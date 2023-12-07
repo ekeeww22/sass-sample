@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.CMYMCP216{
+    .detail-list{
+        margin:0;
+        margin-top:-1.6rem;
+
+        & > ul > li{
+            padding:1.6rem 0 0;
+            &:first-child{border-top:0;}
+            &:last-child{padding-bottom:0;}
+        }
+    }
+}

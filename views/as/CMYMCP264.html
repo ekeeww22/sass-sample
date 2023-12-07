@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <a href="javascript:;" class="header-link">마이데이터 관리</a>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP264">
+					<div class="top-account-wrap">
+                        <div class="account-name">
+                            <div class="bank40"><img src="/images/bank/bank-sample.svg" alt="샘플"></div>
+                            <strong>OOOOOOOOOOO</strong>
+                            <ul class="info">
+                                <li>KB국민은행</li>
+                                <li>80220123457890 (1)</li>
+                            </ul>
+                        </div>
+
+                        <div class="account-data">
+                            <strong class="tit">잔액</strong>
+                            <div class="large-box">
+                                <em>31,000,000</em><span>원</span>
+                            </div>
+
+                            <div class="small-box">
+                                <strong>출금가능금액</strong>
+                                <div class="account-box">
+                                    <em class="">30,000,000</em><span>원</span>
+                                </div>
+                            </div>
+
+                            <!-- .btn-detail에 [.active] 추가되면 .detail-contents 노출됨 -->
+                            <button class="icon24 icon-arrow-bottom-black btn-detail" data-module="toggle" data-target="toggle1">상세정보 버튼</button>
+
+                            <div class="detail-contents" data-name="toggle1">
+                                <div class="data-list">
+                                    <ul class="bg-gray">
+                                        <li>
+                                            <span class="tit">계좌구분</span>
+                                            <span class="txt">기타</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">계좌상태</span>
+                                            <span class="txt">활동</span>
+                                        </li>
+										<li>
+                                            <span class="tit">저축방법</span>
+                                            <span class="txt">요구불식</span>
+                                        </li>
+										<li>
+                                            <span class="tit">개설일</span>
+                                            <span class="txt">2020.01.01</span>
+                                        </li>
+										<li>
+                                            <span class="tit">적용금리</span>
+                                            <span class="txt">1.30%</span>
+                                        </li>
+										<li>
+                                            <span class="tit">잔액</span>
+                                            <span class="txt bold">31,000,000원</span>
+                                        </li>
+										<li>
+                                            <span class="tit">출금가능금액</span>
+                                            <span class="txt">30,000,000원</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-area">
+                        <ul class="period">
+                            <li>1개월</li>
+                            <!--2021-08-02 마크업 삭제
+                            <li>전체</li>
+                            -->
+                        </ul>
+                        <button type="button" class="icon24 icon-filter">검색조건 설정</button>
+                    </div>
+                    
+					<div class="detail-list">
+                        <ul>
+                            <li>
+                                <p class="date">02.04</p>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">출금</p>
+                                    <p class="time">2021.02.04 15:25:08</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">거래금액</span>
+                                                <span class="txt bold minus">-1,000,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">잔액</span>
+                                                <span class="txt">31,000,000원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+    
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">입금</p>
+                                    <p class="time">2021.02.04 13:20:28</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">거래금액</span>
+                                                <span class="txt bold ">2,000,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">잔액</span>
+                                                <span class="txt">32,000,000원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <p class="date">02.03</p>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">입금</p>
+                                    <p class="time">2021.02.04 15:25:08</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">거래금액</span>
+                                                <span class="txt bold ">2,000,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">잔액</span>
+                                                <span class="txt">32,000,000원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

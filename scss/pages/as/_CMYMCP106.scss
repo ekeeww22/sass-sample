@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.CMYMCP106{
+    .certify-area{
+        display:flex;
+        margin-top:3.2rem;
+        li{
+            margin-left:0.9rem;
+            width:100%;
+            &:first-child{
+                margin-left:0;
+            }
+            &:last-child{
+                .tooltip{
+                    left:calc(-100% - 0.9rem);
+                    &:before{
+                        left:75%;
+                    }
+                }
+            }
+            .radio-box{
+                input{
+                    &:checked + label{
+                        &:before{
+                            border:2px solid #ffcc00;
+                        }
+                    }
+                }
+                label{
+                    padding:2.8rem 1.6rem 2rem;
+                    width:100%;
+                    text-align:center;
+                    .icon48{
+                        
+                    }
+                    .txt{
+                        display:block;
+                        margin-top:0.8rem;
+                        @include body-110;
+                    }
+                }
+            }
+            .tooltip{
+                top:calc(100% + 1.6rem);
+                left:0;
+                width:calc(200% + 0.9rem);
+                &:before{
+                    content:'';
+                    display:block;
+                    position:absolute;
+                    top:-0.9rem;
+                    left:25%;
+                    width:1rem;
+                    height:0.9rem;
+                    background:url("../images/icon/icon-triangleline.svg") no-repeat center/contain;
+                    transform:translateX(-50%);
+                }
+            }
+        }
+    }
+    .accordion-wrap{
+        position:fixed;
+        bottom:11.2rem;
+        left:1.6rem;
+        padding:0;
+        width:calc(100% - 3.2rem);
+        background:#fff;
+        z-index:11;
+    }
+}

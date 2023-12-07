@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>내자산 &gt; 마이테이터관리 &gt; 연결 기관 현황</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP302">
+                    <div class="top-account-wrap">
+                        <div class="account-name">
+                            <div class="bank40"><img src="/images/bank/bank-sample.svg" alt="샘플"></div>
+                            <strong>
+                                KB국민은행
+                                <span class="tag-round bg-gray">연결해제</span><!-- 연결해제시 노출 -->
+                            </strong>
+                            <ul class="info">
+                                <li>최초 연결일시 <span>2021.04.10 15:20</span></li>
+                            </ul>
+                            <button type="button" class="icon24 icon-refresh-round" disabled></button><!-- 연결해제시 버튼 disabled -->
+                        </div>
+
+                        <div class="account-data">
+                            <button class="btn-detail" data-module="toggle" data-target="toggle1">
+                                <span>전송요구 내역 보기</span>
+                                <span class="open-txt">접기</span>
+                                <i class="icon16 icon-arrow-bottom-gray"></i>
+                            </button>
+                            <div class="detail-contents" data-name="toggle1">
+                                <select name="" id="" class="inline-select">
+                                    <option value="">2021-04-02</option>
+                                    <option value="">2021-04-01</option>
+                                </select>
+
+                                <div class="table-wrap">
+                                    <table>
+                                        <caption>전송요구 내역 항목</caption>
+                                        <colgroup>
+                                            <col style="width:35%">
+                                            <col style="">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">전송을 요구하는 개인신용정보</th>
+                                                <td>계좌 기본정보, 추가정보 및 거래내역</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">개인신용정보 보유기간</th>
+                                                <td>2021.04.10 ~ 2022.04.09</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">정기적 전송 여부 및 주기</th>
+                                                <td>정기적 전송 (주 1회)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">전송요구 기간</th>
+                                                <td>2021.04.10 ~ 2022.04.09</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">전송을 요구하는 목적</th>
+                                                <td>통합자산관리, 금융상품추천 등</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- 연결해제시 미노출 -->
+                                <div class="btn-wrap">
+                                    <button class="btn-border-gray"><span>전송요구 내역 변경</span></button>
+                                </div>
+                                <!-- // 연결해제시 미노출 -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="property-list type-column">
+                        <!-- 연결중 -->
+                        <li>
+                            <a href="javascript:;" class="box">
+                                <p class="tit">KB Star*t통장-보통예금</p>
+                                <ul class="info">
+                                    <li>입출금</li>
+                                    <li>1234567890123</li>
+                                </ul>
+                                <p class="date">최근 업데이트 <span>2021.04.10 15:20</span></p>
+                                <i class="icon16 icon-arrow-right-black"></i>
+                            </a>
+                        </li>
+                        <!-- // 연결중 -->
+                        <!-- 연결중 & 업데이트 오류 발생 -->
+                        <li>
+                            <a href="javascript:;" class="box">
+                                <p class="tit">KB대출</p>
+                                <ul class="info">
+                                    <li>신용대출</li>
+                                    <li>2345678901234</li>
+                                </ul>
+                                <i class="icon16 icon-arrow-right-black"></i>
+                            </a>                            
+                            <div class="box-bottom">
+                                <p class="info-txt">
+                                    <i class="icon16 icon-error"></i>업데이트 중 오류가 발생하였습니다.
+                                </p>
+                                <a href="javascript:;" class="btn-txt sm">확인</a>
+                            </div>
+                        </li>
+                        <!-- // 연결중 & 업데이트 오류 발생 -->
+                        <!-- 전송요구 해제(연결해제) -->
+                        <li class="off">
+                            <a href="javascript:;" class="box">
+                                <p class="tit">개인형IRP</p>
+                                <ul class="info">
+                                    <li>퇴직연금</li>
+                                    <li>1234567890123</li>
+                                </ul>
+                                <p class="date">연결해제 <span>2021.04.10 15:20</span></p>
+                                <span class="tag">해제</span>
+                                <i class="icon16 icon-arrow-right-black"></i>
+                            </a>
+                        </li>
+                        <!-- // 전송요구 해제(연결해제) -->
+                    </ul>
+
+                    <div class="btn-area bottom-fixed">
+                        <button class="btn-gray"><span>기관 연결해제</span></button><!-- 연결해제시 '기관 재연결' -->
+                        <button class="btn-yellow"><span>연결계좌 변경</span></button><!-- 연결해제시 '데이터 삭제' -->
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="210" viewBox="0 0 260 210">
+    <defs>
+        <path id="tv4boaot5a" d="M0 0H260V210H0z"/>
+        <path id="6nzsncrddc" d="M0 0L191 0 191 214 0 214z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-58.000000, -329.000000) translate(0.000000, 137.000000) translate(58.000000, 192.000000)">
+                    <mask id="susd0k79tb" fill="#fff">
+                        <use xlink:href="#tv4boaot5a"/>
+                    </mask>
+                    <g mask="url(#susd0k79tb)">
+                        <g>
+                            <g transform="translate(34.000000, 0.000000)">
+                                <mask id="n7s7cdygbd" fill="#fff">
+                                    <use xlink:href="#6nzsncrddc"/>
+                                </mask>
+                                <path fill="#EEE" d="M0 352.065V23.611C0 10.591 10.618 0 23.672 0h143.104c13.051 0 23.67 10.59 23.67 23.611v328.454c0 13.02-10.619 23.611-23.67 23.611H23.672C10.618 375.676 0 365.086 0 352.066z" mask="url(#n7s7cdygbd)"/>
+                                <path fill="#FFF" d="M21.499 12C15.149 12 10 17.135 10 23.47v326.22c0 6.333 5.149 11.468 11.496 11.468h144.192c6.347 0 11.496-5.135 11.496-11.469V23.47c0-6.334-5.149-11.469-11.496-11.469H21.499z" mask="url(#n7s7cdygbd)"/>
+                                <g fill="#EEE" mask="url(#n7s7cdygbd)">
+                                    <path d="M0 0H168V1H0z" transform="translate(10.500000, 58.000000)"/>
+                                </g>
+                                <text fill="#666" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="10" letter-spacing=".2" mask="url(#n7s7cdygbd)" opacity=".6">
+                                    <tspan x="18" y="47">받는 사람 : </tspan>
+                                </text>
+                                <text fill="#222" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="10" font-weight="bold" letter-spacing=".2" mask="url(#n7s7cdygbd)" opacity=".6">
+                                    <tspan x="65" y="47">16887143159</tspan>
+                                </text>
+                            </g>
+                            <path fill="#EEE" d="M139.061 22c1.07 0 1.939-.87 1.939-1.945V16c0-4.418-3.582-8-8-8H58c-4.418 0-8 3.582-8 8v4.055C50 21.13 50.869 22 51.939 22h87.122z" transform="translate(34.000000, 0.000000) translate(95.500000, 15.000000) scale(1, -1) translate(-95.500000, -15.000000)"/>
+                            <path fill="#DDD" d="M108.55 10h-26.1c-.8 0-1.45 1.118-1.45 2.5s.65 2.5 1.45 2.5h26.1c.8 0 1.45-1.118 1.45-2.5s-.65-2.5-1.45-2.5M123 12.5c0 1.381-1.121 2.5-2.502 2.5-1.377 0-2.498-1.119-2.498-2.5s1.121-2.5 2.498-2.5c1.38 0 2.502 1.119 2.502 2.5" transform="translate(34.000000, 0.000000)"/>
+                        </g>
+                    </g>
+                    <g mask="url(#susd0k79tb)">
+                        <g transform="translate(3.000000, 79.000000)">
+                            <rect width="252" height="101" x=".5" y=".5" fill="#FFF" stroke="#DDD" rx="12"/>
+                            <text font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="14" letter-spacing="-.2">
+                                <tspan x="16.404" y="29" fill="#222">[KB차차차] 인증문자 보내기</tspan>
+                            </text>
+                            <text font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="12" letter-spacing=".2">
+                                <tspan x="16" y="49" fill="#666">dlkjrejfldkmclkdsjfiejwijflkejfkdmskdf</tspan> <tspan x="16" y="65" fill="#666">sldfjeijflskndnseihwoeidkxsldkjfieruwl</tspan> <tspan x="16" y="81" fill="#666">djfsdlfeiwdkjfckds</tspan>
+                            </text>
+                            <path fill="#FC0" d="M110 72H112V84H110z"/>
+                            <g transform="translate(221.000000, 70.000000)">
+                                <circle cx="12" cy="12" r="12" fill="#FC0"/>
+                                <g stroke="#FFF" stroke-linecap="round" stroke-width="1.5">
+                                    <g>
+                                        <path d="M1.381 8.047L7.862 7.862 8.047 1.381" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000) translate(2.619288, 3.285955) translate(4.714045, 4.714045) rotate(135.000000) translate(-4.714045, -4.714045)"/>
+                                        <path d="M0.714 4.714L11.381 4.714" transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000) translate(2.619288, 3.285955)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

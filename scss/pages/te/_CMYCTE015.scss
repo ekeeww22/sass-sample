@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.CMYCTE015{
+    .part{
+        margin:3.2rem -1.6rem 0;
+        padding:3.2rem 1.6rem 0;
+        border-top:0.8rem solid #f8f8f8;
+        &:first-child{
+            margin-top:0;
+            padding-top:0;
+            border-top:none;
+        }
+        .part-tit-wrap{
+            padding-right:0;
+        }
+        &.info{
+            .info-content{
+                .info-box{
+                    margin:3.2rem -1.6rem 0;
+                    padding:3.2rem 1.6rem 0;
+                    border-top:1px solid #eee;
+                    &:first-child{
+                        margin-top:0;
+                        padding-top:0;
+                        border-top:none;
+                    }
+                    .info-top{
+                        margin-bottom:2.4rem;
+                        padding-bottom:0;
+                        border-bottom:none;
+                    }
+                    .data-list{
+                        .list-tit{
+                            margin-bottom:0.8rem;
+                            span{
+                                @include body-100;
+                            }
+                        }
+                        ul{
+                            li{
+                                margin-top:0.4rem;
+                                &:first-child{
+                                    margin-top:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

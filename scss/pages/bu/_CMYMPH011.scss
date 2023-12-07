@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.CMYMPH011 {
+    .modal-body { 
+        .registration-list {
+            > li { 
+                & + li{margin-top:1.6rem;}
+                position:relative;
+                padding:0.8rem 0;
+
+                .icon { position:absolute; top:50%; left:0; transform:translateY(-50%); 
+                    ~ .tit { padding-left:5.6rem; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:500; }
+                    ~ .price { padding-left: 5.6rem; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                    ~ button { position:absolute; top:50%; right:0; transform:translateY(-50%); }
+                }
+            }
+            .image40 { display:inline-block; width:4rem; height:4rem; overflow:hidden; font-size:0; background-color:transparent; vertical-align:middle; }
+        }
+    }
+}

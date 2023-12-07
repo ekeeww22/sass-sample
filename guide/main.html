@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI GUIDE</title>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/guide_data.js"></script>
+	<script type="text/javascript" src="./js/guide.js"></script>
+	<link type="text/css" rel="stylesheet" href="./css/reset.css" >
+	<link type="text/css" rel="stylesheet" href="./css/content.css">
+	<style>
+		html,body{line-height: 1.5;}
+		.content{margin-left:0px;padding:20px;padding-bottom:120px;width:100%;height:100%;}
+		.section{margin-top:20px;}
+		.section>h3{font-size: 24px;color:black;font-weight: bold;}
+		.section .group{margin-top:10px;padding-left:10px;}
+		.section .group>h4{font-size:20px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+
+			<div class="section">
+				<h3>※ 프로젝트 형상관리</h3>
+				<div class="group">
+					<ul>
+						<li>GIT URL : https://gitlab.com/lsh1117/kbcapital-html.git</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ 파일구조</h3>
+				<div class="group">
+					<h4>- css</h4>
+					<div class="group">
+						<ul>
+							<li><strong>/lib/jquery-ui-1.12.1/jquery-ui.min.css</strong> : jquery ui css</li>
+							<li><strong>/lib/slick/slick.css</strong> : slick css</li>
+							<li><strong>/font/font.css</strong> : 폰트</li>
+							<li><strong>/css/reset.css</strong> : 기본설정</li>
+							<li><strong>/css/common.css</strong> : 공통부분 ( header, GNB, container, footer, popup 등 )</li>
+							<li><strong>/css/component.css</strong> : 컴포넌트 ( button, input, selectBox, tab 등 )</li>
+							<li><strong>/css/template.css</strong> : 템플릿 ( table, list 등 )</li>
+							<li><strong>/css/contents.css</strong> : 전체 페이지</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="group">
+					<h4>- js</h4>
+					<div class="group">
+						<ul>
+							<li><strong>/lib/jquery/jquery-3.3.1.min.js</strong> : jquery 3.3.1 버전</li>
+							<li><strong>/lib/jquery-ui-1.12.1/jquery-ui.min.js</strong> : jquery ui 1.12.1 버전 (jquery 1.7+ 이상 4.0 미만 지원 )</li>
+							<li><strong>/lib/slick/slick.js</strong> : 슬라이드 라이브러리 slick js</li>
+							<li><strong>/js/uicomponent.js</strong> : ui component js</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="group">
+					<h4>- fonts</h4>
+					<div class="group">
+						<ul>
+							<li><strong>KBFGTextL</strong> : KB금융 본문체 Light </li>
+							<li><strong>KBFGTextM</strong> : KB금융 본문체 Medium </li>
+							<li><strong>KBFGTextB</strong> : KB금융 본문체 Bold </li>
+							<li><strong>KBFGDisplayL</strong> : KB금융 제목체 Light </li>
+							<li><strong>KBFGDisplayM</strong> : KB금융 제목체 Medium </li>
+							<li><strong>KBFGDisplayB</strong> : KB금융 제목체 Bold </li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="group">
+					<h4>- html</h4>
+					<div class="group">
+						<ul>
+							<li><strong>/cmm/</strong> : 공통 </li>
+							<li><strong>/ast/</strong> : 내자산 </li>
+							<li><strong>/buy/</strong> : 내차구매 </li>
+							<li><strong>/tec/</strong> : 차테크 </li>
+							<li><strong>/mycar/</strong> : 내차고 </li>
+							<li><strong>/adm/</strong> : 관리자 </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ 네이밍 규칙</h3>
+				<div class="group">
+					<ul>
+						<li>html 파일명 : 화면 ID 와 동일 하게. 단 점(.) 은 언더바(_) 로 대체</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ 주석 규칙</h3>
+				<div class="group">
+					<ul>
+						<li>html : 태그 시작 지점 &lt;-- 내용 --&gt; ,  태그 종료 지점 &lt;-- // 내용 --&gt; , </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ CSS 규칙</h3>
+				<div class="group">
+					<ul>
+						<li>css class name : 단어간 구분은 대시(-)로 구분</li>
+						<li>
+							css code style : component, template 을 제외한 화면 ID 를 시작으로함 예) .A_CL_MA_0010 .section-01>ul>li <br>
+							=> 화면ID는 모든 페이지의 &lt;div class="content <span style="color:red">A_CL_MA_0010</span>"&gt; 에 class로 들어감
+						</li>
+						<li>UIComponent 적용 유무 : UIComponent 실행이 된 Element 에 initiate 클래스 추가(없을경우 미적용)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ JAVASCRIPT 규칙</h3>
+				<div class="group">
+					<ul>
+						<li>javascript version : ES5</li>
+						<li>function name : 카멜 표기법, 소문자의 동사 예) getValue()</li>
+						<li>변수 name : 소문자의 명사 예) var value;</li>
+						<li>상수 name : 대문자의 명사 예) var CONSTANT_VALUE;</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section">
+				<h3>※ fixed z-index 계층</h3>
+				<div class="group">
+					<ul>
+						<li>.CMYMCP132 .btn-floating  : 10</li>
+						<li>.btn-area bottom-fixed : 100</li>
+						<li>.content-header  : 1000</li>
+						<li>.popup-container : 5000</li>
+						<li>.toast.message : 6000</li>
+					</ul>
+				</div>
+				<br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

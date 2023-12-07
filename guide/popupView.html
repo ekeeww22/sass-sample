@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../css/app.css">
+
+	<script src="../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../js/lib/slick/slick.js"></script>
+	<script src="../js/uicomponent.js"></script>
+
+	<script>
+
+		function get_query(){
+			var url = document.location.href;
+			var qs = url.substring(url.indexOf('?') + 1).split('&');
+			for(var i = 0, result = {}; i < qs.length; i++){
+				qs[i] = qs[i].split('=');
+				result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+			}
+			return result;
+		}
+		
+		function popupOpen(prop){
+			if(prop == undefined){
+				return null;
+			}
+			if(prop.type == "modal"){
+				$(".popup-container").load(prop.url);
+				setTimeout(function(){
+					var _popupContainer = document.getElementsByClassName("popup-container")[0];
+					var _popupController = UIComponent.PopupController.getInstance(_popupContainer);
+
+					var modal01 = new UIComponent.Modal({'target':_popupContainer.childNodes[0]});
+					_popupContainer.childNodes[0].addEventListener('popupOpen',function(){
+						UIComponent.Html.reset();
+					});
+					_popupController.add(modal01);
+
+					modal01.open();
+				},100);
+			}
+			else if(prop.type=="toast"){
+				$(".popup-toast").load(prop.url);
+			}
+			else if(prop.type=="loading"){
+				$(".popup-loading").load(prop.url);
+			}
+		}
+
+		$(document).ready(function(){
+			var result = get_query();
+			if(result.url != undefined){
+				if(result.type=="loading"){
+					popupOpen({'type':'loading','url':result.url});
+				}
+				else{
+					popupOpen({'type':'modal','url':result.url});
+				}
+			}
+		});
+
+	</script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>설문조사</h2>
+			<div class="btn-header-wrap">
+				<button type="button" class="btn-alarm">알람</button>
+				<button type="button" class="btn-home">홈</button>
+			</div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP105">
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<p>팝업보기</p>
+					<br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+		</div>
+		<!-- // content -->
+
+		<!-- popup-container -->
+		<div class="popup-container">
+			
+		</div>
+		<!-- // popup-container -->
+
+		<!-- popup-toast 팝업 오픈시 on 클래스 추가 -->
+		<div class="popup-toast"></div>
+		<!-- // popup-toast -->
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

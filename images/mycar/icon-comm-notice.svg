@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M0 0H24V24H0z" transform="translate(-32.000000, -118.000000) translate(0.000000, 104.000000) translate(16.000000, 0.000000) translate(16.000000, 12.000000) translate(0.000000, 2.000000)"/>
+                            <g>
+                                <path d="M0 0H16V16H0z" transform="translate(-32.000000, -118.000000) translate(0.000000, 104.000000) translate(16.000000, 0.000000) translate(16.000000, 12.000000) translate(0.000000, 2.000000)"/>
+                                <g stroke="#222">
+                                    <path d="M2.103 9.033l4.033.06v2.464c0 .415-.168.79-.44 1.061-.271.272-.646.44-1.06.44h0-1.033c-.414 0-.789-.168-1.06-.44-.272-.271-.44-.646-.44-1.06h0V9.032z" transform="translate(-32.000000, -118.000000) translate(0.000000, 104.000000) translate(16.000000, 0.000000) translate(16.000000, 12.000000) translate(0.000000, 2.000000) translate(1.000000, 1.666667)"/>
+                                    <path fill="#FFF" stroke-linejoin="round" d="M13.5-.7v12.788l-8.702-3.12H.758v-6.68h4.044L13.5-.7z" transform="translate(-32.000000, -118.000000) translate(0.000000, 104.000000) translate(16.000000, 0.000000) translate(16.000000, 12.000000) translate(0.000000, 2.000000) translate(1.000000, 1.666667)"/>
+                                    <path fill="#FC0" d="M4.365 2.233v6.8H1l-.5-6.3 3.865-.5z" transform="translate(-32.000000, -118.000000) translate(0.000000, 104.000000) translate(16.000000, 0.000000) translate(16.000000, 12.000000) translate(0.000000, 2.000000) translate(1.000000, 1.666667)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H32V32H0z" transform="translate(-208.000000, -274.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 0.000000) translate(16.000000, 16.000000)"/>
+                                <g transform="translate(-208.000000, -274.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 0.000000) translate(16.000000, 16.000000) translate(5.055456, 2.750000)">
+                                    <path stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M0.973 25.312L20.916 25.312 20.916 22.25 0.973 22.25z"/>
+                                    <path fill="#FC0" d="M10.945 6.593c4.228 0 7.657 3.427 7.657 7.656v7.657H3.287v-7.657c0-4.23 3.429-7.656 7.658-7.656"/>
+                                    <path stroke="#231F20" stroke-width="1.5" d="M10.945 6.25h0c4.228 0 7.657 3.581 7.657 8v8H3.287v-8c0-4.419 3.429-8 7.658-8z"/>
+                                    <path stroke="#222" stroke-width="1.5" d="M5.822 14.25c0-2.83 2.293-5.124 5.123-5.124"/>
+                                    <rect width="4" height="1.5" x="8.945" y="1.25" fill="#222" rx=".75" transform="translate(10.944544, 2.000000) rotate(90.000000) translate(-10.944544, -2.000000)"/>
+                                    <rect width="4" height="1.5" x="-.055" y="5.25" fill="#222" rx=".75" transform="translate(1.944544, 6.000000) rotate(45.000000) translate(-1.944544, -6.000000)"/>
+                                    <rect width="4" height="1.5" x="17.945" y="5.25" fill="#222" rx=".75" transform="translate(19.944544, 6.000000) scale(-1, 1) rotate(45.000000) translate(-19.944544, -6.000000)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

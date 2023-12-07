@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.CMYMCP142{
+    .form-box{
+        font-size:0;
+        .form-radio{
+            margin:0;
+            width:50%;
+            .txt{
+                @include body-110;
+            }
+        }
+    }
+    .btn-select{
+        margin-top:2.4rem;
+    }
+    .tac{
+        margin-top:2.4rem;
+    }
+
+    .link-list{
+        margin:0 -1.6rem -7.2rem;
+    }
+}

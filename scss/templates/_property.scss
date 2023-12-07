@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* 자산 */
+.property-list{
+    > li{
+        position:relative;
+        display:flex;
+        align-items:center;
+        margin-top:0.8rem;
+        padding:1.6rem;
+        border-radius:1.2rem;
+        border:1px solid #ddd;
+        &:first-child{
+            margin-top:0;
+        }
+        .form-checkbox{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index:1;
+            .icon{
+                left:1.6rem;
+            }
+            & + .box{
+                padding-left:3.2rem;
+            }
+        }
+        .box{
+            position:relative;
+            display:block;
+            width:100%;
+            .tit{
+                @include body-110;
+            }
+            .info{
+                font-size:0;
+                li{
+                    position:relative;
+                    display:inline-block;
+                    @include body-210;
+                    & + li{
+                        margin-left:0.8rem;
+                        padding-left:0.9rem;
+                        &:before{
+                            content:'';
+                            display:block;
+                            position:absolute;
+                            top:50%;
+                            left:0;
+                            width:1px;
+                            height:1.2rem;
+                            background:#ddd;
+                            transform:translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .date{
+                display:block;
+                margin-top:0.4rem;
+                @include dock-bar-100;
+                color:#888;
+            }
+            .icon-arrow-right-black{
+                position:absolute;
+                top:50%;
+                right:0;
+                transform:translateY(-50%);
+            }
+        }
+        .tag{
+            display:none;
+            position:absolute;
+            top:50%;
+            right:1.6rem;
+            padding:0.2rem 0.8rem;
+            @include dock-bar-100;
+            border-radius:1.2rem;
+            @include bg-color-gray-200;
+            transform:translateY(-50%);
+        }
+        .state{
+            position:absolute;
+            top:50%;
+            right:1.6rem;
+            @include body-110;
+            font-weight:400;
+            transform:translateY(-50%);
+            &.success{
+                // @include option-color-blue-100;
+            }
+            &.fail{
+                color:#ff0000;
+                font-weight:400;
+                &:after{
+                    content:'';
+                    position:absolute;
+                    left:0;
+                    bottom:0.2rem;
+                    width:100%;
+                    height:1px;
+                    background:#ff0000;
+                }
+            }
+        }
+        &.complete{
+            .box{
+                .tit{
+                    @include font-color-gray-200;
+                }
+                .info{
+                    li{
+                        @include font-color-gray-200;
+                    }
+                }
+            }
+            .tag{
+                display:block;
+            }
+        }
+    }
+    &.type-column{
+        > li{
+            flex-direction:column;
+            .tag{
+                display:block;
+                right:2.4rem;
+                border:none;
+                @include bg-color-gray-200;
+            }
+            .box-bottom{ 
+                display:flex;
+                align-items:center;
+                margin-top:1.6rem;
+                padding-top:1.6rem;
+                width:100%;
+                border-top:1px solid #eee;
+                .btn-txt{
+                    margin-left:0.8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.CMYMCP343 { 
+    .top-account-wrap { 
+        .account-name { 
+            strong { line-height:4rem; }
+        }
+    }
+    .request-list-area { padding-top:3.2rem; 
+        h3 { padding-bottom:0.8rem; }
+    }
+
+    .table-info-area { 
+        .table-info-wrap { 
+            .table-wrap { border:0;
+                table {
+                    th { padding:0.8rem 0; border:0; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666; font-weight:400; background:none; }
+                    td { padding:0.8rem 0; border:0; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:500; }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.CMYMGA010{
+    .part-list dt .tit{@include body-100;}
+    .table-wrap table tbody td{vertical-align: middle;}
+    .bullet-list.sm{margin-top:1.6rem;}
+    .terms-list .bullet-list.sm{margin-top:0.8rem;}
+
+    .part-01{margin-top:1.6rem;}
+
+    
+    .part-03,.part-07{
+        .table-wrap{
+            th,td{
+                padding-right:0;
+            }
+        }
+    }
+
+}

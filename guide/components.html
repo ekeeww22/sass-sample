@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+    
+        <script src="../js/lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../js/uicomponent.js"></script>
+        <script>
+            $(document).ready(function(){
+                UIComponent.Html.reset();
+                $("#viewBtn1").on("click",function(){
+                    $("[data-module='changeStopNumbers']")[0].module.play();
+                });
+                $("#viewBtn2").on("click",function(){
+                    $("[data-module='scrollStopNumbers']")[0].module.play();
+                });
+            });
+        </script>
+    
+        <link rel="stylesheet" href="../css/app.css">
+    
+        <style>
+            .aside{position:fixed;top:0;bottom:0;left:0;padding-bottom:70px;width:260px;overflow-x: hidden;overflow-y: auto;}
+            .aside ul{padding: 25px 0 25px 25px;}
+            .aside ul li {border-bottom: 1px #eee solid;}
+            .aside ul li:first-child a {font-weight: bold;font-size: 25px;}
+            .aside ul li a{display: block;padding: 10px 0;line-height: 22px;color: #000;font-size: 16px;line-height: 16px;letter-spacing: -0.8px;font-family: 'SpoqaHanSans-Regular', sans-serif;font-weight: 400;}
+            .contents{padding-left:270px;padding-top:25px;}
+
+            @media screen and (max-width: 768px) {
+                .aside{display:none;}
+                .contents{padding-left:0;}
+            }
+            
+            .comp-list{padding-bottom:96px;}
+            .comp-list > li{margin:15px; padding:10px; border:3px solid gray;}
+            .comp-list > li h2{margin:-10px -10px 10px; padding:10px;font-size:20px; font-weight:700; background:#eee;}
+            .form-box{padding:15px 20px;}
+            .bg-pink{background:pink;}
+            .title-section{margin-top:15px;padding-top:15px;border-top:1px solid red;}
+            .section-header h2{color:#000;}
+
+            /*
+            .tab-content{display:none;}
+            .tab-content.active{display:block;}
+            */
+
+            .toggle1{display: none;}
+            .toggle1.active{display: block;}
+
+            .btn-floating{bottom:8rem;}
+
+        </style>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="aside">
+            <ul>
+                <li><a href="#top">Components</a></li>
+                <li><a href="#tem1">icon</a></li>
+                <li><a href="#tem2">icon16</a></li>
+                <li><a href="#tem3">icon24</a></li>
+                <li><a href="#tem4">icon32</a></li>
+                <li><a href="#tem5">icon48</a></li>
+                <li><a href="#tem5-2">tag</a></li>
+                <li><a href="#tem6">info-txt</a></li>
+                <li><a href="#tem7">button</a></li>
+                <li><a href="#tem8">form</a></li>
+                <li><a href="#tem9">type-basic</a></li>
+                <li><a href="#tem10">type-price</a></li>
+                <li><a href="#tem11">type-number</a></li>
+                <li><a href="#tem12">type-mix</a></li>
+                <li><a href="#tem12-1">type-card</a></li>
+                <li><a href="#tem13">type-search</a></li>
+                <li><a href="#tem14">type-select</a></li>
+                <li><a href="#tem15">inline-select</a></li>
+                <li><a href="#tem16">btn-select</a></li>
+                <li><a href="#tem17">Date Search Field</a></li>
+                <li><a href="#tem18">Tab Menud</a></li>
+                <li><a href="#tem19">ToolTip</a></li>
+                <li><a href="#tem20">Filter</a></li>
+                <li><a href="#tem21">Toggle</a></li>
+                <li><a href="#tem22">텍스트 모션 (change)</a></li>
+                <li><a href="#tem23">텍스트 모션 (scroll)</a></li>
+                <li><a href="#tem24">scroll-choice-list</a></li>
+            </ul>
+        </div>
+        <!-- / aside -->
+
+        <div class="contents">
+            <ul class="comp-list">
+                <li>
+                    <h2 id="tem1">icon</h2>
+                    <button class="btn-rectangle">인증요청</button>
+
+                </li>
+                <li>
+                    <h2 id="tem2">icon16</h2>
+                    <button class="icon16 icon-close">삭제</button>
+                    <button class="icon16 icon-close-round">삭제</button>
+                    <button class="icon16 icon-plus-black">text</button>
+                    <button class="icon16 icon-plus-gray">text</button>
+                    <button class="icon16 icon-minus-black">text</button>
+                    <button class="icon16 icon-minus-gray">text</button>
+                    <button class="icon16 icon-arrow-right-small-gray">text</button>
+                    <button class="icon16 icon-arrow-top-black">text</button>
+                    <button class="icon16 icon-arrow-top-gray">text</button>
+                    <button class="icon16 icon-arrow-left-black">text</button>
+                    <button class="icon16 icon-arrow-left-gray">text</button>
+                    <button class="icon16 icon-arrow-right-black">text</button>
+                    <button class="icon16 icon-arrow-right-gray">text</button>
+                    <button class="icon16 icon-arrow-bottom-black">text</button>
+                    <button class="icon16 icon-arrow-bottom-gray">text</button>
+                    <button class="icon16 icon-refresh">text</button>
+                    <button class="icon16 icon-refresh-dark">text</button>
+                    <button class="icon16 icon-tooltip">text</button>
+                    <button class="icon16 icon-info">text</button>
+                    <button class="icon16 icon-info-black">text</button>
+                    <button class="icon16 icon-error">text</button>
+                    <button class="icon16 icon-submenu">text</button>
+                    <button class="icon16 icon-delete">text</button>
+                    <button class="icon16 icon-setting">text</button>
+                    <button class="icon16 icon-modify">text</button>
+                    <button class="icon16 icon-time">text</button>
+                    <button class="icon16 icon-calendar">text</button>
+                    <button class="icon16 icon-search">text</button>
+                    <button class="icon16 icon-plus-round-black">text</button>
+                    <button class="icon16 icon-point">text</button>
+                    <button class="icon16 icon-phone">text</button>
+                    <button class="icon16 icon-notice">text</button>
+                    <button class="icon16 icon-data-modify">text</button>
+                    <i class="icon16 icon-depth-line"></i>
+                </li>
+                <li>
+                    <h2 id="tem3">icon24</h2>
+                    <button class="icon24 icon-search">검색</button>
+                    <button class="icon24 icon-calendar">날짜검색</button>
+                    <button class="icon24 icon-back">text</button>
+                    <button class="icon24 icon-close-black">text</button>
+                    <button class="icon24 icon-alarm">text</button>
+                    <button class="icon24 icon-alarm-on">text</button>
+                    <button class="icon24 icon-home">text</button>
+                    <button class="icon24 icon-plus-black">text</button>
+                    <button class="icon24 icon-plus-gray">text</button>
+                    <button class="icon24 icon-minus-black">text</button>
+                    <button class="icon24 icon-minus-gray">text</button>
+                    <button class="icon24 icon-arrow-top-black">text</button>
+                    <button class="icon24 icon-arrow-top-gray">text</button>
+                    <button class="icon24 icon-arrow-left-black">text</button>
+                    <button class="icon24 icon-arrow-left-gray">text</button>
+                    <button class="icon24 icon-arrow-right-black">text</button>
+                    <button class="icon24 icon-arrow-right-gray">text</button>
+                    <button class="icon24 icon-arrow-bottom-black">text</button>
+                    <button class="icon24 icon-arrow-bottom-gray">text</button>
+                    <button class="icon24 icon-assets-off">text</button>
+                    <button class="icon24 icon-assets-on">text</button>
+                    <button class="icon24 icon-urchase-off">text</button>
+                    <button class="icon24 icon-asset-on">text</button>
+                    <button class="icon24 icon-investment-off">text</button>
+                    <button class="icon24 icon-investment-on">text</button>
+                    <button class="icon24 icon-mypage-off">text</button>
+                    <button class="icon24 icon-mypage-on">text</button>
+                    <button class="icon24 icon-refresh-round">text</button>
+                    <button class="icon24 icon-share">text</button>
+                    <button class="icon24 icon-filter">text</button>
+                    <button class="icon24 icon-submenu">text</button>
+                    <button class="icon24 icon-delete">text</button>
+                    <button class="icon24 icon-like-off">text</button>
+                    <button class="icon24 icon-like-on">text</button>
+                    <button class="icon24 icon-tooltip">text</button>
+                    <button class="icon24 icon-message">text</button>
+                    <button class="icon24 icon-purchase-classiccar">text</button>
+                    <button class="icon24 icon-purchase-newcar">text</button>
+                    <button class="icon24 icon-round-plus-orange">text</button>
+                    <button class="icon24 icon24-comm-menu">text</button>
+                    <button class="icon24 icon24-comm-del">text</button>
+                </li>
+                <li>
+                    <h2 id="tem4">icon32</h2>
+                    <i class="icon32 icon-kbbank">KB은행</i>
+                    <i class="icon32 icon-bank">은행</i>
+                    <i class="icon32 icon-capital">캐피탈</i>
+                    <i class="icon32 icon-card">카드</i>
+                    <i class="icon32 icon-fund">펀드</i>
+                    <i class="icon32 icon-insurance">보험</i>
+                    <i class="icon32 icon-pension">연금</i>
+                    <i class="icon32 icon-phone">휴대폰</i>
+                    <i class="icon32 icon-kakaopay">카카오페이</i>
+                    <i class="icon32 icon-toss">토스</i>
+                </li>
+                <li>
+                    <h2 id="tem5">icon48 ex)width59</h2>
+                    <i class="icon48 icon-success">성공</i>
+                    <i class="icon48 icon-error">에러</i>
+                    <i class="icon48 icon-nodata">데이터없음</i>
+                    <i class="icon48 icon-kakaopay-ex">카카오페이</i>
+                    <i class="icon48 icon-toss-ex">토스</i>
+                    <button class="icon48 icon-more">더보기</button>
+                </li>
+                <li>
+                    <h2 id="tem5-2">tag</h2>
+
+                    <b class="underline-mark">2,300만원</b>
+
+                    <div class="round-txt-wrap">
+                        <span>2020년식</span><span>검정색</span>
+                    </div>
+                    
+                    <span class="tag-round bg-gray">예상 월 납입금</span>
+
+                    <span class="tag-round bg-yellow">Tip</span>
+
+                </li>
+                <li>
+                    <h2 id="tem6">info-txt</h2>
+                    
+                    <p class="info-txt">
+                        <i class="icon16 icon-info"></i>
+                        존재하지 않는 고객입니다
+                    </p>
+                </li>
+                <li>
+                    <h2 id="tem7">button</h2>
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>취소</span></button>
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+                    <div class="bottom-space"></div>
+
+                    <div class="btn-area">
+                        <button type="button" class="btn-gray"><span>취소</span></button>
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+
+                    <div class="btn-area">
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+
+                    <div class="btn-area">
+                        <button type="button" class="btn-yellow" disabled><span>disabled</span></button>
+                    </div>
+
+                    <button type="button" class="btn-txt">btn-txt</button>
+                    <a href="" class="btn-txt sm">btn-txt</a>
+
+                    <button type="button" class="btn-txt-arrow"><span>btn-txt-arrow</span><i class="icon16 icon-arrow-right-small-gray"></i></button>
+
+                    <button class="btn-round bg-yellow">연결하기</button>
+                    <button class="btn-round bg-gray">조회</button>
+
+                    <div class="btn-wrap">
+                        <button class="btn-border-gray"><span>자세히보기</span></button>
+                        <button class="btn-bg-yellow"><span>바로가기</span></button>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem8">form</h2>
+                    <div class="form-box">
+                        <label class="form-switch">
+                            <input type="checkbox">
+                            <i><span></span></i>
+                        </label>
+
+                        <label class="form-switch">
+                            <input type="checkbox" disabled>
+                            <i><span></span></i>
+                        </label>
+
+                        <label class="form-switch sm">
+                            <input type="checkbox">
+                            <i><span></span></i>
+                        </label>
+
+                        <label class="form-switch sm">
+                            <input type="checkbox" disabled>
+                            <i><span></span></i>
+                        </label>
+                    </div>
+
+                    <div class="form-box">
+                        <label class="form-checkbox">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                        </label>
+
+                        <label class="form-checkbox">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">checkbox</span>
+                        </label>
+
+                        <label class="form-checkbox">
+                            <input type="checkbox" disabled>
+                            <i class="icon"></i>
+                            <span class="txt">checkbox disabled</span>
+                        </label>
+                    </div>
+
+                    <div class="form-box">
+                        <label class="form-checkbox sm">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                        </label>
+                        
+                        <label class="form-checkbox sm">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">checkbox</span>
+                        </label>
+
+                        <label class="form-checkbox sm">
+                            <input type="checkbox" disabled>
+                            <i class="icon"></i>
+                            <span class="txt">checkbox disabled</span>
+                        </label>
+                    </div>
+
+                    <div class="form-box">
+                        <label class="form-radio" for="radio1">
+                            <input type="radio" name="radio-basic" id="radio1" checked="">
+                            <i class="icon"></i>
+                            <span class="txt">radio</span>
+                        </label>
+
+                        <label class="form-radio" for="radio2">
+                            <input type="radio" name="radio-basic" id="radio2">
+                            <i class="icon"></i>
+                            <span class="txt">radio</span>
+                        </label>
+
+                        <label class="form-radio" for="radio3">
+                            <input type="radio" name="radio-basic" id="radio3" disabled>
+                            <i class="icon"></i>
+                            <span class="txt">radio disabled</span>
+                        </label>
+                    </div>
+
+                    <div class="form-box">
+                        <label class="form-radio type-check" for="radio-check1">
+                            <input type="radio" name="radio-check" id="radio-check1" checked="">
+                            <i class="icon"></i>
+                            <span class="txt">radio</span>
+                        </label>
+
+                        <label class="form-radio type-check" for="radio-check2">
+                            <input type="radio" name="radio-check" id="radio-check2">
+                            <i class="icon"></i>
+                            <span class="txt">radio</span>
+                        </label>
+                    </div>
+
+                    <div class="form-box">
+                        <span class="radio-box">
+                            <input type="radio" name="radio-box" id="radio-box1">
+                            <label for="radio-box1">radio</label>
+                        </span>
+                        <span class="radio-box">
+                            <input type="radio" name="radio-box" id="radio-box2" checked="">
+                            <label for="radio-box2">radio</label>
+                        </span>
+                        <span class="radio-box">
+                            <input type="radio" name="radio-box" id="radio-box3">
+                            <label for="radio-box3">radio</label>
+                        </span>
+                    </div>
+                </li>     
+                <li>
+                    <h2 id="tem9">type-basic</h2>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-basic default">
+                                    <label for="" class="inp-tit">Field default</label>
+                                    <input type="text">
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                                <div class="limit">
+									<span class="num">1</span>/30
+								</div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <h2 id="tem10">type-price</h2>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-price default">
+                                    <label for="" class="price-data-wrap">
+                                        <span class="no-data">0</span> <!-- 금액입력시 클래스명 [.no-data] 제거 -->
+                                        <b>원</b>
+                                    </label>
+                                    <input type="text">
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <h2 id="tem11">type-number</h2>
+
+                    <!-- 에러일 경우 .type-number에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-number default">
+                                    <label for="" class="inp-tit">핸드폰번호(숫자만입력)</label>
+                                    <input type="number">
+                                    <div class="confirm-wrap">
+                                        <button class="btn-rectangle">인증요청</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-number focus">
+                                    <label for="" class="inp-tit">핸드폰번호(숫자만입력)</label>
+                                    <input type="number" value="01011112222">
+                                    <div class="confirm-wrap">
+                                        <button class="btn-rectangle" disabled>인증요청</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-number filled">
+                                    <label for="" class="inp-tit">핸드폰번호(숫자만입력)</label>
+                                    <input type="number"  value="01011112222">
+                                    <div class="confirm-wrap">
+                                        <button class="btn-rectangle">인증요청</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <h2>type-number</h2>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-number default">
+                                    <label for="" class="inp-tit">인증번호 6자리</label>
+                                    <input type="number" inputmode="numeric" pattern="[0-9]*" maxlength="6" onkeypress="return lengthCheckofExp(this)">
+                                    <div class="confirm-wrap">
+                                        <span class="stop-time">03:00</span>
+                                        <button class="btn-rectangle">인증확인</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-number focus">
+                                    <label for="" class="inp-tit">인증번호 6자리</label>
+                                    <input type="number" value="01011112222" inputmode="numeric" pattern="[0-9]*" maxlength="6" onkeypress="return lengthCheckofExp(this)">
+                                    <div class="confirm-wrap">
+                                        <span class="stop-time">03:00</span>
+                                        <button class="btn-rectangle" disabled>인증확인</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-number filled">
+                                    <label for="" class="inp-tit">인증번호 6자리</label>
+                                    <input type="number"  value="01011112222" inputmode="numeric" pattern="[0-9]*" maxlength="6" onkeypress="return lengthCheckofExp(this)">
+                                    <div class="confirm-wrap">
+                                        <span class="stop-time">03:00</span>
+                                        <button class="btn-rectangle">인증확인</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--script>
+                            function lengthCheckofExp(obj){
+                                    if(obj.value.length >= obj.maxLength) //obj.maxLength = 1
+                                    {
+                                        return false;
+                                    }
+                            }
+                        </script-->
+                    </div>
+
+                </li>
+                <li>
+                    <h2 id="tem12">type-mix</h2>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-mix default">
+                                    <label for="" class="inp-tit">생년월일 6자리</label>
+                                    <input type="number">
+                                    <span class="hypen">-</span>
+                                    <input type="number" class="inp-num" maxlength="1">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-mix error">
+                                    <label for="" class="inp-tit">생년월일 6자리</label>
+                                    <input type="number" value="000000" inputmode="numeric" pattern="[0-9]*" maxlength="6" onkeypress="return lengthCheckofExp(this)">
+                                    <span class="hypen">-</span>
+                                    <input type="number" class="inp-num active" inputmode="numeric" pattern="[0-9]*" maxlength="1" onkeypress="return lengthCheckofExp(this)">
+                                </div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                        </ul>
+                        <script>
+                            function lengthCheckofExp(obj){
+                                    if(obj.value.length >= obj.maxLength) //obj.maxLength = 1
+                                    {
+                                        return false;
+                                    }
+                            }
+                        </script>
+                    </div>
+
+                </li>
+
+                <li>
+                    <h2 id="tem12-1">type-card</h2>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-card default"> <!-- 에러일 경우 클래스명 [.error] 추가시 오류메세지 노출 -->
+                                    <label for="" class="inp-tit">카드번호</label>
+                                    <div class="card-part card-part1">
+                                        <label class="pw-point">
+                                            <span class="point-active">1</span>
+                                            <span class="point-active">2</span>
+                                            <span class="point-active">3</span>
+                                            <span class="point-active">4</span>
+                                        </label>
+                                    </div>
+                                    <span class="hypen">-</span>
+                                    <div class="card-part card-part2">
+                                        <label class="pw-point">
+                                            <span class="point-active">1</span>
+                                            <span class="point-active">2</span>
+                                            <span class="point-active">3</span>
+                                            <span class="point-active">4</span>
+                                        </label>
+                                    </div>
+                                    <span class="hypen">-</span>
+                                    <input type="number" id="card-point3" class="card-point3" maxlength="4">
+                                    <span class="hypen">-</span>
+                                    <input type="number" id="card-point4" class="card-point4" maxlength="4" data-name="card-input-number4"> <!--연동되는 input의 id와 label의 for값은 동일하게 설정-->
+
+                                    <div class="pw-point-wrap">
+                                        <div class="card-part card-part4">
+                                            <label class="pw-point" for="card-point4" data-target="card-input-number4" data-module="pwPoint"> <!--연동되는 input의 id와 label의 for값은 동일하게 설정-->
+                                                <span class=""></span>
+                                                <span class=""></span>
+                                                <span class=""></span>
+                                                <span class=""></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                <li>
+                    <h2 id="tem13">type-search</h2>
+
+                    <div class="inp-box type-search">
+                        <input type="text" placeholder="검색">
+                        <button class="icon16 icon-close">필터삭제</button>
+                        <button class="icon24 icon-search">검색</button>
+                    </div>
+
+                </li>
+                <li>
+                    <h2 id="tem14">type-select</h2>
+                    <!-- 에러난 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="select-box type-select default">
+                                    <label for="" class="inp-tit">Select default</label>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                        <option value="">11</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="select-box type-select disabled">
+                                    <label for="" class="inp-tit">Select disabled</label>
+                                    <select name="" id="" disabled>
+                                        <option value=""></option>
+                                        <option value="" selected>11</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem15">inline-select</h2>
+                    <select name="" id="" class="inline-select large">
+                        <option value="">선택하세요</option>
+                        <option value="">선택하세요</option>
+                        <option value="">선택하세요</option>
+                    </select>
+                    <select name="" id="" class="inline-select">
+                        <option value="">전체</option>
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                    </select>
+                </li>
+                <li>
+                    <h2 id="tem16">btn-select</h2>
+                    <button type="button" class="btn-select"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                        <span class="tit">전송주기</span>
+                        <span class="txt">주 1회</span>
+                        <i class="icon16 icon-arrow-bottom-gray"></i>
+                    </button>
+                    <button type="button" class="btn-select" disabled>
+                        <span class="tit">전송주기</span>
+                        <span class="txt">전송주기 선택</span>
+                        <i class="icon16 icon-arrow-bottom-gray"></i>
+                    </button>
+                </li>
+                <li>
+                    <h2 id="tem17">Date Search Field</h2>
+
+                    <div class="search-period">
+                        <ul class="radio-round-white-wrap">
+                            <!--input의 id, label의 for 값들 똑같이 맞추기-->
+                            <li>
+                                <input type="radio" name="period-1" id="period-1-1" checked>
+                                <label for="period-1-1">1개월</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="period-1" id="period-1-2">
+                                <label for="period-1-2">3개월</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="period-1" id="period-1-3">
+                                <label for="period-1-3">6개월</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="period-1" id="period-1-4">
+                                <label for="period-1-4">기간선택</label>
+                            </li>
+                        </ul>
+
+                        <div class="date-search-wrap">
+                            <div class="date-box">
+                                <input type="date">
+                                <i class="icon24 icon-calendar">날짜검색</i>
+                            </div>
+                            <span class="dash">-</span>
+                            <div class="date-box">
+                                <input type="date">
+                                <i class="icon24 icon-calendar">날짜검색</i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem18">Tab Menu</h2>
+
+                    <div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+                        <ul><!--선택된 li에 클래스명 [.active] 추가-->
+                            <li><button class="active" data-target="cont1">메뉴이름</button></li>
+                            <li><button class="" data-target="cont2">메뉴이름</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-wrap" >
+                        <div class="tab-contents" data-name="tabcontents1">
+                            <div class="tab-content active" data-name="cont1">
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                                <p>cont1</p>
+                            </div>
+                            <div class="tab-content" data-name="cont2">
+                                <p>cont2</p>
+                                <p>cont2</p>
+                                <p>cont2</p>
+                                <p>cont2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-underbar type-scroll-x">
+                        <ul>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="active">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                        </ul>
+                    </div>
+                    +
+                    
+                    <div class="tab-round-border type-scroll-x">
+                        <ul>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="active">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                            <li><button class="">메뉴이름</button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li style="position:relative;padding-bottom:120px;">
+                    <h2 id="tem19">tooltip</h2>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="btn-tooltip" data-target="tooltip-1"><span>텍스트버튼</span><i class="icon16 icon-tooltip">툴팁</i></button>
+                        <div class="tooltip active" data-module="tooltip" data-name="tooltip-1" data-tooltip-group="tt1">
+                            <h4 class="tit">통합인증이란?</h4>
+                            <p class="txt">공통의 인증수단을 이용하여 1회 인증만으로 여러개의 금융기관으로 부터 나의 자산을 한 번에 연결하는 방식입니다.</p>
+                            <button class="icon16 icon-close">닫기</button>
+                        </div>
+                    </div>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="btn-tooltip" data-target="tooltip-2"><span>텍스트버튼</span><i class="icon24 icon-tooltip">툴팁</i></button>
+                        <div class="tooltip active" data-module="tooltip" data-name="tooltip-2" data-tooltip-group="tt1">
+                            <h4 class="tit">통합인증이란?</h4>
+                            <p class="txt">공통의 인증수단을 이용하여 1회 인증만으로 여러개의 금융기관으로 부터 나의 자산을 한 번에 연결하는 방식입니다.</p>
+                            <button class="icon16 icon-close">닫기</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem20">filter-area</h2>
+                    <div class="filter-area">
+                        <ul class="period">
+                            <li>1개월</li>
+                            <li>전체</li>
+                        </ul>
+                        <button type="button" class="icon24 icon-filter">검색조건 설정</button>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem21">Toggle</h2>
+                    <button type="button" class="btn-select" data-module="toggle" data-target="toggle1">
+                        <span class="tit">펼쳐보기</span>
+                        <i class="icon16 icon-arrow-bottom-gray"></i>
+                    </button>
+                    <div class="toggle1" data-name="toggle1">
+                        <p>toggle 1</p>
+                        <p>toggle 1</p>
+                        <p>toggle 1</p>
+                        <p>toggle 1</p>
+                        <p>toggle 1</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem22">텍스트 모션 (change) <button id="viewBtn1">보기</button></h2>
+                    <div class="info-filter">
+                        <p class="price"><strong data-module="changeStopNumbers" data-value="870,600">870,600</strong>원</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem23">텍스트 모션 (scroll) <button id="viewBtn2">보기</button></h2>
+                    <div class="info-filter">
+                        <p class="price" >
+                            <strong data-module="scrollStopNumbers" data-value="870,600">870,600</strong>원</p>
+                    </div>
+                </li>
+                <li>
+                    <h2 id="tem24">scroll-choice-list</h2>
+                    <div class="scroll-choice-list column-2"><!-- column-1 : 100%, column-2 : 50%, column-3 : 33.3333333% -->
+                        <ul class="year max-height243">
+                            <li><button type="button" class="btn-scroll-choice active">2021</button></li><!-- 값이 입력되면 클래스 'active' 추가 -->
+                            <li><button type="button" class="btn-scroll-choice">2020</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2019</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2018</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2017</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2016</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2015</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2014</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2013</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2012</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2011</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2010</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2009</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2008</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2007</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2006</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2005</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2004</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2003</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2002</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2000</button></li>
+                            <li><button type="button" class="btn-scroll-choice">2001</button></li>
+                        </ul>
+                        <ul class="month max-height243">
+                            <li><button type="button" class="btn-scroll-choice">01</button></li>
+                            <li><button type="button" class="btn-scroll-choice active">02</button></li><!-- 값이 입력되면 클래스 'active' 추가 -->
+                            <li><button type="button" class="btn-scroll-choice">03</button></li>
+                            <li><button type="button" class="btn-scroll-choice">04</button></li>
+                            <li><button type="button" class="btn-scroll-choice">05</button></li>
+                            <li><button type="button" class="btn-scroll-choice">06</button></li>
+                            <li><button type="button" class="btn-scroll-choice">07</button></li>
+                            <li><button type="button" class="btn-scroll-choice">08</button></li>
+                            <li><button type="button" class="btn-scroll-choice">09</button></li>
+                            <li><button type="button" class="btn-scroll-choice">10</button></li>
+                            <li><button type="button" class="btn-scroll-choice">11</button></li>
+                            <li><button type="button" class="btn-scroll-choice">12</button></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <button type="button" class="btn-floating"><i class="icon24 icon-plus-black"></i><span class="hiding">내역추가</span></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+    
+        <script src="../js/lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../js/uicomponent.js"></script>
+    
+        <link rel="stylesheet" href="../css/app.css">
+    
+        <style>
+            .aside{position:fixed;top:0;bottom:0;left:0;width:260px;overflow-x: hidden;overflow-y: auto;}
+            .aside ul{padding: 25px 0 25px 25px;}
+            .aside ul li {border-bottom: 1px #eee solid;}
+            .aside ul li:first-child a {font-weight: bold;font-size: 25px;}
+            .aside ul li a{display: block;padding: 10px 0;line-height: 22px;color: #000;font-size: 16px;line-height: 16px;letter-spacing: -0.8px;font-family: 'SpoqaHanSans-Regular', sans-serif;font-weight: 400;}
+            .contents{padding-left:270px;padding-top:25px;}
+
+            @media screen and (max-width: 768px) {
+                .aside{display:none;}
+                .contents{padding-left:0;}
+            }
+
+            
+            #section-color .view ul{list-style: none;}
+            #section-color .view ul:after{content:'';clear: both;display: block;}
+            #section-color .view ul>li{padding:10px 20px;float:left;}
+            #section-color .view ul>li>.color-box{display:block;padding:10px;}
+            .section{margin:15px;}
+            .section + .section{margin-top:30px;}
+            .section-header{font-size:30px;color:blue;margin-bottom:20px;}
+            .section-header h2{font-weight:bold;}
+            .codeview{padding:20px;border:3px solid gray;}
+            #section-color h3{margin-top:10px;font-size:20px;color:green;font-weight:bold;}
+            #section-color h3:first-child{margin-top:0;}
+            .section-header h2{color:#000;border-bottom:2px solid #000;}
+        </style>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="aside">
+            <ul>
+                <li><a href="#top">Style Guide</a></li>
+                <li><a href="#tem1">Font Style</a></li>
+                <li><a href="#tem2">Color</a></li>
+            </ul>
+        </div><!-- / aside -->
+
+        <div class="contents">
+
+            <div id="section-font" class="section">
+                <div class="section-header">
+                    <h2 id="tem1">Font Style</h2>
+                </div>
+                <div class="section-body codeview">
+                    <div class="view">
+                        <p class="header-title-100">header-title-100 (Size : 20 / Letter Spacing : -0.4 / Line Height : 30)</p>
+                        <p class="page-intro-100">page-intro-100 (Size : 24 / Letter Spacing : -0.4 / Line Height : 34)</p>
+                        <p class="page-intro-200">page-intro-200 (Size : 16 / Letter Spacing : -0.4 / Line Height : 24)</p>
+                        <p class="contents-title-50">contents-title-50 (Size : 30 / Letter Spacing : -0.4 / Line Height : 40)</p>
+                        <p class="contents-title-100">contents-title-100 (Size : 24 / Letter Spacing : -0.4 / Line Height : 34)</p>
+                        <p class="contents-title-200">contents-title-200 (Size : 20 / Letter Spacing : -0.4 / Line Height : 30)</p>
+                        <p class="contents-title-300">contents-title-300 (Size : 18 / Letter Spacing : -0.4 / Line Height : 26)</p>
+                        <p class="body-100">body-100 (Size : 16 / Letter Spacing : -0.4 / Line Height : 24 / Font Weight : Bold / Color : #222)</p>
+                        <p class="body-110">body-110 (Size : 16 / Letter Spacing : -0.4 / Line Height : 24 / Font Weight : Medium / Color : #222)</p>
+                        <p class="body-120">body-120 (Size : 16 / Letter Spacing : -0.4 / Line Height : 24 / Font Weight : Regular / Color : #666)</p>
+                        <p class="body-200">body-200 (Size : 14 / Letter Spacing : -0.2 / Line Height : 20 / Font Weight : Bold / Color : #666)</p>
+                        <p class="body-210">body-210 (Size : 14 / Letter Spacing : -0.2 / Line Height : 20 / Font Weight : Regular / Color : #666)</p>
+                        <p class="caption-100">caption-100 (Size : 14 / Letter Spacing : -0.2 / Line Height : 20)</p>
+                        <p class="dock-bar-100">dock-bar-100 (Size : 12 / Letter Spacing : -0.2 / Line Height : 16)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="section-color" class="section">
+                <div class="section-header">
+                    <h2 id="tem2">Color</h2>
+                </div>
+                <div class="section-body codeview">
+                    <div class="view">
+                        <h3>Primary Color</h3>
+                        <ul>
+                            <li><div class="primary-color-100" style="width:200px;height:100px;line-height:100px;font-size:1.6rem;letter-spacing:-0.02rem;text-align:center;">primary-color-100</div></li>
+                            <li><div class="primary-color-200" style="width:200px;height:100px;line-height:100px;font-size:1.6rem;letter-spacing:-0.02rem;text-align:center;">primary-color-200</div></li>
+                        </ul>
+                        <h3>Font Color</h3>
+                        <ul>
+                            <li><div class="font-color-black-100">font-color-black-100</div></li>
+                            <li><div class="font-color-gray-100">font-color-gray-100</div></li>
+                            <li><div class="font-color-gray-200">font-color-gray-200</div></li>
+                            <li><div class="font-color-white-100" style="background:black;">font-color-white-100</div></li>
+                        </ul>
+                        <h3>Line Color</h3>
+                        <ul>
+                            <li><div class="line-color-gray-100" style="padding:50px;">line-color-gray-100</div></li>
+                            <li><div class="line-color-gray-200" style="padding:50px;">line-color-gray-200</div></li>
+                            <li><div class="line-color-gray-300" style="padding:50px;">line-color-gray-300</div></li>
+                        </ul>
+                        <h3>BG Color</h3>
+                        <ul>
+                            <li><div class="bg-color-gray-100" style="padding:50px;">bg-color-gray-100</div></li>
+                            <li><div class="bg-color-gray-200" style="padding:50px;">bg-color-gray-200</div></li>
+                        </ul>
+                        <h3>Option Color</h3>
+                        <ul>
+                            <li><div class="option-color-red-100">option-color-red-100</div></li>
+                            <li><div class="option-color-blue-100">option-color-blue-100</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

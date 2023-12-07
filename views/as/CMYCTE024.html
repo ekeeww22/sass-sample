@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>추천상품 : (탭)계좌/카드/대출 </title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>추천 상품</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE024">
+                    <div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+                        <ul>
+                            <li><button class="active" data-target="cont1">계좌</button></li>
+                            <li><button class="" data-target="cont2">카드</button></li>
+                            <li><button class="" data-target="cont3">대출</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-wrap" >
+                        <div class="tab-contents" data-name="tabcontents1">
+                            <div class="tab-content active" data-name="cont1">
+                                <ul class="box-list">
+                                    <li>
+                                        <a href="javascript:;" class="box">
+                                            <img src="/images/as/sample-banner-4.png" alt="샘플 배너">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" data-name="cont2">
+                                <div class="tab-round-border type-scroll-x">
+                                    <ul>
+                                        <li><button class="active">모든 가맹점</button></li><!-- 활성화시 버튼에 'active' 클래스 추가 -->
+                                        <li><button class="">주유</button></li>
+                                        <li><button class="">자동차/하이패스</button></li>
+                                        <li><button class="">교통</button></li>
+                                    </ul>
+                                </div>
+                                <ul class="card-list">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="img"><img src="/images/sample/sample-card-1.png" alt="샘플 이미지"></span>
+                                            <span class="tit">신한카드 Mr.Life</span>
+                                            <span class="txt">신한카드</span>
+                                            <span class="price">연회비 <em>10,000</em>원</span>
+                                            <i class="icon24 icon-arrow-right-gray"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="img"><img src="/images/sample/sample-card-2.png" alt="샘플 이미지"></span>
+                                            <span class="tit">신한카드 Deep Oil</span>
+                                            <span class="txt">신한카드</span>
+                                            <span class="price">연회비 <em>10,000</em>원</span>
+                                            <i class="icon24 icon-arrow-right-gray"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="img"><img src="/images/sample/sample-card-3.png" alt="샘플 이미지"></span>
+                                            <span class="tit">신한카드 경차사랑 Life</span>
+                                            <span class="txt">신한카드</span>
+                                            <span class="price">연회비 <em>10,000</em>원</span>
+                                            <i class="icon24 icon-arrow-right-gray"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="img"><img src="/images/sample/sample-card-4.png" alt="샘플 이미지"></span>
+                                            <span class="tit">KB국민 The Easy카드</span>
+                                            <span class="txt">국민카드</span>
+                                            <span class="price">연회비 <em>10,000</em>원</span>
+                                            <i class="icon24 icon-arrow-right-gray"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <span class="img"><img src="/images/sample/sample-card-5.png" alt="샘플 이미지"></span>
+                                            <span class="tit">카드카드카드카드카드카드카드카드카드카드카드카드카드</span>
+                                            <span class="txt">카드카드카드카드카드카드카드카드카드카드카드</span>
+                                            <span class="price">연회비 <em>999,999,999,999,999</em>원</span>
+                                            <i class="icon24 icon-arrow-right-gray"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" data-name="cont3">
+                                <ul class="box-list">
+                                    <li>
+                                        <div class="box">
+                                            <i class="icon56 icon-convertloan"></i>
+                                            <span class="txt">대출 전환하면 매월 최대 <strong>129,067</strong>원 절약!</span>
+                                            <a href="javascript:;" class="btn-round">상담하기</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="box">
+                                            <img src="/images/as/sample-banner-5.png" alt="샘플 배너">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

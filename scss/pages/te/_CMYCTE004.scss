@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.CMYCTE004{
+    .modal-body{
+        padding-bottom:1.6rem;
+        .info-list{
+            margin:0 -1.6rem;
+            padding:0 1.6rem;
+            max-height:19.2rem;
+            overflow:hidden;
+            overflow-y:auto;
+            > li{
+                margin-top:0;
+                padding:1.2rem 0;
+                a,button{
+                    margin:-1.2rem -1.6rem;
+                    padding:1.2rem 1.6rem;
+                }
+            }
+        }
+    }
+}

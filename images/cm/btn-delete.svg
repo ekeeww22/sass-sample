@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H24V24H0z" opacity=".2" transform="translate(-335.000000, -54.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, 44.000000) translate(335.000000, 10.000000)"/>
+                                <g stroke="#222">
+                                    <path stroke-width="1.5" d="M14.655 19.25H5.34c-1.18 0-2.157-.851-2.243-1.952L2.087 4.5h15.788l-.976 12.794c-.084 1.102-1.064 1.956-2.244 1.956z" transform="translate(-335.000000, -54.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, 44.000000) translate(335.000000, 10.000000) translate(2.000112, 2.000225)"/>
+                                    <path stroke-linecap="round" stroke-width="1.3" d="M10 9L10 14.75" transform="translate(-335.000000, -54.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, 44.000000) translate(335.000000, 10.000000) translate(2.000112, 2.000225)"/>
+                                    <path stroke-width="1.5" d="M0 4.5L20 4.5M15.625 4.5l-1.14-3.04C14.154.581 13.316 0 12.377 0H7.622c-.938 0-1.778.582-2.107 1.46L4.375 4.5" transform="translate(-335.000000, -54.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, 44.000000) translate(335.000000, 10.000000) translate(2.000112, 2.000225)"/>
+                                    <path stroke-linecap="round" stroke-width="1.3" d="M13.857 9L13.375 14.75M6.143 9L6.625 14.75" transform="translate(-335.000000, -54.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, -0.000000) translate(0.000000, 44.000000) translate(335.000000, 10.000000) translate(2.000112, 2.000225)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

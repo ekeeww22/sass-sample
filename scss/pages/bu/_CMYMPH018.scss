@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.CMYMPH018{
+    .result-box{
+        padding:0;
+        position: fixed;
+        top: calc(50% - 6.8rem);
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    .info-txt{@include body-120; position:fixed; bottom:11.6rem; left:0; right:0; padding:0 1.6rem; text-align:center;}
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>휴대폰 본인확인</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+            <h2>휴대폰 본인확인</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content cm">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCMM004">
+                    <!-- 2021-07-22 클래스 수정 & br태그 삭제 -->
+					<h3 class="body-120">
+						마이데이터 인증을 위해<br>
+                        최초1회 휴대폰 본인인증이 필요합니다.
+					</h3>
+                    <!-- // 2021-07-22 클래스 수정 & br태그 삭제 -->
+        
+                    <h3 class="contents-title-300">내 정보 확인</h3>
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-basic default">
+                                    <label for="inp1" class="inp-tit">이름</label>
+                                    <input type="text" id="inp1">
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="inp-box type-mix default">
+                                    <label for="inp2" class="inp-tit">생년월일 6자리</label>
+                                    <input type="number" id="inp2" maxlength="6">
+                                    <span class="hypen">-</span>
+                                    <input type="number" class="inp-num" maxlength="1">
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <div class="select-box type-select default">
+                                    <label for="sel1" class="inp-tit">통신사</label>
+                                    <select name="" id="sel1">
+                                        <option value=""></option>
+                                        <option value="">SKT</option>
+                                        <option value="">KT</option>
+                                        <option value="">LGU+</option>
+                                        <option value="">SKT 알뜰폰</option>
+                                    </select>
+                                </div>
+                            </li> -->
+                            <li>
+                                <button type="button" class="btn-select"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                                    <span class="tit">통신사</span>
+                                    <span class="txt">SKT</span>
+                                    <i class="icon16 icon-arrow-bottom-gray"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="inp-box type-number default">
+                                    <label for="inp3" class="inp-tit">휴대폰번호(숫자만입력)</label>
+                                    <input type="number" id="inp3">
+                                    <div class="confirm-wrap">
+                                        <button class="btn-rectangle">인증요청</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 휴대폰번호 인증요청시 노출 -->
+                            <li>
+                                <div class="inp-box type-number default">
+                                    <label for="inp4" class="inp-tit">인증번호 6자리</label>
+                                    <input type="number" id="inp4" maxlength="6">
+                                    <div class="confirm-wrap">
+                                        <span class="stop-time">03:00</span>
+                                        <button class="btn-rectangle">인증확인</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- // 휴대폰번호 인증요청시 노출 -->
+                        </ul>
+                    </div>
+        
+                    <!-- 2021-06-18 마크업 위치 변경 -->
+                    <div class="agree-box">
+                        <label class="form-checkbox all-check">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">약관 전체동의</span>
+                        </label>
+                        <ul class="agree-list">
+                            <li>
+                                <label class="form-checkbox sm">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">휴대폰 본인확인 서비스 이용약관</span>
+                                </label>
+                                <a href="javascript:;" class="icon16 icon-arrow-right-gray">약관보기</a>
+                            </li>
+                            <li>
+                                <label class="form-checkbox sm">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">휴대폰 통신사 이용약관</span>
+                                </label>
+                                <a href="javascript:;" class="icon16 icon-arrow-right-gray">약관보기</a>
+                            </li>
+                            <li>
+                                <label class="form-checkbox sm">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">휴대폰 개인정보 수집 및 이용동의서</span>
+                                </label>
+                                <a href="javascript:;" class="icon16 icon-arrow-right-gray">약관보기</a>
+                            </li>
+                            <li>
+                                <label class="form-checkbox sm">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">휴대폰 고유식별정보 처리 동의서</span>
+                                </label>
+                                <a href="javascript:;" class="icon16 icon-arrow-right-gray">약관보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- // 2021-06-18 마크업 위치 변경 -->
+
+                    <ul class="bullet-list sm">
+                        <li>본인 확인 정보를 잘 못 입력하거나, KB차차차 대표번호(0000-0000)를 차단한 경우, 인증번호가 발송되지 않을 수 있습니다.</li>
+                        <li>법인폰인 경우 각 통신사별 법인폰 본인인증 서비스를 등록하면 휴대폰 본인확을 할 수 있습니다.</li>
+                        <li>KB차차차를 이용한 적이 있는 경우, 새로운 번호로 본인 확인을 하면 내 정보의 휴대전화번호도 자동 변경 될 수 있습니다.</li>
+                    </ul>
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow" disabled><span>다음</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

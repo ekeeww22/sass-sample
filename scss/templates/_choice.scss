@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.choice-wrap{
+    margin:0 -1.6rem;
+    .list-tit{
+        margin-bottom:1.6rem;
+        padding:0 1.6rem;
+        @include contents-title-300;
+    }
+    ul{
+        li{
+            position:relative;
+            .txt{
+                margin:0;
+                @include body-110;
+                .keyword{
+                    @include option-color-blue-100;
+                }
+            }
+            .form-checkbox{
+                padding:1.2rem 1.6rem;
+                width:100%;
+                .icon{
+                    top:50%;
+                    left:auto;
+                    right:1.6rem;
+                }
+                
+                .tag{
+                    display:none;
+                    position:absolute;
+                    top:50%;
+                    right:1.6rem;
+                    padding:0.2rem 0.8rem;
+                    @include dock-bar-100;
+                    border-radius:1.2rem;
+                    @include bg-color-gray-200;
+                    transform:translateY(-50%);
+                }
+                input[disabled]{
+                    & ~ .icon{
+                        display:none;
+                    }
+                    & ~ .txt{
+                        @include font-color-gray-200;
+                    }
+                    & ~ .tag{
+                        display:block;
+                    }
+                }
+            }
+            .btn-delete{
+                position:absolute;
+                right:0;
+                top:50%;
+                width:4.8rem;
+                height:4.8rem;
+                transform:translateY(-50%);
+                z-index:1;
+                span{
+                    font-size:0;
+                    text-indent:-9999px;
+                }
+            }
+            &.complete{
+                .form-checkbox{
+                    .icon{
+                        display:none;
+                    }
+                    .tag{
+                        display:block;
+                    }
+                }
+                .txt{
+                    @include font-color-gray-200;
+                }
+            }
+        }
+    }
+    & + .choice-wrap{
+        margin-top:1.6rem;
+        padding-top:3.2rem;
+        border-top:0.8rem solid #f8f8f8;
+    }
+}
+
+.choice-reverse-wrap{
+    .form-checkbox{
+        display:flex; justify-content: space-between; align-items: center; padding:1.2rem 0; padding-left:2.4rem;
+        .txt{margin-right:0.8rem; @include body-110; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;}
+        .price{ display:inline-block; @include body-100; vertical-align: middle; white-space:nowrap;}
+    }
+}

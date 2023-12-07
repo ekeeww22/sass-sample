@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내자산(서브메인)</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+			mainScroll();
+		});
+		function mainScroll() {
+			var _actionPrice = $('.CMYMCPSUBMAIN .top-main-account');
+			var _scrollos = 12;
+			var _window = $(window);
+
+			_window.scroll(function(){
+				onScrollHandler();
+			});
+
+			onScrollHandler();
+
+			function onScrollHandler(){
+				($(this).scrollTop() > _scrollos)? _actionPrice.addClass('scroll-active') : _actionPrice.removeClass('scroll-active');
+			}
+		}
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-header-yellow">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<h2>내자산</h2>
+			<div class="btn-header-wrap">
+				<button type="button"><i class="icon24 btn-alarm"></i><span>알람</span></button>
+			</div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCPSUBMAIN CMYMCP002">
+					<div class="top-main-account">
+						<div class="top-account-wrap">
+							<div class="account-data">
+								<label for="top-account-tit" class="tit-label">
+									<strong class="tit va-middle">김국민님의 순자산</strong>
+									<button class="icon16 icon-arrow-right-black va-middle">&lt;</button>
+								</label>
+								<div class="large-box">
+									<em class="va-middle">금액 미표시</em>
+									<label class="form-switch form-switch-main va-middle">
+										<input type="checkbox">
+										<i><span></span></i>
+									</label>							
+								</div>
+								<div class="account-data-right">
+									<span class="caotion-200">1일전</span>
+									<button class="icon24 icon-refresh-round">리로드</button>
+								</div>
+							</div>                        
+						</div>						
+					</div>
+
+					<div class="top-background-header">배경색 가림 영역</div>
+
+					<div class="container-main bg-wrap">
+						<div class="container-top-roundbox-area">
+							<div class="container-top-roundbox">							
+								<div class="top-roundbox-price">
+									<!-- 내차고 상단금액 표시 start -->
+									<a href="javascript:;" class="top-title-price-link">
+										<div class="top-title-price">
+											<h4 class="title-txt">
+												<strong class="tit">내차고</strong>
+												<span class="num-round">2</span>
+											</h4>
+										</div>
+									</a>
+									<!-- 내차고 상단금액 표시 end //-->
+
+									<!-- 등록차량 없을 때 start 
+									<div class="top-none-car">
+										<div class="body-210 font-color-gray-100">등록된 차량이 없습니다.</div>
+										<div class="btn-area">									
+											<button type="button" class="btn-yellow"><span>확인</span></button>
+										</div>
+									</div>
+									등록차량 없을 때 end //-->
+								</div>
+
+								<!-- 등록차량 없을 때 정보 비노출 start -->
+								<div class="emblem-as-list-wrap">
+									<ul class="emblem-as-list">
+										<li>
+											<a href="javascript:;" class="emblem-as-list-link">
+												<i class="icon image40"><img src="/images/sample/icon40-emblem-benz.png" alt="벤츠 엠블럼" /></i>
+												<h4 class="body-100 tit">벤츠 뉴 S클랙스 S560L 4MATIC</h4>
+												<i class="icon16 icon-arrow-right-black">&lt;</i>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="emblem-as-list-link">
+												<i class="icon image40"><img src="/images/sample/icon40-emblem-genesis.svg" alt="제네시스 엠블럼" /></i>
+												<p class="body-100 tit">제네시스 G80(RG3) 3.5 T-GDi</p>
+												<i class="icon16 icon-arrow-right-black">&lt;</i>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- 등록차량 없을 때 정보 비노출 end //-->
+							</div>
+						</div>
+
+						<div class="error-linkbox-wrap">
+							<!-- 오류가 없을 때 제거영역 start
+							<div class="error-linkbox-padding">
+								<div class="error-linkbox">									
+									<em class="body-200 font-color-black-100"><i class="icon16 icon-error"></i><span class="tit">오류안내</span></em>
+									<p class="body-210 font-color-gray-100">국민은행, 하나은행, 신한은행, KB캐피탈 자산연결 오류가 발생하였습니다. 두줄 이상은 말줄임으로 처리합니다.</p>
+									<button class="btn-reconnect">재연결</button>
+								</div>
+							</div>
+							오류가 없을 때 제거영역 end //-->
+						</div>
+
+						<!-- accordion-list-wrap start -->
+						<div class="accordion-list-wrap">
+							<ul>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>예금</strong>
+												<span class="num-round">4</span>
+											</div>											
+											<div class="acco-right">
+												<div class="account-box">
+													<div class="account-top">
+														<i class="icon16 icon-error"></i>
+													</div>
+												</div>
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200 text-unmarked">업데이트완료</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+											<div class="main-title-list">
+												<span class="tit">입출금</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon error-active"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-kb.svg" alt="KB국민은행" />
+															</span>
+														</div>
+														<span class="tit">KB마이핏통장</span>
+														<ul class="info">
+															<li>국민은행</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-kb.svg" alt="KB국민은행" />
+															</span>
+														</div>
+														<span class="tit">KB입출금통장</span>
+														<ul class="info">
+															<li>국민은행</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">예적금</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한은행" />
+															</span>
+														</div>
+														<span class="tit">마이홈플랜 주택청약종...</span>
+														<ul class="info">
+															<li>신한은행</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">외화</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-hana.svg" alt="하나은행" />
+															</span>
+														</div>
+														<span class="tit">외화다통화 예금</span>
+														<ul class="info">
+															<li>하나은행</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-hana.svg" alt="하나은행" />
+															</span>
+														</div>
+														<span class="tit">외화다통화 예금</span>
+														<ul class="info">
+															<li>하나은행</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">기타</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-certificate-kb.svg" alt="KB증권" />
+															</span>
+														</div>
+														<span class="tit">상품명</span>
+														<ul class="info">
+															<li>KB금융투자</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="acco-bottom">
+											<!-- 2021-07-22 마크업 수정 -->
+											<a href="javascript:;" class="acco-bottom-box">
+												<img src="/images/as/sample-banner-1.png" alt="샘플이미지"/>
+											</a>
+											<!-- // 2021-07-22 마크업 수정 -->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>투자</strong>
+												<span class="num-round">3</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">주식</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-certificate-kb.svg" alt="KB증권" />
+															</span>
+														</div>
+														<span class="tit">종합</span>
+														<ul class="info">
+															<li>KB증권</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-hana.svg" alt="하나은행" />
+															</span>
+														</div>
+														<span class="tit">삼성전자</span>
+														<ul class="info">
+															<li>하나금융투자</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">펀드</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한은행" />
+															</span>
+														</div>
+														<span class="tit">유진챔피언단기채증권자…</span>
+														<ul class="info">
+															<li>신한은행</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+											<div class="main-title-list">
+												<span class="tit">기타</span>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-insurance-hanhwa.svg" alt="한화" />
+															</span>
+														</div>
+														<span class="tit">ㅇㅇㅇㅇ상품명</span>
+														<ul class="info">
+															<li>ㅇㅇㅇ기관명</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank_nh.svg" alt="NH농협" />
+															</span>
+														</div>
+														<span class="tit">ㅇㅇㅇㅇ상품명</span>
+														<ul class="info">
+															<li>ㅇㅇㅇ기관명</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap-link type-mix">
+										<a href="javascript:;" class="accordion-link type-mix">
+											<div class="acco-left">
+												<strong>IRP(퇴직연금)</strong>
+											</div>							
+											<div class="acco-right">
+												<strong>연결</strong>
+												<i class="icon16 icon-plus-yellow"></i>
+											</div>
+										</a>
+									</div>
+								</li>
+								
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>IRP(퇴직연금)</strong>
+												<span class="num-round">1</span>
+											</div>											
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+											<div class="stretches-list-wrap">
+												<ul class="info-list">
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-kb.svg" alt="KB국민은행" />
+															</span>
+														</div>
+														<span class="tit">개인형IRP</span>
+														<ul class="info">
+															<li>국민은행</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>전자금융</strong>
+												<span class="num-round">1</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+											<!-- 2021-08-05 추가 start-->
+											<div class="tab-underbar-wrap">
+												<div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+													<ul><!--선택된 li에 클래스명 [.active] 추가-->
+														<li><button class="active" data-target="cont1-1">선불거래내역</button></li>
+														<li><button class="" data-target="cont1-2">결제내역</button></li>
+													</ul>
+												</div>
+											</div>
+											<!--// 2021-08-05 추가 end-->
+											<div class="tab-contents-wrap" >
+												<div class="tab-contents" data-name="tabcontents1"><!-- 2021-08-05 data-name="tabcontents1" 추가 -->
+													<div class="tab-content active" data-name="cont1-1"><!-- 2021-08-05 data-name="cont1-1" 추가 -->
+														<div class="stretches-list-wrap">
+															<ul class="info-tab-list">
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-money-cupay.png" alt="coupang" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">쿠페이머니</span>
+																			<span class="info">쿠팡</span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="tab-content" data-name="cont1-2"><!-- 2021-08-05 data-name="cont1-2" 추가 -->
+														<div class="stretches-list-wrap">
+															<ul class="info-tab-list midele-center">
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-money-cupay.png" alt="coupang" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">쿠팡</span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+
+												</div>
+											</div>											
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>카드</strong>
+												<span class="num-round">3</span>
+											</div>						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>											
+										</div>
+										
+										<div class="accordion-container">
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+											<div class="tab-underbar-wrap">
+												<div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents2"><!-- 2021-08-05 data-contents="tabcontents2" 변경 -->
+													<ul><!--선택된 li에 클래스명 [.active] 추가-->
+														<li><button class="active" data-target="cont2-1">이용금액</button></li><!-- 2021-08-05 data-target="cont2-1" 변경 -->
+														<li><button class="" data-target="cont2-2">청구금액</button></li><!-- 2021-08-05 data-target="cont2-2" 변경 -->
+														<li><button class="" data-target="cont2-3">포인트</button></li><!-- 2021-08-05 data-target="cont2-3" 변경 -->
+													</ul>
+												</div>
+											</div>
+											<div class="tab-contents-wrap" >
+												<div class="tab-contents" data-name="tabcontents2">
+													<div class="tab-content active" data-name="cont2-1"><!-- 2021-08-05 data-name="cont2-1" 변경 -->
+														<div class="stretches-list-wrap">
+															<ul class="info-tab-list">
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">톡톡Pay카드</span>
+																			<span class="info">KB국민카드</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">The More(더모아)</span>
+																			<span class="info">신한카드</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-card-samsung.svg" alt=" 삼성카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">후불하이패스카드</span>
+																			<span class="info">삼성카드</span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="tab-content" data-name="cont2-2"><!-- 2021-08-05 data-name="cont2-2" 변경 -->
+														<div class="stretches-list-wrap">
+															<ul class="info-tab-list midele-center">
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">국민카드</span>
+																		</div>
+																	</div>																	
+																	<div class="area-block price-area">
+																		<span class="date">결제(예정)일 2022.03.01</span>
+																	</div>
+																</li>
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">신한카드</span>
+																		</div>
+																	</div>																	
+																	<div class="area-block price-area">
+																		<span class="date">결제(예정)일 2022.03.01</span>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="tab-content" data-name="cont2-3"><!-- 2021-08-05 data-name="cont2-3" 변경 -->
+														<div class="stretches-list-wrap">
+															<ul class="info-tab-list midele-center">
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">국민카드</span>
+																		</div>
+																	</div>
+																</li>
+																<li>
+																	<div class="area-block icon-area">
+																		<div class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																			<sup class="icon16 icon-error"></sup>
+																			<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한카드" />
+																		</div>
+																		<div class="txt-area">
+																			<span class="tit">신한카드</span>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="acco-bottom">
+											<!-- 2021-07-22 마크업 수정 -->
+											<a href="javascript:;" class="acco-bottom-box">
+												<img src="/images/as/sample-banner-2.png" alt="샘플이미지"/>
+											</a>
+											<!-- // 2021-07-22 마크업 수정 -->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>대출 · 리스</strong>
+												<span class="num-round">3</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+
+											<div class="stretches-list-wrap">
+												<ul class="info-list">													
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-shinhan.svg" alt="KB신한은행" />
+															</span>
+														</div>
+														<span class="tit">주택자금대출</span>
+														<ul class="info">
+															<li>신한카드</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-capital-kb.svg" alt="KB캐피탈" />
+															</span>
+														</div>
+														<span class="tit">신차할부</span>
+														<ul class="info">
+															<li>KB캐피탈</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-card-samsung.svg" alt="삼성카드" />
+															</span>
+														</div>
+														<span class="tit">단기카드대출</span>
+														<ul class="info">
+															<li>삼성카드</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-insurance-hanhwa.svg" alt="한화손해보험" />
+															</span>
+														</div>
+														<span class="tit">보험계약대출</span>
+														<ul class="info">
+															<li>한화손해보험</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="acco-bottom">
+											<!-- 2021-07-22 마크업 수정 -->
+											<a href="javascript:;" class="acco-bottom-box">
+												<img src="/images/as/sample-banner-3.png" alt="샘플이미지"/>
+											</a>
+											<!-- // 2021-07-22 마크업 수정 -->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>보험</strong>
+												<span class="num-round">2</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+
+											<div class="stretches-list-wrap">
+												<ul class="info-list">													
+													<li>
+														<div class="icon-area">
+															<span class="icon error-active"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-insurance-samsung.svg" alt="삼성화재" />
+															</span>
+														</div>
+														<span class="tit">애니카다이렉트</span>
+														<ul class="info">
+															<li>삼성생명</li>
+														</ul>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-bank-shinhan.svg" alt="신한은행" />
+															</span>
+														</div>
+														<span class="tit">무배당실손의료보장보험</span>
+														<ul class="info">
+															<li>현대해상</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>보증보험</strong>
+												<span class="num-round">1</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+
+											<div class="stretches-list-wrap">
+												<ul class="info-list">													
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-insurance-sgi.png" alt="SGI서울보증" />
+															</span>
+														</div>
+														<span class="tit">신원보증보험</span>
+														<ul class="info">
+															<li>SGI서울보증</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-mix">
+										<div class="accordion-header">
+											<div class="acco-left">
+												<strong>통신</strong>
+												<span class="num-round">3</span>
+											</div>
+						
+											<div class="acco-right">
+												<i class="icon16 icon-arrow-bottom-black"></i>
+											</div>
+										</div>
+										<div class="accordion-container">
+											<div class="account-data">
+												<div class="account-data-right">
+													<span class="caotion-200">15:25</span>
+													<button class="icon24 icon-refresh-round">리로드</button>
+												</div>
+											</div>
+
+											<div class="stretches-list-wrap">
+												<ul class="info-list">													
+													<li>
+														<div class="icon-area">
+															<span class="icon error-active"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-communication-kt.svg" alt="kt" />
+															</span>
+														</div>
+														<span class="tit">휴대폰(01086**95**)</span>
+														<ul class="info">
+															<li>SK텔레콤</li>
+														</ul>
+														<span class="date">납부(예정)일 2022.03.01</span>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-communication-sk.svg" alt="sk" />
+															</span>
+														</div>
+														<span class="tit">인터넷(XXXXXXXXXX)</span>
+														<ul class="info">
+															<li>SK텔레콤</li>
+														</ul>
+														<span class="date">납부(예정)일 2022.03.01</span>
+													</li>
+													<li>
+														<div class="icon-area">
+															<span class="icon error-active"> <!-- 에러일 경우 해당 요소에 error-active 클래스 추가 -->
+																<sup class="icon16 icon-error"></sup>
+																<img src="/images/sample/icon40-communication-lg.svg" alt="lg" />
+															</span>
+														</div>
+														<span class="tit">집전화(07086**95**)</span>
+														<ul class="info">
+															<li>엘지유플러스</li>
+														</ul>
+														<span class="date">납부(예정)일 2022.03.01</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- accordion-list-wrap end -->
+
+						<!-- 2021-07-21 퍼블수정 : 마크업 삭제
+						<div class="icon-more-area"><button class="icon48 icon-more-ast">더보기</button></div>						
+						-->
+
+						<!-- 2021-07-21 퍼블수정 : 마크업 추가 -->
+						<button type="button" class="btn-floating"><i class="icon24 icon-plus-black"></i><span class="hiding">기관추가</span></button>
+					</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+
+	<!-- dockbar -->
+	<!-- 2021-07-26 메뉴 수정 -->
+	<div class="dock-menu">
+		<ul class="dock-bar">
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-home"></i>
+					<span>홈</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-sell"></i>
+					<span>팔때</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-search"></i>
+					<span>검색</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="active"><!-- 활성화시 'active' 클래스 추가 -->
+					<i class="icon dock-data"></i>
+					<span>마이데이터</span><!-- 2021-07-07 텍스트 수정 --> 
+				</a>
+				<ul class="dock-depth2">
+					<li>
+						<a href="javascript:;" class="active"><span>내자산</span></a><!-- 활성화시 'active' 클래스 추가 -->
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차구매</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>차테크</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차고</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-market"></i>
+					<span>시세</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- // 2021-07-26 메뉴 수정 -->
+	<!-- // dockbar -->
+</body>
+</html>

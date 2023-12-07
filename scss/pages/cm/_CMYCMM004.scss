@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.CMYCMM004{
+    .contents-title-100{
+        & + *{
+            margin-top:3.2rem;
+        }
+    }
+    .agree-box{
+        margin-top:3.2rem;
+    }
+    .bullet-list{
+        margin-top:3.2rem;
+    }
+}

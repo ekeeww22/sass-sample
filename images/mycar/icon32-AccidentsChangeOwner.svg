@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H32V32H0z" transform="translate(-32.000000, -712.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(0.000000, 438.000000) translate(16.000000, 16.000000)"/>
+                                <g transform="translate(-32.000000, -712.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(0.000000, 438.000000) translate(16.000000, 16.000000) translate(3.000000, 4.000000)">
+                                    <g>
+                                        <g>
+                                            <path fill="#FC0" d="M11.015 0l6.003 3.44c.79.453 1.305 1.24 1.386 2.116L19.09 13H0l.687-7.444c.08-.877.596-1.663 1.386-2.116L8.075 0" transform="translate(0.000000, 10.000000)"/>
+                                            <path stroke="#222" stroke-width="1.5" d="M20 13H0l.692-7.444c.082-.877.601-1.663 1.398-2.116L8.14 0M10.91 0l5.655 3.39c.744.446 1.23 1.22 1.305 2.084L18.182 9" transform="translate(0.000000, 10.000000)"/>
+                                        </g>
+                                        <g stroke="#222" transform="translate(0.000000, 10.000000) translate(13.000000, 1.000000)">
+                                            <circle cx="7" cy="7" r="6.25" fill="#FFF" stroke-width="1.5"/>
+                                            <g stroke-linejoin="round" stroke-width="1.2">
+                                                <path d="M0 2L6 2 3.654 0" transform="translate(4.000000, 4.000000)"/>
+                                                <path d="M0 6L6 6 3.654 4" transform="translate(4.000000, 4.000000) translate(3.000000, 5.000000) scale(-1, -1) translate(-3.000000, -5.000000)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <rect width="9.5" height="9.5" x="4.75" y=".75" fill="#FC0" stroke="#222" stroke-width="1.5" rx="4.75"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

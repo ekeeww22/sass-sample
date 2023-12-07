@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.CMYMCP149{
+    .modal-header{
+        height:10.4rem;
+    }
+    .modal-body{
+        padding-top:10.4rem;
+        .item-list{
+            margin-top:3.2rem;
+            dt{
+                @include contents-title-300;
+            }
+            dd{
+                margin-top:1.6rem;
+                @include body-120;
+                &.txt-red{
+                    @include contents-title-200;
+                    @include option-color-red-100;
+                }
+                & + dt{
+                    margin-top:3.2rem;
+                }
+                .body-120{
+                    margin-top:1.6rem;
+                    & + .body-100{
+                        margin-top:2.4rem;
+                    }
+                }
+                .table-wrap{
+                    margin-top:1.6rem;
+                }
+            }
+        }
+    }
+}

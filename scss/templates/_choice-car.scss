@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.choice-car-wrap{
+    li{padding:0.8rem 0;}
+    li + li{margin-top:1.6rem;}
+
+    .form-box{
+        .form-radio{display:block;width:100%;height:100%; padding:0;}
+        .icon{left:unset; right:0;}
+    }
+
+    .car-info-box{
+        position:relative;
+        padding-left:11.6rem;
+        padding-right:3rem;
+        .img-wrap{
+            position:absolute; top:50%; left:0; transform:translateY(-50%); width:9.6rem;
+            img{width:100%;}
+        }
+        .car-txt-wrap{
+            .car-tit{display:block; margin-top:0.8rem; @include body-110;}
+            .car-txt{display:block; @include body-210;}
+        }
+
+
+    }
+}

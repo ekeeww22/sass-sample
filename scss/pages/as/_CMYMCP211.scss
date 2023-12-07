@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.CMYMCP211,
+.CMYMCP212{
+    .detail-list > ul > li p + .detail-box {margin-top:2.4rem;}
+    .detail-list > ul > li .detail-box {margin-top:0;}
+    .detail-list > ul > li .detail-box .data-list{margin-top:0;}
+    .detail-list > ul > li .detail-box .list-tit{margin-bottom:0;}
+    
+    .detail-list > ul > li:first-child{border-top:0;}
+    .filter-area + .detail-list > ul > li:first-child{border-top:1px solid #eee;}
+}

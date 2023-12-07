@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>정보제공기관 선택(통합인증용) : 검색</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP133">
+					<!-- 2021-06-28 마크업 추가 -->
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="active"><span>2</span></li>
+							<li><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+					<!-- // 2021-06-28 마크업 추가 -->
+					
+					<h3 class="contents-title-100">
+						연결할 금융기관을<br>
+						선택해 주세요.
+					</h3>
+					<div class="sticky-box">
+						<div class="inp-box type-search default">
+							<input type="text" placeholder="검색">
+							<button class="icon16 icon-close">필터삭제</button>
+							<button class="icon24 icon-search">검색</button>
+						</div>
+	
+						<div class="tab-underbar type-scroll-x">
+							<ul>
+								<li><button type="button" data-group="tit" data-target="tit-1" class="active">은행</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-2">증권</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-3">카드</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-4">보험</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-5">보증보험</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-6">할부금융</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-7">통신</button></li>
+								<li><button type="button" data-group="tit" data-target="tit-8">전자금융</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 결과 없을경우 -->
+					<div class="result-box">
+                        <i class="icon48 icon-nodata"></i>
+                        <p class="txt">검색된 기관이 없습니다.</p><!-- 2021-07-27 문구 수정 -->
+                    </div>
+					<!-- // 결과 없을경우 -->
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow" disabled><span>다음</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

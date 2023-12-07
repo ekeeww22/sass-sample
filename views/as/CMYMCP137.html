@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>전송요구 오류 안내</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP137">
+					<!-- 2021-06-28 마크업 추가 -->
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="active"><span>2</span></li>
+							<li><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+					<!-- // 2021-06-28 마크업 추가 -->
+					
+					<div class="result-box">
+                        <i class="icon48 icon-error"></i>
+                        <p class="tit">
+                            전송요구 가능한<br>
+                            정보제공기관이 없습니다.
+                        </p>
+						<!-- 2021-07-27 '에러코드' -> '에러 메시지'로 문구 수정 -->
+                        <p class="txt">
+                            서버에 요청이 너무 많습니다.<br>
+                            잠시후에 다시 시도하십시오.<br>
+                            에러 메시지 : <span>UCPID_001</span>
+                        </p>
+						<!-- // 2021-07-27 '에러코드' -> '에러 메시지'로 문구 수정 -->
+                    </div>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

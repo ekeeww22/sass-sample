@@ -1,0 +1,31 @@
+/* myp start */
+@import 'components/_button';
+@import 'components/_icon';
+@import 'components/_input';
+@import 'components/_checkbox';
+@import 'components/_radio';
+@import 'components/_switch';
+@import 'components/_title';
+@import 'components/_tab';
+@import 'components/_tooltip';
+@import 'components/_select';
+@import 'components/_filter';
+@import 'components/_tag';
+@import 'components/_scroll';
+@import 'components/_scroll';
+@import 'components/_toast';
+
+.form-box{
+    font-size:0;
+    > * + *{
+        margin-left:0.8rem;
+    }
+}
+
+/* info-txt */
+.info-txt{
+    @include body-210;
+    position:relative;
+    padding-left:2rem;
+    i{position:absolute; top:0.2rem; left:0;}
+}

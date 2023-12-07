@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M0 0H48V48H0z" transform="translate(-32.000000, -420.000000) translate(16.000000, 112.000000) translate(0.000000, 146.000000) translate(16.000000, 162.000000)"/>
+                        <g>
+                            <g>
+                                <path fill="#FC0" d="M15 36c12.841-5.632 15-12.69 15-12.69V3.6l-15-3.6v36z" transform="translate(-32.000000, -420.000000) translate(16.000000, 112.000000) translate(0.000000, 146.000000) translate(16.000000, 162.000000) translate(9.000000, 6.000000)"/>
+                                <path stroke="#070100" stroke-width="1.5" d="M30 19V3.602L15 0 0 3.602V23.31S2.16 30.368 15 36c12.841-5.632 15-12.69 15-12.69V19z" transform="translate(-32.000000, -420.000000) translate(16.000000, 112.000000) translate(0.000000, 146.000000) translate(16.000000, 162.000000) translate(9.000000, 6.000000)"/>
+                            </g>
+                            <text fill="#000" font-family="AppleSDGothicNeo-Medium, Apple SD Gothic Neo" font-size="26" font-weight="400" letter-spacing="-.578" transform="translate(-32.000000, -420.000000) translate(16.000000, 112.000000) translate(0.000000, 146.000000) translate(16.000000, 162.000000) translate(9.000000, 6.000000)">
+                                <tspan x="8" y="29">+</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

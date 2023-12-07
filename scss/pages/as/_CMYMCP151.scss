@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.CMYMCP151{
+    .form-list{
+        margin-top:3.2rem;
+        dt{
+            @include contents-title-300;
+        }
+        dd{
+            margin-top:1.6rem;
+            & + dt{
+                margin-top:3.2rem;
+            }
+            .form-box{
+                > * + *{
+                    margin-left:2.4rem;
+                }
+            }
+            .inp-list-wrap{
+                margin-top:1.6rem;
+                & + .form-radio{
+                    margin-top:1.6rem;
+                }
+            }
+            .date-box{
+                margin-top:1.6rem;
+                input{
+                    &:disabled{
+                        @include bg-color-gray-100;
+                        & + .icon-calendar{
+                            z-index:21;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tac{
+        margin-top:2.4rem;
+        .form-checkbox{
+            .txt{
+                margin-left:0.4rem;
+            }
+        }
+    }
+}

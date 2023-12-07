@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.CMYMCP381{
+    .confirm-list{
+        margin-top:3.2rem;
+        li{
+            margin-top:3.2rem;
+            &:first-child{
+                margin-top:3.2rem;
+            }
+            .tit{
+                @include contents-title-300;
+                & + .txt{
+                    margin-top:1.6rem;
+                }
+            }
+            .sub-tit{
+                margin-top:2.4rem;
+                @include body-100;
+                & + .txt{
+                    margin-top:1.6rem;
+                }
+            }
+            .txt{
+                margin-top:0.8rem;
+                @include body-120;
+            }
+        }
+    }
+}

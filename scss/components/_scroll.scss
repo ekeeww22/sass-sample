@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.scroll-choice-list { display:flex; justify-content:start; width:100%;
+    &.column-1 { 
+        > ul { width:1000%; }
+    }
+    &.column-2 { 
+        > ul { width:50%; }
+    }
+    &.column-3 { 
+        > ul { width:33.3333333333333%; }
+    }
+    &.column-4 { 
+        > ul { width:25%;}
+    }
+    > ul { overflow:hidden; overflow-y:auto; -webkit-overflow-scrolling:touch; 
+        &::-webkit-scrollbar { display:none; }
+        &.max-height243 { max-height: 24.3rem; }
+        > li { line-height:4.8rem; padding-right:3rem;
+            button { font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666; 
+                &.active { color:#222; font-weight:700; }
+            }
+        }
+    }
+}

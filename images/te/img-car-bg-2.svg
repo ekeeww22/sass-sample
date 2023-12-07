@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="80" viewBox="0 0 220 80">
+    <defs>
+        <path id="hmszb1mpta" d="M0 0H220V80H0z"/>
+        <path id="cyjpevlbpc" d="M0 0L6.303 0 6.303 6.05 0 6.05z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-78.000000, -1762.000000) translate(16.000000, 112.000000) translate(0.000000, 1514.000000) translate(0.000000, 46.000000) translate(62.000000, 90.000000)">
+                            <mask id="3z3bunddbb" fill="#fff">
+                                <use xlink:href="#hmszb1mpta"/>
+                            </mask>
+                            <g mask="url(#3z3bunddbb)" opacity=".2">
+                                <g>
+                                    <g>
+                                        <path fill="#1D1D1B" d="M0 0L21.146 30.813" transform="translate(-1.000000, 8.000000) translate(50.177083, 8.375000)"/>
+                                        <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M0 0L21.146 30.813" transform="translate(-1.000000, 8.000000) translate(50.177083, 8.375000)"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#1D1D1B" d="M0 0L35.948 31.875" transform="translate(-1.000000, 8.000000) translate(8.458333, 7.562500)"/>
+                                        <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M10 6L45.948 37.875" transform="translate(-1.000000, 8.000000) translate(8.458333, 7.562500)"/>
+                                    </g>
+                                    <g>
+                                        <path fill="#1D1D1B" d="M0 0L39.12 19.125" transform="translate(-1.000000, 8.000000) translate(6.343750, 36.250000)"/>
+                                        <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M0 0L39.12 19.125" transform="translate(-1.000000, 8.000000) translate(6.343750, 36.250000)"/>
+                                    </g>
+                                    <path fill="#1D1D1B" d="M1.842 33.72l-.512-.252.512.251z" transform="translate(-1.000000, 8.000000)"/>
+                                    <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M1.33 33.468L1.842 33.719" transform="translate(-1.000000, 8.000000)"/>
+                                    <path fill="#1D1D1B" d="M33.432 65.506l-.255-.074.255.074z" transform="translate(-1.000000, 8.000000)"/>
+                                    <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M33.177 65.432L33.432 65.506" transform="translate(-1.000000, 8.000000)"/>
+                                    <path fill="#1D1D1B" d="M28.547 63.875L0 55.375l28.547 8.5z" transform="translate(-1.000000, 8.000000)"/>
+                                    <g>
+                                        <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M0 55.6L28.093 63.872" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000)"/>
+                                        <g transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(27.142224, 0.000000)">
+                                            <mask id="77gx5xfwwd" fill="#fff">
+                                                <use xlink:href="#cyjpevlbpc"/>
+                                            </mask>
+                                            <path fill="#FEFEFE" d="M3.087.026C2.965.594 2.384 2.47.025 3.029c-.034.008-.033.053.001.06 2.371.505 2.992 2.37 3.127 2.936.007.033.056.033.063-.001.122-.569.703-2.446 3.061-3.004.035-.008.034-.054 0-.06C3.906 2.455 3.285.591 3.15.025c-.008-.034-.056-.034-.063 0" mask="url(#77gx5xfwwd)"/>
+                                        </g>
+                                        <g fill="#1D1D1B">
+                                            <path d="M21.018 0L0 31.182" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(131.130113, 3.808217)"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#1D1D1B" d="M36.177 0L0 31.493" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(147.600984, 7.719196)"/>
+                                            <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M36.177 0L0 31.493" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(147.600984, 7.719196)"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#1D1D1B" d="M38.618 0L0 18.865" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(146.773083, 35.645024)"/>
+                                            <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M38.618 0L0 18.865" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(146.773083, 35.645024)"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#1D1D1B" d="M0.875 0.453L0.303 0.732" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(190.688496, 32.177185)"/>
+                                            <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M0.875 0.453L0.303 0.732" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(190.688496, 32.177185)"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#1D1D1B" d="M0.731 0.551L0.446 0.634" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(158.396802, 64.814819)"/>
+                                            <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M0.731 0.551L0.446 0.634" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(158.396802, 64.814819)"/>
+                                        </g>
+                                        <g>
+                                            <path fill="#1D1D1B" d="M28.093 0L0 8.273" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(164.195646, 55.599799)"/>
+                                            <path stroke="#FEFEFE" stroke-linecap="round" stroke-linejoin="round" d="M28.093 0L0 8.273" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000) translate(164.195646, 55.599799)"/>
+                                        </g>
+                                        <path fill="#FEFEFE" d="M199.758 49.555c.152.56.83 2.404 3.215 2.837.035.005.036.05.002.058-2.34.632-2.862 2.526-2.968 3.098-.006.034-.053.037-.062.002-.154-.56-.83-2.405-3.216-2.837-.035-.006-.036-.05-.002-.06 2.341-.63 2.863-2.525 2.968-3.096.007-.034.054-.037.063-.002" transform="translate(-1.000000, 8.000000) translate(16.000000, 0.000000)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

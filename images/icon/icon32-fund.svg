@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path stroke="#050101" stroke-linecap="round" stroke-width="1.5" d="M28.457 26.14H3.107C1.522 26.11.262 24.83.29 23.279v-7.152M.286 22.307L.286 0" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path fill="#FC0" d="M4.483 17.558h1.461c1.614 0 2.922 1.28 2.923 2.86v5.722H4.483v-8.582z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path stroke="#050101" stroke-linecap="square" stroke-width="1.5" d="M4.483 17.558h1.461c1.614 0 2.922 1.28 2.923 2.86v5.722H4.483v-8.582z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path fill="#FC0" d="M12.877 8.973h1.46c1.615 0 2.924 1.28 2.924 2.86v14.31h-4.384V8.972z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path stroke="#050101" stroke-linecap="square" stroke-width="1.5" d="M12.877 8.973h1.46c1.615 0 2.924 1.28 2.924 2.86v14.31h-4.384V8.972z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path fill="#FC0" d="M21.146 1.433h1.461c1.581-.031 2.89 1.198 2.923 2.746V26.14h-4.384V1.433z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                                <path stroke="#050101" stroke-linecap="square" stroke-width="1.5" d="M21.146 1.433h1.461c1.581-.031 2.89 1.198 2.923 2.746V26.14h-4.384V1.433z" transform="translate(-450 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(370) translate(.571 2.857)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

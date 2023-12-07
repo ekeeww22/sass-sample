@@ -1,0 +1,118 @@
+<div class="modal-wrap CMYMCP142 step1" data-type="toast" data-uicomponent="modal">
+    <!-- 두번째 팝업이 나와야 할경우. step1 클래스를 .step2클래스로 변경 //-->
+    <!-- 그리고 두번째 팝업 (.modal) 에 active 클래스를 줘야됨 //-->
+    <!-- 스크립트 예시를 보여주기 위해 data-idx 사용 -->
+    <div class="modal active" data-idx="modal1">
+        <div class="modal-header">
+            <h3>정기전송 설정</h3><!-- 2020-07-12 텍스트 수정 -->
+            <button class="modal-close">닫기</button>
+        </div>
+        <div class="modal-body">
+            <div class="form-box">
+                <label class="form-radio" id="radio1">
+                    <input type="radio" name="radio-basic" id="radio1" checked="">
+                    <i class="icon"></i>
+                    <span class="txt">정기적 전송</span>
+                </label>
+
+                <label class="form-radio" id="radio2">
+                    <input type="radio" name="radio-basic" id="radio2">
+                    <i class="icon"></i>
+                    <span class="txt">비정기적 전송</span>
+                </label>
+            </div>
+    
+            <button type="button" class="btn-select active" data-idx="bs1"> 
+                <span class="tit">전송주기</span>
+                <span class="txt">주 1회</span>
+                <i class="icon16 icon-arrow-bottom-gray"></i>
+            </button>
+    
+            <div class="tac">
+                <label class="form-checkbox sm">
+                    <input type="checkbox">
+                    <i class="icon"></i>
+                    <span class="txt">다른기관 동일하게 적용</span>
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn-yellow"><span>설정</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" data-idx="modal2">
+        <div class="modal-header">
+            <button type="button" class="btn-history-back" data-idx="back1">뒤로</button>
+            <h3>정기전송 주기 설정</h3>
+        </div>
+        <div class="modal-body">
+            <ul class="link-list">
+                <li>
+                    <button type="button">
+                        <span class="tit">주 1회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">주 2회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">주 3회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">주 4회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">주 5회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">주 6회</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <span class="tit">일 1회</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 스크립트 예시임 -->
+    <script>
+        $('[data-idx="bs1"]').on("click",function(){
+            $(".modal-wrap").removeClass("step1");
+            $(".modal-wrap").addClass("step2");
+
+            $('[data-idx="modal1"]').removeClass("active");
+            $('[data-idx="modal2"]').addClass("active");
+        });
+
+        $('[data-idx="back1"]').on("click",function(){
+            $(".modal-wrap").addClass("step1");
+            $(".modal-wrap").removeClass("step2");
+
+            $('[data-idx="modal1"]').addClass("active");
+            $('[data-idx="modal2"]').removeClass("active");
+        });
+
+        $('.link-list>li').on("click",function(){
+            $(".modal-wrap").addClass("step1");
+            $(".modal-wrap").removeClass("step2");
+
+            $('[data-idx="modal1"]').addClass("active");
+            $('[data-idx="modal2"]').removeClass("active");
+        });
+    </script>
+</div>

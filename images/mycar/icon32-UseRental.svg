@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <path id="5ki8mkf7wa" d="M0 0L9.223 0 9.223 1 0 1z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M0 0H32V32H0z" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000)"/>
+                            <g>
+                                <g>
+                                    <path stroke="#222" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5" d="M1.605 18.475L5.3 18.475 5.3 14.78 1.605 14.78zM18.848 18.475L22.543 18.475 22.543 14.78 18.848 14.78z" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(0.000000, 6.920592)"/>
+                                    <path stroke="#222" stroke-linejoin="round" stroke-width="1.5" d="M1.605 14.78L22.543 14.78 22.543 6.159 1.605 6.159zM8.238 0h7.67c1.286 0 2.433.796 2.884 1.998l1.56 4.16H3.797l1.559-4.16C5.805.796 6.955 0 8.238 0z" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(0.000000, 6.920592)"/>
+                                    <path fill="#222" d="M7.147 9.237c-.68 0-1.231.552-1.231 1.232 0 .681.552 1.232 1.231 1.232.68 0 1.232-.55 1.232-1.232 0-.68-.552-1.232-1.232-1.232M17 9.237c-.68 0-1.231.552-1.231 1.232 0 .681.552 1.232 1.232 1.232.68 0 1.231-.55 1.231-1.232 0-.68-.552-1.232-1.231-1.232" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(0.000000, 6.920592)"/>
+                                    <path stroke="#222" stroke-width="1.5" d="M20.695 6.158L24 4.507M3.305 6.158L0 4.504" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(0.000000, 6.920592)"/>
+                                </g>
+                                <g>
+                                    <path stroke="#222" stroke-width="1.5" d="M4.285 2.143c0 1.183-.959 2.143-2.143 2.143C.959 4.286 0 3.326 0 2.143 0 .959.959 0 2.142 0c1.184 0 2.143.959 2.143 2.143z" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(5.000000, -0.000000)"/>
+                                    <g transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(5.000000, -0.000000) translate(4.285000, 1.643000)">
+                                        <mask id="mg3fbgyhhb" fill="#fff">
+                                            <use xlink:href="#5ki8mkf7wa"/>
+                                        </mask>
+                                        <path stroke="#222" stroke-width="1.5" d="M0 0.5L9.224 0.5" mask="url(#mg3fbgyhhb)"/>
+                                    </g>
+                                    <path stroke="#222" stroke-width="1.5" d="M11.895 2.143L11.895 4.543M9.752 2.143L9.752 4.044" transform="translate(-24.000000, -1715.000000) translate(0.000000, 132.000000) translate(0.000000, 1437.000000) translate(16.000000, 138.000000) translate(8.000000, 8.000000) translate(4.000000, 3.000000) translate(5.000000, -0.000000)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

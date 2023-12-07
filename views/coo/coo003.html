@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../css/mobile.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap coocon-wrap">
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content coo">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section coo003">
+					
+					<div class="capital-card type-top">
+						<h2 class="capital-logo"><img src="/images/coo/logo-kb-capital.svg" alt="KB캐피탈"></h2>
+						<p class="tit">개별 본인인증</p>
+						<p class="txt">
+							개인 신용정보 전송요구를 위해 <br>
+							다중인증이 필요합니다.
+						</p>
+						<div class="list-wrap">
+							<ul class="list-step">
+								<li class="end">
+									<span class="num">1</span>
+								</li>
+								<li class="end">
+									<span class="num">2</span>
+								</li>
+								<li class="end">
+									<span class="num">3</span>
+								</li>
+								<li class="">
+									<span class="num">4</span>
+								</li>
+							</ul>
+							<div class="list-text">
+								<b>03</b>
+								<span>카카오페이 인증</span>
+								<!-- 상태값에 따라 카카오페이/토스 주석 스위치
+								<span>토스 인증</span>
+								-->
+							</div>
+						</div>
+					</div>
+
+					<div class="result-box">
+                        <i class="icon59"><img src="/images/coo/icon59Kakaopay.png" alt="카카오페이"></i>
+						<!-- 상태값에 따라 카카오페이/토스 주석 스위치
+						<i class="icon59"><img src="/images/coo/icon59Toss.png" alt="토스"></i> 
+						-->
+
+                        <p class="tit">카카오페이 인증을 요청해주세요.</p>
+						<!-- 상태값에 따라 카카오페이/토스 주석 스위치
+						<p class="tit">토스 인증을 요청해주세요.</p> 
+						-->
+
+						<div class="btn-wrap">
+							<button class="btn-bg-yellow"><span>카카오페이 인증</span></button>
+							<!-- 상태값에 따라 카카오페이/토스 주석 스위치
+							<button class="btn-bg-yellow"><span>토스 인증</span></button> 
+							-->
+						</div>
+                    </div>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>이전</span></button>
+						<button type="button" class="btn-yellow" disabled><span>확인</span></button> <!-- 다음페이지로 넘어갈 조건값 충족되면 속성값 disabled 제거 -->
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

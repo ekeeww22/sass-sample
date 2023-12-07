@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>내차구매</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-all-gray">
+	<!--
+	[wrap 인접 class 지정 가이드]
+
+	bg-header-yellow : 헤더만 황색으로 변경
+	bg-header-gray   : 헤더만 회색으로 변경
+	bg-all-gray      : 헤더와 콘텐츠배경 회색으로 변경
+	bg-all-white     : 헤더와 콘텐츠배경 백색으로 변경
+	-->
+		<!-- content-header -->
+		<div class="content-header ">
+			<h2>내차구매</h2>
+			<div class="btn-header-wrap">
+				<button type="button"><i class="icon24 btn-alarm"></i><span>알람</span></button>
+			</div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH001">
+					
+					<!--다음차,추천차 영역-->
+					<div class="part part-01">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">내가 원하는 다음차</h3> <!--2021-08-02 문구수정-->
+							<a href="javascript:;" class="btn-txt sm">편집</a>
+						</div>
+
+						<div class="car-nav-wrap">
+
+							<!--다음차 목록 0개일 때 노출-->
+							<div class="balloon-wrap">
+								<a href="javascript:;" class="link-balloon"> <!-- 2021-07-13 퍼블수정 : 문구수정 -->
+									다음차 등록하고 맞춤 구매 시뮬레이션 받아보기 <br>
+									타고 싶은 다음차가 있으신가요?
+								</a>
+							</div>
+
+							<!--다음차 목록 1개 이상일 때 노출-->
+							<div class="slider-nav-wrap">
+								<ul class="slider-nav">
+									<li><button class="car-item on" data-name="slick1"><img src="/images/car/car-sample01.png" alt="샘플1"></button></li>
+									<li><button class="car-item" data-name="slick2"><img src="/images/car/car-sample02.png" alt="샘플2"></button></li>
+									<li><button class="car-item" data-name="slick3"><img src="/images/car/car-sample01.png" alt="샘플3"></button></li>
+									<li><button class="car-item" data-name="slick4"><img src="/images/car/car-sample02.png" alt="샘플4"></button></li>
+									<li><button class="car-item" data-name="slick5"><img src="/images/car/car-sample01.png" alt="샘플5"></button></li>
+									<li><button class="car-item" data-name="slick6"><img src="/images/car/car-sample02.png" alt="샘플6"></button></li>
+								</ul>
+								<a href="javascript:;" class="btn-car-add">다음차 추가</a>
+							</div>
+						</div>
+
+						<div class="car-slider-wrap">
+							<div class="car-slider" >
+								<!--a태그의 클래스값에 따라 다음차/다음차 등록/추천차 구분함, 클래스명 [.next-car / .add-car / .recommend-car]-->
+								<a href="javascript:;" class="item-car next-car" data-target="slick1">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>-</span><!-- 시세 없을 경우 -->
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car next-car" data-target="slick2">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car next-car" data-target="slick3">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car next-car" data-target="slick4">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car next-car" data-target="slick5">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car next-car" data-target="slick6">
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>검정색</span>
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box"><img src="/images/car/car-sample01.png" alt="sample1"></div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car add-car">
+									<div class="icon-wrap">
+										<i class="icon48 icon-more"></i>
+									</div>
+									<p class="tit">타고 싶은 다음차를 등록해보세요!</strong>
+									<p class="txt">
+										다음 차 정보 조회부터 구매하기까지 <br>
+										차차차가 도와드릴게요!
+									</p>
+								</a>
+								<a href="javascript:;" class="item-car recommend-car">
+									<!-- 2021-07-22 마크업 위치이동(전)
+										<span class="tag">추천</span> 
+									-->
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>은색</span> <!--2021-06-24 퍼블수정 : 문구수정-->
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box">
+											<!-- 2021-07-22 마크업 위치이동(후)-->
+											<span class="tag">추천</span>
+											<img src="/images/car/car-sample01.png" alt="sample1">
+										</div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+								<a href="javascript:;" class="item-car recommend-car">
+									<!-- 2021-07-22 마크업 위치이동(전)
+										<span class="tag">추천</span> 
+									-->
+									<div class="top-box">
+										<span class="btn-txt sm">기본정보</span><!-- 2021-07-22 마크업 추가 -->
+										<div class="round-txt-wrap">
+											<span>2020년식</span><span>은색</span> <!--2021-06-24 퍼블수정 : 문구수정-->
+										</div>
+										<p class="name">
+											벤츠 E클래스 (W213) E200d 4matic Avantgarde
+										</p>
+										<div class="img-box">
+											<!-- 2021-07-22 마크업 위치이동(후)-->
+											<span class="tag">추천</span>
+											<img src="/images/car/car-sample01.png" alt="sample1">
+										</div>
+									</div>
+									<ul class="bottom-box">
+										<li>
+											<strong>중고차시세</strong> <!--2021-06-23 퍼블수정 : 문구수정-->
+											<span>6,411만원</span>
+										</li>
+										<li>
+											<strong>신차가</strong>
+											<span>7,750만원~</span>
+										</li>
+									</ul>
+								</a>
+							</div>
+						</div>
+
+					</div>
+					<!--//다음차,추천차 영역-->
+
+					<!--구매 가능 예산 영역-->
+					<div class="part part-02">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">나의 구매 가능 예산</h3> <!--2021-08-02 문구수정-->
+							<a href="javascriot:;" class="reload-data">
+								<span>1일 전</span>
+								<icon class="icon24 icon-refresh-round"></icon>
+							</a>
+							<p class="txt">내차구매를 위한 시뮬레이션을 보여드릴게요!</p><!-- 2021-07-20 텍스트 수정 -->
+						</div>
+						
+						<div class="budget-wrap">
+							<h4 class="budget-tit">중고차 구매가능 예산</h4>
+							<div class="budget-account">
+								<!-- 상태값에 따라 둘 중 하나만 노출 -->
+								<em class="question-mark">?</em>
+								<strong class="account">1,000</strong>
+								<!--// 상태값에 따라 둘 중 하나만 노출 -->
+
+								<span class="unit">만원</span>
+							</div>
+							
+							<ul class="budget-list">
+								<li class="list-01">
+									<label for="target-01">보유 예산</label>
+									<div class="right-box">
+										<!--상태값에 따라 [.link-modify / .btn-box] 둘 중 하나만 노출-->
+										<!-- 2021-07-27 [.link-modify]에 클래스명 [.completed] 추가되면 컬러값 파란색으로 변경
+										<div class="link-modify">
+											<a href="javascript:;">
+												<em>1,000</em>
+												<span>만원</span>
+												<i class="icon16 icon-modify"></i>
+											</a>
+										</div>
+										-->
+										<div class="btn-box">
+											<button class="btn-round bg-yellow">연결하기</button>		
+										</div>
+										<!--// 상태값에 따라 [.link-modify / .btn-box] 둘 중 하나만 노출-->
+									</div>
+								</li>
+								<li class="list-02">
+									<label for="target-01">내차 판매예상 금액</label> <!--2021-06-23 퍼블수정 : 문구수정-->
+									<div class="right-box">
+										<!--상태값에 따라 [.link-modify / .btn-box] 둘 중 하나만 노출-->
+										<div class="link-modify">
+											<a href="javascript:;" class="completed"> <!-- 2021-07-27 [.link-modify]에 클래스명 [.completed] 추가되면 컬러값 파란색으로 변경 -->
+												<em>1,000</em>
+												<span>만원</span>
+												<i class="icon16 icon-modify"></i>
+											</a>
+										</div>
+										<!-- 2021-07-12 퍼블수정 : 버튼문구 수정
+										<div class="btn-box">
+											<button class="btn-round bg-yellow">등록하기</button>
+										</div>
+										-->
+										<!--// 상태값에 따라 [.link-modify / .btn-box] 둘 중 하나만 노출-->
+									</div>
+								</li>
+								<li class="list-03">
+									<div class="tooltip-wrap">
+										<button type="button" class="btn-tooltip" data-target="tooltip-1"><span>차차차 내한도알기</span><i class="icon16 icon-tooltip">툴팁</i></button><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+										<div class="tooltip" data-module="tooltip" data-name="tooltip-1">
+											<p class="txt">차차차 내한도알기는 중고차 전용 한도 조회 서비스입니다.</p><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+											<button class="icon16 icon-close">닫기</button>
+										</div>
+									</div>
+
+									<!-- Case A,B일 때 노출 / Case C,D일 때 비노출 -->
+									<div class="limit-box">
+										<label class="form-switch sm">
+											<input type="checkbox" checked>
+											<i><span></span></i>
+										</label>
+										<em>나의 한도는?</em> <!--2021-08-02 문구수정-->
+										<strong>2,300만원</strong>
+									</div>
+									<!-- 2021-07-12 퍼블수정 : 문구수정 / 2021-07-09 퍼블수정 : 마크업 추가 / Case A,B일 때 비노출 / Case C,D일 때 노출 
+									<div class="btn-box">
+										<button class="btn-round bg-yellow">조회하기</button>		
+									</div>
+									-->
+									
+								</li>
+							</ul>
+
+							<!--2021-07-09 퍼블수정 : 문구 수정 / Case A,B 일 때 노출 C,D 일 때 비노출 -->
+							<div class="limit-explain">
+								<a href="javascript:;" class="link-balloon">
+									중고차 구매에 <br>
+									이용할 수 있는 내한도를 <br><!-- 2021-07-20 띄어쓰기 수정 '내 한도를' -> '내한도를' -->
+									갖고 있어요!
+								</a>
+							</div>
+
+							<!--2021-07-09 퍼블수정 : 마크업 추가 / Case A,B 일 때 비노출 C,D 일 때 노출-->
+							<div class="limit-explain nolink">
+								<div class="link-balloon">
+									중고차 구매에 <br>
+									이용할 수 있는 내한도! <br><!-- 2021-07-20 띄어쓰기 수정 '내 한도를' -> '내한도를' -->
+									바로 알아보세요.
+								</div>
+							</div>
+						</div>
+
+						<div class="error-box">
+							<i class="icon16 icon-error"></i>
+							<strong>차차차 내한도알기를 최신 데이터로 <br> 다시 조회해주세요!</strong>
+							<div class="btn-box">
+								<button class="btn-round bg-gray">조회</button>		
+							</div>
+						</div>
+
+					</div>
+					<!--//구매 가능 예산 영역-->
+
+					<!--시뮬레이션 영역-->
+					<div class="part part-03">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">시뮬레이션 결과가 나왔어요!</h3>
+
+							<!-- 연결된 예산이 없을시 해당문구 + .type-nodata 노출
+							<h3 class="contents-title-200">시뮬레이션 진행을 도와드릴께요!</h3>
+							-->
+						</div>
+
+						<!--시뮬 결과 박스 영역-->
+						<div class="simulation-banner">
+							<div class="type-success"> <!--[.type-success / .type-possible / .type-effort / .type-lack / .type-nodata ]-->
+								<i class="icon"></i>
+								<strong>준비된 당신은 능력자</strong>
+								<span>
+									신차 같은 중고차 매물도 <br>
+									고객님 예산으로는 문제 없어요!
+								</span>
+							</div>
+							<div class="type-possible"> <!--[.type-success / .type-possible / .type-effort / .type-lack / .type-nodata ]-->
+								<i class="icon"></i>
+								<strong>차는 많고 내 차는? 있다!</strong>
+								<span>
+									차차차가 고객님을 위한 <br>
+									추천 연식을 준비했어요!
+								</span>
+							</div>
+							<div class="type-effort"> <!--[.type-success / .type-possible / .type-effort / .type-lack / .type-nodata ]-->
+								<i class="icon"></i>
+								<strong>영차영차 노력하는 중</strong>
+								<span>
+									예산이 부족하지만 노력하면 <br>
+									고객님도 살 수 있을 거예요!
+								</span>
+							</div>
+							<div class="type-lack"> <!--[.type-success / .type-possible / .type-effort / .type-lack / .type-nodata ]-->
+								<i class="icon"></i>
+								<strong>내 예산으로는 부족해</strong>
+								<span>
+									내한도알기 조회하면 <br>
+									추가로 쓸 수 있는 예산을 조회 할 수 있어요!
+								</span>
+							</div>
+
+							<div class="type-nodata"> <!--[.type-success / .type-possible / .type-effort / .type-lack / .type-nodata ]-->
+								<i class="icon"></i>
+								<strong>
+									내가 갖고 싶은 차를 <br>
+									내 예산으로 구매할 수 있다고?!
+								</strong>
+								<span>
+									데이터만 연결하고 <br>
+									예산 맞춤 추천 시뮬레이션 받아보기
+								</span>
+								<div class="btn-wrap">
+									<button class="btn-bg-yellow"><span>시뮬레이션 바로가기</span></button>
+								</div>
+							</div>
+
+							<!-- 2021-07-20 중고차시세 없을경우 추가 -->
+							<div class="type-noresult">
+								<div class="result-box">
+									<i class="icon48 icon-nodata"></i>
+									<p class="txt">
+										조회된 시뮬레이션 결과가 없어요.<br>
+										다른 모델을 등록해보는건 어떨까요?
+									</p>
+									<div class="btn-wrap">
+										<button class="btn-bg-yellow"><span>다음차 등록하기</span></button>
+									</div>
+								</div>
+							</div>
+							<!-- // 2021-07-20 중고차시세 없을경우 추가 -->
+						</div>
+						<!--//시뮬 결과 박스 영역-->
+
+						<!-- 내가 선택한 연식 -->
+						<div class="accordion-wrap type-card"><!-- .toggle이 활성화 되면 클래스명 [.toggle-active] 추가 -->
+							<h4 class="card-tit">내가 선택한 연식</h4>
+							<div class="accordion-header">
+								<div class="status-box">
+									<i class="icon24 icon-cloud"></i><!-- 조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경 -->
+									<span>예산이 부족해요.</span>
+								</div>
+
+								<div class="data-between">
+									<div class="left-box">
+										<strong>20년식 중고차로 구매</strong>
+									</div>
+									<div class="right-box">
+										<em>6,900만원</em>
+										<span class="txt-error">2,200만원 부족</span>
+										<i class="icon16 icon-arrow-bottom-black"></i>
+									</div>
+								</div>
+
+							</div>
+							<div class="accordion-container">
+								<p class="card-txt">
+									차차차 내한도알기 <b class="underline-mark">2,200만원</b>을 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+									더하면 구매할 수 있어요!
+								</p>
+
+								<div class="chart-bar-wrap">
+									<!--해당영역 추후 논의 예정-->
+									<img src="/images/bu/chart-sample.png" alt="샘플">
+								</div>
+
+								<ul class="possible-budget-list">
+									<li class="list-01">
+										<div class="list-header">
+											<strong>구매 가능 예산</strong>
+											<em>5,600만원</em>
+										</div>
+										<div class="list-contents">
+											<div class="depth">
+												<strong>보유 예산</strong> <!--2021-07-06 퍼블수정 : 문구수정 -->
+												<em>1,000만원</em>
+											</div>
+											<div class="depth">
+												<strong>내차 판매예상 금액</strong> <!--2021-06-23 퍼블수정 : 문구수정 -->
+												<em>2,300만원</em>
+											</div>
+										</div>
+									</li>
+
+									<!-- 상태값에 따라 [.list-02] 노출/비노출 -->
+									<li class="list-02">
+										<div class="list-contents link"> <!-- 2021-07-09 퍼블수정 : a태그를 div태그로 변경 -->
+											<div class="depth-box"><!-- off일 때 클래스명 [.off] 추가 -->
+												<div class="depth">
+													<strong>차차차 내한도알기</strong><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+													<em>2,300만원</em>
+												</div>
+												<p class="max-limit">최대한도 <span>2,500만원</span></p>
+											</div>
+
+											<!--내한도알기 조회 안될때 노출
+											<div class="nodata-txt" >
+												중고차 구매에 이용할 수 있는 내한도! <br>
+												바로 알아보세요.
+											</div>
+											-->
+										</div>
+									</li>
+								</ul>
+								<div class="btn-wrap">
+									<button class="btn-bg-yellow"><span>중고차 매물 구경하기</span></button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 내 자산 맞춤 BEST 연식 -->
+						<div class="accordion-wrap type-card"><!-- .toggle이 활성화 되면 클래스명 [.toggle-active] 추가 -->
+							<span class="tag">BEST</span>
+							<h4 class="card-tit">내 자산 맞춤 BEST 연식</h4>
+							<div class="accordion-header">
+								
+								<div class="status-box">
+									<i class="icon24 icon-cloud"></i><!-- 조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경 -->
+									<span>예산이 부족해요.</span>
+								</div>
+
+								<div class="data-between">
+									<div class="left-box">
+										<strong>20년식 중고차로 구매</strong>
+									</div>
+									<div class="right-box">
+										<em>6,900만원</em>
+										<span class="txt-error">2,200만원 부족</span>
+										<i class="icon16 icon-arrow-bottom-black"></i>
+									</div>
+								</div>
+
+							</div>
+							<div class="accordion-container">
+								<!--2021-07-01 퍼블수정 : 상태값에 따라 나오는 문구case 전부 추가-->
+								<p class="card-txt">
+									차차차 내한도알기 <b class="underline-mark">2,300만원</b>을 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+									더하면 구매할 수 있어요!
+								</p>
+								<p class="card-txt">
+									<b class="underline-mark">50만원씩 32개월</b>을 모으면 <br>
+									구매할 수 있어요!
+								</p>
+								<p class="card-txt">
+									축하해요! <br>
+									<b class="underline-mark">지금 바로</b> 구매할 수 있어요!
+								</p>
+								<p class="card-txt"> <!-- 2021-07-07 퍼블수정 : 문구수정 -->
+									<b class="underline-mark">차차차 내한도알기</b>를 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+									더하면 구매할 수 있어요!
+								</p>
+								<p class="card-txt">
+									<b class="underline-mark">차차차 내한도알기</b> 조회하고 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+									추가 예산을 알아보세요!
+								</p>
+								<!--//2021-07-01 퍼블수정 : 상태값에 따라 나오는 문구case 전부 추가-->
+
+
+								<div class="chart-bar-wrap">
+									<!--해당영역 추후 논의 예정-->
+									<img src="/images/bu/chart-sample.png" alt="샘플">
+								</div>
+
+								<ul class="possible-budget-list">
+									<li class="list-01">
+										<div class="list-header">
+											<strong>구매 가능 예산</strong>
+											<em>5,600만원</em>
+										</div>
+										<div class="list-contents">
+											<div class="depth">
+												<strong>보유 예산</strong> <!--2021-07-06 퍼블수정 : 문구수정 -->
+												<em>1,000만원</em>
+											</div>
+											<div class="depth">
+												<strong>내차 판매예상 금액</strong> <!--2021-06-23 퍼블수정 : 문구수정 -->
+												<em>2,300만원</em>
+											</div>
+										</div>
+									</li>
+
+									<!-- 상태값에 따라 [.list-02] 노출/비노출 -->
+									<li class="list-02">
+										<div class="list-contents link"> <!-- 2021-07-09 퍼블수정 : a태그를 div태그로 변경 -->
+											<div class="depth-box"><!-- off일 때 클래스명 [.off] 추가 -->
+												<div class="depth">
+													<strong>차차차 내한도알기</strong><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+													<em>2,300만원</em>
+												</div>
+												<p class="max-limit">최대한도 <span>2,500만원</span></p>
+											</div>
+
+											<!--내한도알기 조회 안될때 노출-->
+											<div class="nodata-txt">
+												중고차 구매에 이용할 수 있는 내한도! <br><!-- 2021-07-20 띄어쓰기 수정 '내 한도를' -> '내한도를' -->
+												바로 알아보세요.
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-wrap">
+									<button class="btn-bg-yellow"><span>중고차 매물 구경하기</span></button>
+								</div>
+							</div>
+						</div>
+
+						<!--중고차로 구매-->
+						<div class="accordion-list-wrap type-card-wrap">
+							<ul>
+								<li>
+									<div class="accordion-wrap type-card"><!-- .toggle이 활성화 되면 클래스명 [.toggle-active] 추가 -->
+										<div class="accordion-header">
+											<div class="status-box">
+												<i class="icon24 icon-cloud"></i><!-- 조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경 -->
+												<span>예산이 부족해요.</span>
+											</div>
+
+											<div class="data-between">
+												<div class="left-box">
+													<strong>20년식 중고차로 구매</strong>
+												</div>
+												<div class="right-box">
+													<em>6,900만원</em>
+													<span class="txt-error">2,200만원 부족</span>
+													<i class="icon16 icon-arrow-bottom-black"></i>
+												</div>
+											</div>
+
+										</div>
+										<div class="accordion-container">
+											<p class="card-txt">
+												차차차 내한도알기 <b class="underline-mark">2,300만원</b>을 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+												더하면 구매할 수 있어요!
+											</p>
+
+											<div class="chart-bar-wrap">
+												<!--해당영역 추후 논의 예정-->
+												<img src="/images/bu/chart-sample.png" alt="샘플">
+											</div>
+
+											<ul class="possible-budget-list">
+												<li class="list-01">
+													<div class="list-header">
+														<strong>구매 가능 예산</strong>
+														<em>5,600만원</em>
+													</div>
+													<div class="list-contents">
+														<div class="depth">
+															<strong>보유 예산</strong> <!--2021-07-06 퍼블수정 : 문구수정 -->
+															<em>1,000만원</em>
+														</div>
+														<div class="depth">
+															<strong>내차 판매예상 금액</strong> <!--2021-06-23 퍼블수정 : 문구수정 -->
+															<em>2,300만원</em>
+														</div>
+													</div>
+												</li>
+
+												<!-- 상태값에 따라 [.list-02] 노출/비노출 -->
+												<li class="list-02">
+													<div class="list-contents link"> <!-- 2021-07-09 퍼블수정 : a태그를 div태그로 변경 -->
+														<div class="depth-box"><!-- off일 때 클래스명 [.off] 추가 -->
+															<div class="depth">
+																<strong>차차차 내한도알기</strong><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+																<em>2,300만원</em>
+															</div>
+															<p class="max-limit">최대한도 <span>2,500만원</span></p>
+														</div>
+
+														<!--내한도알기 조회 안될때 노출
+														<div class="nodata-txt">
+															중고차 구매에 이용할 수 있는 내한도! <br>
+															바로 알아보세요.
+														</div>
+														-->
+													</div>
+												</li>
+											</ul>
+											<div class="btn-wrap">
+												<button class="btn-bg-yellow"><span>중고차 매물 구경하기</span></button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-card"><!-- .toggle이 활성화 되면 클래스명 [.toggle-active] 추가 -->
+										<div class="accordion-header">
+											<div class="status-box">
+												<i class="icon24 icon-sun"></i><!-- 조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경 -->
+												<span>차량을 구매할 수 있어요.</span>
+											</div>
+
+											<div class="data-between">
+												<div class="left-box">
+													<strong>20년식 중고차로 구매</strong>
+												</div>
+												<div class="right-box">
+													<em>6,900만원</em>
+													<!-- <span class="txt-error">2,200만원 부족</span> -->
+													<i class="icon16 icon-arrow-bottom-black"></i>
+												</div>
+											</div>
+
+										</div>
+										<div class="accordion-container">
+											<p class="card-txt">
+												차차차 내한도알기 <b class="underline-mark">2,300만원</b>을 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+												더하면 구매할 수 있어요!
+											</p>
+
+											<div class="chart-bar-wrap">
+												<!--해당영역 추후 논의 예정-->
+												<img src="/images/bu/chart-sample.png" alt="샘플">
+											</div>
+
+											<ul class="possible-budget-list">
+												<li class="list-01">
+													<div class="list-header">
+														<strong>구매 가능 예산</strong>
+														<em>5,600만원</em>
+													</div>
+													<div class="list-contents">
+														<div class="depth">
+															<strong>보유 예산</strong> <!--2021-07-06 퍼블수정 : 문구수정 -->
+															<em>1,000만원</em>
+														</div>
+														<div class="depth">
+															<strong>내차 판매예상 금액</strong> <!--2021-06-23 퍼블수정 : 문구수정 -->
+															<em>2,300만원</em>
+														</div>
+													</div>
+												</li>
+
+												<!-- 상태값에 따라 [.list-02] 노출/비노출 -->
+												<li class="list-02">
+													<div class="list-contents link"> <!-- 2021-07-09 퍼블수정 : a태그를 div태그로 변경 -->
+														<div class="depth-box"><!-- off일 때 클래스명 [.off] 추가 -->
+															<div class="depth">
+																<strong>차차차 내한도알기</strong><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+																<em>2,300만원</em>
+															</div>
+															<p class="max-limit">최대한도 <span>2,500만원</span></p>
+														</div>
+
+														<!--내한도알기 조회 안될때 노출
+														<div class="nodata-txt">
+															중고차 구매에 이용할 수 있는 내한도! <br>
+															바로 알아보세요.
+														</div>
+														-->
+													</div>
+												</li>
+											</ul>
+											<div class="btn-wrap">
+												<button class="btn-bg-yellow"><span>중고차 매물 구경하기</span></button>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-wrap type-card"><!-- .toggle이 활성화 되면 클래스명 [.toggle-active] 추가 -->
+										<div class="accordion-header">
+											<div class="status-box">
+												<i class="icon24 icon-sun-cloud"></i><!-- 조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경 -->
+												<span>내한도알기 더하면 구매할 수 있어요.</span><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+											</div>
+
+											<div class="data-between">
+												<div class="left-box">
+													<strong>20년식 중고차로 구매</strong>
+												</div>
+												<div class="right-box">
+													<em>6,900만원</em>
+													<span class="txt-error">2,200만원 부족</span>
+													<i class="icon16 icon-arrow-bottom-black"></i>
+												</div>
+											</div>
+
+										</div>
+										<div class="accordion-container">
+											<p class="card-txt">
+												차차차 내한도알기 <b class="underline-mark">2,300만원</b>을 <br><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+												더하면 구매할 수 있어요!
+											</p>
+
+											<div class="chart-bar-wrap">
+												<!--해당영역 추후 논의 예정-->
+												<img src="/images/bu/chart-sample.png" alt="샘플">
+											</div>
+
+											<ul class="possible-budget-list">
+												<li class="list-01">
+													<div class="list-header">
+														<strong>구매 가능 예산</strong>
+														<em>5,600만원</em>
+													</div>
+													<div class="list-contents">
+														<div class="depth">
+															<strong>보유 예산</strong> <!--2021-07-06 퍼블수정 : 문구수정 -->
+															<em>1,000만원</em>
+														</div>
+														<div class="depth">
+															<strong>내차 판매예상 금액</strong> <!--2021-06-23 퍼블수정 : 문구수정 -->
+															<em>2,300만원</em>
+														</div>
+													</div>
+												</li>
+
+												<!-- 상태값에 따라 [.list-02] 노출/비노출 -->
+												<li class="list-02">
+													<div class="list-contents link"> <!-- 2021-07-09 퍼블수정 : a태그를 div태그로 변경 -->
+														<div class="depth-box"><!-- off일 때 클래스명 [.off] 추가 -->
+															<div class="depth">
+																<strong>차차차 내한도알기</strong><!-- 2021-07-20 띄어쓰기 수정 '내한도 알기' -> '내한도알기' -->
+																<em>2,300만원</em>
+															</div>
+															<p class="max-limit">최대한도 <span>2,500만원</span></p>
+														</div>
+
+														<!--내한도알기 조회 안될때 노출
+														<div class="nodata-txt">
+															중고차 구매에 이용할 수 있는 내한도! <br>
+															바로 알아보세요.
+														</div>
+														-->
+													</div>
+												</li>
+											</ul>
+											<div class="btn-wrap">
+												<button class="btn-bg-yellow"><span>중고차 매물 구경하기</span></button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 2021-07-09 퍼블수정 : 마크업 삭제 / 내한도 알기 조회 결과
+						<div class="money-limit-wrap">
+							<i class="icon"></i>
+							<strong>차차차 내한도알기를 조회했어요!</strong>
+							<div class="money-area">
+								최대 <em>2,300</em>만원
+							</div>
+							<p>
+								중고차 구매에 2,300만원을 <br>
+								더할 수 있는 한도를 갖고 있어요!
+							</p>
+							<div class="btn-wrap">
+								<button class="btn-bg-yellow"><span>내한도 조회하기</span></button>
+							</div>
+						</div>
+						-->
+
+						<!-- 2021-07-09 퍼블수정 :  마크업 삭제 / 2021-07-07 퍼블수정 : 마크업 위치 변경 / 2021-06-24 퍼블수정 : 마크업 추가 / 내한도 알기 유도 영역 type C, type D 에서만 노출
+						<div class="money-limit-wrap">
+							<i class="icon"></i>
+							<b>구매자금이 부족하신가요?</b>
+							<p>
+								중고차 구매 시 이용할 수 있는 한도를 <br>
+								미리 알아보고 내차구매 계획을 세워보세요!
+							</p>
+							<div class="btn-wrap">
+								<button class="btn-bg-yellow"><span>내한도 조회하기</span></button>
+							</div>
+						</div>
+						-->
+
+						<div class="accordion-wrap type-card">
+							<div class="accordion-header">
+								<div class="status-box">
+									<i class="icon24 icon-cloud"></i> <!--조건값에 따라 클래스명 [.icon-sun / .icon-sun-cloud / .icon-cloud]으로 변경-->
+									<span>예산이 부족해요.</span>
+								</div>
+
+								<div class="data-between">
+									<div class="left-box">
+										<strong>18년식 신차로 구매</strong>
+									</div>
+									<div class="right-box">
+										<em>6,900만원</em>
+										<span class="txt-error">2,200만원 부족</span>
+										<i class="icon16 icon-arrow-bottom-black"></i>
+									</div>
+								</div>
+
+							</div>
+							<div class="accordion-container">
+								<p class="card-txt">
+									차차차 내한도알기 <b class="underline-mark">2,300만원</b>을 <br>
+									더하면 구매할 수 있어요!
+								</p>
+
+								<div class="chart-bar-wrap">
+									<img src="/images/bu/chart-sample02.png" alt="샘플">
+								</div>
+
+								<ul class="possible-budget-list">
+									<li class="list-01">
+										<div class="list-header">
+											<strong>구매 가능 예산</strong>
+											<em>5,600만원</em>
+										</div>
+										<div class="list-contents">
+											<div class="depth">
+												<strong>보유 예산</strong>
+												<em>1,000만원</em>
+											</div>
+											<div class="depth">
+												<strong>내차 판매예상 금액</strong>
+												<em>2,300만원</em>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 2021-07-20 퍼블수정 : 마크업 삭제 
+						<div class="preparing-box">
+							<div class="data-between">
+								<div class="left-box">
+									<strong>18년식 신차로 구매</strong>
+								</div>
+								<div class="right-box">
+									<em class="question-mark">?</em>
+									<span class="unit">만원</span>
+								</div>
+							</div>
+							<p class="txt">신차가를 준비 중입니다.</p>
+						</div>
+						-->
+
+						<!--리스 - 자산연결 -->
+						<div class="lease-card-wrap">
+							<div class="lease-tit">
+								구매가 부담된다면 초기비용 부담이 덜한 <b class="underline-mark">리스 이용</b>은 어떠세요?
+							</div>
+
+							<div class="month-payment">
+								<span class="tag-round bg-gray">예상 월 납입금</span>
+								<strong>1,245,090원</strong>
+							</div>
+
+							<dl class="average-balance"> <!--자산 연결일 때 노출 / 자산 미연결일 때 비노출-->
+								<dt>3개월 평균 잔액</dt>
+								<dd>190만원</dd>
+							</dl>
+
+							<div class="btn-wrap">
+								<button class="btn-border-gray"><span>자세히보기</span></button>
+							</div>
+
+						</div>
+
+						<!-- 렌트 영역 -->
+						<div class="link-rent-wrap">
+							<a href="javascript:;">
+								<img src="/images/bu/bnCarRent.svg" alt="KB차차차 X 합리적인 렌트 비교">
+							</a>
+						</div>
+
+					</div>
+					<!--//시뮬레이션 영역-->
+
+					<!--하단 배너 영역 2021-06-24 퍼블수정 : 마크업 삭제
+					<div class="bottom-banner-wrap">
+						<div class="bottom-banner bottom-fixed">
+							<a href="javascript:;">
+								<img src="/images/bu/bottom-banner01.svg" alt="차차차 내한도알기 조회">
+							</a>
+							<button class="icon24 icon24-close-gray">닫기</button>
+						</div>
+						<div class="bottom-banner-space"></div>
+					</div>
+					-->
+
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+
+	<!-- dockbar -->
+	<!-- 2021-07-26 메뉴 수정 -->
+	<div class="dock-menu">
+		<ul class="dock-bar">
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-home"></i>
+					<span>홈</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-sell"></i>
+					<span>팔때</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-search"></i>
+					<span>검색</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="active"><!-- 활성화시 'active' 클래스 추가 -->
+					<i class="icon dock-data"></i>
+					<span>마이데이터</span><!-- 2021-07-07 텍스트 수정 --> 
+				</a>
+				<ul class="dock-depth2">
+					<li>
+						<a href="javascript:;"><span>내자산</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="active"><span>내차구매</span></a><!-- 활성화시 'active' 클래스 추가 -->
+					</li>
+					<li>
+						<a href="javascript:;"><span>차테크</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차고</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-market"></i>
+					<span>시세</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- // 2021-07-26 메뉴 수정 -->
+	<!-- // dockbar -->
+
+	<script>
+		$(function(){
+			$('.car-slider').slick({
+				infinite : false, 	//무한 반복 옵션	 
+				//slidesToShow : 1.04,		// 한 화면에 보여질 컨텐츠 개수
+				slidesToScroll : 1,		//스크롤 한번에 움직일 컨텐츠 개수
+				//speed : 100,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+				arrows : false, 		// 옆으로 이동하는 화살표 표시 여부
+				//dots : false, 		// 스크롤바 아래 점으로 페이지네이션 여부
+				//autoplay : false,			// 자동 스크롤 사용 여부
+				pauseOnHover : true,		// 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+				//vertical : false,		// 세로 방향 슬라이드 옵션
+				//draggable : true, 	//드래그 가능 여부 
+				
+			});
+
+			// On before slide change
+			$('.car-slider').on('afterChange', function(event, slick, currentSlide){
+				onChangeSlick(currentSlide);
+			});
+
+			$(".car-item").on("click",function(e){
+				var _slickName = $(this).data("name");
+				$(".car-item").removeClass("on");
+				$(this).addClass("on");
+				setSlickChange(_slickName);
+			});
+
+			function onChangeSlick(index){
+				var _slickItems = $('.car-slider').find('.item-car');
+				var _slickEl = _slickItems[index];
+				var _slickName = _slickEl.getAttribute("data-target");
+				setSlickButtonOn(_slickName);
+			}
+
+			function setSlickButtonOn(name){
+				$(".car-item").removeClass("on");
+				var $slickButton = $('[data-name="'+name+'"]');
+				if($slickButton.length < 1) return null;
+				$slickButton.addClass("on");
+				
+				/* 2021-06-28 수정 */
+				var _tabButton = $slickButton[0];
+				var _tabParent = _tabButton.parentNode.parentNode.parentNode;
+				var _tabW =_tabButton.offsetLeft + _tabButton.offsetWidth;
+				var _tx = _tabW - window.innerWidth;
+
+				if( _tabParent.scrollLeft > _tabButton.offsetLeft){
+					_tabParent.scrollTo(_tabButton.offsetLeft,0);
+				}
+				else if(_tabParent.scrollLeft < _tx){
+					_tabParent.scrollTo(_tx,0);
+				}
+			}
+			
+			function setSlickChange(name){
+				var _slickItem = $('[data-target="'+name+'"]');
+				var _slickIndex = $('.item-car').index(_slickItem[0]);
+				$('.car-slider').slick("slickGoTo",_slickIndex);
+			}
+  		})
+	</script>
+</body>
+</html>

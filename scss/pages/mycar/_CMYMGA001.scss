@@ -1,0 +1,915 @@
+@charset "UTF-8";
+
+.mainbg-kbcolor-off {
+    .content-body {
+        background-color:#f6f8f9;
+    }
+}
+
+.content-header { 
+    .btn-header-wrap {
+        button {
+            &.txt-link { display:inline-block; width:auto; text-indent:initial; font-size:1.4rem; text-align:center; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+        }
+    }
+}
+
+.CMYMGA001 { padding-bottom:11.2rem;
+    .container-main {
+        .top-notice-alarm-area { padding-bottom:3.2rem; margin-top:-0.8rem;
+            .top-notice-alarm-box { position:relative; display:flex; justify-content:space-between; background-color:#fff; padding:1.2rem 1.6rem; border-radius:1.2rem; box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+                > a { display:inline-block; font-size:0; }
+                i { vertical-align:middle; margin-right:0.8rem; }
+                .txt { vertical-align:middle; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#222; font-weight:400; 
+                    strong { font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#222; font-weight:700; }
+                }
+                button { position:absolute; right:1.2rem; top:50%; transform:translateY(-50%); }
+                ~ .top-notice-alarm-box { margin-top:0.4rem; }
+            }
+        }
+
+        .top-mycar-visual-area { position:relative;
+            .top-button-area { position:relative; text-align:center; z-index:1;
+                > button { font-size:1.2rem; text-align:center; line-height:1.6rem; color:#222222; padding:0.4rem 0.8rem; background-color:rgba(255,204,0,1); border-radius:2rem; letter-spacing:0.02rem;
+                    &:disabled { 
+                        color:rgba(136,136,136,1); background-color:rgba(238,238,238,1); 
+                    }
+                }
+            }
+            
+            .top-background-view { position:relative; height:18.3rem;
+                .top-title-area { position:relative; z-index:2;
+                    .car-name { font-size:2rem; text-align:center; line-height:3rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; }
+                    .car-info { text-align:center; font-size:0;
+                        .txt { display:inline-block; font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; vertical-align:middle; margin-right:0.8rem; }
+                        .modify { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; vertical-align:middle; text-decoration:underline; cursor:pointer; }
+                        .details-txt { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; vertical-align:middle; cursor:pointer; padding-bottom:0.3rem; 
+                            &:after { display:block; content: ""; clear:both; height:0.1rem; background-color: #aaaaaa; margin-top:-0.3rem; }
+                        }
+                    }
+                }
+                .top-product-image-area { position:absolute; top:7rem; left:0; right:0; text-align:center; z-index:1;
+                    .top-product-image { position:relative;
+                        .product { display:block; max-width:20rem; width:100%; margin-left:auto; margin-right:auto;
+                            img { width:100%; }
+                        }
+                        .license-plate { width:15.2rem; height:4.4rem; position:absolute; top:8.8rem; left:50%; margin-left:-6rem; text-align:center; z-index:1;
+                            background-image:url('../images/mycar/bg-license-plate.svg');
+                            background-repeat:no-repeat;
+                            background-position:center center; 
+                            background-size:contain;
+                            .lp-number { 
+                                display:inline-block; padding:0.5rem 0 0.7rem; font-size:2rem; text-align:center; line-height:3rem; letter-spacing:-0.04rem; font-weight:700;
+                            }
+                        }
+                    }
+                }
+                &:after { content:""; position:absolute; width:calc(100% + 3.2rem); margin-left:-1.6rem; height:18.3rem; top:0; left:0; z-index:1;
+                    background-image:url('../images/mycar/background-mycar-main-carview.png');
+                    background-repeat:no-repeat;
+                    background-position:center bottom; 
+                    background-size:100% 100%;
+                }
+            }
+            .top-car-info { 
+                ul { display:flex; justify-content:space-between; align-items:center;
+                    li { 
+                        > .data-box { display:inline-block; }
+                        .list-tit { text-align:left;
+                            em { display:inline-block; font-size:1.4rem; font-weight:400; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                            button {vertical-align:top; }
+                        }
+                        .list-txt { font-size:0; text-align:left;
+                            strong { font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:700; vertical-align:middle; }
+                            span { font-size:1.6rem; line-height:2.6rem; letter-spacing:-0.036rem; color:#222; font-weight:400; vertical-align:middle; }
+                            button { vertical-align:middle; }
+                        }
+                        &:nth-child(1) { text-align:left; }
+                        &:nth-child(2) { text-align:center; }
+                        &:nth-child(3) { text-align:right; }
+                    }
+                }                
+            }
+            .top-car-bottom { 
+                &:before { margin-top:1.6rem; display:block; content:""; clear:both; width:calc(100% + 4.8rem); height:0.1rem; background-color:#eee; margin-left:-2.4rem; }
+                button { width:calc(100% + 4.8rem); margin-left:-2.4rem; height:4rem; }                
+            }
+
+            .page-adddata-area { margin-top:2.4rem; padding:1.6rem 2.4rem 0 2.4rem; }
+
+            .distance-driven { padding:1.7rem 2.4rem; margin-top:6.7rem; margin-bottom:0; }
+
+            .page-move-area { padding:1.6rem 2.4rem; margin-top:5.1rem; margin-bottom:0; 
+                .page-move { display:flex; justify-content:space-between;
+                    .page-move-left { display:flex; justify-content:space-between; align-items:center;
+                        strong { display:inline-block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:bold; }
+                    }
+                    .page-move-right { display:flex; justify-content:space-between; align-items:center; text-align:right; 
+                        span { display:inline-block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:bold; vertical-align:middle; }
+                        button { margin-left:0.4rem; margin-top:0.6rem; }
+                    }
+                }
+            }
+            .container-top-roundbox { 
+                + .container-top-roundbox { margin-top:0.8rem; }
+            }
+        }
+
+        .page-move-modify-area { padding-top:4.3rem; text-align:center; font-size:0;
+            .tit { font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#222; font-weight:400; margin-right:0.8rem; vertical-align:middle; }
+            .txt { font-size:1.6rem; line-height:3.4rem; letter-spacing:-0.02rem; color:#222; font-weight:400; margin-right:0.4rem; vertical-align:middle;
+                .num { font-size:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:700; 
+                    span { font-size:2.4rem !important; color:#222; font-weight:700; }
+                }
+            }
+            .icon16 { vertical-align:middle; margin-top:0.3rem; }
+        }
+
+        .specification-info {
+            .specification-info-add { text-align:center;
+                .btn-specification-info {
+                    span { display:inline-block; font-size:1.4rem; text-align:center; letter-spacing:-0.05rem; color:#666666; vertical-align:middle; 
+                        &.fold { display:none; }
+                    }
+                }
+                .info-layer-wrap { width:calc(100% + 1.6rem); margin-left:-0.8rem; background-color:#ffffff; display:none;
+                    .info-image { margin-top:1.6rem; margin-left:auto; margin-right:auto;
+                        img { width:100%; }
+                    }
+                    .info-table { margin-top:1.6rem;       
+                        .table-wrap { 
+                            td { text-align:left; background-color:#ffffff; }
+                        }
+                    }
+                }
+                .info-layer-wrap.active { display:block; 
+                    + .btn-specification-info { 
+                        .more { display:none; }
+                        .fold { display:inline-block; }
+                    }
+                }
+                .btn-specification-info.active i { transform:rotate(180deg); }
+            }
+        }
+
+        .sub-main-data-box { position:relative; margin-bottom:0 !important; padding-top:4.8rem; }        
+
+        .sub-tit-area { position:relative; }
+
+        .sub-tit { font-size:0; position:relative;
+            strong { display:inline-block; font-size:2rem; line-height:3rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; vertical-align:middle; margin-right:0.4rem; }
+            .btn-call { position:absolute; top:50%; transform:translateY(-50%); right:0; text-align:right;
+                .txt { display:inline-block; vertical-align:middle; margin-left:0.4rem; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; }
+            }
+            .icon-tooltip { margin-top:0.2rem; }
+        }
+        .sub-tit-right { position:absolute; top:50%; transform:translateY(-50%); right:0; display:flex; text-align:center; align-items:center;                 
+            label { display:block; cursor:pointer; }
+            span { display:inline-block; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; vertical-align:middle; }
+
+            .form-switch { margin-left:0.8rem; }
+            .form-switch i { width:3.6rem; height:2rem; border-radius:1rem; }
+            .form-switch i span { width:1.6rem; height:1.6rem; font-size:0; }
+        }
+
+        .container-top-roundbox { position:relative; padding:2.4rem; background-color:rgba(255,255,255,1); margin-top:1.6rem;
+            z-index:1; border-radius:1.2rem; box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+
+            .top-roundbox-price {
+                .body-210 { text-align:center; padding:2.5rem 0; }
+                .btn-area { padding:0; }
+            }
+            .btn-area { padding:1.6rem 0 0rem; 
+                button { padding:1.2rem 1.6rem; line-height:unset; font-size:0;
+                    span { font-weight:500; font-size:1.6rem; text-align:center; line-height:2.4rem; color:#222; }
+                    .round-txt { display: inline-block; vertical-align:middle; background-color:#ffffff; line-height:2.4rem; border-radius:1.2rem; font-weight: 400;
+                        font-size:1.2rem;
+                        text-align:center;
+                        letter-spacing:-0.02rem;
+                        color:#222222;
+                        padding:0 0.8rem;
+                        margin-right:0.8rem; }
+                }
+            }
+
+            .box-flex-tit { display:flex; justify-content:space-between; align-items:center;
+                .box-top-tit { font-weight:700; font-size: 1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; }
+                .btn-call { text-align:right;
+                    .txt { display:inline-block; vertical-align:middle; margin-left:0.4rem; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; }
+                }
+                .details-txt { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; text-align:right;
+                    &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                }
+                ~ .box-tit-area { margin-top:1.6rem; }
+            }
+
+            .box-tit-area { position:relative; font-size:0;
+                .box-tit { display:inline-block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; vertical-align:middle; margin-right:0.4rem; }
+                
+                .box-top-txt { position:relative; display:inline-block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; font-weight:400; color:#222222; 
+                    b { font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; font-weight:700; color:#222222; }
+                    .details-txt { position:absolute; right:0; display:inline-block; top:0; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; 
+                        &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                    }
+                    button { margin:0 0 0.3rem 0.4rem; }
+                    button.icon-error { margin:0 0 0.3rem 0; }
+                }
+                .hash-tag { display:block; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:rgba(37,137,255,1); margin-top:0.4rem; }
+                .details-txt { position:absolute; right:0; display:inline-block; top:50%; transform:translateY(-50%); font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; 
+                    &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                }
+                ~ .box-tit-area { margin-top:1.6rem; }
+            }
+
+            .box-sub-txt { margin-top:1.6rem; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; 
+                + .btn-area { padding:2.4rem 0 0 0; }
+            }
+
+            .box-caselist-area { margin-top:0.8rem;
+                > ul { font-size:0;
+                    > li { display:inline-block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; 
+                        span { font-weight:700; font-size:1.6rem; letter-spacing:-0.04rem; color:#222; }
+                        span.color-blue { color:#2589ff; }
+                        + li { margin-left:0.8rem;
+                            &:before { display:inline-block; content:""; width:0.1rem; height:1.2rem; background-color:#eee; margin-right:0.8rem; }
+                        }
+                    }
+                }
+            }
+            
+            .roundbox-line-bottom {
+                margin-top:1.6rem; border-top:0.1rem solid #eeeeee;
+                .top-account-wrap { margin-top:2.4rem; }
+                .price-txt-wrap { margin-top:1.6rem; }
+                + .btn-area { padding:2.4rem 0 0 0; }
+                .sub-tit { display:block; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; margin-top:1.6rem; }                
+            }
+
+            .content-sub-roundbox-area { margin-top:1.6rem; }
+
+            .content-sub-roundbox { display:block; position:relative; padding:1.6rem 5.6rem 1.6rem 7.2rem; border-radius:1.2rem; margin-bottom:0.8rem;
+                i { position:absolute; left:1.6rem; top:50%; transform:translateY(-50%); }
+                .tit { display:block; font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#ffffff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+                .date { display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#ffffff; }
+                button { position:absolute; right:0.8rem; top:50%; transform:translateY(-50%); }
+                .complete { text-align:center; right:1.6rem; padding:0 0.8rem; background-color:#ffffff; font-weight:400; font-size:1.2rem; line-height:2.4rem; letter-spacing:-0.02rem; color:#222222; border-radius:1.2rem; }
+            }
+
+            .bottom-tip-txt { font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+
+            .progress-mycar-area { margin-top:1.6rem; 
+                + .btn-area { padding:2.4rem 0 0 0; }
+            }
+            .progress-mycar { 
+                li { 
+                    .top-info { display:flex; justify-content:space-between; align-items:center; text-align:left;
+                        .tit { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; }
+                        .data-box { display:inline-block; vertical-align:middle; text-align:right; padding:0.3rem 0.8rem; border:0.1rem solid #eee; border-radius:1.2rem; font-size:0;
+                            span { display:inline-block; font-weight:400; font-size:1.2rem; text-align:center; line-height:1.6rem; letter-spacing:-0.02rem; color:#222;
+                                ~ span { margin-left:0.5rem;
+                                    &:before { display:inline-block; content:""; width:0.1rem; height:1rem; margin-right:0.5rem; background-color:#222; }
+                                }
+                            }
+                        }                        
+                    }
+                    .progress-bar-mycar { position:relative; overflow:hidden; width:100%; height:0.8rem; background-color:#eee; margin-top:0.8rem; border-radius:0.4rem;
+                        .rate { position:absolute; height:0.8rem; background-color:#ffcc00; border-radius:0.4rem; font-size:0; text-indent:-9999999999px; }
+                    }
+                    ~ li { margin-top:3.2rem; }
+                }
+            }
+
+            .inspection-day-wrap { 
+                .inspection-day-list { display:block; margin-top:1.6rem; text-align:center; font-size:0;
+                    li { display:inline-block; vertical-align:middle; }
+                    .background-image-calendar { position:relative;
+                        width:9.9rem; height:9.1rem;
+                        .txt-wrap { position:absolute; top:50%; left:0; right:0; transform:translateY(-30%);
+                            .txt-year { display:block; text-align:center; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                            .txt-monthday { display:block; text-align:center; font-weight:700; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; }
+                        }
+                    }
+                    .next-txt { text-align:center; width:100%; max-width:5.8rem;
+                        .icon-calendar-next { display:inline-block; width:1rem; height:0.4rem;  }
+                    }
+                }
+            }
+
+            .price-txt-wrap { display:flex; justify-content:space-between; align-items:center; 
+                .tit { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; text-align:left; }
+                .price { font-weight:700; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; text-align:right; }
+            }
+
+            .top-account-wrap { padding-bottom:0; 
+                .account-name { padding-right:0rem; display:flex; 
+                    .details-txt { position:absolute; right:0; display:inline-block; top:50%; transform:translateY(-50%); font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; 
+                        &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                    }
+                }
+                &:after { display:none; }
+            }
+
+            .top-thumb-wrap { padding-bottom:0; 
+                .thumb-name { display:flex; margin-top:1.6rem; position:relative;
+                    i { padding-right:1.6rem; }
+                    .info { 
+                        li { 
+                            .tit { display:block; font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; }
+                            .txt { display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                        }
+                    }
+                    .details-txt { position:absolute; right:0; display:inline-block; top:50%; transform:translateY(-50%); font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; 
+                        &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                    }
+                }
+                &:after { display:none; }
+            }           
+
+            .checklist-area { display:flex; justify-content:space-between; 
+                .checklist-left { display:flex; justify-content:space-between; align-items:center;
+                    strong { display:inline-block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:700; margin-right:0.6rem; }
+                    .icon-new { display:inline-block; font-size:1.2rem; line-height:1.6rem; text-align:center; color:#ffffff; width:1.6rem; height:1.6rem; border-radius:0.8rem; background-color:#ff0000; letter-spacing:-0.02rem; }
+                }
+                .checklist-right { display:flex; justify-content:space-between; align-items:center; text-align:right;
+                    em { display:inline-block; text-align:right; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:700; }
+                    i { margin-left:0.5rem; }
+                    .inp-box {
+                        &.type-price { 
+                            .price-data-wrap { width:auto; height:auto; padding:0; right:0; text-align:right; padding-right:4.6rem;
+                                > span { width:100%; display:inline-block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; text-align:right; overflow:hidden; vertical-align:middle;
+                                    + b { position:absolute; top:0; right:0; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; vertical-align:middle;
+                                        &:after { vertical-align:middle; margin-left:0.4rem; }
+                                    }
+                                }
+                            }
+                            .price-input { display:inline-block; }
+                            input[type="text"] { top:0; height:auto; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; text-align:right; margin:0 4.6rem 0 0; padding:0; }
+                            &.focus {
+                                .price-data-wrap {
+                                    b {
+                                        &:after { display:inline-block; opacity:0; }
+                                    }
+                                }
+                            }
+                            .icon16 { 
+                                &.icon-close { top:55%; right:0; }
+                            }
+                        }
+                    }
+                }
+            }            
+
+            .info-strong-text { text-align:center;
+                strong { display:inline-block; }
+            }
+            
+            &.page-calendar-area { padding:1.6rem 2.4rem; }
+            
+            &.bgcolor-29538d { background-color:#29538d; }
+            &.bgcolor-1d4783 { background-color:#1d4783; }
+            &.bgcolor-3981ff { background-color:#3981ff; }
+            &.bgcolor-1abcc4 { background-color:#1abcc4; }
+            ~ .container-top-roundbox { margin-top:2.4rem; }
+        }
+
+        .mycar-bottom-btn { 
+            .btn-area { padding:0.8rem 0 0; }
+        }
+
+        .single-icon-image { text-align:center;
+            img { width:100%; }
+        }
+
+        
+        .price-round-header { text-align:center;
+            .round-border-box-black { display:inline-block; font-size:1.2rem; text-align:center; line-height:1.6rem; letter-spacing:0.02rem; color:#222; }
+        }
+
+        .price-mycar-top-txt { text-align:center;
+            strong { display:block; text-align:left; font-size:2.4rem; line-height:3.4rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; }
+            em { display:block; text-align:left; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; font-weight:400; }
+        }
+
+        .price-info-tip-area { margin-top:3.2rem;
+            .price-info-tip { display:flex; justify-content:space-evenly; 
+                li { text-align:center;
+                    .tit { font-size:0;
+                        span { display:inline-block; text-align:center; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; vertical-align:middle; }
+                    }
+                    .txt { font-size:0; padding-top:0.2rem;
+                        strong { position:relative; display:inline-block; text-align:center; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#222222; vertical-align:middle; }
+                        i { vertical-align:middle; }
+                    }
+                    &.bar { width:0.1rem; height:4rem; background-color:#eee; }
+                }
+            }
+        }
+
+        .price-middle-strong { margin-top:1.6rem;
+            strong { display:block; text-align:center; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; }
+        }
+
+        .graph-area { margin-top:2.4rem;
+            img { width:100%; }
+        }
+
+        .price-mycar-wrap {
+            .single-icon-image { margin-top:0.8rem; max-width:14rem; margin-left:auto; margin-right:auto; 
+                img { width:100%; }
+            }
+        }
+
+        .price-bottom-box-area { margin-top:1.6rem; }
+
+        .price-bottom-clearblue-box { position:relative; display:flex; justify-content:space-between;  border-radius:1.2rem; padding:1.2rem 1.6rem 1.2rem 4.8rem;
+            i { position:absolute; z-index:2; left:1.6rem; top:50%; transform:translateY(-50%); }
+            .txt { display:block; text-align:left; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; font-weight:500; }
+            .txt-right { display:block; text-align:right; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; }
+            &:after { display:block; content:""; clear:both; background-color:#2589ff; opacity:0.1; border-radius:1.2rem;
+                position:absolute; z-index:1; top:0; left:0; bottom:0; width:100%;
+            }
+            + .price-bottom-clearblue-box { margin-top:0.8rem; }
+        }
+
+        .lightishBlue-roundbox { padding:2.4rem; margin-top:4.8rem !important; }
+        .darkBlue-roundbox { padding:2.4rem; margin-top:1.6rem !important; }
+
+        .sellcar-wrap { position:relative; display:block;
+            .sellcar-left { text-align:left;
+                em { display:block; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#ffffff; opacity:0.7; }
+                strong { display:block; margin-top:0.4rem; font-weight:700; font-size:2.4rem; line-height:3.4rem; letter-spacing:-0.04rem; color:#ffffff; }
+            }
+            .sellcar-right { text-align:center; max-width:22rem; position:relative; margin-left:auto; margin-right:auto; padding-top:1.6rem;
+                background-image:url('../images/mycar/background-car-celebration.svg'); background-size:contain; background-position:center 1.6rem; background-repeat:no-repeat;
+                .image { max-width:18rem; margin-left:auto; margin-right:auto; padding-top:3.6rem;
+                    img { width:100%; }
+                }
+                .circle-price { position:absolute; top:3.2rem; right:2.9rem; width:4.8rem; height:4.8rem; 
+                    background-image:url('../images/mycar/background-circle-car-price.svg'); 
+                    background-size:contain; background-position:center center; background-repeat:no-repeat;
+                    display:flex; align-items:center;
+                    .txt { 
+                        display:block; text-align:center; width:100%; font-size:1.4rem; letter-spacing:-0.04rem; color:#ffcc00;
+                    }
+                }
+            }
+            .banner-bottom-box-area { padding-top:0.8rem;
+                .banner-bottom-box { background-color:#ffcc00; padding:1.2rem 1.6rem; text-align:center; border-radius:1.2rem; font-size:0;
+                    .round-txt { display:inline-block; vertical-align:middle; background-color:#ffffff; line-height:2.4rem; border-radius:1.2rem; font-weight:400; font-size:1.2rem; text-align:center; letter-spacing:-0.02rem; color:#222222; padding:0 0.8rem; margin-right:0.8rem; }
+                    .txt { display:inline-block; vertical-align:middle; font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; }
+                }
+            }
+        }
+        .accounts-mycar-box { 
+            .single-icon-image { max-width:14rem; margin-left:auto; margin-right:auto; margin-top:1.6rem;
+                img { width:100%; }
+            }
+            .box-tit-area { 
+                .details-txt { position:absolute; right:0; display:inline-block; top:0; transform:translateY(0); font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; 
+                    &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                }
+            }
+            &.unconnected { 
+                .price-consumption-area { 
+                    .price-consumption-top {
+                        .price { 
+                            .price-txt { display:none; }
+                            i { display:none; }
+                            .unconnected-box { display:inline-block; }
+                        }
+                    }
+                    .price-consumption-bottom { 
+                        .price-consumption-bottom-right { 
+                            .price {
+                                .price-txt { display:none; }
+                                .unconnected-box { display:inline-block; }
+                            }
+                        }
+                    }
+                    + .btn-area { display:flex; padding:2.4rem 0 0rem; }
+                }
+                
+            }
+        }
+        .price-consumption-area { margin-top:1.6rem;
+            .price-consumption-top { position:relative;
+                .tit { font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#000; }
+                .price { font-size:0;
+                    .price-txt { display:inline-block; font-size:2.4rem; line-height:3.4rem; letter-spacing:-0.04rem; color:#222; font-weight:700; vertical-align:middle; margin-right:0.4rem; }
+                    .unconnected-box { display:none; text-align:center; font-size:2.6rem; color:#222; font-weight:700; width:8rem; max-width:8rem; line-height:3.2rem; vertical-align:middle; background-color:#f6f8f9; border-radius:0.5rem; }
+                }
+            }
+            .price-consumption-bottom { position:relative; display:flex; justify-content:space-between; margin-top:1.6rem;
+                border-top:0.1rem solid #eee; padding-top:1.6rem;
+                .price-consumption-bottom-left { display:flex; justify-content:space-between; 
+                    .tit { display:block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:700; }
+                }
+                .price-consumption-bottom-right { padding-top:0.1rem;
+                    .price { text-align:right; font-size:0;
+                        .price-txt{ display:inline-block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:700; vertical-align:middle; }
+                        .back-txt { display:inline-block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:700; vertical-align:middle; }
+                        .unconnected-box { display:none; text-align:center; font-size:1.8rem; color:#222; font-weight:700; width:8rem; max-width:8rem; line-height:2.6rem; vertical-align:middle; background-color:#f6f8f9; border-radius:0.5rem; }                 
+                    }
+                    .date { display:block; text-align:right; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; }
+                }
+                
+            }
+            + .btn-area { display:none; }
+            &.unconnected { 
+                .price-consumption-top {
+                    .price { 
+                        .price-txt { display:none; }
+                        i { display:none; }
+                        .unconnected-box { display:inline-block; }
+                    }
+                }
+                .price-consumption-bottom { 
+                    .price-consumption-bottom-right { 
+                        .price {
+                            .price-txt { display:none; }
+                            .unconnected-box { display:inline-block; }
+                        }
+                    }
+                }
+                + .btn-area { display:flex; }
+            }
+        }
+
+        .direct-loan-box { 
+            .direct-loan-box-slide-wrap {
+                width:calc(100% + 3.2rem); margin-left:-1.6rem;
+                .slick-slide { margin-left:1.6rem; margin-right:1.6rem; 
+                    .container-top-roundbox { margin-bottom:1.6rem; }
+                }
+                .slick-dots { text-align:center; margin-top:-0.4rem;
+                    li { display:inline-block; 
+                        button { font-size:0; line-height:0; text-indent:-999999px; width:0.6rem; height:0.6rem; opacity:0.1; background-color:#222222; border-radius:50%; margin:0.4rem 0.4rem 0 0.4rem; }
+                        &.slick-active { 
+                            button { opacity:1; }
+                        }
+                    }
+                }
+            }
+            .box-tit-area { position:relative;
+                .icon-right { position:absolute; top:0rem; right:0rem; }
+            }
+        }
+
+        .accidents-damage-list { margin-top:1.6rem;
+            ul { margin-left:-0.9rem;
+                li { float:left; width:50%; 
+                    .ad-round-box { margin-left:0.9rem; background-color:#f6f8f9; border-radius:1.2rem; padding:1.6rem;
+                        em { margin-top:2.4rem; display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                        strong { margin-top:0.4rem; display:block; font-weight:700; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; } 
+                    }
+                }
+                &:after { display:block; content:""; clear:both; height:0; }
+            }
+        }
+
+        .link-info-list { 
+            ul { align-items:center; margin-top:1.6rem;
+                li { text-align:left; float:left; width:50%; position:relative;
+                    .tit { display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+                    a { display:block; font-size:0; margin-top:0.6rem;                     
+                        .txt { display:inline-block; font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; margin-right:0.4rem; vertical-align:middle;
+                            
+                        }
+                        &.size-info { margin-top:0.2rem;
+                            .txt { 
+                                font-size:2rem; line-height:3rem; letter-spacing:-0.04rem; color:#222222;  }
+                        }
+                    }
+                    
+                    i { display:inline-block; vertical-align:middle; }
+                }
+                .link-info-list-left { 
+                    .link-size-info-area { padding-right:0rem; }
+                }
+                .link-info-list-right { 
+                    .link-size-info-area { }
+                }
+                &:after { display:block; content:""; clear:both; height:0; }
+            }
+        }        
+
+        .membership-mycar-area { display:flex; justify-content:space-between; align-items:center;
+            .membership-mycar-info{ font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; padding-right:1.6rem;
+                strong { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; }
+            }
+            .membership-mycar-img { width:100%; max-width:10rem;
+                img { width:100%; }
+            }
+            + .btn-area { padding:2.4rem 0 0rem; }
+        }
+
+        .thumb-image-area { margin-top:1.6rem;
+            .thumb-image { font-size:0;
+                img { width:100%; }
+            }
+            .thumb-info { margin-top:1.6rem;
+                > .tit { display:block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:700; }
+                > .txt { display:block; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; }
+                > .price { display:block; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; font-weight:700; margin-top:0.4rem; }
+                .box-caselist-area {
+                    > ul { font-size:0;
+                        > li { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2.4rem; letter-spacing:-0.02rem; color:#666; 
+                            span { font-weight:700; font-size:1.4rem; letter-spacing:-0.02rem; color:#666; }
+                            span.color-blue { color:#2589ff; }
+                            + li { margin-left:0.8rem;
+                                &:before { display:inline-block; content:""; width:0.1rem; height:1.2rem; background-color:#ddd; margin-right:0.8rem; }
+                            }
+                        }
+                    }
+                }
+                .purchase-area { margin-top:0.8rem;
+                    .round-txt { display:inline-block; box-sizing:border-box; border:0.1rem solid #222; padding:0.3rem 0.8rem; border-radius:1.2rem; text-align:center;
+                        font-weight:400; font-size:1.2rem; line-height:1.6rem; letter-spacing:-0.02rem; color:#222; vertical-align:middle; margin-right:0.8rem;
+                    }
+                    .txt { display:inline-block; vertical-align:middle; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666;
+                        span { font-weight:700; font-size:1.4rem; letter-spacing:-0.02rem; color:#666; }
+                        span.color-blue { color:#2589ff; }
+                    }
+                }
+            }
+            .btn-area { padding:1.6rem 0 0;
+                button { line-height:4.8rem; 
+                    span { font-weight:500; font-size:1.6rem; text-align:center; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; }
+                }
+            }
+            + .thumb-image-area { margin-top:2.4rem; }
+        }
+
+        .mycar-license-penalties {
+            .box-sub-txt { font-weight:400; margin-top:1.6rem; }            
+            
+            .authentication-info-area { display:none; margin-top:1.6rem;
+                .authentication-list {
+                    ul { font-size:0; 
+                        li { display:flex; justify-content:space-between; align-items:center;
+                            .tit { display:block; font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; text-align:left; }
+                            .txt { display:block; font-weight:700; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222; text-align:right; }
+                        }
+                        li ~ li { margin-top:0.4rem; }
+                    }
+                }
+                .authentication-bottom-list {
+                    ul { font-size:0; 
+                        li { font-size:0; text-align:right;
+                            .tit { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#888; text-align:left; margin-right:0.4rem; }
+                            .txt { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#888; text-align:right; }
+                        }
+                        li ~ li { margin-top:0.4rem; }
+                    }
+                }
+                .authentication-box { margin-top:1.6rem; padding:1.6rem 0; background-color:#f6f8f9; border-radius:1.2rem;
+                    ul { font-size:0; justify-content:space-around; align-items:center; 
+                        li { float:left; width:33.3333333%; position:relative;                            
+                            .tit { display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; text-align:center; }
+                            .txt { font-size:0; text-align:center;
+                                strong { display:inline-block; font-weight:700; font-size:2.4rem; line-height:3.4rem; letter-spacing:-0.04rem; color:#2589ff; }
+                                span { display:inline-block; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#222; }
+                            }
+                            ~ li { 
+                                &:before { position:absolute; left:0; top:50%; transform:translateY(-50%); display:block; content:""; background-color:#eee; width:0.1rem; height:5.4rem;  }
+                            }
+                        }
+                        &:after { display:block; content:""; clear:both; height:0; }
+                        
+                    }
+                }
+                .bottom-txt { margin-top:0.8rem; font-weight:400; font-size:1.2rem; line-height:1.6rem; letter-spacing:-0.02rem; color:#888; }
+                + .btn-area { padding:2.4rem 0 0rem; }
+            }
+    
+            .authentication-box { 
+                ~ .sub-button-box { margin-top:2.4rem; padding-top:2.4rem; border-top:0.1rem solid #eee;
+                    .box-tit-area { 
+                        .box-tit { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; }
+                    }
+                    .box-sub-txt { font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; }
+                    .btn-area { padding:2rem 0 0; }
+                }
+            }
+
+            .box-thumb-icon-area { position:relative; padding-left:7.2rem; min-height:4.8rem;
+                .image-icon { position:absolute; top:1.6rem; left:0; font-size:0; line-height:0;
+                    img { width:100%; }
+                } 
+                .txt { display:block; padding-top:2rem; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666; }
+            }
+
+            &.authentication { 
+                .authentication-info-area {
+                    display:block; 
+                    ~ .btn-area { display:none; }
+                }
+            }
+        }
+
+        
+    
+        .tooltip { margin-top:0.5rem; }
+
+        .estimated-selling-price { 
+            .tooltip { margin-top:0.5rem; }
+        }
+
+        .insurance-accident-history { 
+            .tooltip { margin-top:0.8rem; }        
+        }
+
+        .mycar-insurance { position:relative;
+            .btn-area {  
+                ~ .btn-area { padding:0.8rem 0 0; }
+            }
+            .tooltip { margin-right:2.4rem; }
+        }
+
+        .mycar-periodic-inspection { 
+            .tooltip { margin-right:2.4rem; }
+            .btn-area {
+                ~ .btn-area { padding:0.8rem 0 0; }
+            }
+        }
+        .mycar-recall-target { 
+            &.no-recall { 
+                .roundbox-line-bottom { display:none; 
+                    ~ .btn-area { display:block; }
+                }
+            }
+            .btn-area { display:none; }
+        }
+        
+        .mycar-tire-info { 
+            .tooltip {
+                .image { padding-bottom:1.7rem;
+                    img { width:100%; }
+                }
+            }
+            
+            .action-banner-area { margin-top:1.6rem; display:none; padding-left:0.8rem; padding-right:0.8rem; max-width:29.5rem; margin-left:auto; margin-right:auto;
+                .action-banner-item { background-color:#ffffff; overflow:hidden;
+                    .action-banner-bg { display:block; position:relative; font-size:0; padding:1.2rem; text-align:center;
+                        &::before { display:block; content:""; z-index:0; position:absolute; top:0; left:0; bottom:0; right:0; background-color:#ddebfb; border-radius:1.2rem; }
+                        .action-info { position:relative; z-index:1;
+                            i { display:inline-block; margin-right:0.5rem; }
+                            .txt { display:inline-block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; vertical-align:middle; }                    
+                        }
+                    }
+                }
+                .action-banner-item:nth-child(1) { transform:scale(0.8) translateY(0.8rem);
+                    .action-banner-bg {
+                        &::before { background-color:#ddebfb; }
+                    }
+                }
+                .action-banner-item:nth-child(2) { transform:scale(0.9) translateY(-0.8rem); 
+                    .action-banner-bg {
+                        &::before { background-color:#e6f2ff; }
+                    }
+                }
+                .action-banner-item:nth-child(3) { transform:scale(1) translateY(-1.8rem); 
+                    .action-banner-bg {
+                        &::before { background-color:#f2f8ff; }
+                    }
+                }            
+            }
+            .bottom-tip-area { margin-top:0.8rem; display:none;
+                .tit { display:block; font-weight:700; font-size:2rem; line-height:3rem; letter-spacing:-0.04rem; color:#222222; text-align:center; }
+                .txt { display:block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; text-align:center; margin-top:0.4rem; }
+                + .btn-area { padding:2.4rem 0 0rem; }
+            }
+
+            .tire-information-area { margin-top:1.6rem; display:none;
+                .tire-information { display:flex; justify-content:center; align-items:center; font-size:0;
+                    .tire-add:last-child { margin-top:3.2rem; }
+                    .image { 
+                        img { width:100%; max-width:11.6rem; }
+                    }                    
+                    .tire-add { position:relative; width:8rem; height:8rem;
+                        button { position:absolute; display:block; top:0; width:100%; left:0; bottom:0; background-color:#eeeeee; box-sizing:border-box; border:0.1rem solid #ddd; border-radius:1.2rem; }
+                        .tire-add-data { position:absolute; display:block; top:0; width:100%; left:0; bottom:0; background-color:#777; box-sizing:border-box; border-radius:1.2rem; overflow:hidden;
+                            .tit { background-color:#434343; line-height:2.8rem; padding:0 0.5rem; overflow:hidden; white-space:nowrap; font-weight:400; font-size:1.4rem; letter-spacing:-0.02rem; color:#fff; text-align:center; }
+                            .txt-area { text-align:center; padding:0.1rem 0.5rem 0.5rem 0.5rem;
+                                .txt-num { display:block; font-weight:700; font-size:1.8rem; letter-spacing:-0.04rem; color:#fff; text-align:center; }
+                                .txt-point { display:block; font-weight:400; font-size:1.4rem; letter-spacing:-0.02rem; color:#fff; text-align:center; }
+                            }
+                        }
+                    }
+                    .tire-info {
+                        &.left { padding-right:1rem; }
+                        &.right { padding-left:1rem; }
+                    }
+                }
+
+                .action-banner-item { background-color:#ffffff; overflow:hidden; padding-top:1.6rem;
+                    .action-banner-bg { position:relative; font-size:0; padding:1.2rem 1.8rem; text-align:left; display:flex; justify-content:space-between; align-items:center;
+                        &::before { display:block; content:""; z-index:0; position:absolute; top:0; left:0; bottom:0; right:0; background-color:#2589ff; opacity:0.1; border-radius:1.2rem; }
+                        .action-info { position:relative; z-index:1;
+                            i { display:inline-block; margin-right:0.8rem; }
+                            .txt { display:inline-block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; vertical-align:middle; }                    
+                        }
+                        .number-case { display:inline-block; font-weight:700; font-size:1.6rem; text-align:right; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; vertical-align:middle; margin-right:0.4rem; }
+                    }
+                }
+
+            }
+            .btn-area { display:none; }
+            &.data-true { 
+                .tire-information-area { display:block; 
+                    + .btn-area { display:flex; }
+                }
+                
+            }
+    
+            &.data-false { 
+                .action-banner-area { display:block; }
+                .bottom-tip-area { display:block; 
+                    + .btn-area { display:flex; }
+                }
+            }
+        }
+
+        
+
+
+        .padding-top16 { padding:1.6rem 0 0 0; }
+        .padding-top24 { padding:2.4rem 0 0 0; }    
+    }
+}
+
+.top-menu-mycar-area { background-color:#f6f8f9; position:fixed; top:-4.4rem; left:0; right:0; z-index:999; transition:all .2s ease-in;
+    .tab-underbar-area { 
+        .tab-underbar { margin:0; padding-left:1.6rem;
+            &.type-scroll-x{
+                ul { padding:0 1.6rem 0 0;
+                    li { 
+                        button { word-break:keep-all; white-space:nowrap; }
+                    }
+                }
+            }
+            .button-top-arrow-area { position:absolute; top:0; left:0; 
+                .button-top-arrow { text-align:center; position:relative; width:5.6rem; height:4.7rem;
+                    button { position:absolute; top:50%; transform:translate(-50%,-50%); left:50%; }
+                }
+            }
+        }
+    }
+    &.active { transform:translateY(8.8rem); }
+}
+
+.btn-area button.btn-grayline {
+    background-color:#ffffff; box-shadow:border-box; border:0.1rem solid rgba(221,221,221,1);
+}
+
+.icon20 { display:inline-block; width:2rem; height:2rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align:middle; }
+.icon22 { display:inline-block; width:2.2rem; height:2.2rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align:middle; }
+.icon40 { display:inline-block; width:4rem; height:4rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align:middle; }
+.icon-arrow-right-white { background:url('../images/mycar/icon24-arrow-right-white.svg') no-repeat center/contain; }
+.icon-check-calendar { background:url('../images/mycar/icon-check-calendar.svg') no-repeat center/contain; }
+.icon-emergency-call { background:url('../images/mycar/icon-commphone.svg') no-repeat center/contain; }
+.icon-commicon-commnotice { background:url('../images/mycar/icon-commicon-commnotice.svg') no-repeat center/contain; }
+.icon-notice-yellow { background:url('../images/mycar/icon-notice-yellow.svg') no-repeat center/contain; }
+.icon-notice-blue { background:url('../images/mycar/icon-notice-blue.svg') no-repeat center/contain; }
+.icon-purchase-newcar { background:url('../images/mycar/icon24-purchase-newcar.svg') no-repeat center/contain; }
+.icon-graph-value { background:url('../images/mycar/icon24-graph-value.svg') no-repeat center/contain; }
+.icon-mycar-loan { background:url('../images/mycar/icon56-mycar-loan.svg') no-repeat center/contain; }
+.icon-mycar-collateral { background:url('../images/mycar/icon56-mycar-collateral.svg') no-repeat center/contain; }
+.icon-accidents-damage-my { background:url('../images/mycar/icon32-accidents-damage-my.svg') no-repeat center/contain; }
+.icon-accidents-damage-other { background:url('../images/mycar/icon32-accidents-damage-other.svg') no-repeat center/contain; }
+.icon-calendar-next { background:url('../images/mycar/icon-data-next.svg') no-repeat center/contain; }
+.icon-tire-summer { background:url('../images/mycar/icon40-tire-summer.svg') no-repeat center/contain; }
+.icon-tire-position-change { background:url('../images/mycar/icon40-tire-position-change.svg') no-repeat center/contain; }
+.icon-tire-replacement { background:url('../images/mycar/icon40-tire-replacement.svg') no-repeat center/contain; }
+.icon-recall-dafault { background:url('../images/mycar/icon40-recall-dafault.svg') no-repeat center/contain; }
+.icon-national-taxservice { background:url('../images/mycar/icon40-national-taxservice.svg') no-repeat center/contain; }
+.icon-comm-goback { background:url('../images/mycar/icon24-comm-goback.svg') no-repeat center/contain; }
+.icon-commIcon-add-gray { background:url('../images/mycar/icon24-commIcon-add-gray.svg') no-repeat center/contain; }
+.icon-tire-notice { background:url('../images/mycar/icon-tire-notice.svg') no-repeat center/contain; }
+.icon-mycar-drive-club { background:url('../images/mycar/icon40-mycar-drive-club.svg') no-repeat center/contain; }
+.icon-mycar-crown { background:url('../images/mycar/icon40-mycar-crown.svg') no-repeat center/contain; }
+.icon-calendar-notice { background:url('../images/mycar/icon24-calendar-notice.svg') no-repeat center/contain; }
+.icon-calendar-mileage { background:url('../images/mycar/icon24-calendar-mileage.svg') no-repeat center/contain; }
+.icon-flag-yellow { background:url('../images/mycar/icon-flag-yellow.svg') no-repeat center/contain; }
+.icon-comm-notice { background:url('../images/mycar/icon-comm-notice.svg') no-repeat center/contain; }
+.icon-garage-popular-color { background:url('../images/mycar/icon-garage-popular-color.svg') no-repeat center/contain; }
+.icon-garage-popular-mileage { background:url('../images/mycar/icon-garage-popular-mileage.svg') no-repeat center/contain; }
+.icon-garage-popular-sell { background:url('../images/mycar/icon-garage-popular-sell.svg') no-repeat center/contain; }
+.icon56-asset-demerit-laws { background:url('../images/mycar/icon56-asset-demerit-laws.svg') no-repeat center/contain; }
+.icon56-asset-demerit-mileage { background:url('../images/mycar/icon56-asset-demerit-mileage.svg') no-repeat center/contain; }
+
+
+.background-image-calendar { background:url('../images/mycar/background-date.svg') no-repeat center/contain; }
+
+.bgcolor-1d4783 { background-color:#1d4783; }
+.bgcolor-5c70ff { background-color:#5c70ff; }
+.bgcolor-5adcff { background-color:#5adcff; }
+.bgcolor-f6cb0a { background-color:#f6cb0a; }
+.bgcolor-39bdaf { background-color:#39bdaf; }
+.bgcolor-3981ff { background-color:#3981ff; }
+.bgcolor-1abcc4 { background-color:#1abcc4; }
+
+.bgcolor-434c53 { background-color:#434c53; }
+.bgcolor-44a5b7 { background-color:#44a5b7; }
+.bgcolor-003964 { background-color:#003964; }
+

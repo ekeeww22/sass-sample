@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.CMYMCP256 { 
+    .tab-contents-wrap {
+        .tab-contents {
+            .tab-content {
+                .data-list {padding:3.2rem 0 0;
+                    > ul {
+                        li {
+                            .info { display:inline-block;
+                                > li { position:relative; display:inline-block; margin-top:0; vertical-align:middle;
+                                    + li { margin-left:0.8rem;
+                                        .txt { margin-left:0.9rem; }
+                                        &:before { content:""; position:absolute; top:50%; left:0; width:1px; height:1.2rem; background-color:#ddd; transform:translateY(-50%); }
+                                    }
+                                    .txt { max-width:none; }
+                                }                                
+                            }
+                        }
+                    }
+                }
+                .date {
+                    + .detail-box { margin-top:2.4rem; }
+                }
+                .detail-box { margin-top:0;
+                    .data-list { padding:0; }
+                }
+            }
+        }
+    }
+}

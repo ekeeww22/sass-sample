@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.CMYMCP171 {    
+    .top-breadcrumbs-area { padding-bottom:3.2rem; }
+    .inp-box.type-search { 
+        input::placeholder { color:#888; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; }
+    }
+    .contents-title-100 { margin-bottom:0.8rem; }
+    .sticky-box { position:sticky; top:4.4rem; left:0; margin:0 -1.6rem; padding:2.4rem 1.6rem 0; background:#fff; z-index:1;
+        .tab-underbar { margin-top:2.4rem; }
+        & + .choice-wrap { margin-top:3.2rem; }
+    }
+    .btn-floating { position:fixed; right:1.6rem; bottom:8.8rem; width:5.6rem; height:5.6rem; border-radius:50%; background:#fff; box-shadow:0 0.6rem 1.2rem rgba(0,0,0,0.08); z-index:10;
+        .num { position:absolute; top:0; right:-0.2rem; padding:0 0.4rem; min-width:1.6rem;
+            @include dock-bar-100;
+            @include primary-color-100;
+            border-radius:0.8rem;
+        }
+    }
+    .bottom-fixed + .bottom-space { height:12.4rem; }
+    .form-link { position:relative; display:flex; justify-content:space-between; align-items:center; width:100%; padding:1.2rem 1.6rem;
+        .form-link-left { display:flex; align-items:center; 
+            em { font-size:1.6rem; letter-spacing:-0.04rem; color:#222; font-weight:500; }
+            span { display:inline-block; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; font-weight:500; }
+            .keyword { color:#2589ff; }
+        }
+        .form-link-right { 
+            span { display:inline-block; font-size:1.6rem; text-align:right; line-height:2.4rem; letter-spacing:-0.04rem; color:#888; font-weight:500; vertical-align:middle; }
+        }
+    }
+}

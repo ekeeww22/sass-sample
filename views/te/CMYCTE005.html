@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>카테고리별 지출 내역</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>4월 주유/충전</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content te">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE005">
+					<div class="part top">
+						<div class="part-tit-wrap">
+							<dl>
+								<dt>
+									<span>총 금액</span>
+								</dt>
+								<dd>
+									<span>250,000원</span>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="part info">
+						<div class="info-filter">
+							<p class="total">총 <span>32</span>건</p>
+							<ul class="filter">
+								<li>
+									<button type="button" class="active"><!-- 활성화시 'active' 클래스 추가 -->
+										<span>최신순</span>
+									</button>
+								</li>
+								<li>
+									<button type="button">
+										<span>과거순</span><!-- 2021-08-02 문구 수정 -->
+										<!-- <i class="icon-arrow-top"></i> --><!-- 2021-08-02 마크업 삭제 -->
+									</button>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="info-content">
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">15 (목)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS 칼텍스</span>
+											<span class="price">60,000원</span>
+										</a>
+									</li>
+									<li class="not"><!-- 2021-07-21 지출합계에 미포함일 경우 'not' 클래스 추가 -->
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS 칼텍스</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">50,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- 
+								카테고리별 이미지
+								할부 --- <img src="/images/icon/icon-lease.svg" alt="할부">
+								정비/수리 --- <img src="/images/icon/icon-maintain.svg" alt="정비/수리">
+								주유/충전 --- <img src="/images/icon/icon-gasbill.svg" alt="주유/충전">
+								통행료 --- <img src="/images/icon/icon-tollgate.svg" alt="통행료">
+								주차 --- <img src="/images/icon/icon-parking.svg" alt="주차">
+								세차 --- <img src="/images/icon/icon-carwash.svg" alt="세차">
+								대리운전 --- <img src="/images/icon/icon-chauffeur.svg" alt="대리운전">
+								보험 --- <img src="/images/icon/icon-insure.svg" alt="자동차 보험">
+								유지비 기타 --- <img src="/images/icon/icon-other.svg" alt="유지비 기타">
+							 -->
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">14 (수)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS 칼텍스</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">30,000원</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS 칼텍스</span>
+											<ul class="info">
+												<li>일시불</li>
+												<li class="cancel">승인취소</li><!-- 승인취소시 클래스 'cancel' 추가 -->
+											</ul>
+											<span class="price cancel">50,000원</span><!-- 승인취소시 클래스 'cancel' 추가 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS 칼텍스</span>
+											<ul class="info">
+												<li>일시불</li>
+												<li>정정</li>
+											</ul>
+											<span class="price">50,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 2021-08-02 마크업 수정 -->
+						<!-- 과거순으로 정렬 -->
+						<div class="info-content" style="display:none;">
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">15 (목)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">S-OIL 오토테크주유소</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">100,000원</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS칼텍스 서초꽃마을주</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">50,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">16 (금)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS칼텍스 삼방주유소</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">40,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">17 (토)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+											<span class="tit">GS칼텍스 삼방주유소</span>
+											<ul class="info">
+												<li>일시불</li>
+											</ul>
+											<span class="price">30,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- // 과거순으로 정렬 -->
+						<!-- // 2021-08-02 마크업 수정 -->
+					</div>
+
+					<!-- 내역 없을경우 -->
+					<!-- <div class="result-box">
+						<i class="icon48 icon-nodata"></i>
+						<p class="txt">
+							내역이 없어요
+						</p>
+					</div> -->
+					<!-- // 내역 없을경우 -->
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+		<div class="nav-bar-wrap">
+
+		</div>
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path fill="#E177B6" d="M40 20c0 11.046-8.955 20-20 20C8.954 40 0 31.046 0 20 0 8.955 8.954 0 20 0c11.045 0 20 8.955 20 20" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000)"/>
+                        <g stroke="#FFF" stroke-width="1.5">
+                            <path d="M1.67 11.6V0h14.499c1.602 0 2.9 1.298 2.9 2.9v5.22" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000) translate(9.000000, 9.000000)"/>
+                            <path stroke-linecap="round" d="M20.61 19.52c-.304.82-1.071 1.216-2.069 1.442-.23.051-.466.077-.704.077H2.9c-1.6 0-2.9-1.173-2.9-2.622 0-.214.03-.428.087-.636l1.71-6.182h15" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000) translate(9.000000, 9.000000)"/>
+                            <path stroke-linecap="square" d="M23 22.385L20.448 19.7" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000) translate(9.000000, 9.000000)"/>
+                            <path d="M14.048 12.959c-1.812 1.812-1.812 4.75 0 6.562 1.811 1.812 4.75 1.812 6.562 0 1.811-1.812 1.811-4.75 0-6.562-1.812-1.812-4.75-1.812-6.562 0z" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000) translate(9.000000, 9.000000)"/>
+                        </g>
+                        <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2">
+                            <path d="M1.434 0L2.599 4.049 3.963.022 5.32 4.049 6.485 0M0 1.316L1.441 1.316M8 1.316L6.482 1.316" transform="translate(-16.000000, -531.000000) translate(0.000000, 439.000000) translate(0.000000, 72.000000) translate(16.000000, 20.000000) translate(15.500000, 12.500000)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

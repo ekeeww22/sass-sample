@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*search-period*/  
+.search-period{
+
+    .search-section + .search-section{margin-top:3.2rem;}
+
+    .date-search-wrap{margin-top:0.8rem;}
+
+    .tit{
+        @include body-210;
+        margin:0 0 0.8rem 0;
+    }
+}

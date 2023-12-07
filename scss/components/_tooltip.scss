@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 툴팁 */
+.tooltip-wrap{
+    position:relative;
+}
+
+.tooltip{
+    display:none;
+    position:absolute;
+    padding:2.4rem 4.8rem 2.4rem 2.4rem;
+    border:1px solid #ddd;
+    border-radius:1.2rem;
+    background:#fff;
+    box-shadow:0 0.3rem 0.6rem rgba(0,0,0,0.04);
+    z-index:10;
+    .tit{
+        @include body-200;
+        @include font-color-black-100;
+        & + .txt{
+            margin-top:0.8rem;
+        }
+        & + .bullet-list{
+            margin-top:0.8rem;
+        }
+    }
+    .txt{
+        @include body-210;
+        & + .tit{
+            margin-top:1.6rem;
+        }
+    }
+    .icon-close{
+        position:absolute;
+        top:1.6rem;
+        right:0.8rem;
+    }
+    &.active{
+        display:block;
+    }
+}
+
+.btn-tooltip{
+    span{
+        @include body-120;
+        display:inline-block;
+        vertical-align:middle;
+        & + .icon-tooltip{
+            margin-left:0.4rem;
+        }
+    }
+    .icon-tooltip{
+        vertical-align:middle;
+    }
+}

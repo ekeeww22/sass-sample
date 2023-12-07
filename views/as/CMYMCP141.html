@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>기관별 정기전송 여부 설정</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP141">
+                    <!-- 2021-06-28 마크업 추가 -->
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="end"><span>2</span></li>
+							<li class="active"><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+					<!-- // 2021-06-28 마크업 추가 -->
+                    
+					<h3 class="contents-title-100">
+						연결 기관별 정기전송 여부를<br>
+						설정해주세요.
+					</h3>
+                    <div class="tooltip-wrap">
+                        <button type="button" class="btn-tooltip" data-target="tooltip-1"><span>전송방식 안내</span><i class="icon16 icon-tooltip">툴팁</i></button>
+                        <div class="tooltip" data-module="tooltip" data-name="tooltip-1">
+                            <h4 class="tit">정기적 전송</h4>
+                            <p class="txt">사용자가 설정한 전송 주기에 맞춰 개인(신용)정보를 정기적으로 자동 업데이트합니다.</p>
+                            <h4 class="tit">비정기적 전송</h4>
+                            <p class="txt">사용자의 요청(연동 버튼 터치 등)이 있을 때만 개인(신용)정보를 수동 업데이트합니다.</p>
+                            <button class="icon16 icon-close">닫기</button>
+                        </div>
+                    </div>
+
+					<!-- 설정전 -->
+					<ul class="link-list">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB국민은행</span>
+                                <span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB증권</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB국민카드</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB손해보험</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">IBK기업은행</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">SC제일은행</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">DB금융투자</span>
+								<span class="txt">설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+                    </ul>
+					<!-- // 설정전 -->
+
+					<!-- 설정후 -->
+					<!-- <ul class="link-list">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB국민은행</span>
+                                <span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB증권</span>
+								<span class="txt">비정기적 설정</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB국민카드</span>
+								<span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">KB손해보험</span>
+								<span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">IBK기업은행</span>
+								<span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">SC제일은행</span>
+								<span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+						<li>
+                            <a href="javascript:;">
+                                <i class="icon24"><img src="/images/bank/bank-sample.svg" alt="샘플이미지"></i>
+                                <span class="tit">DB금융투자</span>
+								<span class="txt">정기적 전송(주1회)</span>
+                                <i class="icon16 icon-arrow-right-gray"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+					<!-- // 설정후 -->
+					
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow" disabled><span>전송요구</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

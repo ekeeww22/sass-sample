@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.CMYMGA103{
+    .contents-title-300{
+        margin-bottom:1.6rem;
+    }
+    .bg-gray-info{
+        position:relative;
+        padding:1.6rem;
+        min-height:8.8rem;
+        border-radius:1.2rem;
+        @include bg-color-gray-200;
+        .icon{
+            position:absolute;
+            top:1.6rem;
+            left:1.6rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:5.6rem;
+            height:5.6rem;
+            border-radius:50%;
+            background:#fff;
+        }
+        .txt{
+            padding-left:7.2rem;
+            @include body-210;
+        }
+    }
+    .inp-list-wrap{
+        margin-top:3.2rem;
+    }
+}

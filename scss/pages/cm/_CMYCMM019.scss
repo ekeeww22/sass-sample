@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.CMYCMM019{
+    .certificate-list{
+        margin-top:3.2rem;
+    }
+    .tac{
+        margin-top:3.2rem;
+    }
+    .result-box{
+        position:fixed;
+        top:50%;
+        left:0;
+        width:100%;
+        transform:translateY(-50%)
+    }
+}

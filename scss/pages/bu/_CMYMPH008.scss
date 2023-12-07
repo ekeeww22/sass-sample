@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.CMYMPH008{
+
+    .service-chat-wrap{
+        margin-top:2.4rem;
+    
+        li{
+            & + li{margin-top:3.2rem;}
+            &.user + .user,
+            &.operator + .operator{margin-top:0.8rem;}
+    
+            position:relative;
+            display:flex;
+            justify-content: flex-start;
+            padding:0 0 0 5.6rem;
+            min-height:4rem;
+
+            opacity:0;
+            transition:all 0.2s cubic-bezier(0.65, 0.05, 0.36, .5) ;
+
+            .icon{
+                position:absolute; top:0; left:0;
+                display:inline-block; width:4rem; height:4rem; background:url("../images/bu/img-user.svg") no-repeat center/contain;
+            }
+    
+            .balloon{
+                position:relative;
+                padding:1.2rem;
+                border-radius:2rem;
+                background:#fff;
+                @include body-210;
+                color:#222;
+                &:after{
+                    position:absolute;top:1.6rem; left:-0.8rem;
+                    content:'';display:block;width:1.2rem;height:0.9rem;background:url("../images/icon/balloon-left-bg-white.svg") no-repeat center/contain;
+                }
+    
+                strong{display:block; margin-bottom:0.4rem; font-weight:700;}
+                em{color:#ffcc00; font-weight:700;}
+                .underline-mark{@include body-210; color:#222; font-weight:700;}
+            }
+    
+            &.operator{
+                justify-content: flex-end; padding:0 5.6rem 0 0 ;
+                .icon{left:unset; right:0; background:url("../images/bu/img-operator.svg") no-repeat center/contain;}
+                .balloon{
+                    background:#434c53;
+                    @include body-210;
+                    color:#fff;
+                    &:after{
+                        left:unset; right:-0.8rem;
+                        background:url("../images/icon/balloon-right-bg-dark.svg") no-repeat center/contain
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-area{
+        flex-wrap:wrap; padding:2.4rem 0 0;
+
+        &.bottom-fixed{background-image: unset;}
+
+        .btn-yellow{margin:0 1.6rem;}
+        .tac{
+            display:block; padding:3.2rem 0; width:100%; background:#f6f8f9; 
+            .btn-txt{display: inline-block;padding: 0;line-height: 2.4rem;width: auto;text-align: center;}
+        }
+    }
+    .bottom-space{height:17rem;}
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>내차구매</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>정보확인</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH106">
+
+                    <!-- 2021-06-25 퍼블수정 : 마크업 삭제
+                    <p class="body-120">
+                        차차차 내한도알기 한도 조회를 위한 약관에 동의 해주세요. 한도 조회를 위한 신용 조회는 고객님의 신용도에 영향을 주지 않습니다.
+                    </p>
+                    -->
+
+                    <h3 class="contents-title-300">고객정보</h3>
+
+                    <!-- 에러일 경우 .type-select에 클래스명 [.error] 추가시 오류메세지 노출 -->
+                    <div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-basic default">
+                                    <label for="" class="inp-tit">이름</label>
+                                    <input type="text" value="차국민" readonly> <!-- 2021-07-07 퍼블수정 : 밸류,리드온리 추가 -->
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                            <li>
+                                <div class="inp-box type-mix default"> <!-- 에러일 경우 클래스명 [.error] 추가시 오류메세지 노출 -->
+                                    <label for="" class="inp-tit">주민등록번호</label>
+                                    <input type="number" maxlength="6" value="841213" readonly> <!-- 2021-07-07 퍼블수정 : 밸류,리드온리 추가 -->
+                                    <span class="hypen">-</span>
+                                    <input type="number" class="inp-num active" maxlength="1" value="1" readonly> <!-- 2021-07-07 퍼블수정 : 밸류,리드온리 추가 -->
+                                </div>
+                                <p class="txt-error">오류메세지</p>
+                            </li>
+                            <li>
+                                <p class="label">운전면허증</p>
+                                <div class="form-box">
+                                    <span class="radio-box">
+                                        <input type="radio" name="radio1" id="radio1-1" disabled> <!-- 2021-07-07 퍼블수정 : disabled 추가 -->
+                                        <label for="radio1-1">미소지</label>
+                                    </span>
+                                    <span class="radio-box">
+                                        <input type="radio" name="radio1" id="radio1-2" checked="" disabled> <!-- 2021-07-07 퍼블수정 : disabled 추가 -->
+                                        <label for="radio1-2">소지</label>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+                    <div class="bottom-space"></div>
+				</div>
+
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

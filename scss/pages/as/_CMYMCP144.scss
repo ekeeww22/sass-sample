@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.CMYMCP144{
+    .contents-title-300{
+        margin-top:3.2rem;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    .select-box{
+        margin-top:1.6rem;
+    }
+    .table-wrap{
+        margin-top:1.6rem;
+    }
+}

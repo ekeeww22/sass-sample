@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.CMYMCP302 { 
+    .top-account-wrap{
+        padding-bottom:1.6rem;
+        .account-data{
+            margin-top:0.8rem;
+            padding-bottom:4.8rem;
+            .btn-detail{
+                top:auto;
+                bottom:0;
+                left:0;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                width:100%;
+                height:4rem;
+                span{
+                    @include body-210;
+                    &.open-txt{
+                        display:none;
+                    }
+                    & + .icon16{
+                        margin-left:0.4rem;
+                    }
+                }
+                &.active{
+                    transform:none;
+                    span{
+                        display:none;
+                        &.open-txt{
+                            display:block;
+                        }
+                    }
+                    .icon16{
+                        transform:rotate(180deg);
+                    }
+                }
+            }
+            .detail-contents{
+                .table-wrap{
+                    margin-top:1.6rem;
+                    & + .btn-wrap{
+                       margin-top:1.6rem; 
+                    }
+                }
+                &.active{
+                    margin-top:2.4rem;
+                }
+            }
+        }
+    }
+    .property-list{
+        margin-top:3.2rem;
+    }
+}
+

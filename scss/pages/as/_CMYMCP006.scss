@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.CMYMCP006 {
+    .assets-top { text-align:right; border-bottom:0.1rem solid rgba(238,238,238,1); padding-bottom:1.6rem;
+        &:after { display:block; content:""; clear:both; height:0; }
+        .tit { display:inline-block; float:left; line-height:2.4rem; color:#222; font-size:1.6rem; font-weight:700; letter-spacing:-0.04rem; }
+        .price { display:inline-block; line-height:2.6rem; color:#222; font-size:1.8rem; font-weight:700; letter-spacing:-0.04rem; }
+    }
+    .assets-list-wrap {
+        .assets-list { padding-top:0.8rem;
+            li { text-align:right; padding:1.082rem 0;
+                &:after { display:block; content:""; clear:both; height:0; }
+                .tit { display:inline-block; float:left; line-height:2.4rem; vertical-align:middle;
+                    label { color:#222; font-size:1.6rem; font-weight:700; letter-spacing:-0.04rem; 
+                        .txt { color:#222; font-weight:500; font-size:1.6rem; }
+                    }
+                }                
+                .price { display:inline-block; line-height:2.4rem; color:#222; font-size:1.6rem; font-weight:700; letter-spacing:-0.02rem; }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.CMYMPH006{
+
+    .total-assets{
+        display:flex; justify-content:space-between; align-items: center; margin:1.6rem 0 0.8rem; padding:1.6rem 0; border-bottom:1px solid #eee;
+        dt{
+            @include body-100; font-size:0;
+            span{vertical-align:middle; @include body-100; display:inline-block;}
+            b{margin-left:0.8rem; vertical-align:middle; @include body-100; @include option-color-blue-100; display:inline-block; }
+        }
+        dd{@include contents-title-300;}
+    }
+    
+    .accordion-container{padding-bottom:3.2rem;}
+
+    .budget-modify-wrap{
+        position:fixed;
+        bottom:9.6rem;
+        left:1.6rem;
+        width:calc(100% - 3.2rem);
+    }
+
+    .bottom-fixed + .bottom-space{
+        height:14.4rem;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI GUIDE</title>
+
+    <script src="../js/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../js/uicomponent.js"></script>
+
+    <script>
+        $(document).ready(function(e){
+            UIComponent.base.reset();
+        });
+    </script>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/component.css">
+
+    <style>
+        .comp-list > li{margin:15px; padding:10px 0; border:3px solid gray;}
+        h3{padding:10px 0;font-size:30px; font-weight:700; background:#eee;}
+    </style>
+
+</head>
+<body>
+    <ul class="comp-list">
+        <li>
+            <button class="icon16 close">삭제</button>
+            <button class="btn-rectangle">인증요청</button>
+        </li>
+        <li>
+            <select name="" id="" class="inline-select large">
+                <option value="">선택하세요</option>
+                <option value="">선택하세요</option>
+                <option value="">선택하세요</option>
+            </select>
+            <select name="" id="" class="inline-select">
+                <option value="">전체</option>
+                <option value="">선택</option>
+                <option value="">선택</option>
+            </select>
+        </li>
+        <li>
+            <h3>type-basic</h3>
+
+            <!-- 해당 input태그의 포커싱 상태에 따라 .inp-box에 클래스명 [.default / .focus / .filled / .disabled / .error ]이 추가되어야 함 -->
+            <div class="inp-list-wrap">
+                <ul>
+                    <li>
+                        <div class="inp-box type-basic default">
+                            <label for="" class="inp-tit">Field default</label>
+                            <input type="text" id="test1">
+                            <button class="icon16 close">삭제</button>
+                        </div>
+                        <p class="txt-error">오류메세지</p>
+                    </li>
+                    <li>
+                        <div class="select-box type-select default">
+                            <label for="" class="inp-tit">Select default</label>
+                            <select name="" id="">
+                                <option value=""></option>
+                                <option value="11">11</option>
+                                <option value="22">22</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+    </ul>
+</body>
+</html>

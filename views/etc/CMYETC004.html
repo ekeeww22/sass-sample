@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>인증서 관리</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>공동인증서 관리</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content etc">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYETC004">
+					<h3 class="body-120"><!-- 2021-07-09 클래스 수정 -->
+						PC에 생성된 인증번호 12자리를
+						입력하세요.
+					</h3>
+
+					<div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-mix default">
+                                    <label for="" class="inp-tit">인증번호</label>
+                                    <input type="number" maxlength="4">
+                                    <span class="hypen">-</span>
+                                    <input type="number" maxlength="4">
+									<span class="hypen">-</span>
+                                    <input type="number" maxlength="4">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="step-info">
+						<h4 class="body-100">PC에서 가져오기</h4>
+						<div class="img-box">
+							<img src="/images/cm/img-certificate.png" alt="PC에서 가져오기"/>
+						</div>
+						<ul>
+							<li>
+								<span class="num">1</span>
+								PC에서 KB차차차(https://www.kbchachacha.com/)에 접속
+							</li>
+							<li>
+								<span class="num">2</span>
+								홈페이지 공동인증서 관리 페이지에서 공동인증서 내보내기 버튼 클릭
+							</li>
+							<li>
+								<span class="num">3</span>
+								스마트폰으로 가져올 인증서 선택 후 인증번호 입력
+							</li>
+							<li>
+								<span class="num">4</span>
+								인증서 보내기 팝업창에 표시된 인증번호를 스마트폰에 입력 후 [공동인증서 가져오기] 버튼 클릭
+							</li>
+						</ul>
+					</div>
+
+					<div class="btn-area bottom-fixed">
+                        <button class="btn-yellow"><span>공동인증서 가져오기</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

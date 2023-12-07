@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* 구분파트 */
+dl.part-list{
+    margin-top:3.2rem;
+    & > dt{
+        position:relative;
+        .tit{display:inline-block; @include contents-title-300;}
+        .btn-txt{position:absolute; top:50%; right:0; transform:translateY(-50%);}
+        .form-switch{position:absolute; top:50%; right:0; transform:translateY(-50%);}
+
+    }
+    & > dd{
+        margin-top:1.6rem;
+        > .txt{@include body-110;}
+        .txt-gray{
+            @include body-120;
+            & + .txt-gray{margin-top:0.4rem;}
+        }
+    }
+}

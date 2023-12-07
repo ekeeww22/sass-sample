@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height">
+    <title>UI GUIDE</title>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/guide.js"></script>
+    <link type="text/css" href="./css/font.css" rel="stylesheet">
+    <link type="text/css" href="./css/reset.css" rel="stylesheet">
+    <link type="text/css" href="./css/index.css" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            UI_GUIDE.GNB.init();
+            setTimeout(function(){
+                $("#pages").click();
+            },100);
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="title">
+                <h2 style="cursor: pointer;">&lt; UI GUIDE &gt;</h2>
+            </div>
+            <button type="button" class="btn-allmenu">메뉴보기</button>
+        </div>
+        <div class="GNB">
+            <ul>
+                <li id="styleGuide"><button type="button" class="btn-menu">Style Guide</button></li>
+                <li id="component"><button type="button" class="btn-menu">Components</button></li>
+                <li id="template"><button type="button" class="btn-menu">Templates</button></li>
+                <li id="pages"><button type="button" class="btn-menu">Pages</button></li>
+            </ul>
+            <button type="button" class="btn-allmenu-close">메뉴닫기</button>
+        </div>
+        <div class="container">
+            <div class="contents">
+                <iframe></iframe>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

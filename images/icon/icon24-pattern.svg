@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="r3crtyhpna" d="M0 0H24V24H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-32.000000, -719.000000) translate(16.000000, 703.000000) translate(16.000000, 16.000000)">
+                    <mask id="h5qf0mqb5b" fill="#fff">
+                        <use xlink:href="#r3crtyhpna"/>
+                    </mask>
+                    <g mask="url(#h5qf0mqb5b)">
+                        <g transform="translate(3.500000, 3.500000)">
+                            <path fill="#222" d="M2 .5H16V2.5H2zM2 14.5H9V16.5H2z"/>
+                            <path fill="#222" d="M-2.172 7.672H19.828V9.672H-2.172z" transform="translate(8.828427, 8.671573) rotate(-45.000000) translate(-8.828427, -8.671573)"/>
+                            <circle cx="2" cy="1.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                            <circle cx="8.5" cy="1.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                            <circle cx="15" cy="1.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                            <circle cx="8.5" cy="8.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                            <circle cx="1.5" cy="15.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                            <circle cx="8.5" cy="15.5" r="1.5" fill="#FFF" stroke="#222" stroke-width="1.5"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

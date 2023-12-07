@@ -1,0 +1,30 @@
+.toast{
+    position:fixed;
+    &.message{
+        width:100%;
+        height:auto;
+        left:0;
+        bottom:0;
+        padding:2.4rem 1.6rem 1.6rem;
+        opacity: 0;
+        z-index: 6000;
+        span{ 
+            display:block;
+            width:100%;
+            padding:1.4rem 1.6rem;
+            background:rgba(34,34,34,0.7);
+            border-radius: 1.2rem;
+
+            @include caption-100;
+            text-align: center;
+            color: #fff;
+        }
+        @include allTransition;
+    }
+    &.show{
+        opacity: 1;
+    }
+    &.hide{
+        opacity: 0;
+    }
+}

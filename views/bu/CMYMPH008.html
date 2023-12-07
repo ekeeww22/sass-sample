@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/lib/anime/anime.min.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-all-gray">
+
+		<!-- content-header -->
+		<div class="content-header ">
+			<button type="button" class="btn-history-back">뒤로</button>
+            <h2>내차구매 시뮬레이션</h2> <!-- 2021-07-22 퍼블수정 : 문구수정 -->
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH008">
+					
+					<div class="service-chat-wrap">
+						<ul>
+							<li class="user">
+								<i class="icon"></i>
+								<div class="balloon">
+									내차구매 시뮬레이션이 뭐지?
+								</div>
+							</li>
+
+							<li class="operator">
+								<i class="icon"></i>
+								<div class="balloon">
+									<strong>내차구매 시뮬레이션이란?</strong>
+									내가 갖고 싶은 차를 <br>
+									‘내차구매 시뮬레이션’ 을 통해 <br>
+									<em>내 예산에 맞게 구매할 수 있는 방법</em>을 <br>
+									조회할 수 있어요.
+								</div>
+							</li>
+
+							<li class="operator">
+								<i class="icon"></i>
+								<div class="balloon">
+									<!-- 2021-07-22 퍼블수정 : 문구수정-->
+									<strong><span class="tag-round bg-yellow">Tip</span> 예산이 부족해도 걱정하지 마세요!</strong>
+									부족한 예산은 차차차 내한도알기를 통해 <br>
+									조회할 수 있어요.
+								</div>
+							</li>
+
+							<li class="user">
+								<i class="icon"></i>
+								<div class="balloon"><!-- 2021-07-22 퍼블수정 : 문구수정 -->
+									내가 갖고 있는 <br>
+									<b class="underline-mark">보유 예산,내차 판매예상 금액,</b> <br>
+									<b class="underline-mark">차차차 내한도알기</b>로 <br>
+									자동으로 진행되는구나!<br>
+								</div>
+							</li>
+
+							<!-- 2021-07-22 퍼블수정 : 위치변경(전) -->
+							<!--// 2021-07-22 퍼블수정 : 위치변경(전) -->
+
+							<li class="operator">
+								<i class="icon"></i>
+								<div class="balloon">
+									고객님 예산 맞춤 구매 시뮬레이션을 <br>
+									준비했습니다.
+								</div>
+							</li>
+
+							<!-- 2021-07-22 퍼블수정 : 위치변경(후) -->
+							<li class="user">
+								<i class="icon"></i>
+								<div class="balloon"> <!-- 2021-07-22 퍼블수정 : 문구수정 -->
+									내 예산으로는 벤츠 신차 구매는 어렵고<br>
+									중고차 구매는 가능하네!
+								</div>
+							</li>
+
+							<li class="user">
+								<i class="icon"></i>
+								<div class="balloon">
+									내 예산으로 신차 같은 중고차를 <br>
+									살 수 있다니! 
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>예산과 차량 한 번에 연결하기</span></button>
+						<div class="tac">
+							<button type="button" class="btn-txt">차량만 연결</button>
+						</div>
+                    </div>
+					<div class="bottom-space"></div>
+
+				</div>
+				<!-- // section, 화면ID -->
+
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+	<script>
+		$(document).ready(function(){
+			//$(".service-chat-wrap>ul>li").css("opacity",0);
+			//$(".service-chat-wrap>ul>li").css("transition","all cubic-bezier(0.65, 0.05, 0.36, .5) .2s");
+			
+			let cnt = 0;
+			const scrollElement = window.document.scrollingElement || window.document.body || window.document.documentElement;
+			let interval = setInterval(function(){
+				let _target = $(".service-chat-wrap>ul>li").eq(cnt);
+				_target.css("opacity",1);
+				cnt++;
+
+				if( $(".service-chat-wrap>ul>li").length == cnt ){
+					clearInterval(interval);
+				}
+
+				let _t = window.innerHeight - 280;
+				
+				if( _target.offset().top > _t ){
+					let _ty = _target.offset().top - _t;
+					anime({
+						targets: scrollElement,
+						scrollTop: _ty,
+						duration: 300,
+						easing: 'easeOutQuad'
+					});
+				}
+			},1000)
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.CMYMCP257 { 
+    .data-list {
+        ~ .data-list {
+            margin-top:2.4rem; padding-top:2.4rem;
+            border-top:0.1rem solid #eee;
+        }
+
+        em,span,.round-txt-wrap{vertical-align:middle;}
+        .tit em{display:inline-block;}
+    }
+
+    .round-txt-wrap{margin-left:0.8rem;}
+}

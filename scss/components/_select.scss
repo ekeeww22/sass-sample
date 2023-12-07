@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* 셀렉트-인라인-폼 */
+.inline-select{
+    padding-right:20px; outline:0; border:0; appearance:none;-webkit-appearance:none;
+    @include body-110;
+    background:url("../images/icon/icon-arrow-bottom-dark.svg") no-repeat right center;
+
+    &.large{
+        @include header-title-100;
+    }
+}
+

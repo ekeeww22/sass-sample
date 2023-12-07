@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.CMYMCP341{ 
+    .bg-gray{
+        margin-top:3.2rem;
+        padding:1.6rem;
+        text-align:center;
+        border-radius:1.2rem;
+        @include bg-color-gray-200;
+        .body-120{
+            b{
+                color:#2589ff;
+            }
+        }
+    }
+    .accordion-list-wrap{
+        margin-top:3.2rem;
+    }
+}

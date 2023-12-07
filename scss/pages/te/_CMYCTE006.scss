@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.CMYCTE006{
+    .modal-header{
+        height:13rem;
+        padding-bottom:5.8rem;
+        &:after{
+            content:'';
+            display:block;
+            position:absolute;
+            left:1.6rem;
+            bottom:0;
+            width:calc(100% - 3.2rem);
+            height:1px;
+            background:#eee;
+        }
+    }
+    .modal-body{
+        padding-top:13rem;
+    }
+    .info-filter{
+        position:absolute;
+        top:7.2rem;
+        left:0;
+        padding:1.6rem;
+        width:100%;
+        .total{
+            margin-top:0.1rem;
+            @include body-100;
+        }
+        & + .info-content{
+            margin-top:0;
+        }
+    }
+    .info-content{
+        .info-box{
+            margin:0 -1.6rem;
+            padding:2.4rem 1.6rem 0;
+            max-height:28.4rem;
+            overflow:hidden;
+            overflow-y:auto;
+            .info-top{
+                margin-bottom:2.4rem;
+                padding-bottom:0;
+                border-bottom:none;
+                .date{
+                    @include body-210;
+                }
+                .price{
+                    display:inline-flex;
+                    align-items:center;
+                    @include body-100;
+                    .form-switch{
+                        margin-left:0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

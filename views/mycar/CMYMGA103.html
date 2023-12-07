@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 내차캘린더 &gt; 정비주기 &gt; 정비주기 변경</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>정비주기 변경</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA103">
+					<!-- 에어컨필터 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">에어컨필터</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-heaterairfilter.svg" alt="에어컨필터 아이콘"></span>
+							<p class="txt">실내로 들어오는 공기의 이물질을 걸러주는 역할을 합니다. 에어컨 또는 히터 가동 시 불쾌한 냄새가 난다면 교체하는 것이 좋습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 에어컨필터 -->
+
+					<!-- 타이어 위치 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">타이어 위치</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-airconditioningeva.svg" alt="타이어 위치 아이콘"></span>
+							<p class="txt">타이어의 마모 상태를 균등하게 유지하기 위해 주기적인 타이어 위치 교환이 필요합니다. 일반적인 자동차의 무게 중심은 주요 부품이 있는 앞쪽에 쏠려있어 앞쪽의 타이어가 빨리 닳게 되는데, 타이어 위치 교환이 이뤄지지 않으면 핸들 떨림 현상이나 피시 테일 현상 등이 발생할 수 있습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 타이어 위치 -->
+
+					<!-- 브레이크 패드 및 디스크 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">브레이크 패드 및 디스크</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-brakepad.svg" alt="브레이크 패드 및 디스크 아이콘"></span>
+							<p class="txt">브레이크를 밟았을 때 최종적으로 차량을 멈추게 하는 부품이 브레이크 패드와 디스크입니다. 브레이크 패드는 계속되는 마찰로 인해 조금씩 소모됩니다. 일반적으로 브레이크 패드가 3mm 이하로 남은 경우 교체해야 디스크가 손상되는 것을 방지할 수 있습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 브레이크 패드 및 디스크 -->
+
+					<!-- 엔진부동액(냉각수) -->
+					<div class="type-box">
+						<h3 class="contents-title-300">엔진부동액(냉각수)</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-antifreeze.svg" alt="엔진부동액(냉각수) 아이콘"></span>
+							<p class="txt">여름철 엔진 과열 및 겨울철 동파를 방지하기 위해 부동액을 사용합니다. 다른 계열의 부동액 주입 시 기존의 부동액과 반응해 부유물을 발생시켜 냉각 라인이 막히는 경우가 발생할 수 있습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 엔진부동액(냉각수) -->
+
+					<!-- 브레이크 오일 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">브레이크 오일</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-brakeoil.svg" alt="브레이크 오일 아이콘"></span>
+							<p class="txt">제동 시 브레이크 패드와 디스크가 마찰되어 정지되도록 압력을 전달하는 역할을 하는 것이 브레이크 오일입니다. 수분을 흡수하는 성질이 강한 브레이크 오일은 오래될수록 수분 함유량이 높아지며, 이 경우 브레이크가 제대로 작동하지 않을 수 있으니 적절한 시점에 교체해야 합니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 브레이크 오일 -->
+
+					<!-- 미션 오일 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">미션 오일</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-missionoil.svg" alt="미션 오일 아이콘"></span>
+							<p class="txt">미션 오일은 기어 변경시 바퀴까지 동력을 전달하는 매개체 역할을 합니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 미션 오일 -->
+
+					<!-- 구동벨트 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">구동벨트</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-externaldrivebelt.svg" alt="구동벨트 아이콘"></span>
+							<p class="txt">엔진 폭발에 의한 회전력을 회전이 필요한 다른 부품에 전달하는 고무벨트입니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 구동벨트 -->
+
+					<!-- 배터리 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">배터리</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-battery.svg" alt="배터리 아이콘"></span>
+							<p class="txt">차량의 전기 시스템에 전기를 공급하는 장치입니다. 겨울철 낮은 온도에 배터리 방전이 많이 일어나며, 배터리 방전 방지를 위해 보조배터리를 추가 설치하는 것이 좋습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 배터리 -->
+
+					<!-- 연료필터 (가솔린 제외) -->
+					<div class="type-box">
+						<h3 class="contents-title-300">연료필터 (가솔린 제외)</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-fuelfilter.svg" alt="연료필터 (가솔린 제외) 아이콘"></span>
+							<p class="txt">엔진 내에서 연료와 공기가 잘 폭발하기 위해서 연료에 불순물이 섞여 있지 않아야 하는데, 연료의 불순물을 제거하는 것이 연료필터입니다. 연료 필터 교체방식은 어셈블리, 필터 엘리먼트 교체로 나뉩니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 연료필터 (가솔린 제외) -->
+
+					<!-- 타이어 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">타이어</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-bearingset.svg" alt="타이어 아이콘"></span>
+							<p class="txt">타이어가 마모될 경우 제동 거리가 길어지며, 빗길과 눈길에서 미끌어질 수 있습니다. 타이어 바닥면의 트레드가 마모한계에 다다를 경우 타이어 교체시기가 되었음을 알 수 있습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 타이어 -->
+
+					<!-- 타이밍 벨트 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">타이밍 벨트</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-tirebelt.svg" alt="타이밍 벨트 아이콘"></span>
+							<p class="txt">엔진에서 가장 중요한 부품 중 하나로 엔진 내 부품들이 정상적으로 움직이게 제어하는 역할을 하는 것이 타이밍벨트입니다. 타이밍벨트는 대부분 고무로 되어 있어 노후될 경우 갈라지기 시작하며 끊어질 수 있습니다. 주변 부품이 손상되지 않도록 정비소를 방문하여 교체하는 것이 좋습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="5,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 타이밍 벨트 -->
+
+					<!-- 파워스티어링 오일 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">파워스티어링 오일</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-differentialoil.svg" alt="파워스티어링 오일 아이콘"></span>
+							<p class="txt">자동차 파워 핸들 장치 내에 들어가는 오일로 핸들을 쉽게 돌리기 위한 파워스티어링 기능에 도움을 줍니다. 오일이 누유되거나 변질되면 원활한 방향 조향에 문제가 생길 수 있습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="5,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 파워스티어링 오일 -->
+
+					<!-- 점화플러그 (디젤 제외) -->
+					<div class="type-box">
+						<h3 class="contents-title-300">점화플러그 (디젤 제외)</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-sparkplug.svg" alt="점화플러그 (디젤 제외) 아이콘"></span>
+							<p class="txt">자동차는 엔진 내에서 연료와 공기의 혼합기가 폭발함으로써 움직이며, 이러한 폭발이 일어나도록 불꽃을 발생시켜 주는 장치가 점화플러그입니다. 점화플러그는 폭발을 일으킬 때마다 엄청난 고온의 열과 순간적인 불꽃이 발생하기 때문에 장기적으로 손상될 수밖에 없습니다. 점화플러그는 가솔린, LPG 방식의 차량에서만 사용되며, 디젤 차량은 점화 방식이 다르기 때문에 점화플러그가 필요 없습니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="5,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // 점화플러그 (디젤 제외) -->
+
+                    <!-- 엔진 오일 -->
+					<div class="type-box">
+						<h3 class="contents-title-300">엔진 오일</h3>
+						<div class="bg-gray-info">
+							<span class="icon"><img src="/images/mycar/icon32-oil.svg" alt="엔진 오일 아이콘"></span>
+							<p class="txt">자동차의 내연 기관에서 윤활제 역할을 합니다. 주된 기능은 가동부의 마모를 감소시키고, 부식 방지와 엔진의 냉각 시키는 역할을 합니다.</p>
+						</div>
+						<div class="inp-list-wrap">
+							<!-- 2021-07-05 정비거리&정비주기 위치 변경 -->
+							<ul>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (시간)</label>
+										<input type="text" value="0개월">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+								<li>
+									<div class="inp-box type-basic filled">
+										<label for="" class="inp-tit">정비주기 (거리)</label>
+										<input type="text" value="100,000km">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</li>
+							</ul>
+							<!-- // 2021-07-05 정비거리&정비주기 위치 변경 -->
+						</div>
+					</div>
+					<!-- // 엔진 오일 -->
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>주기 변경</span></button>
+                    </div>
+					<div class="bottom-space"></div>         
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

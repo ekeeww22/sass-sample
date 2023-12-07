@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="32" viewBox="0 0 80 32">
+    <defs>
+        <rect id="z7lckc81ma" width="80" height="32" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-123.000000, -738.000000) translate(16.000000, 612.000000) translate(0.000000, 74.000000) translate(107.000000, 52.000000)">
+                        <mask id="bdag2abipb" fill="#fff">
+                            <use xlink:href="#z7lckc81ma"/>
+                        </mask>
+                        <use fill="#F6F8F9" xlink:href="#z7lckc81ma"/>
+                        <text fill="#222" font-family="AppleSDGothicNeo-Bold, Apple SD Gothic Neo" font-size="25" font-weight="bold" letter-spacing="-.4" mask="url(#bdag2abipb)">
+                            <tspan x="35" y="27">?</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

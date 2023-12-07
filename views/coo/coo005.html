@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../css/mobile.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap coocon-wrap">
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content coo">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section coo005">
+					
+					<div class="capital-card">
+						<h2 class="capital-logo"><img src="/images/coo/logo-kb-capital.svg" alt="KB캐피탈"></h2>
+						<p class="tit">전송 요구서</p>
+
+						<div class="table-wrap">
+							<table>
+								<caption>전송 요구서</caption>
+								<colgroup>
+									<col style="width:110px">
+									<col style="width:auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">
+											정보제공자 <br>
+											(전송 요구를 받는 자)
+										</th>
+										<td>
+											<ul class="bullet-list sm">
+												<li>신용정보제공자의 상호 또는 명칭</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											전송을 요구 <br>
+											하는 개인 <br>
+											신용정보
+										</th>
+										<td>
+											<ul class="bullet-list sm">
+												<li>은행 : 수신계좌 정보, 투자 상품 정보, 대출상품 정보, 개인형 IRP 정보 중 선택한 자산</li>
+												<li>카드 : 카드 정보, 포인트 정보, 청구ㆍ결제 정보 및 리볼빙 정보, 대출상품 정보 중 선택한 자산</li>
+												<li>금융투자 : 계좌 정보, 개인형IRP 정보 중 선택한 자산</li>
+												<li>보험 : 보험 정보, 대출상품 정보, 개인형 IRP 정보 중 선택한 자산</li>
+												<li>전자금융 : 선불전자 지급수단 정보, 결제 정보 중 선택한 자산</li>
+												<li>할부금융 : 대출상품 또는 운용리스 정보 중 선택한 자산</li>
+												<li>보증보험 : 보증보험 정보 중 선택한 자산</li>
+												<li>통신 : 통신정보 중 선택한 자산</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											개인신용 <br>
+											정보를 제공 <br>
+											받는 자
+										</th>
+										<td>
+											<ul class="bullet-list sm">
+												<li>본인신용정보관리회사의 상호 또는 명칭</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											전송을 요구 <br>
+											하는 목적
+										</th>
+										<td>
+											<ul class="bullet-list sm">
+												<li>본인신용정보 통합조회 서비스의 이용</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											전송을 요구 <br>
+											하는 개인신용정보의 <br>
+											보유기간
+										</th>
+										<td>
+											<ul class="bullet-list sm">
+												<li>서비스 이용 종료시 또는 수집ㆍ이용 동의 철회시</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											정기적 전송을 요구하는지 여부 및 요구하는 경우 그 주기
+										</th>
+										<td>
+											<ul class="agree-list">
+												<li>
+													<label class="form-checkbox sm" for="radio1-1" >
+														<input type="radio" id="radio1-1" name="radio1" checked>
+														<i class="icon"></i>
+														<span class="txt">예 (주 1회)</span>
+													</label>
+												</li>
+												<li>
+													<label class="form-checkbox sm" for="radio1-2" >
+														<input type="radio" id="radio1-2" name="radio1">
+														<i class="icon"></i>
+														<span class="txt">아니오</span>
+													</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											전송요구의 종료시점 <br>
+											(전송요구서의 유효기간)
+										</th>
+										<td>
+											<ul class="agree-list">
+												<li>
+													<label class="form-checkbox sm" for="radio2-1" >
+														<input type="radio" id="radio2-1" name="radio2" checked>
+														<i class="icon"></i>
+														<span class="txt">1년</span>
+													</label>
+												</li>
+												<li>
+													<label class="form-checkbox sm" for="radio2-2" >
+														<input type="radio" id="radio2-2" name="radio2">
+														<i class="icon"></i>
+														<span class="txt">1년 범위 내 직접선택</span>
+													</label>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="sign-wrap">
+							<p class="sign-text">
+								<em>[신용정보주체의 성명]</em> 은/는 다음과 같이 <br> 
+								전송을 요구합니다.
+							</p>
+							<p class="sign">(전자)서명</p>
+						</div>
+					</div>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>이전</span></button>
+						<button type="button" class="btn-yellow"><span>확인</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

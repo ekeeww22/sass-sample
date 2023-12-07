@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.CMYCMM017{
+    .result-box{
+        padding:0 0 3.2rem;
+        .tit{
+            position:relative;
+            .btn-tooltip{
+                span{
+                    @include contents-title-200;
+                }
+            }
+            .tooltip{
+                top:calc(100% + 0.4rem);
+                text-align:left;
+            }
+        }
+    }
+}

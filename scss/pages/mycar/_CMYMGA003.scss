@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.CMYMGA003{
+
+    .top-product-image-area {
+        margin-top:-2.4rem; margin-left:-1.6rem; padding-top:2.4rem; width:calc(100% + 3.2rem); text-align:center; 
+        background-image:url("../images/mycar/bgGarageTop02.png");
+        background-repeat: no-repeat;
+        background-size: 100% 75%;
+        background-position:center top;
+
+        .top-product-image { 
+            position:relative;
+            .product { display:block; max-width:20rem; width:100%; margin-left:auto; margin-right:auto;
+                img { width:100%; }
+            }
+            .license-plate { 
+                width:15.2rem; height:4.4rem; position:absolute; top:8.8rem; left:50%; margin-left:-6rem; text-align:center; z-index:1;
+                background-image:url('/images/mycar/bg-license-plate.svg');
+                background-repeat:no-repeat;
+                background-position:center center; 
+                background-size:contain;
+                .lp-number { 
+                    display:inline-block; padding:0.5rem 0 0.7rem; font-size:2rem; text-align:center; line-height:3rem; letter-spacing:-0.04rem; font-weight:700;
+                }
+            }
+        }
+    }
+
+    .tab-underbar{margin-top:3.2rem;}
+
+    .tab-content01{
+        .inp-list-wrap ul > li{display:flex; justify-content: space-between;}
+        .inp-list-wrap ul > li > .select-box{width:100%;}
+        .inp-list-wrap ul > li > .select-box + .select-box{margin-left:0.9rem;}
+        .inp-list-wrap ul > li > .inp-box + .inp-box{margin-left:0.9rem;}
+
+        .part-01{
+            dd .txt{font-weight:400;}
+        }
+
+        .part-04{
+            .card-box{
+                margin-bottom:2.4rem; background:#f6f8f9; box-shadow:none;
+
+                .card-header{
+                    display:flex; align-items: center;
+                    .img-wrap{
+                        margin-right:0.8rem; width:2.4rem; height:2.4rem;
+                        img{width:100%;}
+                    }
+                }
+                .round-txt-wrap{margin-left:0.4rem;}
+            }
+            .inp-list-wrap .inp-box{width:100%;}
+        }
+
+        .part-05{
+            position:relative; padding-top:4rem;
+            &:before{    
+                position: absolute;
+                top: 0;
+                left: -1.6rem;
+                content: "";
+                display: block;
+                width: calc(100% + 3.2rem);
+                height: 0.8rem;
+                background: #f8f8f8;}
+        }
+    }
+
+    .tab-content02{
+        .data-list{margin-top:3.2rem;}
+    }
+
+}
+
+/* 지난 주행거리  */
+.distance-driven-list{
+    li{
+        & + li{margin-top:1.6rem;}
+        & > *{vertical-align: middle;}
+        font-size:0;
+
+        .date{display:inline-block; @include body-120; margin-right:2.4rem;}
+        .distance{display:inline-block; @include body-110; margin-right:0.8rem;}
+        .tag-round{}
+        .btn-txt{float:right;}
+    }
+}
+
+/* option-list-wrap */
+.option-list-wrap{
+    padding-top:1.6rem; clear:both;
+    ul{
+        display:flex; flex-wrap:wrap; margin-bottom:-0.8rem;
+
+        li{
+            margin:0; margin-bottom:2.4rem; width:25%; min-height:7.6rem; text-align:center;
+            .img-wrap{
+                margin:0 auto; width:4rem;height:4rem;
+                img{width:100%;}
+            }
+            .option-txt{margin-top:0.4rem; @include dock-bar-100; color:#222;}
+        }
+    }
+}

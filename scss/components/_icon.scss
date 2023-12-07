@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/* 아이콘 */
+@mixin icon16{
+    display:inline-block; width:1.6rem; height:1.6rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon16{
+    @include icon16;
+}
+
+@mixin icon24{
+    display:inline-block; width:2.4rem; height:2.4rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon24{
+    @include icon24;
+}
+
+@mixin icon32{
+    display:inline-block; width:3.2rem; height:3.2rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon32{
+    @include icon32;
+}
+
+@mixin icon48{
+    display:inline-block; width:4.8rem; height:4.8rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon48{
+    @include icon48;
+}
+
+@mixin icon56{
+    display:inline-block; width:5.6rem; height:5.6rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon56{
+    @include icon56;
+}
+
+@mixin icon64{
+    display:inline-block; width:6.4rem; height:6.4rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon64{
+    @include icon64;
+}
+
+@mixin icon96{
+    display:inline-block; width:9.6rem; height:9.6rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon96{
+    @include icon96;
+}
+
+@mixin icon160{
+    display:inline-block; width:16rem; height:16rem; overflow:hidden; text-indent:-9999px; font-size:0; background-color:transparent; vertical-align: middle;
+}
+.icon160{
+    @include icon160;
+}
+
+/* icon16 */
+.icon16.icon-plus-gray {background: url("../images/icon/icon16-plus-gray.svg") no-repeat center/contain;}
+.icon16.icon-plus-black {background: url("../images/icon/icon16-plus-black.svg") no-repeat center/contain;}
+.icon16.icon-minus-black {background: url("../images/icon/icon16-minus-black.svg") no-repeat center/contain;}
+.icon16.icon-minus-gray {background: url("../images/icon/icon16-minus-gray.svg") no-repeat center/contain;}
+.icon16.icon-arrow-top-black {background: url("../images/icon/icon16-arrow-top-black.svg") no-repeat center/contain;}
+.icon16.icon-arrow-top-gray {background: url("../images/icon/icon16-arrow-top-gray.svg") no-repeat center/contain;}
+.icon16.icon-arrow-left-black {background: url("../images/icon/icon16-arrow-left-black.svg") no-repeat center/contain;}
+.icon16.icon-arrow-left-gray {background: url("../images/icon/icon16-arrow-left-gray.svg") no-repeat center/contain;}
+.icon16.icon-arrow-right-black {background: url("../images/icon/icon16-arrow-right-black.svg") no-repeat center/contain;}
+.icon16.icon-arrow-right-gray {background: url("../images/icon/icon16-arrow-right-gray.svg") no-repeat center/contain;}
+.icon16.icon-arrow-bottom-black {background: url("../images/icon/icon16-arrow-bottom-black.svg") no-repeat center/contain;}
+.icon16.icon-arrow-bottom-gray {background: url("../images/icon/icon16-arrow-bottom-gray.svg") no-repeat center/contain;}
+.icon16.icon-tooltip {background: url("../images/icon/icon16-tooltip.svg") no-repeat center/contain;}
+.icon16.icon-submenu {background: url("../images/icon/icon16-submenu.svg") no-repeat center/contain;}
+.icon16.icon-delete {background: url("../images/icon/icon16-delete.svg") no-repeat center/contain;}
+.icon16.icon-calendar {background: url("../images/icon/icon16-calendar.svg") no-repeat center/contain;}
+.icon16.icon-phone {background: url("../images/icon/icon16-phone.svg") no-repeat center/contain;}
+.icon16.icon-search {background: url("../images/icon/icon16-search.svg") no-repeat center/contain;}
+.icon16.icon-error {background: url("../images/icon/icon16-error.svg") no-repeat center/contain;}
+
+.icon24.icon-calendar {background: url("../images/icon/icon24-calendar.svg") no-repeat center/contain;}
+.icon24.icon-datahistory {background: url("../images/as/icon24-datahistory.svg") no-repeat center/contain;}
+.icon24.icon-datamanagement {background: url("../images/as/icon24-datamanagement.svg") no-repeat center/contain;}
+.icon24.icon-errormanagement {background: url("../images/as/icon24-errormanagement.svg") no-repeat center/contain;}
+.icon24.icon-join {background: url("../images/as/icon24-join.svg") no-repeat center/contain;}
+.icon24.icon-notification {background: url("../images/as/icon24-notification.svg") no-repeat center/contain;}
+
+.icon-close{background:#fff url("../images/icon/icon-close-gray.svg") no-repeat center/contain;}
+.icon-close-round{background:url("../images/icon/icon-close-round.svg") no-repeat center/contain;}
+.icon-plus-yellow {background: url("../images/icon/icon16-plus-yellow.png") no-repeat center/contain;}
+.icon-refresh {background: url("../images/icon/icon16-refresh.svg") no-repeat center/contain;}
+.icon-refresh-dark {background: url("../images/icon/icon16-refresh-dark.svg") no-repeat center/contain;}
+.icon-refresh-round { background:url("../images/icon/icon24-reload-black.svg") no-repeat center/contain; }
+.icon-info {background: url("../images/icon/icon16-info.svg") no-repeat center/contain;}
+.icon-info-black {background: url("../images/icon/icon16-info-black.svg") no-repeat center/contain;}
+
+.icon-setting {background: url("../images/icon/icon16-setting.svg") no-repeat center/contain;}
+.icon-modify {background: url("../images/icon/icon16-modify.svg") no-repeat center/contain;}
+.icon-time {background: url("../images/icon/icon16-time.svg") no-repeat center/contain;}
+.icon-plus-round-black {background: url("../images/icon/icon16-plus-round-black.svg") no-repeat center/contain;}
+.icon-point {background: url("../images/icon/icon16-point.svg") no-repeat center/contain;}
+.icon-notice {background: url("../images/icon/icon16-notice.svg") no-repeat center/contain;}
+.icon-depth {background:url("../images/icon/icon16-depth.svg") no-repeat center/contain;}
+.icon-data-modify {background:url("../images/icon/icon16-data-modify.svg") no-repeat center/contain;}
+.icon-search{background:url("../images/icon/icon-search.svg") no-repeat center/contain;}
+.icon-calendar{background:url("../images/icon/icon-calendar.png") no-repeat center/contain;}
+.icon-back{background:url("../images/icon/icon24-back.svg") no-repeat center/contain;}
+.icon-close-black{background:url("../images/icon/icon24-close-black.svg") no-repeat center/contain;}
+.icon-alarm{background:url("../images/icon/icon24-alarm.svg") no-repeat center/contain;}
+.icon-alarm-on{background:url("../images/icon/icon24-alarm-on.svg") no-repeat center/contain;}
+.icon-home{background:url("../images/icon/icon24-home.svg") no-repeat center/contain;}
+.icon-plus-black{background:url("../images/icon/icon24-plus-black.svg") no-repeat center/contain;}
+.icon-plus-gray{background:url("../images/icon/icon24-plus-gray.svg") no-repeat center/contain;}
+.icon-round-plus-orange{background:url("../images/icon/icon24-round-plus-orange.svg") no-repeat center/contain;}
+.icon-minus-black{background:url("../images/icon/icon24-minus-black.svg") no-repeat center/contain;}
+.icon-minus-gray{background:url("../images/icon/icon24-minus-gray.svg") no-repeat center/contain;}
+.icon-arrow-right-small-gray{background:url("../images/icon/icon16-arrow-right-small-gray.svg") no-repeat center/contain;}
+.icon-arrow-top-black{background:url("../images/icon/icon24-arrow-top-black.svg") no-repeat center/contain;}
+.icon-arrow-top-gray{background:url("../images/icon/icon24-arrow-top-gray.svg") no-repeat center/contain;}
+.icon-arrow-left-black{background:url("../images/icon/icon24-arrow-left-black.svg") no-repeat center/contain;}
+.icon-arrow-left-gray{background:url("../images/icon/icon24-arrow-left-gray.svg") no-repeat center/contain;}
+.icon-arrow-right-black{background:url("../images/icon/icon24-arrow-right-black.svg") no-repeat center/contain;}
+.icon-arrow-right-gray{background:url("../images/icon/icon24-arrow-right-gray.svg") no-repeat center/contain;}
+.icon-arrow-bottom-black{background:url("../images/icon/icon24-arrow-bottom-black.svg") no-repeat center/contain;}
+.icon-arrow-bottom-gray{background:url("../images/icon/icon24-arrow-bottom-gray.svg") no-repeat center/contain;}
+.icon-assets-off{background:url("../images/icon/icon24-assets-off.svg") no-repeat center/contain;}
+.icon-assets-on{background:url("../images/icon/icon24-assets-on.svg") no-repeat center/contain;}
+.icon-urchase-off{background:url("../images/icon/icon24-urchase-off.svg") no-repeat center/contain;}
+.icon-asset-on{background:url("../images/icon/icon24-asset-on.svg") no-repeat center/contain;}
+.icon-investment-off{background:url("../images/icon/icon24-investment-off.svg") no-repeat center/contain;}
+.icon-investment-on{background:url("../images/icon/icon24-investment-on.svg") no-repeat center/contain;}
+.icon-mypage-off{background:url("../images/icon/icon24-mypage-off.svg") no-repeat center/contain;}
+.icon-mypage-on{background:url("../images/icon/icon24-mypage-on.svg") no-repeat center/contain;}
+.icon-refresh-round{background:url("../images/icon/icon24-refresh-round.svg") no-repeat center/contain;}
+.icon-share{background:url("../images/icon/icon24-share.svg") no-repeat center/contain;}
+.icon-filter{background:url("../images/icon/icon24-filter.svg") no-repeat center/contain;}
+.icon-submenu{background:url("../images/icon/icon24-submenu.svg") no-repeat center/contain;}
+.icon-delete{background:url("../images/icon/icon24-delete.svg") no-repeat center/contain;}
+.icon-like-off{background:url("../images/icon/icon24-like-off.svg") no-repeat center/contain;}
+.icon-like-on{background:url("../images/icon/icon24-like-on.svg") no-repeat center/contain;}
+.icon-tooltip{background:url("../images/icon/icon24-tooltip.svg") no-repeat center/contain;}
+.icon-message{background:url("../images/icon/icon24-message.svg") no-repeat center/contain;}
+.icon-purchase-classiccar{background:url("../images/icon/icon24-purchase-classiccar.svg") no-repeat center/contain;}
+.icon-purchase-newcar{background:url("../images/icon/icon24-purchase-newcar.svg") no-repeat center/contain;}
+.icon-kbbank{background:url("../images/icon/icon32-kbbank.svg") no-repeat center/contain;}
+.icon-bank{background:url("../images/icon/icon32-bank.svg") no-repeat center/contain;}
+.icon-capital{background:url("../images/icon/icon32-capital.svg") no-repeat center/contain;}
+.icon-card{background:url("../images/icon/icon32-card.svg") no-repeat center/contain;}
+.icon-fund{background:url("../images/icon/icon32-fund.svg") no-repeat center/contain;}
+.icon-insurance{background:url("../images/icon/icon32-insurance.svg") no-repeat center/contain;}
+.icon-pension{background:url("../images/icon/icon32-pension.svg") no-repeat center/contain;}
+.icon32-spend-gasbill{background:url("../images/icon/icon32-spend-gasbill.svg") no-repeat center/contain;}
+.icon-phone{background:url("../images/icon/icon32-phone.svg") no-repeat center/contain;}
+.icon-kakaopay{background:url("../images/icon/icon32-kakaopay.svg") no-repeat center/contain;}
+.icon-toss{background:url("../images/icon/icon32-toss.svg") no-repeat center/contain;}
+.icon-success{background:url("../images/icon/icon48-success.svg") no-repeat center/contain;}
+.icon-error{background:url("../images/icon/icon48-error.svg") no-repeat center/contain;}
+.icon-nodata{background:url("../images/icon/icon48-nodata.svg") no-repeat center/contain;}
+.icon-kakaopay-ex{width:5.9rem; background:url("../images/icon/icon48-Kakaopay.png") no-repeat center/contain;}
+.icon-toss-ex{width:5.9rem; background:url("../images/icon/icon48-toss.png") no-repeat center/contain;}
+.icon-more{background:url("../images/icon/icon48-more-view.svg") no-repeat center/contain;}
+.icon-combine{background:url("../images/icon/icon48-combine.svg") no-repeat center/contain;}
+.icon-individual{background:url("../images/icon/icon48-individual.svg") no-repeat center/contain;}
+.icon-asset{background:url("../images/icon/icon56-asset.svg") no-repeat center/contain;}
+.icon-loading{background:url("../images/icon/icon-loading.svg") no-repeat center/contain;}
+.icon-depth-line{background:url("../images/icon/icon-depthline.svg") no-repeat center/contain;}
+.icon-id{background:url("../images/icon/icon24-id.svg") no-repeat center/contain;}
+.icon-pin{background:url("../images/icon/icon24-pin.svg") no-repeat center/contain;}
+.icon-pattern{background:url("../images/icon/icon24-pattern.svg") no-repeat center/contain;}
+.icon-loan{background:url("../images/te/icon-loan.svg") no-repeat center/contain;}
+.icon-convertloan{background:url("../images/te/icon-convertloan.svg") no-repeat center/contain;}
+.icon-insurance-1{background:url("../images/te/icon-insurance-1.svg") no-repeat center/contain;}
+.icon-insurance-2{background:url("../images/te/icon-insurance-2.svg") no-repeat center/contain;}
+.icon-insurance-3{background:url("../images/te/icon-insurance-3.svg") no-repeat center/contain;}
+.icon-insurance-4{background:url("../images/te/icon-insurance-4.svg") no-repeat center/contain;}
+.icon-sun{background:url("../images/icon/icon24-sun.svg") no-repeat center/contain;}
+.icon-sun-cloud{background:url("../images/icon/icon24-sun-cloud.svg") no-repeat center/contain;}
+.icon-cloud{background:url("../images/icon/icon24-cloud.svg") no-repeat center/contain;}
+.icon-sell-1{background:url("../images/te/icon-sell-1.svg") no-repeat center/contain;}
+.icon-sell-2{background:url("../images/te/icon-sell-2.svg") no-repeat center/contain;}
+.icon-cardlist{background:url("../images/icon/icon24-cardlist.svg") no-repeat center/contain;}
+.icon-cardwrite{background:url("../images/icon/icon24-cardwrite.svg") no-repeat center/contain;}
+.icon-accountadd{background:url("../images/icon/icon24-accountadd.svg") no-repeat center/contain;}
+.icon24-close-gray{background:url("../images/icon/icon24-close-gray.svg") no-repeat center/contain;}
+.icon24-comm-menu{background:url("../images/icon/icon24-comm-menu.svg") no-repeat center/contain;}
+.icon24-comm-del {background:url("../images/icon/icon24-comm-del.svg") no-repeat center/contain;}
+.icon48-simulation {background:url("../images/icon/icon48-simulation.svg") no-repeat center/contain;}
+.icon48-cost {background:url("../images/icon/icon48-cost.svg") no-repeat center/contain;}
+.icon48-insurance {background:url("../images/icon/icon48-insurance.svg") no-repeat center/contain;}
+.icon48-loan {background:url("../images/icon/icon48-loan.svg") no-repeat center/contain;}
+.icon-addaccount {background:url("../images/icon/icon24-addaccount.svg") no-repeat center/contain;}
+.icon-disconnect {background:url("../images/icon/icon24-disconnect.svg") no-repeat center/contain;}
+.icon-transferhistory {background:url("../images/icon/icon24-transferhistory.svg") no-repeat center/contain;}
+.icon-car {background:url("../images/icon/icon24-car.svg") no-repeat center/contain;}

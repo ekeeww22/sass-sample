@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>공동인증서 선택</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content cm">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCMM019">
+                    <!-- 공동인증서 있음 -->
+					<h3 class="contents-title-100">
+						공동인증서를 선택해 주세요.
+					</h3>
+
+					<ul class="certificate-list">
+                        <li>
+                            <button type="button">
+                                <span class="icon"><img src="/images/icon/icon-certificate.svg" alt="인증서 아이콘"></span>
+                                <div class="box">
+                                    <p class="name">김국민</p>
+                                    <ul class="info">
+                                        <li>보험(개인)</li>
+                                        <li>금융결제원</li>
+                                    </ul>
+                                    <p class="date">만료일 2021-12-25</p>
+                                </div>
+                                <i class="icon24 icon-arrow-right-gray"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <span class="icon"><img src="/images/icon/icon-certificate.svg" alt="인증서 아이콘"></span>
+                                <div class="box">
+                                    <p class="name">김국민</p>
+                                    <ul class="info">
+                                        <li>보험(개인)</li>
+                                        <li>금융결제원</li>
+                                    </ul>
+                                    <p class="date warning">만료일 2021-12-25</p><!-- 만료 임박시 warning 클래스 추가 -->
+                                </div>
+                                <i class="icon24 icon-arrow-right-gray"></i>
+                            </button>
+                        </li>
+                        <!-- 2021-07-23 만료시 마크업 수정 -->
+                        <li>
+                            <button type="button" disabled=""><!-- 만료시 disabled -->
+                                <span class="icon"><img src="/images/icon/icon-certificate.svg" alt="인증서 아이콘"></span>
+                                <div class="box">
+                                    <p class="name">김국민</p>
+                                    <ul class="info">
+                                        <li>보험(개인)</li>
+                                        <li>금융결제원</li>
+                                    </ul>
+                                    <p class="date">만료일 2021-12-25</p>
+                                </div>
+                                <span class="state">만료</span>
+                            </button>
+                        </li>
+                        <!-- // 2021-07-23 만료시 마크업 수정 -->
+                    </ul>
+
+					<div class="tac">
+						<a href="javascript:;" class="btn-txt" target="_blank">공동인증서 가져오기</a>
+					</div>
+                    <!-- // 공동인증서 있음 -->
+
+                    <!-- 공동인증서 없음 -->
+                    <div class="result-box" style="display:none;">
+                        <i class="icon48 icon-nodata"></i>
+                        <p class="txt">저장된 인증서가 없습니다.</p>
+                        <div class="tac">
+                            <a href="javascript:;" class="btn-txt" target="_blank">공동인증서 가져오기</a>
+                        </div>
+                    </div>
+                    <!-- // 공동인증서 없음 -->
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

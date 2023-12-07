@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../css/mobile.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap coocon-wrap">
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content coo">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section coo004">
+					
+					<div class="capital-card type-top">
+						<h2 class="capital-logo"><img src="/images/coo/logo-kb-capital.svg" alt="KB캐피탈"></h2>
+						<p class="tit">전송요구 내역 선택</p>
+						<p class="txt">
+							전송을 요구할 계좌 및 정보를 <br>
+							선택해주시기 바랍니다.
+						</p>
+						<div class="list-wrap">
+							<ul class="list-step">
+								<li class="end">
+									<span class="num">1</span>
+								</li>
+								<li class="end">
+									<span class="num">2</span>
+								</li>
+								<li class="end">
+									<span class="num">3</span>
+								</li>
+								<li class="end">
+									<span class="num">4</span>
+								</li>
+							</ul>
+							<div class="list-text">
+								<b>04</b>
+								<span>전송요구 내역 선택</span>
+							</div>
+						</div>
+					</div>
+
+					<dl class="part-list part-01">
+                        <dt>
+                            <span class="tit">계좌목록</span>
+                        </dt>
+                        <dd>
+                            <div class="agree-box">
+								<label class="form-checkbox all-check">
+									<input type="checkbox">
+									<i class="icon"></i>
+									<span class="txt bold">전체선택</span>
+								</label>
+								<ul class="agree-list">
+									<li>
+										<label class="form-checkbox sm">
+											<input type="checkbox">
+											<i class="icon"></i>
+											<div class="text-wrap">
+												<p class="">A18020586500100</p>
+												<p class="">- [할부] 상용신차 – 기본(대형_화물)</p>
+											</div>
+										</label>
+									</li>
+									<li>
+										<label class="form-checkbox sm">
+											<input type="checkbox">
+											<i class="icon"></i>
+											<div class="text-wrap">
+												<p class="">A18020586500200</p>
+												<p class="">- [할부] 상용신차 – 기본(대형_화물)</p>
+											</div>
+										</label>
+									</li>
+									<li>
+										<label class="form-checkbox sm">
+											<input type="checkbox">
+											<i class="icon"></i>
+											<div class="text-wrap">
+												<p class="">A18020586500300</p>
+												<p class="">- [할부] 상용신차 – 기본(대형_화물)</p>
+											</div>
+										</label>
+									</li>
+									<li>
+										<label class="form-checkbox sm">
+											<input type="checkbox">
+											<i class="icon"></i>
+											<div class="text-wrap">
+												<p class="">A18020586500400</p>
+												<p class="">- [할부] 상용신차 – 기본(대형_화물)</p>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+                        </dd>
+                    </dl>
+
+					<dl class="part-list part-02">
+                        <dt>
+                            <span class="tit">정기적 전송 요구</span>
+                        </dt>
+                        <dd>
+							<ul class="radio-list">
+								<li>
+									<label class="form-radio" for="radio1-1">
+										<input type="radio" name="radio1" id="radio1-1">
+										<i class="icon"></i>
+										<span class="txt">예</span>
+									</label>
+
+									<!-- 숨겨져있다가 '예'에 체크되면 노출 -->
+									<div class="inp-list-wrap">
+										<ul>
+											<li>
+												<div class="select-box type-select default">
+													<label for="sel1" class="inp-tit">기본정보</label>
+													<select name="" id="sel1">
+														<option value=""></option>
+														<option value="">주1회</option>
+													</select>
+												</div>
+											</li>
+											<li> <!-- 1년지나서 선택가능할 때 쓰는 폼 -->
+												<div class="select-box type-select default" >
+													<label for="sel1" class="inp-tit">추가정보</label>
+													<select name="" id="sel1">
+														<option value=""></option>
+														<option value="">일1회</option>
+														<option value="">주1회</option>
+														<option value="">월1회</option>
+													</select>
+												</div>
+											</li>
+											<li> <!-- 1년동안 주1회 고정일 때 쓰는 폼 -->
+												<button type="button" class="btn-select active">
+													<span class="tit">추가정보</span>
+													<span class="txt">주1회</span>
+													<i class="icon16 icon-arrow-bottom-gray"></i>
+												</button>
+											</li>
+										</ul>
+									</div>
+									<!--// 숨겨져있다가 '예'에 체크되면 노출 -->
+								</li>
+								<li>
+									<label class="form-radio" for="radio1-2">
+										<input type="radio" name="radio1" id="radio1-2">
+										<i class="icon"></i>
+										<span class="txt">아니오</span>
+									</label>
+								</li>
+							</ul>
+                        </dd>
+                    </dl>
+
+					<dl class="part-list part-03">
+                        <dt>
+                            <span class="tit">전송요구의 종료시점</span>
+                        </dt>
+                        <dd>
+							<ul class="radio-list">
+								<li>
+									<label class="form-radio" for="radio2-1">
+										<input type="radio" name="radio2" id="radio2-1">
+										<i class="icon"></i>
+										<span class="txt">1년</span>
+									</label>
+								</li>
+								<li>
+									<label class="form-radio" for="radio2-2">
+										<input type="radio" name="radio2" id="radio2-2">
+										<i class="icon"></i>
+										<span class="txt">1년 범위 내 직접선택</span>
+									</label>
+
+									<!-- 숨겨져있다가 '1년 범위 내 직접선택'에 체크되면 노출 -->
+									<div class="date-wrap">
+										<div class="date-box">
+											<input type="date">
+											<i class="icon24 icon-calendar">날짜검색</i>
+										</div>
+										<p class="caption-100">오늘부터 1년까지 입력가능합니다.</p>
+									</div>
+									<!--// 숨겨져있다가 '1년 범위 내 직접선택'에 체크되면 노출 -->
+								</li>
+							</ul>
+                        </dd>
+                    </dl>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>이전</span></button>
+						<button type="button" class="btn-yellow" disabled><span>확인</span></button> <!-- 다음페이지로 넘어갈 조건값 충족되면 속성값 disabled 제거 -->
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

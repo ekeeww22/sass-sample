@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 내차캘린더</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>내차캘린더</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA101">
+                    <div class="top-car-info-area">
+						<div class="top-car-info-tit">
+							<strong class="tit">2021년 05월 23일</strong>
+							<button class="details-txt">정비주기관리</button>
+						</div>
+						<div class="action-banner-item-area">
+							<div class="action-banner-item">
+								<div class="action-banner-bg">
+									<div class="action-info">
+										<i class="icon24 icon-calendar-notice"></i>
+										<span class="txt">이달의 확인사항</span>
+									</div>
+									<span class="number-case">4건</span>
+								</div>
+							</div>
+							<div class="action-banner-item">
+								<div class="action-banner-bg">
+									<div class="action-info">
+										<i class="icon24 icon-calendar-mileage"></i>
+										<span class="txt">누적 주행거리</span>
+									</div>
+									<span class="number-case">100,000km</span>
+								</div>
+							</div>
+						</div>
+					</div>			
+						
+					<div class="mycar-comtent-bc">
+						<div class="sub-main-data-box">
+							<div class="sub-tit-area">
+								<div class="sub-tit">
+									<strong>
+										2021년 5월
+									</strong>
+								</div>
+							</div>
+						</div>
+						<div class="container-top-roundbox">
+							<div class="box-tit-area">
+								<span class="box-tit">엔진오일</span>
+								<button class="icon24 icon-tooltip" data-target="tooltip-1"></button>								
+							</div>
+							<div class="tooltip" data-module="tooltip" data-name="tooltip-1" data-tooltip-group="tt1">
+								<p class="txt">자동차는 엔진에서 연료와 공기가 만나 폭발하는 힘으로 움직이는, 이 때 폭발이 일어나도록 불꽃을 발생시키는 장치가 가열 플러그입니다.</p>
+								<button class="icon16 icon-close">닫기</button>
+							</div>
+							<div class="box-sub-txt">
+								교체 시점입니다.
+							</div>
+							<div class="progress-flag-bar-area">
+								<div class="progress-flag-area">
+									<i class="icon22 icon-flag-yellow" style="left:80%"></i>
+								</div>
+								<div class="progress-flag-bar">
+									<div class="color-blue-bar" style="width:80%;"></div>
+								</div>
+								<div class="progress-flag-txt-area">
+									<span class="txt color-red">13,000km 지남</span>
+									<span class="txt">교체 기준 15,000km</span>
+								</div>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-gray"><span>주기변경</span></button>
+								<button type="button" class="btn-yellow"><span>점검완료</span></button>
+							</div>
+							<div class="roundbox-line-bottom">
+								<dl class="thumb-info">
+									<dt class="thumb-img"><img src="/images/mycar/image-product-oil.png"></dt>
+									<dd class="txt-area">
+										<span class="txt">
+											벤츠 엔진오일 교환 패키지<br />
+											GL450 4-Matic (X166)
+										</span>	
+										<span class="price">117,000원</span>
+									</dd>
+								</dl>
+							</div>				
+							
+						</div>
+
+						<div class="container-top-roundbox mycar-insurance select">
+							<div class="box-flex-tit">
+								<strong class="box-top-tit">자동차보험</strong>
+								<button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+							</div>
+							<div class="box-tit-area">
+								<span class="box-top-txt">보험만기일이 <b>9개월</b> 남았습니다.</span>
+								<!-- <button class="details-txt">자세히</button> -->
+							</div>
+							<div class="roundbox-line-bottom">
+								<div class="top-thumb-wrap">
+									<div class="thumb-name">
+										<i class="bank40"><img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드"></i>                                            
+										<ul class="info">
+											<li><strong class="tit">KB 손해보험 다이렉트</strong></li>
+											<li><span class="txt">2021.12.18 만료</span></li>
+										</ul>
+										<button class="details-txt">수정</button>
+									</div>
+								</div>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+							</div>
+						</div>
+
+						<div class="container-top-roundbox">
+							<div class="box-tit-area">
+								<span class="box-tit">자동차세 납부 안내</span>
+								<button class="details-txt">자세히</button>
+							</div>
+							<div class="box-sub-roundbox-txt">
+								<span class="round-box">연납</span>
+								<span class="block-txt">2021.01.16 ~ 2021.01.31</span>
+							</div>
+							<div class="roundbox-line-bottom">
+								<div class="price-area">
+									<strong class="tit">납부금액</strong>
+									<span class="txt">255,090원</span>
+								</div>
+								<div class="price-link-banner-area">
+									<a href="javascript:;" class="price-link-banner"> <!-- active 클래스 추가 -->
+										<div class="txt-area">
+											<em class="tit">자동차세 연납하기</em>
+											<span class="address">(서울거주자)</span>
+										</div>
+										<div class="logo-link-area">
+											<em class="box-image width88"><img src="/images/mycar/image-logo-etax.png" alt="" /></em>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</div>
+									</a>
+
+									<a href="javascript:;" class="price-link-banner">
+										<div class="txt-area">
+											<em class="tit">자동차세 연납하기</em>
+											<span class="address">(서울 외 지역거주자)</span>
+										</div>
+										<div class="logo-link-area">
+											<em class="box-image width63"><img src="/images/mycar/image-logo-wtax.png" alt="" /></em>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="container-top-roundbox">
+							<div class="box-tit-area">
+								<span class="box-tit">자동차세 납부 안내</span>
+								<button class="details-txt">자세히</button>
+							</div>
+							<div class="box-sub-roundbox-txt">
+								<span class="round-box">연납/상반기</span>
+								<span class="block-txt">2021.01.16 ~ 2021.01.31</span>
+							</div>
+							<div class="roundbox-line-bottom">
+								<div class="price-area">
+									<strong class="tit">상반기 과세금액</strong>
+									<span class="txt">255,090원</span>
+								</div>
+								<div class="price-area">
+									<strong class="tit">예상 연납 금액</strong>
+									<span class="txt">205,090원</span>
+								</div>
+								<div class="price-link-banner-area">
+									<a href="javascript:;" class="price-link-banner"> <!-- active 클래스 추가 -->
+										<div class="txt-area">
+											<em class="tit">자동차세 연납하기</em>
+											<span class="address">(서울거주자)</span>
+										</div>
+										<div class="logo-link-area">
+											<em class="box-image width88"><img src="/images/mycar/image-logo-etax.png" alt="" /></em>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</div>
+									</a>
+
+									<a href="javascript:;" class="price-link-banner">
+										<div class="txt-area">
+											<em class="tit">자동차세 연납하기</em>
+											<span class="address">(서울 외 지역거주자)</span>
+										</div>
+										<div class="logo-link-area">
+											<em class="box-image width63"><img src="/images/mycar/image-logo-wtax.png" alt="" /></em>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="sub-main-data-box">
+							<div class="sub-tit-area">
+								<div class="sub-tit">
+									<strong>
+										2021년 6월
+									</strong>
+								</div>
+							</div>
+						</div>
+						<div class="container-top-roundbox">
+							<div class="box-tit-area">
+								<span class="box-tit">에어컨필터</span>
+								<button class="icon24 icon-tooltip" data-target="tooltip-2-1"></button>								
+							</div>
+							<div class="tooltip" data-module="tooltip" data-name="tooltip-2-1" data-tooltip-group="tt1">
+								<p class="txt">자동차는 엔진에서 연료와 공기가 만나 폭발하는 힘으로 움직이는, 이 때 폭발이 일어나도록 불꽃을 발생시키는 장치가 가열 플러그입니다.</p>
+								<button class="icon16 icon-close">닫기</button>
+							</div>
+							<div class="box-sub-txt">
+								교체 시점입니다.
+							</div>
+							<div class="box-sub-tip-txt">
+								<b>TIP.</b> 황사가 잦은 계절에는 에어컨 필터를 점검 해주세요.
+							</div>
+							<div class="progress-flag-bar-area">
+								<div class="progress-flag-area">
+									<i class="icon22 icon-flag-yellow" style="left:0%"></i>
+								</div>
+								<div class="progress-flag-bar">
+									<div class="color-blue-bar" style="width:100%;"></div>
+								</div>
+								<div class="progress-flag-txt-area">
+									<span class="txt color-red">5,000km 지남</span>
+									<span class="txt">교체 기준 5,000km</span>
+								</div>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-gray"><span>주기변경</span></button>
+								<button type="button" class="btn-yellow"><span>점검완료</span></button>
+							</div>
+							<div class="roundbox-line-bottom">
+								<dl class="thumb-info">
+									<dt class="thumb-img"><img src="/images/mycar/image-product-aircon-filter.png"></dt>
+									<dd class="txt-area">
+										<span class="txt">
+											3M X3 프리미엄 PM2.5 초미세먼지<br />
+											활성탄 에어컨 필터
+										</span>	
+										<span class="price">15,000원</span>
+									</dd>
+								</dl>
+							</div>				
+							
+						</div>
+
+						<div class="container-top-roundbox">
+							<div class="box-tit-area">
+								<span class="box-tit">에어컨필터</span>
+								<button class="icon24 icon-tooltip" data-target="tooltip-2-2"></button>								
+							</div>
+							<div class="tooltip" data-module="tooltip" data-name="tooltip-2-2" data-tooltip-group="tt1">
+								<p class="txt">자동차는 엔진에서 연료와 공기가 만나 폭발하는 힘으로 움직이는, 이 때 폭발이 일어나도록 불꽃을 발생시키는 장치가 가열 플러그입니다.</p>
+								<button class="icon16 icon-close">닫기</button>
+							</div>
+							<div class="box-sub-txt">
+								교체 시점입니다.
+							</div>
+							<div class="box-sub-tip-txt">
+								<b>TIP.</b> 황사가 잦은 계절에는 에어컨 필터를 점검 해주세요.
+							</div>
+							<div class="progress-flag-bar-area">
+								<div class="progress-flag-area">
+									<i class="icon22 icon-flag-yellow" style="left:0%"></i>
+								</div>
+								<div class="progress-flag-bar">
+									<div class="color-blue-bar" style="width:60%;"></div>
+								</div>
+								<div class="progress-flag-txt-area">
+									<span class="txt color-red">7,000km 지남</span>
+									<span class="txt">교체 기준 10,000km</span>
+								</div>
+							</div>
+							<div class="btn-area">
+								<button type="button" class="btn-gray"><span>주기변경</span></button>
+								<button type="button" class="btn-yellow" disabled><span>점검완료</span></button>
+							</div>
+							<div class="roundbox-line-bottom">
+								<dl class="thumb-info">
+									<dt class="thumb-img"><img src="/images/mycar/image-product-aircon-filter.png"></dt>
+									<dd class="txt-area">
+										<span class="txt">
+											3M X3 프리미엄 PM2.5 초미세먼지<br />
+											활성탄 에어컨 필터
+										</span>	
+										<span class="price">15,000원</span>
+									</dd>
+								</dl>
+							</div>				
+							
+						</div>
+
+					</div>       
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

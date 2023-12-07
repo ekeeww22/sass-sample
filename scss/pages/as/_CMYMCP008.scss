@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.CMYMCP008 {
+    .modal-body { 
+        .modal-txt { font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; }
+        .table-wrap { margin-top:1.6rem; 
+            table {
+                tbody {
+                    th { padding:1.4rem 1.6rem; }
+                    td { padding:1.4rem 1.6rem; }
+                }
+            }
+        }
+        .bullet-wrap { margin-top:2.4rem; padding-bottom:2.4rem; }
+        .button-form-box { width:100%; display:block; 
+            .form-box { text-align:center;
+                .txt { margin-left: 0.4rem; }
+            }
+        }
+    }
+}

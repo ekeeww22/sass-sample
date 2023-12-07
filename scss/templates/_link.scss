@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* link */
+.link-list{
+    li{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        a, button{
+            position:relative;
+            display:block;
+            padding:1.6rem 3.6rem 1.6rem 1.6rem;
+            width:100%;
+            text-align:right;
+            background-size:1.6rem;
+            &:after{
+                content:'';
+                display:block;
+                clear:both;
+            }
+            &.txt{
+                display:inline-flex;
+                align-items:center;
+                padding:0;
+                width:auto;
+                max-width:calc(100% - 9rem);
+            }
+        }
+        .icon16{
+            position:absolute;
+            top:50%;
+            right:1.6rem;
+            transform:translateY(-50%);
+        }
+        .icon24{
+            float:left;
+            vertical-align:middle;
+            img{
+                width:100%;
+            }
+            & + .tit{
+                margin-left:0.8rem;
+            }
+        }
+        .icon32{
+            float:left;
+            vertical-align:middle;
+            & + .tit{
+                margin-left:1.6rem;
+                line-height:3.2rem;
+            }
+        }
+        .tit{
+            @include body-110;
+            float:left;
+            vertical-align:middle;
+            &:first-child:last-child{
+                @include body-120;
+                margin:-0.4rem 0;
+            }
+        }
+        .txt{
+            position:relative;
+            @include body-120;
+            vertical-align:middle;
+            span{
+                @include body-100;
+            }
+            .icon-arrow-right{
+                display:inline-block;
+                margin-left:0.4rem;
+                width:1.6rem;
+                min-width:1.6rem;
+                height:1.6rem;
+                background:url("../images/icon/icon16-arrow-right-black.svg") no-repeat center/contain;
+            }
+            &.none{
+                span{
+                    @include body-120;
+                }
+                .icon-arrow-right{
+                    background:url("../images/icon/icon16-arrow-right-gray.svg") no-repeat center/contain;
+                }
+            }
+            .txt-input{
+                position:relative;
+                label{
+                    @include body-100;
+                    &.view-time{
+                        position:absolute;
+                        left:-9999px;
+                        width:0;
+                        height:0;
+                        font-size:0;
+                    }
+                }
+                input{
+                    position:absolute;
+                    left:-9999px;
+                    width:0;
+                    height:0;
+                    font-size:0;
+                }
+                &.type-pc{
+                    font-size:0;
+                    label{
+                        display:none;
+                    }
+                    input{
+                        position:relative;
+                        left:auto;
+                        width:50%;
+                        height:auto;
+                        font-size:1.6rem;
+                    }
+                    input[type="date"],
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        appearance:unset;
+                        -webkit-appearance:unset;
+                        margin:auto;
+                        background:revert;
+                    }
+                }
+            }
+        }
+        .txt-black{
+            @include body-100;
+            vertical-align:middle;
+        }
+        .accordion-wrap{
+            width:100%;
+            > .accordion-header{
+                justify-content:flex-start;
+                padding:1.6rem;
+            }
+            > .accordion-container{
+                padding:0.8rem 1.6rem;
+                .bg-gray{
+                    li{
+                        margin-top:0.8rem;
+                        &:first-child{
+                            margin-top:0;
+                        }
+                        a,button{
+                            padding:1.4rem 3.6rem 1.4rem 1.6rem;
+                            @include bg-color-gray-200;
+                            border-radius:1.2rem;
+                            .tit{
+                                @include body-210;
+                            }
+                        }
+                    }
+                }
+            }
+            &.toggle-active{
+                > .accordion-header{
+                    .icon16{
+                        transform:translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+        
+    }
+    &.line{
+        li{
+            border-bottom:1px solid #eee;
+            a{
+                padding:1.2rem 2rem 1.2rem 0;
+            }
+        }
+    }
+    &.line-top{
+        li{
+            position:relative;
+            &:before{position:absolute; top:0; left:1.6rem; content:'';display:block; width:calc(100% - 3.2rem); height:1px; background:#eee;}
+            a{
+                padding:1.6rem 2rem 1.6rem 3.6rem;
+                .tit{@include body-120; padding-right:2rem;}
+                .icon16{
+                    right:1.6rem;
+                } 
+            }
+        }
+    }
+    &.round{
+        li{
+            margin-top:0.8rem;
+            border-radius:1.2rem;
+            @include line-color-gray-200;
+            &:first-child{
+                margin-top:0;
+            }
+            a{
+                text-align:left;
+            }
+            .tit{
+                float:none;
+                display:block;
+            }
+            .txt{
+                display:block;
+                @include body-210;
+            }
+            .img{
+                position:absolute;
+                top:50%;
+                right:3.6rem;
+                text-align:right;
+                transform:translateY(-50%);
+                img{
+                    width:50%;
+                }
+            }
+        }
+    }
+}
+
+/* 차 엠블럼 CMYMPH013 */
+.emblem-list{
+
+    ul{
+        display:flex; flex-wrap:wrap; justify-content: flex-start; margin:0 -0.8rem;
+    }
+    li{
+        margin-bottom:3.2rem; width:25%; text-align:center; font-size:0; padding:0 0.8rem;
+    }
+    a{
+        display:inline-block; width:6.4rem; min-width:6.4rem; max-width:6.4rem; text-align:center;
+        .img-wrap{
+            display:flex; justify-content: center; align-items: center; padding:1.1rem; width:100%; border-radius:50%;border:1px solid #eee;
+            img{width:100%;}
+        }
+        .txt{display:inline-block; @include body-210; margin-top:0.8rem; color:#222;}
+    }
+
+    /* 480 ~ */
+    @media all and (min-width:479px) {
+        ul > li{width:20%;}
+    }
+    
+    
+}
+
+/* 링크 리스트 CMYMPH012 */
+.link-list-box{
+    li{
+        & + li{margin-top:1.6rem;}
+
+        a{
+            display:flex; justify-content: space-between; align-items: center; width:100%;height:100%; padding:2.4rem; border-radius:1.2rem;box-shadow:0px 4px 16px 0 rgba(0,0,0,0.08);
+            span{display:inline-block; @include contents-title-300;}
+            i{background: url("../images/icon/icon16-plus-black.svg") no-repeat center/contain;}
+
+            &.disabled{
+                box-shadow:none;
+                background:#f8f8f8;
+                border:1px solid #eee;
+                span{color:#888;}
+                i{background: url("../images/icon/icon16-plus-gray.svg") no-repeat center/contain; opacity:50%;}
+            }
+        }
+    }
+}
+
+/* link-list-between CMYMPH014 */
+.link-list-between{
+    li{
+        width:100%; height:9.6rem; border-bottom:1px solid #eee;
+        a{
+            display:flex; justify-content: space-between; align-items: center; padding:1.6rem 0; width:100%; height:100%;
+            .txt{@include body-100;}
+            .img-wrap{
+                width:9.6rem; height:6.4rem;
+                img{width:100%;}
+            }
+        }
+    }
+}
+
+/* link-list-img  */
+.link-list-img{
+    li{
+        & + li{margin-top:1.6rem;}
+    }
+    a{
+        position:relative; display:block; padding:0.8rem 3.2rem 0.8rem 5.6rem; width:100%; height:100%;
+        .img-wrap{
+            position:absolute; top:50%; left:0; transform:translateY(-50%); width:4rem; height:4rem; 
+            img{width:100%;}
+        }
+        .tit{@include body-110;}
+        .txt{@include body-210;  margin-top:0.4rem; color:#2589ff;}
+        .icon-link{position:absolute; top:50%; right:0; transform:translateY(-50%); }
+    }
+}

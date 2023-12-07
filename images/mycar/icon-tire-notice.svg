@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="w1fsc5ls6a" d="M10 5c0 2.761-2.239 5-5 5S0 7.761 0 5s2.239-5 5-5 5 2.239 5 5z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#FFF" d="M22 11c0 6.075-4.925 11-11 11S0 17.075 0 11 4.925 0 11 0s11 4.925 11 11" transform="translate(-84.000000, -490.000000) translate(44.000000, 98.000000) translate(24.000000, 380.000000) translate(16.000000, 12.000000) translate(1.000000, 1.000000)"/>
+                            <path fill="#FC0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 11c0 6.075-4.925 11-11 11S0 17.075 0 11 4.925 0 11 0s11 4.925 11 11z" transform="translate(-84.000000, -490.000000) translate(44.000000, 98.000000) translate(24.000000, 380.000000) translate(16.000000, 12.000000) translate(1.000000, 1.000000)"/>
+                            <path fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.5 11c0 4.142-3.358 7.5-7.5 7.5-4.142 0-7.5-3.358-7.5-7.5 0-4.142 3.358-7.5 7.5-7.5 4.142 0 7.5 3.358 7.5 7.5z" transform="translate(-84.000000, -490.000000) translate(44.000000, 98.000000) translate(24.000000, 380.000000) translate(16.000000, 12.000000) translate(1.000000, 1.000000)"/>
+                            <g transform="translate(-84.000000, -490.000000) translate(44.000000, 98.000000) translate(24.000000, 380.000000) translate(16.000000, 12.000000) translate(1.000000, 1.000000) translate(5.967742, 5.967742)">
+                                <mask id="mxi5zlgmfb" fill="#fff">
+                                    <use xlink:href="#w1fsc5ls6a"/>
+                                </mask>
+                                <use fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" xlink:href="#w1fsc5ls6a"/>
+                                <g mask="url(#mxi5zlgmfb)">
+                                    <g transform="translate(-0.867742, -1.567742)">
+                                        <path fill="#000" d="M6.683 0v4.102c.387.11.74.303 1.04.561l3.479-2.054.665 1.201-3.35 1.98c.128.328.198.686.198 1.062 0 .166-.014.328-.04.486l3.192 1.885-.665 1.201L8.128 8.61c-.36.475-.865.83-1.444.994v3.707h-1.5l-.001-3.717c-.571-.17-1.067-.523-1.422-.996L.665 10.424 0 9.223 3.22 7.32c-.024-.152-.037-.31-.037-.469 0-.37.069-.723.193-1.048L0 3.81.665 2.61l3.498 2.065c.294-.256.64-.45 1.02-.563V0h1.5z"/>
+                                        <circle cx="5.9" cy="6.6" r="2.25" fill="#FFF" stroke="#000" stroke-width="1.5"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

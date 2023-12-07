@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H40V40H0z" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000)"/>
+                                <g stroke="#222">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.49 16.294h3.89c1.148 0 2.08-.899 2.08-2.007V9.655c0-1.2-.875-2.222-2.095-2.451-1.39-.264-3.206-.807-4.583-1.928C9.207 3.18 6.79 0 2.042 0 1.306 0 .64.019 0 .051v3.082c4.553 0 6.21 2 8.245 4.424H0v8.737h5.177" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000) translate(8.000000, 11.000000)"/>
+                                    <path d="M12.49 16.343c0 2.02-1.637 3.657-3.657 3.657s-3.656-1.638-3.656-3.657c0-2.02 1.636-3.656 3.656-3.656 2.02 0 3.657 1.636 3.657 3.656z" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000) translate(8.000000, 11.000000)"/>
+                                    <path stroke-linecap="round" d="M11.782 5.276S14.115.75 17.944 0" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000) translate(8.000000, 11.000000)"/>
+                                    <path stroke-linecap="round" stroke-width=".75" d="M21.232 1.293c1.38 1.153 2.313 2.836 2.443 4.772.13 1.935-.57 3.728-1.782 5.055" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000) translate(8.000000, 11.000000)"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width=".75" d="M22.973 1.928L21.23 1.276 21.536 3.111M23.534 10.258L21.894 11.138 21.951 9.278" transform="translate(-299.000000, -716.000000) translate(0.000000, 88.000000) translate(16.000000, 268.000000) translate(0.000000, 120.000000) translate(0.000000, 240.000000) translate(283.500000, 0.000000) translate(8.000000, 11.000000)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

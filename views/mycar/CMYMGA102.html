@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 내차캘린더 &gt; 정비주기</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>정비주기</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA102">
+					<h3 class="contents-title-200">소모품 및 점검 주기 관리</h3>
+					<div class="tab-underbar type-scroll-x">
+                        <ul>
+                            <li><button class="active">전체</button></li><!-- 활성화시 button에 'active' 클래스 추가 -->
+                            <li><button class="">10,000km</button></li>
+                            <li><button class="">30,000km</button></li>
+                            <li><button class="">50,000km</button></li>
+                            <li><button class="">100,000km</button></li>
+                        </ul>
+                    </div>
+
+					<div class="item-area">
+						<div class="item-filter">
+							<span class="body-210">교체대상 항목만 보기</span>
+							<label class="form-switch sm">
+								<input type="checkbox">
+								<i><span></span></i>
+							</label>
+						</div>
+						<ul class="item-list">
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-heaterairfilter.svg" alt="에어컨필터"></span>
+									</div>
+									<p class="name">에어컨필터</p>
+									<p class="distance">5,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-airconditioningeva.svg" alt="타이어 위치"></span>
+									</div>
+									<p class="name">타이어 위치</p>
+									<p class="distance">10,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-brakepad.svg" alt="브레이크 패드 및 디스크"></span>
+									</div>
+									<p class="name">브레이크 패드 및 디스크</p>
+									<p class="distance">20,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-antifreeze.svg" alt="엔진부동액"></span>
+									</div>
+									<p class="name">엔진부동액</p>
+									<p class="distance">40,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-brakeoil.svg" alt="브레이크 오일"></span>
+									</div>
+									<p class="name">브레이크 오일</p>
+									<p class="distance">5,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-missionoil.svg" alt="미션 오일"></span>
+									</div>
+									<p class="name">미션 오일</p>
+									<p class="distance">20,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-externaldrivebelt.svg" alt="구동벨트"></span>
+									</div>
+									<p class="name">구동벨트</p>
+									<p class="distance">40,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-battery.svg" alt="배터리"></span>
+									</div>
+									<p class="name">배터리</p>
+									<p class="distance">60,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-fuelfilter.svg" alt="연료필터"></span>
+									</div>
+									<p class="name">연료필터</p>
+									<p class="distance">20,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-bearingset.svg" alt="타이어"></span>
+									</div>
+									<p class="name">타이어</p>
+									<p class="distance">50,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-tirebelt.svg" alt="타이밍 벨트"></span>
+									</div>
+									<p class="name">타이밍 벨트</p>
+									<p class="distance">60,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-differentialoil.svg" alt="파워스티어링 오일"></span>
+									</div>
+									<p class="name">파워스티어링 오일</p>
+									<p class="distance">40,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-sparkplug.svg" alt="점화플러그"></span>
+									</div>
+									<p class="name">점화플러그</p>
+									<p class="distance">25,000km</p>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="box">
+										<!-- 차트영역 -->
+										<div class="chart-area">
+
+										</div>
+										<!-- 차트영역 -->
+										<span class="icon"><img src="/images/mycar/icon32-oil.svg" alt="엔진오일"></span>
+									</div>
+									<p class="name">엔진오일</p>
+									<p class="distance">0km</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

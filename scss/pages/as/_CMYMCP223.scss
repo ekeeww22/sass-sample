@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.CMYMCP223{
+    .top-account-wrap .account-name strong{line-height:4rem;}
+    .detail-list > ul > li div.detail-box{margin-top:0;}
+    
+    .detail-list > ul > li:first-child{border-top:0;}
+    .filter-area + .detail-list > ul > li:first-child{border-top:1px solid #eee;}
+}

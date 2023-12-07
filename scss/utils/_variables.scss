@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+// 메인 컬러
+$color-default-1:   #da291c;
+$color-default-2:   #93785f;
+
+
+// 폰트 컬러
+$color-font-1:  #fff;
+$color-font-2:  #000;
+$color-font-3:  #555;
+$color-font-4:  #777;
+$color-font-5:  #999;
+$color-font-6:  #da291c;
+$color-font-7:  #93785f;
+$color-font-8:  #93775d;
+$color-font-9:  #b47c47;
+$color-font-10:  #aaa;
+$color-font-11:  #ccc;
+$color-font-12:  #33aeb6;
+$color-font-13:  #222;
+$color-font-14:  #efc122;
+$color-font-15:  #eee;
+
+
+
+// line & BG 컬러
+$color-bg-0:    #fff;
+$color-bg-1:    #f5f5f5;
+$color-bg-2:    #eee;
+$color-bg-3:    #ddd;
+$color-bg-4:    #ccc;
+$color-bg-5:    #4D97DB;
+$color-bg-6:    #555;
+$color-bg-7:    #da291c;
+$color-bg-8:    #bbb;
+$color-bg-9:    #A59280;
+$color-bg-10:   #000;
+$color-bg-11:   #2086cd;
+$color-bg-12:   #e63333;
+$color-bg-13:   #e5e5e5;
+$color-bg-14:   #777;
+$color-bg-15:   #8D7B69;
+$color-bg-16:   #716254;
+$color-bg-17:   #387688;
+$color-bg-18:   #2D5E6D;
+$color-bg-19:   #33AEB6;
+$color-bg-20:   #aaa;
+$color-bg-21:   #444;
+$color-bg-22:   #999;
+$color-bg-23:   #888;
+$color-bg-24:   #4c4c4c;
+$color-bg-25:   #dedede;
+$color-bg-26:   #fafafa;
+
+
+// font size
+$font-x-small       : 12px;
+$font-small         : 14px;
+$font-medium        : 16px;
+$font-large         : 18px;
+$font-large-20      : 20px;
+$font-large-24      : 24px;
+$font-large-30      : 30px;
+$font-large-32      : 32px;
+$font-x-large       : 36px;
+$font-xx-large      : 42px;
+
+// @include font-light
+
+// media query
+$desktop-l-width	: 1440px;
+$tablet-l-width		: 1024px;
+$tablet-s-width		: 768px;
+$mob-l-width		: 640px;
+$mob-m-width		: 425px;
+$mob-s-width		: 375px;
+
+
+// Header Height
+$header-height      : 120px;
+// $header-height-m    : 50px;

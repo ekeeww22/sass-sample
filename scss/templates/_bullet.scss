@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Bullet List */
+.bullet-wrap{
+    .tit{
+        @include contents-title-300;
+        margin-bottom:1.6rem;
+    }
+}
+
+.bullet-list{
+    li{
+        @include body-120;
+        position:relative;
+        margin-top:1.6rem;
+        padding-left:1.2rem;
+        &:first-child{
+            margin-top:0;
+        }
+        &:before{
+            content:'';
+            display:block;
+            position:absolute;
+            top:1rem;
+            left:0;
+            width:0.4rem;
+            height:0.4rem;
+            border-radius:50%;
+            background:#888;
+        }
+        .bullet-list{
+            &.sm{
+                margin-top:0.8rem;
+            }
+        }
+    }
+    &.sm{
+        li{
+            @include body-210;
+            margin-top:0.8rem;
+            padding-left:0.8rem;
+            &:first-child{
+                margin-top:0;
+            }
+            &:before{
+                top:0.9rem;
+                width:0.2rem;
+                height:0.2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <a href="javascript:;" class="header-link">마이데이터 관리</a> <!-- 2021-07-07 퍼블수정: 한글로 문구수정 -->
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP207">
+					<div class="top-account-wrap">
+                        <div class="account-name">
+                            <div class="bank40"><img src="/images/bank/bank-sample.svg" alt="샘플"></div>
+                            <strong>삼성아세안증권자투자신탁제2호[주식] 종류C-E</strong>
+                            <ul class="info">
+                                <li>삼성증권</li>
+                                <li>250146123456 (1)</li>
+                            </ul>
+                        </div>
+
+                        <div class="account-data">
+                            <strong class="tit">평가금액</strong>
+                            <div class="large-box">
+                                <em>31,000,000</em><span>원</span>
+                            </div>
+
+                            <!-- .btn-detail에 [.active] 추가되면 .detail-contents 노출됨 -->
+                            <button class="icon24 icon-arrow-bottom-black btn-detail" data-module="toggle" data-target="toggle1">상세정보 버튼</button>
+
+                            <div class="detail-contents" data-name="toggle1">
+                                <div class="data-list">
+                                    <ul class="bg-gray">
+                                        <li>
+                                            <span class="tit">납입유형</span>
+                                            <span class="txt">임의식</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">개설일</span>
+                                            <span class="txt">2021.01.01</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">만기일</span>
+                                            <span class="txt">2021.12.31</span>
+                                        </li>
+                                        <!--2021-08-02 마크업 삭제
+                                        <li>
+                                            <span class="tit">통화코드</span>
+                                            <span class="txt">원(KRW)</span>
+                                        </li>
+                                        -->
+                                        <li>
+                                            <span class="tit">잔액</span>
+                                            <span class="txt">XXX,XXX,XXX원</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">투자원금</span>
+                                            <span class="txt">9,000,000원</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">보유좌수</span>
+                                            <span class="txt">XX.XXX좌</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">평가금액</span>
+                                            <span class="txt bold">10,000,000원</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-area">
+                        <ul class="period">
+                            <li>1개월</li>
+                            <!--2021-07-30 마크업 삭제
+                            <li>전체</li>
+                            -->
+                        </ul>
+                        <button type="button" class="icon24 icon-filter">검색조건 설정</button>
+                    </div>
+                    
+					<div class="detail-list">
+                        <ul>
+                            <li>
+                                <p class="date">02.04</p>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">재투자</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">거래금액</span>
+                                                <span class="txt bold">1,000,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">거래좌수</span>
+                                                <span class="txt">1,000좌</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">거래 후 평가금액</span>
+                                                <span class="txt">10,000,000원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

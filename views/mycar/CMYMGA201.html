@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 타이어 상세 정보</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>타이어 상세 정보</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA201">
+					<div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+                        <ul>
+                            <li><button class="active" data-target="cont1">기본정보</button></li>
+                            <li><button class="" data-target="cont2">관리정보</button></li>
+                            <li><button class="" data-target="cont3">안전알림</button></li>
+                            <li><button class="" data-target="cont4">타이어구매</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-wrap" >
+                        <div class="tab-contents" data-name="tabcontents1">
+                            <div class="tab-content active" data-name="cont1">
+								<h4 class="contents-title-300">
+									타이어 사이즈 수정
+									<button type="button" class="btn-txt sm">타이어규격 확인</button>
+								</h4>
+
+								<div class="tire-img">
+									<img src="/images/mycar/img-tire-info.png" alt="타이어 사이즈 정보"/>
+								</div>
+								<p class="info-txt"><i class="icon16 icon-info"></i>제공하는 타이어 사이즈 정보는 출고 옵션에 따라 달라질 수 있습니다. 내 차의 사이즈와 다르다면 수정 후 관리하세요.</p>
+
+								<div class="inp-list-wrap">
+									<h4 class="contents-title-300">전륜</h4>
+									<ul>
+										<li>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">단면폭</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">편평비</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">인치</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+										</li>
+									</ul>
+
+									<h4 class="contents-title-300">후륜</h4>
+									<ul>
+										<li>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">단면폭</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">편평비</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+											<div class="inp-box type-basic default">
+												<label for="" class="inp-tit">인치</label>
+												<input type="text">
+												<button class="icon16 icon-close">삭제</button>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="btn-area">
+									<button class="btn-gray"><span>초기화</span></button>
+									<button class="btn-yellow"><span>저장</span></button>
+								</div>
+                            </div>
+
+                            <div class="tab-content" data-name="cont2">
+                                <h4 class="contents-title-300">타이어 장착 정보</h4>
+								<div class="tire-info-box">
+									<ul>
+										<li>
+											<span class="img"><img src="/images/mycar/img-tire.png" alt="타이어 이미지"/></span>
+											<a href="javascript:;" class="link">
+												<span class="type">전륜<br>(좌)</span>
+												<div class="box">
+													<ul class="info">
+														<li>한국타이어</li>
+														<li>4계절</li>
+													</ul>
+													<p class="txt">00년 00개월 00일 사용</p>
+													<p class="distance"><strong>23,500km</strong>주행</p>
+												</div>
+												<i class="icon24 icon-arrow-right-white"></i>
+											</a>
+										</li>
+										<li>
+											<span class="img"><img src="/images/mycar/img-tire.png" alt="타이어 이미지"/></span>
+											<a href="javascript:;" class="link">
+												<span class="type">전륜<br>(우)</span>
+												<div class="box">
+													<ul class="info">
+														<li>한국타이어</li>
+														<li>4계절</li>
+													</ul>
+													<p class="txt">00년 00개월 00일 사용</p>
+													<p class="distance"><strong>23,500km</strong>주행</p>
+												</div>
+												<i class="icon24 icon-arrow-right-white"></i>
+											</a>
+										</li>
+										<li>
+											<span class="img"><img src="/images/mycar/img-tire.png" alt="타이어 이미지"/></span>
+											<a href="javascript:;" class="link">
+												<span class="type">후륜<br>(좌)</span>
+												<div class="box">
+													<ul class="info">
+														<li>-</li>
+														<li>-</li>
+													</ul>
+													<p class="txt">00년 00개월 00일 사용</p>
+													<p class="distance"><strong>23,500km</strong>주행</p>
+												</div>
+												<i class="icon24 icon-arrow-right-white"></i>
+											</a>
+										</li>
+										<!-- 타이어 정보 없을경우 -->
+										<li>
+											<span class="img"><img src="/images/mycar/img-tire.png" alt="타이어 이미지"/></span>
+											<a href="javascript:;" class="link">
+												<span class="type">후륜<br>(우)</span>
+												<div class="box">
+													<p class="txt">타이어 정보가 없습니다</p>
+												</div>
+												<i class="icon24 icon-arrow-right-white"></i>
+											</a>
+										</li>
+										<!-- // 타이어 정보 없을경우 -->
+									</ul>
+								</div>
+								<p class="info-txt"><i class="icon16 icon-info"></i>타이어 사용 기간과 주행거리는 차고 등록 시점을 자동으로 입력합니다. 정확한 안전 알림 서비스를 위해 실제 구매한 일자와 사용 주행거리를 확인하며 수정해주세요.</p>
+
+								<h4 class="contents-title-300 top-line">
+									타이어 위치교환
+									<button type="button" class="btn-txt sm">위치교환 왜 하나요?</button>
+								</h4>
+
+								<div class="history-list">
+									<ul>
+										<li>
+											<span class="date">2021.05.31</span>
+											<span class="txt">네바퀴 위치교환 정보 등록</span>
+										</li>
+										<li>
+											<span class="date">2021.05.31</span>
+											<span class="txt">전륜(앞바퀴) 위치교환 정보 등록</span>
+										</li>
+										<li>
+											<span class="date">2021.05.31</span>
+											<span class="txt">후륜(뒷바퀴) 위치교환 정보 등록</span>
+										</li>
+									</ul>
+
+									<!-- 내역없을경우 -->
+									<div class="result-box">
+										<i class="icon48 icon-nodata"></i>
+										<p class="txt">
+											타이어 위치교환 정보가 없습니다.<br>
+											위치교환 정보는 교환 대상 위치의 타이어를<br>
+											새로운 타이어로 교체시 자동 초기화 됩니다.
+										</p>
+									</div>
+									<!-- // 내역없을경우 -->
+								</div>
+
+								<ul class="bullet-list sm">
+									<li>가까운 타이어 샵에서 위치교환을 하신 뒤 정보를 등록해 주세요. 확인이 필요할 때 다시 알려드릴게요.</li>
+									<li>기존에 타이어를 교체한 샵이 있다면 문의해 보세요. 위치교환은 서비스로 받으실 수도 있습니다.</li>
+								</ul>
+
+								<div class="btn-area">
+									<button class="btn-yellow"><span>타이어 위치교환 정보 등록</span></button>
+								</div>
+                            </div>
+
+							<div class="tab-content" data-name="cont3">
+                                <div class="info-content">
+									<div class="info-box">
+										<div class="info-top">
+											<p class="date">2021.05.30</p>
+										</div>
+										<ul class="info-list">
+											<!-- 장착 중인 타이어에 썸머타이어 타입 타이어가 있을 경우 & 11월 시작시 -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-winter.png" alt="겨울 아이콘"></span>
+												<span class="tit">썸머타이어 교체 권고</span>
+												<span class="txt">동절기 주행에 적합하지 않은 타이어, 타이어 교체를 고려해 보세요.</span>
+											</li>
+											<!-- // 장착 중인 타이어에 썸머타이어 타입 타이어가 있을 경우 & 11월 시작시 -->
+											<!-- 장착 중인 타이어에 윈터타이어 타입 타이어가 있을 경우 & 3월 시작시  -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-summer.png" alt="여름 아이콘"></span>
+												<span class="tit">윈터타이어 교체 권고</span>
+												<span class="txt">동절기 전용 타이어 장착 중, 안전을 위해 타이어 교체를 고려해 보세요.</span>
+											</li>
+											<!-- // 장착 중인 타이어에 윈터타이어 타입 타이어가 있을 경우 & 3월 시작시  -->
+											<!-- 주행거리 10,000 km 마다  -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-positionchange.png" alt="위치교환"></span>
+												<span class="tit">타이어 위치교환 점검 권고</span>
+												<span class="txt">장착 후 주행거리 10,000km 초과, 균일한 마모를 위해 위치교환 여부를 점검해 보세요.</span>
+											</li>
+											<!-- // 주행거리 10,000 km 마다  -->
+										</ul>
+									</div>
+
+									<div class="info-box">
+										<div class="info-top">
+											<p class="date">2021.05.22</p>
+										</div>
+										<ul class="info-list">
+											<!-- 주행거리 40,000 km 시점 -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-replacement.png" alt="닳은 타이어"></span>
+												<span class="tit">타이어 교체 점검 권고</span>
+												<span class="txt">장착 후 주행거리 50,000km 초과, 안전을 위해 타이어 교체(제조사마다 상이)를 점검해 보세요.</span>
+											</li>
+											<!-- // 주행거리 40,000 km 시점 -->
+										</ul>
+									</div>
+
+									<div class="info-box">
+										<div class="info-top">
+											<p class="date">2021.05.21</p>
+										</div>
+										<ul class="info-list">
+											<!-- 주행거리 50,000 km 시점  -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-replacement.png" alt="닳은 타이어"></span>
+												<span class="tit">타이어 교체 점검 권고</span>
+												<span class="txt">장착 후 주행거리 50,000km 초과, 안전을 위해 타이어 교체(제조사마다 상이)를 점검해 보세요.</span>
+											</li>
+											<!-- // 주행거리 50,000 km 시점 -->
+											<!-- 타이어 장착일 시점으로부터 3년 경과 시점 표시 -->
+											<li>
+												<span class="icon"><img src="/images/mycar/icon-tire-replacement.png" alt="닳은 타이어"></span>
+												<span class="tit">타이어 교체 점검 권고</span>
+												<span class="txt">장착 후 사용기한 3년 초과, 안전을 위해 타이어 교체(제조사마다 상이) 를 점검해 보세요.</span>
+											</li>
+											<!-- // 타이어 장착일 시점으로부터 3년 경과 시점 표시 -->
+										</ul>
+									</div>
+								</div>
+								<div class="tac">
+									<p class="body-210">메시지는 최대 30일간 보관됩니다.</p>
+								</div>
+								<!-- 내역없을경우 -->
+								<div class="result-box">
+									<i class="icon48 icon-nodata"></i>
+									<p class="txt">
+										등록된 알림 정보가 없습니다.<br>
+										메시지는 최대 30일간 보관됩니다.
+									</p>
+								</div>
+								<!-- // 내역없을경우 -->
+                            </div>
+							
+							<div class="tab-content" data-name="cont4">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

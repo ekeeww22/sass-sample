@@ -1,0 +1,200 @@
+<div class="modal-wrap CMYMCP345" data-type="toast" data-uicomponent="modal">
+    <!-- 두번째 팝업이 나와야 할경우. step1 클래스를 .step2클래스로 변경 //-->
+    <!-- 그리고 두번째 팝업 (.modal) 에 active 클래스를 줘야됨 //-->
+    <!-- 스크립트 예시를 보여주기 위해 data-idx 사용 -->
+    <div class="modal active" data-idx="modal1">
+        <div class="modal-header">
+            <h3>검색조건 설정</h3>
+            <button class="modal-close">닫기</button>
+        </div>
+        <div class="modal-body">
+            <div class="search-set-list">
+                <ul>
+                    <li>
+                        <button type="button" class="btn-select" data-idx="bs1"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                            <span class="tit">조회 기간 선택</span>
+                            <span class="txt">2021-06</span>
+                            <i class="icon16 icon-arrow-bottom-gray"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn-select" data-idx="bs2"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                            <span class="tit">기관 선택</span>
+                            <span class="txt">전체 기관</span>
+                            <i class="icon16 icon-arrow-bottom-gray"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn-select" data-idx="bs3"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                            <span class="tit">유형 선택</span>
+                            <span class="txt">전체 유형</span>
+                            <i class="icon16 icon-arrow-bottom-gray"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-area">
+                <button type="button" class="btn-yellow"><span>조회</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-dep2" data-idx="modal2-1">
+        <div class="modal-header">            
+            <button type="button" class="btn-history-back" data-idx="back1">뒤로</button>
+            <h3>조회 기간 선택</h3>
+        </div>
+        <div class="modal-body">
+            <div class="scroll-choice-area">
+                <div class="scroll-choice-list column-2">
+                    <!-- 값이 입력되면 button 태그에 클래스 'active' 추가 -->
+                    <ul class="year max-height243">
+                        <li><button type="button" class="btn-scroll-choice">2021</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2020</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2019</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2018</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2017</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2016</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2015</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2014</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2013</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2012</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2011</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2010</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2009</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2008</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2007</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2006</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2005</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2004</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2003</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2002</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2000</button></li>
+                        <li><button type="button" class="btn-scroll-choice">2001</button></li>
+                    </ul>
+                    <!-- 값이 입력되면 button 태그에 클래스 'active' 추가 -->
+                    <ul class="month max-height243">
+                        <li><button type="button" class="btn-scroll-choice">01</button></li>
+                        <li><button type="button" class="btn-scroll-choice">02</button></li>
+                        <li><button type="button" class="btn-scroll-choice">03</button></li>
+                        <li><button type="button" class="btn-scroll-choice">04</button></li>
+                        <li><button type="button" class="btn-scroll-choice">05</button></li>
+                        <li><button type="button" class="btn-scroll-choice">06</button></li>
+                        <li><button type="button" class="btn-scroll-choice">07</button></li>
+                        <li><button type="button" class="btn-scroll-choice">08</button></li>
+                        <li><button type="button" class="btn-scroll-choice">09</button></li>
+                        <li><button type="button" class="btn-scroll-choice">10</button></li>
+                        <li><button type="button" class="btn-scroll-choice">11</button></li>
+                        <li><button type="button" class="btn-scroll-choice">12</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-dep2" data-idx="modal2-2">
+        <div class="modal-header">            
+            <button type="button" class="btn-history-back" data-idx="back1">뒤로</button>
+            <h3>기관 선택</h3>
+        </div>
+        <div class="modal-body">
+            <div class="scroll-choice-area">
+                <div class="scroll-choice-list column-1">
+                    <!-- 값이 입력되면 button 태그에 클래스 'active' 추가 -->
+                    <ul class="agency">
+                        <li><button type="button" class="btn-scroll-choice">전체 기관</button></li>
+                        <li><button type="button" class="btn-scroll-choice">KB국민은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">IBK기업은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">KDB산업은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">KEB하나은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">NH농협은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">SC제일은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">경남은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">광주은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">대구은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">부산은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">전북은행</button></li>
+                        <li><button type="button" class="btn-scroll-choice">저축은행</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-dep2" data-idx="modal2-3">
+        <div class="modal-header">            
+            <button type="button" class="btn-history-back" data-idx="back1">뒤로</button>
+            <h3>유형 선택</h3>
+        </div>
+        <div class="modal-body">
+            <div class="scroll-choice-area">
+                <div class="scroll-choice-list column-1">
+                    <!-- 값이 입력되면 button 태그에 클래스 'active' 추가 -->
+                    <ul class="agency">
+                        <li><button type="button" class="btn-scroll-choice">전체 유형</button></li>
+                        <li><button type="button" class="btn-scroll-choice">전송요구(신규)</button></li>
+                        <li><button type="button" class="btn-scroll-choice">전송요구(변경)</button></li>
+                        <li><button type="button" class="btn-scroll-choice">전송요구 해제</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 스크립트 예시임 -->
+    <script>
+        $('[data-idx="bs1"]').on("click",function(){
+            $(".modal-wrap").removeClass("step1");
+            $(".modal-wrap").addClass("step2");
+
+            $('[data-idx="modal1"]').removeClass("active");
+            $('[data-idx="modal2-1"]').addClass("active");
+        });
+
+        $('[data-idx="bs2"]').on("click",function(){
+            $(".modal-wrap").removeClass("step1");
+            $(".modal-wrap").addClass("step2");
+
+            $('[data-idx="modal1"]').removeClass("active");
+            $('[data-idx="modal2-2"]').addClass("active");
+        });
+
+        $('[data-idx="bs3"]').on("click",function(){
+            $(".modal-wrap").removeClass("step1");
+            $(".modal-wrap").addClass("step2");
+
+            $('[data-idx="modal1"]').removeClass("active");
+            $('[data-idx="modal2-3"]').addClass("active");
+        });
+
+        $('[data-idx="back1"]').on("click",function(){
+            $(".modal-wrap").addClass("step1");
+            $(".modal-wrap").removeClass("step2");
+
+            $('[data-idx="modal1"]').addClass("active");
+            $('[data-idx="modal2-1"]').removeClass("active");
+            $('[data-idx="modal2-2"]').removeClass("active");
+            $('[data-idx="modal2-3"]').removeClass("active");
+        });
+
+        $('.link-list>li').on("click",function(){
+            $(".modal-wrap").addClass("step1");
+            $(".modal-wrap").removeClass("step2");
+
+            $('[data-idx="modal1"]').addClass("active");
+            $('[data-idx="modal2-1"]').removeClass("active");
+            $('[data-idx="modal2-2"]').removeClass("active");
+            $('[data-idx="modal2-3"]').removeClass("active");
+        });
+
+        $('.btn-scroll-choice').on("click", function(){
+            $(this).parent('li').siblings('li')
+                .find('.btn-scroll-choice')
+                .removeClass('active');
+
+            $(this).addClass('active');
+        });
+    </script>
+</div>

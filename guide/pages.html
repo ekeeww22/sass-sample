@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI GUIDE</title>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/guide_data.js"></script>
+    <script type="text/javascript" src="./js/guide.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="./css/reset.css" >
+    <link type="text/css" rel="stylesheet" href="./css/content.css">
+    <style>
+        .content{margin-left:0px;padding:20px;width:100%;height:100%;}
+        a+a{margin-left:20px;display: inline-block;padding:6px 2px 6px 3px;background-color:#eee;color:#000;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            UI_GUIDE.page.init();
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <!-- 화면 목록 -->
+            <h3 class="page-title">Screen List</h3>
+            <ul class="display-work-list">
+                <li><em class="box-green">progress:100</em><span>완료</span></li>
+                <li><em class="box-red">progress:1</em><span>삭제</span></li>
+                <li><em class="box-sea">progress:99</em><span>공통</span></li>
+                <li><em class="box-yellow">progress:50</em><span>스크립트 필요</span></li>
+                <li><em class="box-duskypink">progress:70</em><span>수정사항</span></li>
+            </ul>
+            <div class="list-container">
+                <table id="pageList" class="table-typeA">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>화면 ID</th>
+                            <th>css 클래스명</th>
+                            <th>1 Depth</th>
+                            <th>화면명</th>
+                            <th>type</th>
+                            <th>담당자</th>
+                            <th>시작일</th>
+                            <th>완료일</th>
+                            <th>%</th>
+                            <th>수정날짜</th>
+                            <th>URL</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="list-container lc-page2">
+                <table id="pageList2" class="table-typeA">
+                    <thead>
+                        <tr>
+                            <th colspan="13">쿠콘</th>
+                        </tr>
+                        <tr>
+                            <th>No.</th>
+                            <th>화면 ID</th>
+                            <th>css 클래스명</th>
+                            <th>1 Depth</th>
+                            <th>화면명</th>
+                            <th>type</th>
+                            <th>담당자</th>
+                            <th>시작일</th>
+                            <th>완료일</th>
+                            <th>%</th>
+                            <th>수정날짜</th>
+                            <th>URL</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!-- // 화면 목록 -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* filter */
+.filter-area{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    height:4rem;
+    .period{
+        font-size:0;
+        li{
+            position:relative;
+            display:inline-block;
+            @include body-210;
+            & + li{
+                margin-left:0.8rem;
+                padding-left:0.9rem;
+                &:before{
+                    content:'';
+                    display:block;
+                    position:absolute;
+                    top:50%;
+                    left:0;
+                    width:1px;
+                    height:1.2rem;
+                    background:#ddd;
+                    transform:translateY(-50%);
+                }
+            }
+        }
+    }
+    .icon-filter{
+        margin-left:0.8rem;
+    }
+}
+
+.form-filter{
+    dt{
+        @include body-210;
+        @include font-color-gray-200;
+    }
+    dd{
+        margin-top:0.8rem;
+        > * + *{
+            margin-top:0.8rem;
+        } 
+        & + dt{
+            margin-top:1.6rem;
+        }
+    }
+}

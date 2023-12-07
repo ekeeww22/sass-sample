@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="80" viewBox="0 0 375 80">
+    <defs>
+        <linearGradient id="dbcohp4a1a" x1="54.178%" x2="54.178%" y1="76.324%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#dbcohp4a1a)" transform="translate(-80 -909)">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path d="M0 0H375V80H0z" transform="translate(80 160) translate(0 54) translate(0 44) translate(0 651) matrix(1 0 0 -1 0 80)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

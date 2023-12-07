@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.CMYMCP255 { 
+    .detail-list{
+        > ul{
+            > li{
+                &:first-child{
+                    border-top:none;
+                }
+                .date{
+                    & + .detail-box{
+                        margin-top:2.4rem;
+                    }
+                }
+                .detail-box{
+                    margin-top:0;
+                }
+            }
+        }
+    }
+}

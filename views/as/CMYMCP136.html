@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>전송요구(자산목록) 완료</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP136">
+                    <!-- 2021-06-28 마크업 추가 -->
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="active"><span>2</span></li>
+							<li><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+					<!-- // 2021-06-28 마크업 추가 -->
+                    
+					<div class="result-box">
+                        <i class="icon48 icon-success"></i>
+                        <p class="tit">
+                            보유 계좌 및 상품목록에 대한<br>
+                            전송요구가 안전한게 완료되었습니다.
+                        </p>
+                    </div>
+
+                    <div class="total-list-wrap">
+                        <dl class="total-list-caption">
+                            <dt>성공</dt>
+                            <dd class="success">6</dd>
+                            <dt>실패</dt>
+                            <dd class="fail">2</dd>
+                        </dl>
+                        <ul>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>KB국민은행</strong>
+                                    </div>
+                                    <span class="txt success">성공</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>KB증권</strong>
+                                    </div>
+                                    <span class="txt fail">실패</span>
+                                </div>
+                                <div class="total-list-contents">
+                                    <div class="round-pale-box">
+                                        <!-- 2021-07-27 에러 메시지 추가  -->
+                                        <p class="info-txt">
+                                            <i class="icon16 icon-info"></i>
+                                            예기치 않는 오류가 발생하였습니다.<br>
+                                            동일 오류가 지속적 발생시 고객센터로 문의 바랍니다.<br>
+                                            <em>[UCPID_100]</em>
+                                        </p>
+                                        <!-- // 2021-07-27 에러 메시지 추가  -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>KB국민카드</strong>
+                                    </div>
+                                    <span class="txt fail">실패</span>
+                                </div>
+                                <div class="total-list-contents">
+                                    <div class="round-pale-box">
+                                        <!-- 2021-07-27 에러 메시지 추가  -->
+                                        <p class="info-txt">
+                                            <i class="icon16 icon-info"></i>
+                                            안내 메세지<br>
+                                            <em>[에러 메시지]</em>
+                                        </p>
+                                        <!-- // 2021-07-27 에러 메시지 추가  -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>KB손해보험</strong>
+                                    </div>
+                                    <span class="txt success">성공</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>DB금융투자</strong>
+                                    </div>
+                                    <span class="txt success">성공</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>IBK기업은행</strong>
+                                    </div>
+                                    <span class="txt success">성공</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-list-header">
+                                    <div class="account-name">
+                                        <i class="icon24">
+                                            <img src="/images/bank/bank-sample.svg" alt="샘플">
+                                        </i>
+                                        <strong>SC제일은행</strong>
+                                    </div>
+                                    <span class="txt success">성공</span>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>다음</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

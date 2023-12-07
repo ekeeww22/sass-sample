@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <a href="javascript:;" class="header-link">마이데이터 관리</a> <!-- 2021-07-07 퍼블수정: 한글로 문구수정 -->
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP237">
+					<div class="top-account-wrap">
+                        <div class="account-name">
+                            <div class="bank40"><img src="/images/bank/bank-sample.svg" alt="샘플"></div>
+                            <strong>OOOOOOOO대출</strong>
+                            <ul class="info">
+                                <li>KB손해보험</li>
+                                <li>1234567890123</li>
+                            </ul>
+                        </div>
+
+                        <div class="account-data">
+                            <strong class="tit">대출잔액</strong> 
+                            <div class="large-box">
+                                <em>300,000,000</em><span>원</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+                        <ul><!--선택된 li에 클래스명 [.active] 추가-->
+                            <li><button class="active" data-target="cont1">대출정보</button></li>
+                            <li><button class="" data-target="cont2">상환내역</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-wrap" >
+                        <div class="tab-contents" data-name="tabcontents1">
+                            <div class="tab-content active" data-name="cont1">
+                                
+                                <div class="detail-list">
+                                    <ul>
+                                        <li>
+                                            <div class="data-list">
+                                                <ul>
+                                                    <li>
+                                                        <span class="tit">대출구분</span>
+                                                        <span class="txt">보험계약대출</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">증권번호</span>
+                                                        <span class="txt">1234567890123</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">대출원금</span>
+                                                        <span class="txt">11,000,000원</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">대출일</span>
+                                                        <span class="txt">2020.01.01</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">만기일</span>
+                                                        <span class="txt">2021.12.31</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">상환방식</span>
+                                                        <span class="txt">원리금균등분할상환</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">다음 이자 상환일</span>
+                                                        <span class="txt">2021.02.01</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">계좌상태</span>
+                                                        <span class="txt">정상</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">대출잔액</span>
+                                                        <span class="txt bold">10,000,000원</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-content" data-name="cont2">
+                                <div class="filter-area">
+                                    <ul class="period">
+                                        <li>1개월</li>
+                                    </ul>
+                                    <button type="button" class="icon24 icon-filter">검색조건 설정</button>
+                                </div>
+
+                                <div class="detail-list">
+                                    <ul>
+                                        <li>
+                                            <p class="date">02.04</p>
+                                            <a href="javascript:;" class="detail-box">
+                                                <!-- <p class="list-tit">1234567890</p> --><!-- 2021-08-02 거래번호 삭제 -->
+                                                <p class="time">2021.02.04 15:25:08</p>
+                                                <div class="data-list">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="tit">상환금액</span>
+                                                            <span class="txt bold">1,000,000원</span>
+                                                        </li>
+                                                        <!-- 2021-07-30 마크업 삭제 -->
+                                                        <!-- <li>
+                                                            <span class="tit">대출잔액</span>
+                                                            <span class="txt">10,000,000원</span>
+                                                        </li> -->
+                                                        <!-- // 2021-07-30 마크업 삭제 -->
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <p class="date">02.04</p>
+                                            <a href="javascript:;" class="detail-box">
+                                                <!-- <p class="list-tit">1234567890</p> --><!-- 2021-08-02 거래번호 삭제 -->
+                                                <p class="time">2021.02.04 15:25:08</p>
+                                                <div class="data-list">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="tit">상환금액</span>
+                                                            <span class="txt bold">1,000,000원</span>
+                                                        </li>
+                                                        <!-- 2021-07-30 마크업 삭제 -->
+                                                        <!-- <li>
+                                                            <span class="tit">대출잔액</span>
+                                                            <span class="txt">10,000,000원</span>
+                                                        </li> -->
+                                                        <!-- // 2021-07-30 마크업 삭제 -->
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

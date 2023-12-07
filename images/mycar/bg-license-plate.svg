@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="44" viewBox="0 0 152 44">
+    <defs>
+        <linearGradient id="7b42a3opta" x1="2.85%" x2="94.173%" y1="50%" y2="50%">
+            <stop offset="0%" stop-opacity="0"/>
+            <stop offset="51.112%" stop-opacity=".64"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-128.000000, -310.000000) translate(0.000000, 112.000000) translate(88.000000, 110.000000) translate(40.000000, 88.000000)">
+                        <ellipse cx="76" cy="41.338" fill="url(#7b42a3opta)" rx="76" ry="2.662"/>
+                        <rect width="125.667" height="40.534" x="13.77" y=".5" fill="#FFF" stroke="#979797" rx="8"/>
+                        <rect width="118.187" height="34.014" x="17.51" y="3.76" fill="#FFF" stroke="#222" rx="6"/>
+                        <circle cx="23.833" cy="20.669" r="1.5" fill="#DDD"/>
+                        <circle cx="128.944" cy="20.669" r="1.5" fill="#DDD"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

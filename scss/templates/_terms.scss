@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.terms-wrap{
+    & > li{
+        & + li{margin-top:2.4rem;}
+
+        .terms-header{
+            margin-bottom:0.8rem;
+            .terms-tit{@include body-200;}
+        }
+        .terms-contents{
+            .terms-txt{@include body-210;}
+            .bullet-list.sm{margin-top:0.8rem;}
+            .info-txt + .bullet-list.sm{margin-top:1.6rem;}
+            .info-txt{margin-top:1.6rem;}
+            .terms-txt + .info-txt{margin-top:0.8rem;}
+            
+        }
+    }
+}

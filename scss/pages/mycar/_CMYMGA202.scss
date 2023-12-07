@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.CMYMGA202{
+    .inp-list-wrap{
+        ul{
+            li{
+                .date-box{
+                    margin-top:0.8rem;
+                }
+                .body-210{
+                    @include font-color-gray-200;
+                }
+            }
+        }
+    }
+    .check-list{
+        margin-top:2.4rem;
+        li{
+            position:relative;
+            margin-top:2.4rem;
+            .form-checkbox{
+                .txt{
+                    @include body-110;
+                    strong{
+                        font-weight:500;
+                    }
+                }
+            }
+        }
+    }
+}

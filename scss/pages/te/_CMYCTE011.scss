@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.CMYCTE011{
+    .part{
+        margin:3.2rem -1.6rem 0;
+        padding:3.2rem 1.6rem 0;
+        border-top:0.8rem solid #f8f8f8;
+        &:first-child{
+            margin-top:0;
+            padding-top:0;
+            border-top:none;
+        }
+        &.top{
+            & + .part{
+                margin-top:2.4rem;
+            }
+        }
+    }
+}

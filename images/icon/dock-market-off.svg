@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H24V24H0z" transform="translate(-176.000000, -728.000000) translate(0.000000, 672.000000) translate(0.000000, 47.000000) translate(150.000000, 1.000000) translate(26.000000, 8.000000) translate(0.000000, -0.000000)"/>
+                                <g stroke="#888" stroke-width="1.5">
+                                    <path stroke-linejoin="round" d="M15.368 5.612h-2.663c-1.104 0-2-.914-2-2.04V0" transform="translate(-176.000000, -728.000000) translate(0.000000, 672.000000) translate(0.000000, 47.000000) translate(150.000000, 1.000000) translate(26.000000, 8.000000) translate(0.000000, -0.000000) translate(4.000000, 3.000000)"/>
+                                    <path d="M8.5 18H2c-1.104 0-2-.896-2-2V2C0 .896.896 0 2 0h9.682L16 4.243l-.151 11.767c0 1.099-.891 1.99-1.991 1.99H8.5z" transform="translate(-176.000000, -728.000000) translate(0.000000, 672.000000) translate(0.000000, 47.000000) translate(150.000000, 1.000000) translate(26.000000, 8.000000) translate(0.000000, -0.000000) translate(4.000000, 3.000000)"/>
+                                    <path stroke-linecap="round" d="M8.122 6.893L8.122 13.345M11.122 10.765L11.122 13.345M5.122 9.474L5.122 13.345" transform="translate(-176.000000, -728.000000) translate(0.000000, 672.000000) translate(0.000000, 47.000000) translate(150.000000, 1.000000) translate(26.000000, 8.000000) translate(0.000000, -0.000000) translate(4.000000, 3.000000)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

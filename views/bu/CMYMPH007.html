@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>내차 판매예상 금액</h2> <!--2021-06-23 퍼블수정 : 문구수정-->
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH007">
+					<!-- 2021-07-20 텍스트 수정 -->
+                    <p class="body-120">
+                        실제 보유차 시세를 참고하여 내차 판매예상 금액을 설정해보세요. 설정한 예산은 하루 동안 유지됩니다.
+                    </p>
+                    <!-- // 2021-07-20 텍스트 수정 -->
+
+                    <dl class="total-assets">
+                        <dt>
+                            <span>내차고</span><!-- 2021-07-20 텍스트 수정 -->
+                            <b class="num">1</b>
+                        </dt>
+                        <dd>2,800만원</dd>
+                    </dl>
+
+                    <div class="choice-reverse-wrap">
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" checked>
+                                    <i class="icon"></i>
+                                    <span class="txt">[123가 1234] 기아 스포티지 4세대</span> <!--2021-06-30 퍼블수정 : 문구수정 -->
+                                    <em class="price">2,800만원</em>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">[123가 1234] 벤츠 A클래스</span> <!--2021-06-30 퍼블수정 : 문구수정 -->
+                                    <em class="price">3,720만원</em>
+                                </label>
+                            </li>
+                        </ul>
+                        <p class="info-txt">
+                            <i class="icon16 icon-info"></i>
+                            KB차차차 거래 데이터를 기초로 인공지능이 예측한 현재 시세 기반으로, 주행거리 옵션 등에 따라 실제 가격과 차이가 날 수 있습니다.
+                        </p>
+                    </div>
+
+                    <ul class="budget-modify-wrap">
+                        <li class="">
+                            <label for="target-01">내차 판매예상 금액</label> <!--2021-06-23 퍼블수정 : 문구수정-->
+                            <div class="right-box">
+                                <div class="inp-inline-modify">
+                                    <input type="number" name="target" id="target-01" value="2300" maxlength="7">
+                                    <span class="unit">만원</span>
+                                    <i class="icon16 icon-modify"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn-area bottom-fixed">
+                        <!-- 판매금액 입력하는 키패드 올라왔을때/내려갔을때에 따라 버튼 [확인/저장] 둘 중 하나 노출
+                        <button type="button" class="btn-yellow"><span>확인</span></button>
+                        -->
+                        <button type="button" class="btn-yellow"><span>저장</span></button><!-- 2021-07-20 텍스트 수정 -->
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

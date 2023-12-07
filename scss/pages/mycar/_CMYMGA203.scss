@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.CMYMGA203{
+    .info-box-gray{
+        padding:2.4rem 1.6rem 0.8rem;
+        border-radius:1.2rem;
+        @include bg-color-gray-200;
+        .box{
+            position:relative;
+            padding-right:10.4rem;
+            text-align:left;
+            .img{
+                position:absolute;
+                top:50%;
+                right:0;
+                width:9.6rem;
+                height:6.4rem;
+                transform:translateY(-50%);
+                img{
+                    width:100%;
+                }
+            }
+            .tit{
+                @include body-100;
+            }
+            .txt{
+                margin-top:0.4rem;
+                @include body-210;
+            }
+        }
+        dl{
+            margin-top:2.4rem;
+            padding-top:0.8rem;
+            font-size:0;
+            border-top:1px solid #eee;
+            dt{
+                display:inline-block;
+                @include body-110;
+            }
+            dd{
+                display:inline-block;
+                margin-left:0.8rem;
+                @include body-100;
+            }
+        }
+    }
+    .body-120{
+        margin-top:1.6rem;
+        @include font-color-black-100;
+    }
+}

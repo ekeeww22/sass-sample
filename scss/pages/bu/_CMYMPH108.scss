@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.CMYMPH108{
+    min-height:calc(100vh - 10rem);
+    .info-txt{margin-top:1.6rem;}
+}
+
+.lookup-card-wrap{
+    padding:2.4rem; text-align:center; background:#fff;border-radius:1.2rem;box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+
+    .result-txt{
+        display:block; @include contents-title-300; text-align:center;
+    }
+
+    .icon{display:inline-block; margin-top:2.4rem; width:14rem; height:9.6rem; background:url("../images/bu/img140-moneylimit.svg") no-repeat center/contain;}
+    .icon ~ .tit{margin-top:2.4rem; @include contents-title-100;}
+    .icon ~ .txt{margin-top:0.4rem; @include body-210;}
+    
+    .data-list{margin-top:2.4rem;}
+    .data-list ul li .txt{max-width:none;}
+    .btn-wrap{margin-top:1.6rem;}
+}

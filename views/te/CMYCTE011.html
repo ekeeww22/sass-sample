@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>카드 소비 내역</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>카드 소비 내역</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content te">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE011">
+					<div class="part top">
+						<div class="inp-box type-search">
+							<input type="text" placeholder="사용 내역을 입력하세요.">
+							<button class="icon16 icon-close">필터삭제</button>
+							<button class="icon24 icon-search">검색</button>
+						</div>
+					</div>
+
+					<div class="part info">
+						<div class="info-filter">
+							<button type="button" class="btn-txt-arrow">
+								<span>2021년 5월</span>
+								<i class="icon16 icon-arrow-bottom-black"></i>
+							</button>
+							<!-- 2021-07-21 마크업 삭제 -->
+							<!-- <button type="button" class="reload-data">
+								<span>10%</span>
+								<icon class="icon24 icon-refresh-round"></icon>
+							</button> -->
+							<!-- // 2021-07-21 마크업 삭제 -->
+						</div>
+						
+						<div class="info-content type-dot">
+							<!-- 내역 없을경우 -->
+							<div class="result-box">
+								<i class="icon48 icon-nodata"></i>
+								<p class="txt">
+									<span>5</span>월 내 검색 결과가 없습니다.<!-- 소비내역 없을경우 '소비 내역이 없습니다.' -->
+								</p>
+							</div>
+							<!-- // 내역 없을경우 -->
+
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">04.24 (금)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="tit">서울시설공단_카카오페이</span>
+											<ul class="info">
+												<li>22:19</li>
+												<li>NEW현대백화점체크카드</li>
+											</ul>
+											<span class="price">20,000원</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="tit">자동차 목욕탕</span>
+											<ul class="info">
+												<li>18:00</li>
+												<li>카드의정석 L.POINT</li>
+											</ul>
+											<span class="price">5,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">04.22 (금)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="tit">쿠팡(주)</span>
+											<ul class="info">
+												<li>21:00</li>
+												<li>SSG.COM 카드</li>
+											</ul>
+											<span class="price">6,000원</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="tit">교보핫트랙스(주)</span>
+											<ul class="info">
+												<li>13:30</li>
+												<li>삼성카드 TapTapO</li>
+											</ul>
+											<span class="price">30,000원</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="tit">스타벅스 자동충전</span>
+											<ul class="info">
+												<li>09:00</li>
+												<li>우리 V카드</li>
+											</ul>
+											<span class="price">5,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="info-box">
+								<div class="info-top">
+									<p class="date">04.21 (목)</p>
+								</div>
+								<ul class="info-list">
+									<li>
+										<a href="javascript:;">
+											<span class="tit">GS 칼텍스</span>
+											<ul class="info">
+												<li>주유</li>
+												<li>현대카드</li>
+											</ul>
+											<span class="price">20,000원</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // section, 화면ID -->
+
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

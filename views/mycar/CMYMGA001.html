@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고(서브메인)</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>	
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-all-gray">
+        <!--
+			[wrap 인접 class 지정 가이드]
+
+			bg-header-yellow : 헤더만 황색으로 변경
+			bg-header-gray   : 헤더만 회색으로 변경
+			bg-header-white  : 헤더만 백색으로 변경
+			bg-all-gray      : 헤더와 콘텐츠배경 회색으로 변경
+			bg-all-white     : 헤더와 콘텐츠배경 백색으로 변경
+            
+			text-unmarked    : 금액 미표시 일때만 클래스 추가
+			↑ CMYMCP002.html 파일 참고
+		-->
+
+		<!-- content-header -->
+		<div class="content-header">
+			<h2>내차고</h2>
+			<div class="btn-header-wrap">
+				<button type="button"><i class="icon24 btn-add"></i><span>추가</span></button>
+				<button type="button"><sup class="badge-yellow">2</sup><i class="icon24 btn-car"></i><span>차</span></button>
+			</div>
+		</div>
+		<!-- // content-header -->       
+
+		<!-- content-body -->
+		<div class="content-body">
+            <!-- content, 카테고리-->
+			<div class="content mycar">
+                <!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA001">
+                    <div class="container-main">
+
+                        <div class="top-menu-mycar-area">
+                            <div class="tab-underbar-area">
+                                <div class="tab-underbar type-scroll-x">
+                                    <ul>
+                                        <li><button type="button" data-group="tit" data-name="tit-1">KB시세</button></li>
+                                        <li><button type="button" data-group="tit" data-name="tit-2">안전관리</button></li>
+                                        <li><button type="button" data-group="tit" data-name="tit-3">보험</button></li>
+                                        <li><button type="button" data-group="tit" data-name="tit-4">내차관리</button></li>
+                                        <li><button type="button" data-group="tit" data-name="tit-5">추천차량</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-notice-alarm-area">
+                            <div class="top-notice-alarm-box">
+                                <a href="javascript:;">
+                                    <i class="icon16 icon-comm-notice"></i>
+                                    <span class="txt"><strong>확인해야 할 차량정보가 있습니다.</strong></span>
+                                </a>
+                            </div>
+                            <div class="top-notice-alarm-box">                                    
+                                <a href="javascript:;">
+                                    <i class="icon16 icon-comm-notice"></i>
+                                    <span class="txt"><strong>내 차의 자동차보험 만기일을 확인하세요!</strong></span>                          
+                                </a>
+                            </div>
+                        </div>
+                        <div class="top-mycar-visual-area">
+                            
+                            <div class="top-background-view">
+                                <div class="top-title-area">
+                                    <h3 class="car-name">현대 그랜저</h3>
+                                    <p class="car-info">
+                                        <span class="txt">더 뉴 그랜저 2.5 캘리그래피</span>
+                                        <button class="details-txt">수정</button>
+                                    </p>
+                                </div>
+                                <div class="top-product-image-area">
+                                    <div class="top-product-image">
+                                        <div class="product"><img src="/images/mycar/image-content-mycar-1.png" alt="" /></div>
+                                        <div class="license-plate">
+                                            <span class="lp-number">123가 1234</span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <div class="page-move-modify-area">
+                                <span class="tit">주행거리</span>
+                                <!--<span class="txt"><strong class="num">999,999</strong>km</span>-->
+                                <span class="txt"><strong class="num" data-module="scrollStopNumbers" data-value="999,999"></strong>km</span>
+                                <button class="icon16 icon-modify">수정</button>
+                            </div>
+
+                            <div class="container-top-roundbox page-adddata-area">
+                                <!-- top-car-info -->
+                                <div class="top-car-info">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" class="data-box">
+                                                <div class="list-tit"><em>월 평균 주행</em></div>
+                                                <div class="list-txt"><strong>289,500</strong><span>km</span><button class="icon16 icon-arrow-right-black">&gt;</button></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="data-box">
+                                                <div class="list-tit"><em>나와 함께</em></div>
+                                                <div class="list-txt"><strong>9,999</strong><span>일째</span><button class="icon16 icon-arrow-right-black">&gt;</button></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <span class="data-box">
+                                                <div class="list-tit"><em>중고차 시세</em></div>
+                                                <div class="list-txt"><strong>1,714</strong><span>만원</span></div>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- // top-car-info -->
+
+                                <!-- top-car-bottom -->
+                                <div class="top-car-bottom">
+                                    <div class="specification-info">
+                                        <div class="specification-info-add">
+                                            <div class="info-layer-wrap" data-module="info-layer" data-name="specification-info-layer">
+                                                <div class="info-image"><img src="/images/mycar/image-carInfo.png" /></div>
+                                                <div class="info-table">
+                                                    <div class="table-wrap">
+                                                        <table>
+                                                            <caption>차량 정보 테이블</caption>
+                                                            <colgroup>
+                                                                <col style="width:35%">
+                                                                <col style="width:65%">
+                                                            </colgroup>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">최초등록일</th>
+                                                                    <td>2015년 10월 10일</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">배기량</th>
+                                                                    <td>2,159cc</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">연료</th>
+                                                                    <td>경유</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">변속기</th>
+                                                                    <td>자동</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">연비</th>
+                                                                    <td>13.8 km/L</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">색상</th>
+                                                                    <td>검정색</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">산차가격</th>
+                                                                    <td>3,452만원</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">거래이력</th>
+                                                                    <td>
+                                                                        <ul class="bullet-list sm">
+                                                                            <li>명의이전등록 (2020년 09월 24일)</li>
+                                                                            <li>신차출고 (2015년 10월 02일)</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-specification-info" data-module="toggle" data-target="specification-info-layer">
+                                                <span class="more">더보기</span>
+                                                <span class="fold">접기</span>
+                                                <i class="icon16 icon-arrow-bottom-gray"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // top-car-bottom -->
+
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box" data-module="tabScroller" data-margintop="90" data-target="tit-1">
+                            <div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>내 차 시세</strong>
+                                </div>
+                                <div class="sub-tit-right">
+                                    <label for="quote-alert">
+                                        <span>시세변경 알림</span>
+                                    </label>
+                                    <label class="form-switch">
+                                        <input type="checkbox" id="quote-alert">
+                                        <i><span></span></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-top-roundbox price-mycar-wrap">
+                            <div class="price-mycar-top-txt">
+                                <strong>2,343만원</strong>
+                                <em>999,999km 기준</em>
+                            </div>
+                            <div class="price-bottom-box-area">
+                                <div class="price-bottom-clearblue-box">
+                                    <i class="icon24 icon-graph-value"></i>
+                                    <span class="txt">잔존가치</span>
+                                    <strong class="txt-right">84.4%</strong>
+                                </div>
+                                <div class="price-bottom-clearblue-box">
+                                    <i class="icon24 icon-purchase-newcar"></i>
+                                    <span class="txt">신차가격</span>
+                                    <strong class="txt-right">99,999만원</strong>
+                                </div>
+                            </div>
+                            <div class="price-info-tip-area">
+                                <ul class="price-info-tip">
+                                    <li>
+                                        <div class="tit"><span>주행거리</span></div>
+                                        <div class="txt">
+                                            <strong>매우짧음</strong>
+                                            <i class="icon24 icon-garage-popular-mileage"></i>
+                                        </div>
+                                    </li>
+                                    <li class="bar"></li>
+                                    <li>
+                                        <div class="tit"><span>색상인기도</span></div>
+                                        <div class="txt">
+                                            <strong>매우인기</strong>
+                                            <i class="icon24 icon-garage-popular-color"></i>
+                                        </div>
+                                    </li>
+                                    <li class="bar"></li>
+                                    <li>
+                                        <div class="tit"><span>판매인기도</span></div>
+                                        <div class="txt">
+                                            <strong>좋음</strong>
+                                            <i class="icon24 icon-garage-popular-sell"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-middle-strong">
+                                <strong>
+                                    “매력도 높은 내차, 시세 대비<br />
+                                    좋은 가격으로 판매할 수 있어요!”
+                                </strong>
+                            </div>                            
+                            <div class="graph-area">
+                                <img src="/images/mycar/img-graph-price.svg" alt="" />                                
+                            </div>                            
+						</div>
+
+                        <div class="sub-main-data-box estimated-selling-price">
+                            <div class="sub-tit">
+                                <strong>내 차 예상 판매가</strong>
+                                <button class="icon24 icon-tooltip" data-target="tooltip-1"></button>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-1" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <h4 class="tit">'내 차 시세'와 '내 차 예상 판매가'가 왜 다르죠?</h4>
+                                    <p class="txt">'내 차 예상 판매가'는 사업자 매입 가격으로, 실제 중고차 구매 고객들에게 판매되는 가격인 '내 차 시세'보다 다소 낮을 수 있습니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox">
+                                <div class="price-mycar-top-txt">
+                                    <strong>2,343만원</strong>
+                                    <em>999,999km 기준</em>
+                                </div>
+                                <div class="price-bottom-box-area">
+                                    <div class="price-bottom-clearblue-box">
+                                        <i class="icon24 icon-check-calendar"></i>
+                                        <span class="txt">월간 입찰수</span>
+                                        <strong class="txt-right">4,988건</strong>
+                                    </div>
+                                </div> 
+                                <div class="graph-area">
+                                    <img src="/images/mycar/img-graph-selling-price.svg" alt="" />
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box">
+                            <div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>내 차 캘린더</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox page-calendar-area">
+                                <div class="checklist-area">
+                                    <div class="checklist-left">
+                                        <strong class="tit">이달의 확인사항</strong>
+                                        <i class="icon-new">N</i>
+                                    </div>
+                                    <div class="checklist-right">
+                                        <em>1건</em>
+                                        <i class="icon16 icon-arrow-right-black">&gt;</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box">
+                            <div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>팔아줘차차차</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox darkBlue-roundbox bgcolor-29538d">
+                                <div class="sellcar-wrap">
+                                    <div class="sellcar-left">
+                                        <em>파는 방법도, 딜러도 내맘대로</em>
+                                        <strong>
+                                            가격이 올라가는 비교견적
+                                        </strong>
+                                    </div>
+                                    <div class="sellcar-right">
+                                        <div class="circle-price">
+                                            <span class="txt">+130</span>
+                                        </div>
+                                        <div class="image"><img src="/images/mycar/img-sellcar2.png" alt="" /></div>                                
+                                    </div>
+                                    <div class="banner-bottom-box-area">
+                                        <div class="banner-bottom-box">
+                                            <span class="round-txt">무료</span>
+                                            <span class="txt">내 차 팔기 신청하기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box ">
+                            <div class="sub-tit">
+                                <strong>차계부</strong>
+                            </div>
+
+                            <!-- 차계부 마이데이터 연결화면 -->
+                            <div class="container-top-roundbox accounts-mycar-box"><!-- 마이데이터 미연결시 unconnected 클래스 추가 -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">
+                                        지금, 마이데이터로<br />
+                                        차계부를 편리하게 이용해보세요.
+                                    </span>
+                                </div>
+                                <div class="single-icon-image">
+                                    <img src="/images/mycar/image-consumption.svg" alt="" />
+                                </div>
+                                <div class="price-consumption-area">
+                                    <div class="price-consumption-top">
+                                        <p class="tit">내 4월 소비</p>
+                                        <p class="price">
+                                            <em class="price-txt">450,060원</em>
+                                            <em class="unconnected-box">?</em>
+                                            <i class="icon16 icon-arrow-right-black">&lt;</i>                                            
+                                        </p>                                        
+                                    </div>
+                                    <div class="price-consumption-bottom">
+                                        <div class="price-consumption-bottom-left">
+                                            <strong class="tit">전월대비</strong>
+                                        </div>
+                                        <div class="price-consumption-bottom-right">
+                                            <div class="price">
+                                                <em class="price-txt">102,030</em>
+                                                <em class="unconnected-box">?</em>
+                                                <span class="back-txt">원 더 지출</span>
+                                            </div>
+                                            <div class="date">
+                                                4월 23일 기준
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>마이데이터 연동하기</span></button>
+                                </div>
+                            </div>
+
+                            <!-- 마이데이터 미연결시 -->
+                            <div class="container-top-roundbox accounts-mycar-box unconnected"><!-- 마이데이터 미연결시 unconnected 클래스 추가 -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">
+                                        지금, 마이데이터로<br />
+                                        차계부를 편리하게 이용해보세요.
+                                    </span>
+                                </div>
+                                <div class="single-icon-image">
+                                    <img src="/images/mycar/image-consumption.svg" alt="" />
+                                </div>
+                                <div class="price-consumption-area">
+                                    <div class="price-consumption-top">
+                                        <p class="tit">내 차의 한 달 유지비는 얼마일까?</p>
+                                        <p class="price">
+                                            <em class="price-txt">450,060원</em>
+                                            <em class="unconnected-box">?</em>
+                                            <i class="icon16 icon-arrow-right-black">&lt;</i>                                            
+                                        </p>                                        
+                                    </div>
+                                    <div class="price-consumption-bottom">
+                                        <div class="price-consumption-bottom-left">
+                                            <strong class="tit">전월대비</strong>
+                                        </div>
+                                        <div class="price-consumption-bottom-right">
+                                            <div class="price">
+                                                <em class="price-txt">102,030</em>
+                                                <em class="unconnected-box">?</em>
+                                                <span class="back-txt">원 더 지출</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>마이데이터 연동하기</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box direct-loan-box">
+                            <div class="sub-tit">
+                                <strong>다이렉트 대출</strong>
+                            </div>
+                            <div class="direct-loan-box-slide-wrap">
+                                <div class="container-top-roundbox">
+                                    <div class="box-tit-area">
+                                        <span class="box-tit">
+                                            차량 유지비가 부담될 땐?<br />
+                                            내 차로 대환대출
+                                        </span>
+                                        <span class="hash-tag">#Direct #저금리 #갈아타기</span>
+                                        <i class="icon56 icon-right icon-mycar-loan">대출 아이콘</i>
+                                    </div>
+                                    <div class="btn-area">
+                                        <button type="button" class="btn-yellow"><span>신청하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="container-top-roundbox">
+                                    <div class="box-tit-area">
+                                        <span class="box-tit">
+                                            돈이 필요해서 파시는 건가요?<br />
+                                            중고차 담보대출
+                                        </span>
+                                        <span class="hash-tag">#금리바로확인 #중도상환수수료면제</span>
+                                        <i class="icon56 icon-right icon-mycar-collateral">대출 아이콘</i>
+                                    </div>
+                                    <div class="btn-area">
+                                        <button type="button" class="btn-yellow"><span>신청하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box insurance-accident-history" data-module="tabScroller" data-margintop="90" data-target="tit-2">
+                            <div class="sub-tit">
+                                <strong>안전관리</strong>
+                            </div>
+                            <div class="container-top-roundbox">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">보험사고이력</span>
+                                    <button class="icon24 icon-tooltip" data-target="tooltip-2"></button>
+                                    <div class="tooltip" data-module="tooltip" data-name="tooltip-2" data-tooltip-group="tt1">
+                                        <p class="txt">카히스토리 보험사고 정보조회 일자를 기준으로 정보를 제공하고 있습니다.</p>
+                                        <button class="icon16 icon-close">닫기</button>
+                                    </div>
+                                </div>
+                                <div class="accidents-damage-list">
+                                    <ul>
+                                        <li>
+                                            <div class="ad-round-box">
+                                                <i class="icon32 icon-accidents-damage-my"></i>
+                                                <em>내 차 피해 0회</em>
+                                                <strong>0원</strong>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ad-round-box">
+                                                <i class="icon32 icon-accidents-damage-other"></i>
+                                                <em>상대 차 피해 2회</em>
+                                                <strong>1,323,780원</strong>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow">
+                                        <span class="round-txt">무료</span>
+                                        <span>사고이력 자세히보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="container-top-roundbox">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">교통범칙금 · 과태료</span>
+                                    <button class="details-txt">자세히</button>
+                                </div>
+                                <div class="box-sub-txt">
+                                    교통범칙금, 과태료 정보 놓치지 말고 확인하세요.
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>범칙금 · 과태료 확인하기</span></button>
+                                </div>
+                            </div>
+
+                            <div class="container-top-roundbox mycar-license-penalties "><!-- 운전면허 공인인증서로 본인인증 후 'authentication' 클래스 추가, 인증되지 않으면 'authentication' 삭제 -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">운전면허 벌점</span>
+                                    <button class="details-txt">자세히</button>
+                                </div>
+                                <div class="box-sub-txt">
+                                    벌점 정보 확인하고 안전운전 하세요.
+                                </div>
+                                <div class="authentication-info-area">
+                                    <div class="authentication-list">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">누산 종료일자</div>
+                                                <div class="txt">2023.09.24</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="authentication-bottom-list">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">누산 시작일자</div>
+                                                <div class="txt">2021.09.24</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="authentication-box">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">1년간</div>
+                                                <div class="txt">
+                                                    <strong>10</strong>
+                                                    <span>/121</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tit">2년간</div>
+                                                <div class="txt">
+                                                    <strong>50</strong>
+                                                    <span>/201</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tit">3년간</div>
+                                                <div class="txt">
+                                                    <strong>65</strong>
+                                                    <span>/271</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+
+                                    <div class="bottom-txt">최근 업데이트 : 2021.06.17</div>
+
+                                    <div class="sub-button-box">
+                                        <div class="box-tit-area">
+                                            <span class="box-tit">착한 운전 마일리지</span>
+                                        </div>
+                                        <div class="box-thumb-icon-area">
+                                            <i class="image-icon"><img src="/images/mycar/icon56-asset-demerit-mileage.svg" alt="" /></i>
+                                            <span class="txt">
+                                                안전운전 서약서를 작성하고 착한 운전 마일리지 10점 받기
+                                            </span>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button type="button" class="btn-grayline"><span>신청하러 가기(10점)</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="sub-button-box">
+                                        <div class="box-tit-area">
+                                            <span class="box-tit">교통 법규 수강</span>
+                                        </div>
+                                        <div class="box-thumb-icon-area">
+                                            <i class="image-icon"><img src="/images/mycar/icon56-asset-demerit-laws.svg" alt="" /></i>
+                                            <span class="txt">
+                                                교통법규교육을 수강하고 벌점20점을 감경받기 (벌점 40점 미만만)
+                                            </span>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button type="button" class="btn-grayline"><span>신청하러 가기(20점)</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>벌점기록 가져오기</span></button>
+                                </div>
+                            </div>
+
+                            <div class="container-top-roundbox mycar-license-penalties authentication"><!-- 운전면허 공인인증서로 본인인증 후 'authentication' 클래스 추가, 인증되지 않으면 'authentication' 삭제 -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">운전면허 벌점</span>
+                                    <button class="details-txt">자세히</button>
+                                </div>
+                                <div class="box-sub-txt">
+                                    벌점 정보 확인하고 안전운전 하세요.
+                                </div>
+                                <div class="authentication-info-area">
+                                    <div class="authentication-list">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">누산 종료일자</div>
+                                                <div class="txt">2023.09.24</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="authentication-bottom-list">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">누산 시작일자</div>
+                                                <div class="txt">2021.01.24</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="authentication-box">
+                                        <ul>
+                                            <li>
+                                                <div class="tit">1년간</div>
+                                                <div class="txt">
+                                                    <strong>10</strong>
+                                                    <span>/121</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tit">2년간</div>
+                                                <div class="txt">
+                                                    <strong>50</strong>
+                                                    <span>/201</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tit">3년간</div>
+                                                <div class="txt">
+                                                    <strong>65</strong>
+                                                    <span>/271</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+
+                                    <div class="bottom-txt">최근 업데이트 : 2021.06.17</div>
+
+                                    <div class="sub-button-box">
+                                        <div class="box-tit-area">
+                                            <span class="box-tit">착한 운전 마일리지</span>
+                                        </div>
+                                        <div class="box-thumb-icon-area">
+                                            <i class="image-icon"><img src="/images/mycar/icon56-asset-demerit-mileage.svg" alt="" /></i>
+                                            <span class="txt">
+                                                안전운전 서약서를 작성하고 착한 운전 마일리지 10점 받기
+                                            </span>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button type="button" class="btn-grayline"><span>신청하러 가기(10점)</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="sub-button-box">
+                                        <div class="box-tit-area">
+                                            <span class="box-tit">교통 법규 수강</span>
+                                        </div>
+                                        <div class="box-thumb-icon-area">
+                                            <i class="image-icon"><img src="/images/mycar/icon56-asset-demerit-laws.svg" alt="" /></i>
+                                            <span class="txt">
+                                                교통법규교육을 수강하고 벌점20점을 감경받기 (벌점 40점 미만만)
+                                            </span>
+                                        </div>
+                                        <div class="btn-area">
+                                            <button type="button" class="btn-grayline"><span>신청하러 가기(20점)</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>벌점기록 가져오기</span></button>
+                                </div>
+                            </div>
+						</div>
+
+                        <div class="sub-main-data-box" data-module="tabScroller" data-margintop="90" data-target="tit-3">
+                            <div class="sub-tit">
+                                <strong>내차유지</strong>
+                            </div>
+
+                            <!-- 미등록시 : 보험조회 가능 -->
+                            <div class="container-top-roundbox mycar-insurance possible">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">보험만기일이 <b>9개월</b> 남았습니다.</span>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">                                     
+                                            <ul class="info">
+                                                <li><strong class="tit">보험사를 선택해주세요.</strong></li>
+                                                <li><span class="txt">2021.12.18 만료</span></li>
+                                            </ul>
+                                            <button class="details-txt">선택</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>마이데이터 연동하기</span></button>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                             <!-- // 미등록시 : 보험조회 가능 -->
+
+                            <!-- 미등록시 : 보험조회 실패 -->
+                            <div class="container-top-roundbox mycar-insurance fail">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">보험 정보 선택하고 만기일 알림 받아보세요.</span>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">                                     
+                                            <ul class="info">
+                                                <li><strong class="tit">보험사를 선택해주세요.</strong></li>
+                                                <li><span class="txt">만료일 정보가 없습니다.</span></li>
+                                            </ul>
+                                            <button class="details-txt">선택</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>마이데이터 연동하기</span></button>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 미등록시 : 보험조회 실패 -->
+
+                            <!-- 선택버튼을 클릭하여 직접 등록시 -->
+                            <div class="container-top-roundbox mycar-insurance select">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">보험만기일이 <b>9개월</b> 남았습니다.</span>
+                                    <!-- <button class="details-txt">자세히</button> -->
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">
+                                            <i class="bank40"><img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" /></i>                                            
+                                            <ul class="info">
+                                                <li><strong class="tit">KB 손해보험 다이렉트</strong></li>
+                                                <li><span class="txt">2021.12.18 만료</span></li>
+                                            </ul>
+                                            <button class="details-txt">수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 선택버튼을 클릭하여 직접 등록시 -->
+
+                            <!-- 마이데이터 연동하기 버튼을 클릭하여 등록시 -->
+                            <div class="container-top-roundbox mycar-insurance mydata">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">보험만기일이 <b>9개월</b> 남았습니다.</span>
+                                    <button class="details-txt">자세히</button>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">
+                                            <i class="bank40"><img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" /></i>                                            
+                                            <ul class="info">
+                                                <li><strong class="tit">KB 손해보험 다이렉트</strong></li>
+                                                <li><span class="txt">2021.12.18 만료</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 마이데이터 연동하기 버튼을 클릭하여 등록시 -->
+
+                            <!-- 만료 45일~15일 전 -->
+                            <div class="container-top-roundbox mycar-insurance expiry-before">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">만기일이 <button class="icon16 icon-error" data-target="tooltip-3"></button> <b>00일</b> 남았습니다.</span>
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-3" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">자동차 운행시 보험가입은 의무입니다. 위반 적발시 과태료 부과와 함께 보험 미가입 사고 발생시 보호를 받을 수 없습니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">
+                                            <i class="bank40"><img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" /></i>                                            
+                                            <ul class="info">
+                                                <li><strong class="tit">KB 손해보험 다이렉트</strong></li>
+                                                <li><span class="txt">2021.12.18 만료</span></li>
+                                            </ul>
+                                            <button class="details-txt">수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 만료 45일~15일 전 -->
+
+                            <!-- 만료 당일 -->
+                            <div class="container-top-roundbox mycar-insurance expiry-date">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">자동차보험</strong>
+                                    <button class="btn-call"><i class="icon16 icon-phone"></i><span class="txt">보험사 긴급호출</span></button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">만기일이 보험 <button class="icon16 icon-error" data-target="tooltip-4"></button> <b>만기일</b>입니다.</span>
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-4" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">자동차 운행시 보험가입은 의무입니다. 위반 적발시 과태료 부과와 함께 보험 미가입 사고 발생시 보호를 받을 수 없습니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="top-thumb-wrap">
+                                        <div class="thumb-name">
+                                            <i class="bank40"><img src="/images/sample/icon40-card-kb.svg" alt="KB국민카드" /></i>                                            
+                                            <ul class="info">
+                                                <li><strong class="tit">KB 손해보험 다이렉트</strong></li>
+                                                <li><span class="txt">2021.12.18 만료</span></li>
+                                            </ul>
+                                            <button class="details-txt">수정</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>다이렉트보험 비교하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 만료 당일 -->
+
+                            <div class="container-top-roundbox">
+                                <div class="box-flex-tit">
+                                    <strong class="box-top-tit">세금</strong>
+                                    <button class="details-txt">자세히</button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">
+                                        <b>1월</b>은 자동차세 연납 기간입니다.<br />
+                                        <b>9.15%</b>를 할인 받으실 수 있습니다.
+                                    </span>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="price-txt-wrap">
+                                        <em class="tit">예상 연납 금액</em>
+                                        <strong class="price">475,090원</strong>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>자동차세 납부하기</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box accounts-mycar-box" data-module="tabScroller" data-margintop="90" data-target="tit-4">
+                            <div class="sub-tit">
+                                <strong>내차관리</strong>
+                            </div>
+
+                            <!-- 미 등록시 : 정기검사 도래 전 -->
+                            <div class="container-top-roundbox periodic-inspection-before">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">정기검사</span>
+                                    <button class="icon24 icon-tooltip active" data-target="tooltip-5-1"></button>
+                                    <div class="tooltip" data-module="tooltip" data-name="tooltip-5-1" data-tooltip-group="tt1">
+                                        <p class="txt">차차차 내차고 검사기간은 만기일 이후 자동 갱신됩니다.</p>
+                                        <button class="icon16 icon-close">닫기</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">자동차 검사일이 <b>1334일</b> 남았습니다.</span>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="inspection-day-wrap">
+                                        <em class="sub-tit">정기검사 가능일</em>
+                                        <ul class="inspection-day-list">
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">4월 27일</span>
+                                                </div>
+                                            </li>
+                                            <li class="next-txt">
+                                                <i class="icon-calendar-next"></i>
+                                            </li>
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">6월 27일</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>정기검사 예약하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 미 등록시 : 정기검사 도래 전 -->
+                            
+                            <!-- 미 등록시 : 정기검사 시작일 도래 -->
+                            <div class="container-top-roundbox mycar-periodic-inspection">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">정기검사</span>
+                                    <button class="icon24 icon-tooltip" data-target="tooltip-5-2"></button>
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-5-2" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">차차차 내차고 검사기간은 만기일 이후 자동 갱신됩니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">
+                                        자동차 검사일이 시작되었습니다.<br />
+                                        <button class="icon16 icon-error" data-target="tooltip-5-2-1"></button> <b>00</b>일 내로 검사를 해주세요.
+                                    </span>                                    
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-5-2-1" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">
+                                        자동차는 일정 기간(신차 출고 최초 4년 뒤, 이후 2년마다 반복)에 따라 정해진 검사소에서 종합검사를 받아야 합니다.<br />
+                                        검사를 받지 않을 경우 과태료 부과 대상이 됩니다. 만일 이미 검사를 받으셨다면 유효기간 만료일인 <span class="tit">0000년00월00일</span>에 자동으로 알림이 갱신됩니다.
+                                    </p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="inspection-day-wrap">
+                                        <em class="sub-tit">정기검사 가능일</em>
+                                        <ul class="inspection-day-list">
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">4월 27일</span>
+                                                </div>
+                                            </li>
+                                            <li class="next-txt">
+                                                <i class="icon-calendar-next"></i>
+                                            </li>
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">6월 27일</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>정기검사 예약하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 미 등록시 : 정기검사 시작일 도래 -->
+
+                            <!-- 정기검사 만료일 초과 : 최종 검사결과 (실패값-미검사) 수신 -->
+                            <div class="container-top-roundbox mycar-periodic-inspection">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">정기검사</span>
+                                    <button class="icon24 icon-tooltip" data-target="tooltip-5-3"></button>
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-5-3" data-tooltip-group="tt1">
+                                    <p class="txt">차차차 내차고 검사기간은 만기일 이후 자동 갱신됩니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">
+                                        <button class="icon16 icon-error" data-target="tooltip-5-3-1"></button> 자동차 종합검사 여부를 확인해주세요.
+                                    </span>                                    
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-5-3-1" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">
+                                        자동차는 일정 기간(신차 출고 최초 4년 뒤, 이후 2년마다 반복)에 따라 정해진 검사소에서 종합검사를 받아야 합니다. 검사를 받지 않을 경우 과태료 부과 대상이 됩니다.
+                                    </p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="inspection-day-wrap">
+                                        <em class="sub-tit">정기검사 가능일</em>
+                                        <ul class="inspection-day-list">
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">4월 27일</span>
+                                                </div>
+                                            </li>
+                                            <li class="next-txt">
+                                                <i class="icon-calendar-next"></i>
+                                            </li>
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">6월 27일</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>정기검사 예약하기</span></button>
+                                </div>
+                            </div>
+                            <!-- // 정기검사 만료일 초과 : 최종 검사결과 (실패값-미검사) 수신 -->
+
+                            <!-- 정기검사 만료일 초과 : 최종 검사결과 (정상값) 수신 -->
+                            <div class="container-top-roundbox mycar-periodic-inspection">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">정기검사</span>
+                                    <button class="icon24 icon-tooltip" data-target="tooltip-5-4"></button>
+                                </div>
+                                <div class="tooltip" data-module="tooltip" data-name="tooltip-5-4" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                    <p class="txt">차차차 내차고 검사기간은 만기일 이후 자동 갱신됩니다.</p>
+                                    <button class="icon16 icon-close">닫기</button>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt">
+                                        자동차 검사일이 <b>1334일</b> 남았습니다.
+                                    </span>                                    
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="inspection-day-wrap">
+                                        <em class="sub-tit">정기검사 가능일</em>
+                                        <ul class="inspection-day-list">
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">4월 27일</span>
+                                                </div>
+                                            </li>
+                                            <li class="next-txt">
+                                                <i class="icon-calendar-next"></i>
+                                            </li>
+                                            <li class="background-image-calendar">
+                                                <div class="txt-wrap">
+                                                    <span class="txt-year">2021년</span>
+                                                    <span class="txt-monthday">6월 27일</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow" disabled><span>검사 가능 기간이 아닙니다.</span></button>
+                                </div>
+                            </div>
+                            <!-- // 정기검사 만료일 초과 : 최종 검사결과 (정상값) 수신 -->
+
+
+                            <div class="container-top-roundbox mycar-recall-target">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">리콜대상</span>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt"><b>124차 1234</b> 차량은 아래의 사항에 해당됩니다.</span>
+                                </div>
+                                <div class="box-caselist-area">
+                                    <ul>
+                                        <li>전체 <span class="">3</span>건</li>
+                                        <li>점검필요 <span class="color-blue">1</span>건</li>
+                                    </ul>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="content-sub-roundbox-area">
+                                        <a class="content-sub-roundbox bgcolor-434c53" href="javascript:;" title="">
+                                            <i class="icon40 icon-recall-dafault"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="icon24 icon-arrow-right-white"></button>
+                                        </a>
+                                        <div class="content-sub-roundbox bgcolor-44a5b7">
+                                            <i class="icon40 icon-national-taxservice"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="complete">완료</button>
+                                        </div>
+                                        <a class="content-sub-roundbox bgcolor-003964" href="javascript:;" title="">
+                                            <i class="icon40 icon-national-taxservice"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="icon24 icon-arrow-right-white"></button>
+                                        </a>
+                                        <div class="bottom-tip-txt">제공 : 자동차리콜센터</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="container-top-roundbox mycar-recall-target no-recall"><!-- 리콜대상이 없을때 'no-recall' -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">리콜대상</span>
+                                </div>
+                                <div class="box-tit-area">
+                                    <span class="box-top-txt"><b>124차 1234</b> 차량은 해당되는 리콜사항이 없습니다.</span>
+                                </div>
+                                <div class="box-caselist-area">
+                                    <ul>
+                                        <li>전체 <span class="">0</span>건</li>
+                                        <li>점검필요 <span class="">0</span>건</li>
+                                    </ul>
+                                </div>
+                                <div class="roundbox-line-bottom">
+                                    <div class="content-sub-roundbox-area">
+                                        <a class="content-sub-roundbox bgcolor-434c53" href="javascript:;" title="">
+                                            <i class="icon40 icon-recall-dafault"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="icon24 icon-arrow-right-white"></button>
+                                        </a>
+                                        <div class="content-sub-roundbox bgcolor-44a5b7">
+                                            <i class="icon40 icon-national-taxservice"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="complete">완료</button>
+                                        </div>
+                                        <a class="content-sub-roundbox bgcolor-003964" href="javascript:;" title="">
+                                            <i class="icon40 icon-national-taxservice"></i>
+                                            <span class="tit">[벤츠] C220 CDI 등 9개…</span>
+                                            <span class="date">게시일 2010.01.31</span>
+                                            <button class="icon24 icon-arrow-right-white"></button>
+                                        </a>
+                                        <div class="bottom-tip-txt">제공 : 자동차리콜센터</div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>리콜대상 보러가기</span></button>
+                                </div>
+                            </div>
+
+                            <div class="container-top-roundbox">
+                                <div class="box-tit-area">
+                                    <span class="box-tit">보증기간</span>
+                                </div>
+                                <div class="progress-mycar-area">
+                                    <ul class="progress-mycar">
+                                        <li>
+                                            <div class="top-info">
+                                                <strong class="tit">차체/일반</strong>
+                                                <div class="data-box">
+                                                    <span>62,100km</span>
+                                                    <span>D-24개월</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress-bar-mycar">
+                                                <p class="rate" style="width:40%;">진행률</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top-info">
+                                                <strong class="tit">엔진/주요부품</strong>
+                                                <div class="data-box">
+                                                    <span>62,100km</span>
+                                                    <span>D-24개월</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress-bar-mycar">
+                                                <p class="rate" style="width:30%;">진행률</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top-info">
+                                                <strong class="tit">Hybrid 전용부품</strong>
+                                                <div class="data-box">
+                                                    <span>보증종료</span>
+                                                    <span>보증종료</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress-bar-mycar">
+                                                <p class="rate" style="width:40%;">진행률</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="top-info">
+                                                <strong class="tit">Electric 전용부품</strong>
+                                                <div class="data-box">
+                                                    <span>평생보증</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress-bar-mycar">
+                                                <p class="rate" style="width:40%;">진행률</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>보증정보 입력하기</span></button>
+                                </div>
+                            </div>
+
+                            <div class="container-top-roundbox mycar-tire-info data-true data-false">
+                                <!--
+                                    데이터가 없을 때 'data-false' class 추가
+                                    데이터가 있을 때 'data-true' class 추가
+                                -->
+                                <div class="box-tit-area">
+                                    <span class="box-tit">타이어정보</span>
+                                    <button class="icon24 icon-tooltip" data-target="tooltip-6-1"></button>
+                                    <div class="tooltip" data-module="tooltip" data-name="tooltip-6-1" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+                                        <p class="image"><img src="/images/mycar/img-tire-info.png" alt="" /></p>
+                                        <p class="txt">
+                                            제공하는 타이어 사이즈 정보는 출고 옵션에 따라 달라질 수 있습니다. 내 차의 타이어 사이즈와 다르다면 수정 후 관리하세요.
+                                        </p>
+                                        <button class="icon16 icon-close">닫기</button>
+                                    </div>
+                                </div>
+                                <div class="link-info-list">
+                                    <ul>
+                                        <li class="link-info-list-left">
+                                            <div class="link-size-info-area">
+                                                <em class="tit">전륜</em>
+                                                <a href="javascript:;" title="">
+                                                    <strong class="txt">사이즈정보 없음</strong><!-- 사이즈 정보가 있을 때 size-info 클래스 추가 -->
+                                                    <i class="icon16 icon-arrow-right-black"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="link-info-list-right">
+                                            <div class="link-size-info-area">
+                                                <em class="tit">후륜</em>
+                                                <a href="javascript:;" title="" class="size-info">
+                                                    <!-- <strong class="txt">사이즈 정보 없음</strong> -->
+                                                    <strong class="txt size-info">225/50R17</strong><!-- 데이터 있을 때 size-info 클래스 추가 -->
+                                                    <i class="icon16 icon-arrow-right-black"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="action-banner-area">
+                                    <div class="action-banner-item">
+                                        <div class="action-banner-bg">
+                                            <div class="action-info">
+                                                <i class="icon32 icon-tire-summer"></i>
+                                                <span class="txt">겨울용 타이어? 여름용 타이어?</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-banner-item">
+                                        <div class="action-banner-bg">
+                                            <div class="action-info">
+                                                <i class="icon32 icon-tire-position-change"></i>
+                                                <span class="txt">타이어 위치교환, 필수?</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-banner-item">
+                                        <div class="action-banner-bg">
+                                            <div class="action-info">
+                                                <i class="icon32 icon-tire-replacement"></i>
+                                                <span class="txt">타이어 교체주기, 언제?</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bottom-tip-area">
+                                    <h4 class="tit">“ 타이어 관리 막막하신가요? ”</h4>
+                                    <p class="txt">
+                                        장착하고 계신 타이어 정보를 조금만 알려주세요.<br />
+                                        언제 교체를 해야 할지, 계절에 맞지 않는 제품인지<br />
+                                        알아서 알려드릴게요!
+                                    </p>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow" tabindex="0"><span>타이어 정보 입력하고 관리받기</span></button>
+                                </div>
+
+                                <div class="tire-information-area">
+                                    <div class="tire-information">
+                                        <div class="tire-info left">
+                                            <div class="tire-add">
+                                                <!-- 
+                                                <button><i class="icon24 icon-commIcon-add-gray">add</i></button> 
+                                                -->
+                                                <div class="tire-add-data">
+                                                    <h5 class="tit">4계절 일반</h5>
+                                                    <p class="txt-area">
+                                                        <strong class="txt-num">999,999</strong>
+                                                        <em class="txt-point">km</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="tire-add">
+                                                <button><i class="icon24 icon-commIcon-add-gray">add</i></button>
+                                                <!-- 
+                                                <div class="tire-add-data">
+                                                    <h5 class="tit">4계절 일반</h5>
+                                                    <p class="txt-area">
+                                                        <strong class="txt-num">99,999</strong>
+                                                        <em class="txt-point">kn</em>
+                                                    </p>
+                                                </div>
+                                                -->
+                                            </div>
+                                        </div>
+                                        <div class="image"><img src="/images/mycar/image-tire-car.png" alt="" /></div>
+                                        <div class="tire-info right">
+                                            <div class="tire-add">
+                                                <!-- 
+                                                <button><i class="icon24 icon-commIcon-add-gray">add</i></button> 
+                                                -->
+                                                <div class="tire-add-data">
+                                                    <h5 class="tit">4계절 일반</h5>
+                                                    <p class="txt-area">
+                                                        <strong class="txt-num">23,456</strong>
+                                                        <em class="txt-point">km</em>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="tire-add">
+                                                <button><i class="icon24 icon-commIcon-add-gray">add</i></button>
+                                                <!-- 
+                                                <div class="tire-add-data">
+                                                    <h5 class="tit">4계절 일반</h5>
+                                                    <p class="txt-area">
+                                                        <strong class="txt-num">99,999</strong>
+                                                        <em class="txt-point">kn</em>
+                                                    </p>
+                                                </div>
+                                                -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="action-banner-item">
+                                        <a class="action-banner-bg">
+                                            <div class="action-info">
+                                                <i class="icon24 icon-tire-notice"></i>
+                                                <span class="txt">타이어정보 안전 알림</span>
+                                            </div>
+                                            <div>
+                                                <span class="number-case">3건</span>
+                                                <button class="icon16 icon-arrow-right-black"></button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow" tabindex="0"><span>타이어 제품 자세히보기</span></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="sub-main-data-box accounts-mycar-box">                            
+                            <div class="sub-tit">
+                                <strong>차차차 멤버십</strong>
+                            </div>                            
+                            <div class="container-top-roundbox">
+                                <div class="membership-mycar-area">
+                                    <div class="membership-mycar-info">
+                                        <strong>차국민</strong> 고객님!<br />
+                                        차차차 멤버십 할인혜택을<br />
+                                        만나보세요.
+                                    </div>
+                                    <div class="membership-mycar-img"><img src="/images/mycar/image_membership.png" alt="" /></div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow" tabindex="0"><span>멤버십 할인혜택 바로가기</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-main-data-box accounts-mycar-box" data-module="tabScroller" data-margintop="90" data-target="tit-5">
+                            <div class="sub-tit">
+                                <strong>다음 내차 추천</strong>
+                            </div>
+
+                            <div class="thumb-image-area">
+                                <div class="thumb-image">
+                                    <img src="/images/mycar/img-nextcar.png" alt="" />
+                                </div>
+                                <div class="thumb-info">
+                                    <em class="tit">현대 펠리세이드 2.2 디젤 8인승 AWD 프레스티지</em>
+                                    <div class="box-caselist-area">
+                                        <ul>
+                                            <li>2018.09 (2019년식)</li>
+                                            <li>100,000km</li>
+                                        </ul>
+                                    </div>
+                                    <strong class="price">3,510만원</strong>
+                                    <div class="purchase-area">
+                                        <span class="round-txt">내 차 판매시</span>
+                                        <em class="txt"><span class="color-blue">월 189,000원</span>으로 구입 가능</em>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>구매 시뮬레이션 바로가기</span></button>
+                                </div>
+                            </div>
+
+                            <div class="thumb-image-area">
+                                <div class="thumb-image">
+                                    <img src="/images/mycar/img-nextcar.png" alt="" />
+                                </div>
+                                <div class="thumb-info">
+                                    <em class="tit">현대 펠리세이드 2.2 디젤 8인승 AWD 프레스티지</em>
+                                    <div class="box-caselist-area">
+                                        <ul>
+                                            <li>2018.09 (2019년식)</li>
+                                            <li>100,000km</li>
+                                        </ul>
+                                    </div>
+                                    <strong class="price">3,510만원</strong>
+                                    <div class="purchase-area">
+                                        <span class="round-txt">내 차 판매시</span>
+                                        <em class="txt"><span class="color-blue">월 189,000원</span>으로 구입 가능</em>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn-yellow"><span>구매 시뮬레이션 바로가기</span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <script>
+                        (function(){
+                            UIComponent.Html.reset();
+                            $(".direct-loan-box .direct-loan-box-slide-wrap").slick({
+                                dots: true,
+                                arrows: false,
+                                infinite: true,
+                                centerMode: true,
+                                centerPadding:'0'
+                            });
+
+                            var didScroll; 
+                            var lastScrollTop = 0; 
+                            var delta = 5; 
+                            var navbar = $('.top-menu-mycar-area');
+                            var navbarHeight = navbar.outerHeight();
+                            var isMenuClick = false;
+
+                            $(window).on('scroll',hasScrolled);
+
+                            function hasScrolled() {
+                                if($('.top-menu-mycar-area').length==0){
+                                    $(window).off('scroll',hasScrolled);
+                                }
+                                var st = $(this).scrollTop();
+                                if(Math.abs(lastScrollTop - st) <= delta) return;
+                                if (st > lastScrollTop && st > navbarHeight){
+                                    if(!isMenuClick){
+                                        navbar.removeClass('active');
+                                    }
+                                    else{
+                                        isMenuClick = false;
+                                    }
+                                } else {
+                                    if($(window).scrollTop() > navbarHeight) {
+                                        if(st + $(window).height() < $(document).height()){
+                                            navbar.addClass('active');
+                                        }
+                                    } else { 
+                                        navbar.removeClass('active'); 
+                                    }
+                                }
+                                lastScrollTop = st;
+                            }
+
+                            // 탭메뉴 클릭 이벤트
+                            $('[data-group="tit"]').on("click",function(){
+                                isMenuClick = true;
+                                var _this = this;
+                                //$('[data-group="tit"]').removeClass("active");
+                                //$(_this).addClass("active");
+                            });
+
+                            $(".icon-comm-goback").on("click",function(){
+                                $(window).scrollTop(0);
+                            });
+
+                        })();
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <!-- // content-body -->
+
+    </div>
+    <!-- // wrap -->    
+
+    <!-- dockbar -->
+    <!-- 2021-07-26 메뉴 수정 -->
+	<div class="dock-menu">
+		<ul class="dock-bar">
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-home"></i>
+					<span>홈</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-sell"></i>
+					<span>팔때</span>
+				</a>
+			</li>
+            <li>
+				<a href="javascript:;">
+					<i class="icon dock-search"></i>
+					<span>검색</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="active"><!-- 활성화시 'active' 클래스 추가 -->
+					<i class="icon dock-data"></i>
+					<span>마이데이터</span><!-- 2021-07-07 텍스트 수정 --> 
+				</a>
+				<ul class="dock-depth2">
+					<li>
+						<a href="javascript:;"><span>내자산</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차구매</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>차테크</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="active"><span>내차고</span></a><!-- 활성화시 'active' 클래스 추가 -->
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-market"></i>
+					<span>시세</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+    <!-- // 2021-07-26 메뉴 수정 -->
+	<!-- // dockbar -->
+</body>
+</html>

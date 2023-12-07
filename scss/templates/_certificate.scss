@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 인증서 */
+.certificate-list{
+    > li{
+        position:relative;
+        margin-top:1.6rem;
+        
+        overflow:hidden;
+        &:first-child{
+            margin-top:0;
+        }
+        button, > div{
+            display:flex;
+            align-items:center;
+            padding:1.6rem 4.8rem 1.6rem 1.6rem;
+            width:100%;
+            text-align:left;
+            border:1px solid #ddd;
+            border-radius:1.2rem;
+            .icon{
+                margin-right:1.6rem;
+                width:4rem;
+                height:4rem;
+            }
+            .box{
+                .name{
+                    @include body-110;
+                    color:#000;
+                }
+                .info{
+                    margin-top:0.4rem;
+                    font-size:0;
+                    li{
+                        position:relative;
+                        display:inline-block;
+                        @include dock-bar-100;
+                        & + li{
+                            margin-left:0.8rem;
+                            padding-left:0.9rem;
+                            &:before{
+                                content:'';
+                                position:absolute;
+                                left:0;
+                                top:50%;
+                                width:1px;
+                                height:0.8rem;
+                                background:#ddd;
+                                transform:translateY(-50%);
+                            }
+                        }
+                    }
+                }
+                .date{
+                    @include dock-bar-100;
+                    &.warning{
+                        @include option-color-red-100;
+                    }
+                }
+            }
+            .icon24{
+                position:absolute;
+                top:50%;
+                right:1.6rem;
+                transform:translateY(-50%);
+            }
+            .state{
+                position:absolute;
+                top:50%;
+                right:2rem;
+                padding:0.2rem 0.8rem;
+                @include dock-bar-100;
+                @include font-color-white-100;
+                border-radius:1.2rem;
+                background:#ff0000;
+                transform:translateY(-50%);
+            }
+            &[disabled]{
+                @include bg-color-gray-100;
+                .icon{
+                    opacity:0.5;
+                }
+                .box{
+                    .name{
+                        @include font-color-gray-200;
+                    }
+                    .info{
+                        li{
+                            @include font-color-gray-200;
+                        }
+                    }
+                    .date{
+                        @include option-color-red-100;
+                    }
+                }
+            }
+        }
+    }
+}

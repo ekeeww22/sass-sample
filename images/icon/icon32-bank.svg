@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FC0" d="M28.355 8.506v1.418h-24.1c-1.506.06-2.775-1.11-2.836-2.615-.002-.074-.002-.147 0-.22L14.18 0l12.76 5.67c1.22.593 1.416 1.48 1.416 2.836" transform="translate(-172 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(92) translate(1.714 2.286)"/>
+                                <path stroke="#050101" stroke-linecap="square" stroke-width="1.5" d="M28.355 8.506v1.418h-24.1c-1.506.06-2.775-1.11-2.836-2.615-.002-.074-.002-.147 0-.22L14.18 0l12.76 5.67c1.22.593 1.416 1.48 1.416 2.836z" transform="translate(-172 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(92) translate(1.714 2.286)"/>
+                                <path stroke="#050101" stroke-width="1.5" d="M28.357 26.937L0 26.937M4.253 9.922L4.253 26.934M8.506 26.937L8.506 9.922M21.266 9.922L21.266 26.934M25.516 10L25.516 27.012" transform="translate(-172 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(92) translate(1.714 2.286)"/>
+                                <path fill="#212222" d="M14.888 6.38c-.783 0-1.418-.634-1.418-1.418 0-.783.635-1.418 1.418-1.418.783 0 1.417.635 1.417 1.418 0 .783-.634 1.418-1.417 1.418" transform="translate(-172 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(92) translate(1.714 2.286)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

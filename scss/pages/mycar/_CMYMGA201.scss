@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+.CMYMGA201{
+    .tab-contents-wrap{
+        margin-top:3.2rem;
+        .contents-title-300{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            &.top-line{
+                margin:3.2rem -1.6rem 0;
+                padding:3.2rem 1.6rem 0;
+                border-top:0.8rem solid #f8f8f8;
+            }
+        }
+        .tire-img{
+            margin-top:1.6rem;
+            img{
+                width:100%;
+            }
+            & + .info-txt{
+                margin-top:1.6rem;
+            }
+        }
+        .tire-info-box{
+            padding:3.8rem 0;
+            background:url(../images/mycar/bg-car.png) no-repeat center center;
+            background-size:contain;
+            > ul{
+                > li{
+                    position:relative;
+                    margin-top:2.8rem;
+                    .img{
+                        position:absolute;
+                        top:50%;
+                        width:3.6rem;
+                        height:9.2rem;
+                        transform:translateY(-50%);
+                        img{
+                            width:100%;
+                        }
+                    }
+                    .link{
+                        position:relative;
+                        display:flex;
+                        align-items:center;
+                        padding:0 4.8rem 0 1.6rem;
+                        height:8rem;
+                        border-radius:1.2rem;
+                        background:rgba(85,85,85,0.8);
+                        .type{
+                            @include body-200;
+                            color:#ffcc00;
+                            & + .box{
+                                margin-left:1.6rem;
+                            }
+                        }
+                        .box{
+                            .info{
+                                font-size:0;
+                                li{
+                                    position:relative;
+                                    display:inline-block;
+                                    @include body-210;
+                                    color:#ddd;
+                                    & + li{
+                                        margin-left:0.8rem;
+                                        padding-left:0.9rem;
+                                        &:before{
+                                            content:'';
+                                            display:block;
+                                            position:absolute;
+                                            top:50%;
+                                            left:0;
+                                            width:1px;
+                                            height:1rem;
+                                            background:#aaa;
+                                            transform:translateY(-50%);
+                                        }
+                                    }
+                                }
+                            }
+                            .txt{
+                                @include body-110;
+                                @include font-color-white-100;
+                            }
+                            .distance{
+                                @include body-210;
+                                @include font-color-white-100;
+                                strong{
+                                    margin-right:0.4rem;
+                                }
+                            }
+                        }
+                        .icon24{
+                            position:absolute;
+                            right:1.6rem;
+                            top:50%;
+                            transform:translateY(-50%);
+                        }
+                    }
+                    &:first-child{
+                        margin-top:0;
+                    }
+                    &:nth-child(odd){
+                        padding-left:5.2rem;
+                        .img{
+                            left:0;
+                        }
+                    }
+                    &:nth-child(even){
+                        padding-right:5.2rem;
+                        .img{
+                            right:0;
+                        }
+                    }
+                }
+            }
+            & + .info-txt{
+                margin-top:2.4rem;
+            }
+        }
+        .history-list{
+            margin-top:1.6rem;
+            padding-bottom:2.4rem;
+            border-bottom:1px solid #eee;
+            > ul{
+                > li{
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+                    margin-top:1.6rem;
+                    &:first-child{
+                        margin-top:0;
+                    }
+                    .date{
+                        @include body-120;
+                    }
+                    .txt{
+                        @include body-110;
+                    }
+                }
+            }
+            .result-box{
+                padding:0.8rem 0 0;
+            }
+            & + .bullet-list{
+                margin-top:2.4rem;
+            }
+        }
+        .inp-list-wrap{
+            margin-top:3.2rem;
+            .contents-title-300{
+                margin-bottom:1.6rem;
+            }
+            > ul{
+                > li{
+                    display:flex;
+                    > * + *{
+                        margin-left:0.9rem;
+                    }
+                }
+                & + .contents-title-300{
+                    margin-top:3.2rem;
+                }
+            }
+        }
+        .info-content{
+            .info-box{
+                .info-top{
+                    padding-bottom:0;
+                    border-bottom:none;
+                }
+            }
+            & ~ .tac{
+                margin-top:3.2rem;
+            }
+        }
+        .info-list{
+            > li{
+                .icon{
+                    & ~ .tit{
+                        padding-right:0;
+                    }
+                }
+            }
+        }
+        .btn-area{
+            padding-bottom:0;
+        }
+    }
+}

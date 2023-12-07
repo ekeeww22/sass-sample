@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.CMYCTE010{
+    .modal-body{
+        padding-bottom:1.6rem;
+        .link-list{
+            li{
+                margin-top:0.8rem;
+                @include line-color-gray-200;
+                border-radius:1.2rem;
+                &:first-child{
+                    margin-top:0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.top-breadcrumbs-area { padding-bottom:3.2rem;
+    ul { font-size:0;
+        li { display:inline-block;
+            button { vertical-align:middle; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666;
+                &.active { font-weight:bold; color:#222222;
+                    &:after { 
+                        display:block; content:""; height:0.4rem; background-color:#ffde00; border-radius:0.4rem; margin-top:-0.5rem;
+                    }
+                }
+                
+            }
+            ~ li { margin-left:0.4rem;
+                &:before { display:inline-block; content:""; width:1.6rem; height:1.6rem; vertical-align:middle; background: url(../images/icon/icon16-arrow-right-gray.svg) no-repeat center/contain; margin-right:0.4rem; }
+            }
+        }
+        
+    }
+}

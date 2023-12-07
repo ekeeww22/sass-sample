@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.CMYMCP153{
+    .item-list{
+        dt{
+            @include contents-title-300;
+        }
+        dd{
+            margin-top:1.6rem;
+            @include body-120;
+            &.txt-red{
+                @include contents-title-200;
+                @include option-color-red-100;
+            }
+            & + dt{
+                margin-top:3.2rem;
+            }
+            .body-120{
+                margin-top:1.6rem;
+                & + .body-100{
+                    margin-top:2.4rem;
+                }
+            }
+            .table-wrap{
+                margin-top:1.6rem;
+            }
+            .bullet-list{
+                margin-top:1.6rem;
+                &.sm{
+                    margin-top:0;
+                }
+            }
+        }
+    }
+}

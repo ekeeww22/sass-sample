@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 나와함께</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-header-white">
+		<!--
+			[wrap 인접 class 지정 가이드]
+
+			bg-header-yellow : 헤더만 황색으로 변경
+			bg-header-gray   : 헤더만 회색으로 변경
+			bg-header-white  : 헤더만 백색으로 변경
+			bg-all-gray      : 헤더와 콘텐츠배경 회색으로 변경
+			bg-all-white     : 헤더와 콘텐츠배경 백색으로 변경
+
+			text-unmarked    : 금액 미표시 일때만 클래스 추가
+			↑ CMYMCP002.html 파일 참고
+		-->
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>나와 함께</h2>
+			<div class="hearder-right-icon-area"><button class="icon24 icon-share">text</button></div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA006">
+					<div class="top-car-info-area">
+						<div class="top-car-thumb">
+							<dl>
+								<dt class="top-product-txt">
+									<h4 class="tit">현대 그랜저</h4>
+									<span class="txt">더 뉴 그랜저 2.5 캘리그래피</span>
+									<button class="details-txt">수정</button>
+								</dt>
+								<dd class="top-product-image">
+									
+									<div class="product"><img src="/images/mycar/image-content-mycar-1.png" alt=""></div>
+									<div class="license-plate">
+										<span class="lp-number">123가 1234</span>
+									</div>
+								</dd>
+							</dl>
+						</div>
+						<div class="driving-info-area">
+							<dl class="driving-info">
+								<dt class="tit">주행거리</dt>
+								<dd class="txt">999,999km <button class="icon16 icon-modify">수정</button></dd>
+							</dl>
+							<dl class="driving-info">
+								<dt class="tit">최초등록</dt>
+								<dd class="txt">2019.02.19</dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="mycar-comtent-bc">
+						<div class="sub-main-data-box">
+                            <div class="container-top-roundbox">
+                                <div class="driving-top-area">
+									<em class="tit"><span class="txt">나와 함께한지</span> <button class="icon24 icon-tooltip" data-target="tooltip-1"></button></em>															
+									<strong class="line-txt">3,650일</strong>									
+                                </div>
+								<div class="tooltip" data-module="tooltip" data-name="tooltip-1" data-tooltip-group="tt1"><!-- class 'active' 추가할 경우 노출됨 -->
+									<p class="txt">나와 함께한 날짜는 등록원부에 기록된 최종 사용자 변경일로부터 측정합니다. 최초 출고 후에 소유주가 변경된 차량이라면 소유주 변경 일자부터 카운팅됩니다.</p>
+									<button class="icon16 icon-close">닫기</button>
+								</div>	
+								
+								<div class="driving-info-area">
+									<dl class="driving-info">
+										<dt class="tit">나의 보유기간 랭킹</dt>
+										<dd class="txt">상위 20.5%</dd>
+									</dl>
+									<dl class="driving-info">
+										<dt class="tit">동일 모델 평균 보유기간</dt>
+										<dd class="txt">9,999일</dd>
+									</dl>
+								</div>
+								<div class="accidents-damage-list">
+                                    <ul>
+                                        <li>
+                                            <div class="ad-round-box">
+                                                <i class="icon40 icon-mycar-crown"></i>
+                                                <em>상위오너</em>
+                                                <strong>20%</strong>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ad-round-box">
+                                                <i class="icon40 icon-mycar-drive-club"></i>
+                                                <em>드라이빙 클럽</em>
+                                                <strong>1년</strong>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                       
+
+						<div class="alert-bottom-txt-area">
+							<i class="icon16 icon-info">text</i>
+							<span class="txt">KB차차차에 등록된 동일 모델 전체 0,000대의 차량들의 보유 기간을 측정한 결과로 매일 갱신됩니다.</span>
+						</div>
+
+						<div class="bottom-logo-area">
+							<img src="/images/mycar/logo-bottom.svg" alt="" />
+						</div>
+
+					</div>
+
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

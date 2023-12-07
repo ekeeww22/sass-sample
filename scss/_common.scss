@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* common */
+.tal{
+    text-align:left !important;
+}
+.tac{
+    text-align:center !important;
+}
+.tar{
+    text-align:right !important;
+}
+
+/* Typography */
+.header-title-100{
+    @include header-title-100;
+}
+.page-intro-100{
+    @include page-intro-100;
+}
+.page-intro-200{
+    @include page-intro-200;
+}
+.contents-title-50{
+    @include contents-title-50;
+}
+.contents-title-100{
+    @include contents-title-100;
+    & + .body-120{
+        margin-top:0.8rem;
+    }
+    & + .table-wrap{
+        margin-top:3.2rem;
+    }
+}
+.contents-title-200{
+    @include contents-title-200;
+}
+.contents-title-300{
+    @include contents-title-300;
+    & + .inp-list-wrap{
+        margin-top:1.6rem;
+    }
+    & + .body-120{
+        margin-top:1.6rem;
+    }
+}
+.body-100{
+    @include body-100;
+}
+.body-110{
+    @include body-110;
+}
+.body-120{
+    @include body-120;
+    & + .contents-title-300{
+        margin-top:3.2rem;
+    }
+}
+.body-200{
+    @include body-200;
+}
+.body-210{
+    @include body-210; 
+}
+.caption-100{
+    @include caption-100;
+}
+.dock-bar-100{
+    @include dock-bar-100;
+}
+
+
+/* color */
+.primary-color-100{
+    @include primary-color-100;
+}
+.primary-color-200{
+    @include primary-color-200;
+}
+
+.font-color-black-100{
+    @include font-color-black-100
+}
+.font-color-gray-100{
+    @include font-color-gray-100;
+}
+.font-color-gray-200{
+    @include font-color-gray-200;
+}
+.font-color-white-100{
+    @include font-color-white-100;
+}
+
+.line-color-gray-100{
+    @include line-color-gray-100;
+}
+.line-color-gray-200{
+    @include line-color-gray-200;
+}
+.line-color-gray-300{
+    @include line-color-gray-300;
+}
+
+.bg-color-gray-100{
+    @include bg-color-gray-100;
+}
+.bg-color-gray-200{
+    @include bg-color-gray-200;
+}
+
+.option-color-red-100{
+    @include option-color-red-100;
+}
+
+.option-color-blue-100{
+    @include option-color-blue-100;
+}

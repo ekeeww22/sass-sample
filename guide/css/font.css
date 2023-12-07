@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: SpoqaHanSans-Regular;
+	font-weight: 400;
+	src: url('../font/SpoqaHanSansRegular.eot');
+	src: local(☺),
+	url('../font/SpoqaHanSansRegular.woff2') format('woff2'),
+	url('../font/SpoqaHanSansRegular.woff') format('woff'),
+	url('../font/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: SpoqaHanSans-Light;
+	font-weight: 700;
+	src: url('../font/SpoqaHanSansLight.eot');
+	src: local(☺),
+	url('../font/SpoqaHanSansLight.woff2') format('woff2'),
+	url('../font/SpoqaHanSansLight.woff') format('woff'),
+	url('../font/SpoqaHanSansLight.ttf') format('truetype');
+}

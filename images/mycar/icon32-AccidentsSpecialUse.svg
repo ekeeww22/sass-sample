@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <filter id="4tbr3bnlza">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.133333 0 0 0 0 0.133333 0 0 0 0 0.133333 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M0 0H32V32H0z" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000)"/>
+                                <g>
+                                    <g>
+                                        <path stroke="#070100" stroke-width="1.5" d="M20.434 5.836L23.495 4.852M3.062 5.836L0 4.852" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                        <path d="M23.405 15.44H.888V8.005c0-1.224.98-2.215 2.19-2.215h18.136c1.21 0 2.19.991 2.19 2.215v7.435z" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                        <path fill="#FEFEFE" d="M16.971 15.44h-9.65l.644-1.93c.226-.68 1.004-1.287 1.93-1.287h4.503c.927 0 1.704.608 1.93 1.287l.643 1.93z" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                        <path stroke="#070100" stroke-width="1.5" d="M24 15.44H.245V7.72c0-.939 1.008-1.93 1.93-1.93H20.83c1.551 0 2.56.991 2.574 1.93v7.382M20.51 5.79H3.14l1.93-4.503C5.265.545 6.07 0 7 0h9.65c.93 0 1.736.545 1.93 1.287l1.93 4.503z" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                        <path fill="#070100" d="M6.678 10.293c0-.71-.576-1.286-1.287-1.286-.71 0-1.286.575-1.286 1.286 0 .71.577 1.287 1.286 1.287.711 0 1.287-.576 1.287-1.287M20.188 10.293c0-.71-.576-1.286-1.287-1.286-.71 0-1.286.575-1.286 1.286 0 .71.577 1.287 1.286 1.287.711 0 1.287-.576 1.287-1.287" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                        <path stroke="#070100" stroke-width="1.5" d="M3.462 15.44v3.217c0 .388-.248.643-.644.643H.888c-.395 0-.643-.255-.643-.643V15.44M20.188 15.44v3.217c0 .388.248.643.643.643h1.93c.395 0 .644-.255.644-.643V15.44" transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(0.000000, 7.333333)"/>
+                                    </g>
+                                    <g transform="translate(-208.000000, -420.000000) translate(0.000000, 132.000000) translate(0.000000, 84.000000) translate(16.000000, 42.000000) translate(176.000000, 146.000000) translate(16.000000, 16.000000) translate(4.000000, 2.000000) translate(14.000000, 0.000000)">
+                                        <circle cx="6" cy="6" r="5" fill="#FC0"/>
+                                        <circle cx="6" cy="6" r="5.25" stroke="#222" stroke-width="1.5"/>
+                                        <g stroke-linecap="round" filter="url(#4tbr3bnlza)">
+                                            <g stroke="#FFF" stroke-width="1.3">
+                                                <path stroke-linejoin="round" d="M0.881 0L1.861 3.61 3.009 0.026 4.153 3.61 5.14 0.001" transform="translate(3.000000, 4.500000)"/>
+                                                <path stroke-linejoin="bevel" d="M1.201 1.761L0 1.761M6 1.761L4.799 1.761" transform="translate(3.000000, 4.500000)"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

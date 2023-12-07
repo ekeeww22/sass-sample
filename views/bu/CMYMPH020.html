@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>내차구매</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>다음차 등록</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH020">
+
+                    <div class="model-card">
+                        <strong class="tit">제조사/모델</strong>
+                        <p class="txt">
+                            벤츠 E클래스 (W213) E200d 4matic Avantgarde 3줄일 경우3줄일 경우
+                        </p>
+                        <div class="img-wrap"><img src="/images/car/img96Car05.png" alt=""></div>
+                        <a href="javascript:;" class="link"><i class="icon16 icon-refresh-dark"></i><span>차 변경</span></a>
+                    </div>
+
+                    <div class="year-model-card">
+                        <strong class="tit">연식</strong>
+                        <ul><!--li안의 각각의 input id와 label for 값을 똑같게 설정  -->
+                            <li>
+                                <label for="years-01">
+                                    <input type="radio" name="years" id="years-01">
+                                    <span>2021</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-02">
+                                    <input type="radio" name="years" id="years-02">
+                                    <span>2020</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-03">
+                                    <input type="radio" name="years" id="years-03">
+                                    <span>2019</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-04">
+                                    <input type="radio" name="years" id="years-04">
+                                    <span>2018</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-05">
+                                    <input type="radio" name="years" id="years-05">
+                                    <span>2017</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-06">
+                                    <input type="radio" name="years" id="years-06">
+                                    <span>2016</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-07">
+                                    <input type="radio" name="years" id="years-07">
+                                    <span>2015</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="years-08">
+                                    <input type="radio" name="years" id="years-08">
+                                    <span>2014</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="color-model-card">
+                        <strong class="tit">색상</strong>
+                        <ul><!--li안의 각각의 input id와 label for 값을 똑같게 설정  -->
+                            <li>
+                                <label for="color-01">
+                                    <input type="radio" name="colors" id="color-01" checked>
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#000; border:1px solid #000;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">검정색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-02">
+                                    <input type="radio" name="colors" id="color-02">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#fff; border:1px solid #ddd;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">흰색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-03">
+                                    <input type="radio" name="colors" id="color-03">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#f0f0f0; border:1px solid #f0f0f0;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">은색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-04">
+                                    <input type="radio" name="colors" id="color-04">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#ececde; border:1px solid #ececde;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">진주색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-05">
+                                    <input type="radio" name="colors" id="color-05">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#bcbcbc; border:1px solid #bcbcbc;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">회색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-06">
+                                    <input type="radio" name="colors" id="color-06">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#eb2a2a; border:1px solid #eb2a2a;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">빨강색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-07">
+                                    <input type="radio" name="colors" id="color-07">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#2666c6; border:1px solid #2666c6;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">파랑색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-08">
+                                    <input type="radio" name="colors" id="color-08">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#e46600; border:1px solid #e46600;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">주황색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-09">
+                                    <input type="radio" name="colors" id="color-09">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#653b2a; border:1px solid #653b2a;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">갈색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-10">
+                                    <input type="radio" name="colors" id="color-10">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#009944; border:1px solid #009944;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">초록색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-11">
+                                    <input type="radio" name="colors" id="color-11">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#fed800; border:1px solid #fed800;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">노랑색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                            <li>
+                                <label for="color-12">
+                                    <input type="radio" name="colors" id="color-12">
+                                    <div class="color-border">
+                                        <span class="color-box" style="background-color:#56357e; border:1px solid #56357e;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+                                    </div>
+                                </label>
+                                <p class="color-name">보라색</p> <!-- 2021-07-29 마크업 추가 -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow" disabled><span>다음</span></button>
+                    </div>
+                    <div class="bottom-space"></div>
+				</div>
+
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

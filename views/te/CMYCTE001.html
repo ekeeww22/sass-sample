@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>차테크</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-all-gray">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<h2>차테크</h2>
+			<div class="btn-header-wrap">
+				<button type="button"><i class="icon24 btn-alarm"></i><span>알람</span></button>
+			</div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content te">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE001">
+					<div class="part keep">
+						<div class="part-tit-wrap">
+							<dl>
+								<dt>
+									<span><em>5</em>월 차계부</span>
+									<i class="icon16 icon-error"></i>
+								</dt>
+								<dd>
+									<a href="javascript:;">
+										<span>1,450,000원</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a>
+									<!-- 0원일 경우 클래스 'none' 추가 -->
+									<!-- <a href="javascript:;" class="none">
+										<span>0원</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a> -->
+									<!-- // 0원일 경우 클래스 'none' 추가 -->
+								</dd>
+							</dl>
+							<button type="button" class="reload-data">
+								<span>1일 전</span>
+								<icon class="icon24 icon-refresh-round"></icon>
+							</button>
+						</div>
+						
+						<div class="part-content">
+							<!-- 2021-07-08 유지비 없는 케이스 추가 -->
+							<div class="link-area">
+								<h4>
+									<strong>차국민</strong>님, 최근 3개월간 내역이 없네요.<br>
+									유지비를 직접 추가해보세요.
+								</h4>
+								<ul class="link-list">
+									<li>
+										<a href="javascript:;">
+											<i class="icon24 icon-cardlist"></i>
+											<span class="tit">카드 소비 내역에서 가져오기  </span>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="icon24 icon-accountadd"></i>
+											<span class="tit">입출금통장 출금내역에서 가져오기 </span>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<i class="icon24 icon-cardwrite"></i>
+											<span class="tit">직접 내역 추가하기</span>
+											<i class="icon16 icon-arrow-right-black"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- // 2021-07-08 유지비 없는 케이스 추가 -->
+
+							<!-- 2021-07-22 카드연결 항목 추가 / 이미 카드 연결 되어있을시 노출 X -->
+							<div class="box-area sm">
+								<p class="box-txt">
+									사용중인 카드 연결하면, 더 편한<br>
+									내차 유지비 관리가 가능해요.
+								</p>
+								<button type="button" class="btn-round bg-gray">카드연결</button>
+							</div>
+							<!-- // 2021-07-22 카드연결 항목 추가 / 이미 카드 연결 되어있을시 노출 X -->
+
+							<!-- 자산연결 안한 경우 -->
+							<div class="box-area">
+								<p class="box-txt">
+									자동차 유지비만 쏙쏙 골라<br>
+									실시간으로 한눈에 보여드려요.
+								</p>
+								<i class="icon140 icon-maintenance"></i>
+								<button type="button" class="btn-yellow"><span>자산 연결하기</span></button>
+							</div>
+							<!-- // 자산연결 안한 경우 -->
+
+							<div class="info-area">
+								<h4 class="tit">
+									지난달 대비
+									<span class="date">4월 23일 기준</span>
+								</h4>
+								<p class="txt"><em>23,520</em>원 더 지출 했어요!</p>
+								<span class="icon"><img src="/images/te/icon-invest.svg" alt="아이콘"></span>
+							</div>
+	
+							<div class="chart-area">
+								<dl>
+									<dt>최근 유지비 추이</dt>
+									<dd>평균 <em>815,650</em>원 사용</dd>
+								</dl>
+	
+								<!-- 차트영역 -->
+								<div class="chart-box">
+									<img src="/images/sample/sample-chart-1.png">
+								</div>
+								<!-- // 차트영역 -->
+							</div>
+
+							<div class="card-area">
+								<dl>
+									<dt>자동차 유지비, 확 줄이기</dt><!-- 내차고 차랑등록 안했을경우 '대중교통 알뜰하게 이용하기' -->
+									<dd><span>차국민</span>님을 위한 추천 카드</dd>
+								</dl>
+	
+								<ul class="card-slider">
+									<li>
+										<a href="javascript:;">
+											<span class="img"><img src="/images/sample/sample-card-1.png" alt="샘플이미지"/></span>
+											<span class="tit">The Easy카드</span>
+											<span class="txt">KB국민카드</span>
+											<span class="price">연회비 <em>10,000</em>원</span><!-- 2021-07-21 마크업 추가 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="img"><img src="/images/sample/sample-card-2.png" alt="샘플이미지"/></span>
+											<span class="tit">신한카드 The More (더모아)</span>
+											<span class="txt">신한카드</span>
+											<span class="price">연회비 <em>10,000</em>원</span><!-- 2021-07-21 마크업 추가 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="img"><img src="/images/sample/sample-card-3.png" alt="샘플이미지"/></span>
+											<span class="tit">현대카드 X BOOST</span>
+											<span class="txt">현대카드</span>
+											<span class="price">연회비 <em>10,000</em>원</span><!-- 2021-07-21 마크업 추가 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="img"><img src="/images/sample/sample-card-4.png" alt="샘플이미지"/></span>
+											<span class="tit">카드카드카드</span>
+											<span class="txt">카드</span>
+											<span class="price">연회비 <em>10,000</em>원</span><!-- 2021-07-21 마크업 추가 -->
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="img"><img src="/images/sample/sample-card-5.png" alt="샘플이미지"/></span>
+											<span class="tit">카드카드카드카드카드카드카드</span>
+											<span class="txt">카드카드카드카드</span>
+											<span class="price">연회비 <em>10,000</em>원</span><!-- 2021-07-21 마크업 추가 -->
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="part finance">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">
+								내차 금융
+								<i class="icon16 icon-error"></i>
+							</h3>
+							<button type="button" class="reload-data">
+								<span>1일 전</span>
+								<icon class="icon24 icon-refresh-round"></icon>
+							</button>
+						</div>
+						<div class="part-content">
+							<!-- 금융 내역 없는 경우 -->
+							<div class="box-area">
+								<p class="box-txt">
+									내 자동차 할부 현황부터<br>
+									대출 잔액까지 한번에 관리하려면?
+								</p>
+								<i class="icon140 icon-finance"></i>
+								<button type="button" class="btn-yellow"><span>금융 연결하기</span></button>
+							</div>
+							<!-- // 금융 내역 없는 경우 -->
+
+							<div class="box-area">
+								<a href="javascript:;" class="item-area">
+									<span class="img"><img src="/images/sample/sample-hdcapital.png" alt="샘플이미지"/></span>
+									<div class="box">
+										<span class="tit">디지털 중고차론</span>
+										<span class="txt">현대캐피탈</span>
+										<ul class="info">
+											<li>2020.01.04 ~ 2021.01.03</li>
+										</ul>
+									</div>
+									<i class="icon16 icon-arrow-right-black"></i>
+								</a>
+								<!-- 2021-07-21 마크업 위치 변경 -->
+								<div class="bg-area">
+									<i class="icon24 icon-assets-on"></i>
+									<span class="tit">대출잔액</span>
+									<span class="price"><strong>11,439,330</strong>원</span>
+								</div>
+								<!-- // 2021-07-21 마크업 위치 변경 -->
+								<div class="detail-area">
+									<span class="tit">상환</span>
+									<span class="date">04.24 (금)</span>
+									<div class="box">
+										<span class="price"><strong>400,000</strong>원</span>
+										<!-- <span class="type">적용금리 <em>2.95</em>%</span> --><!-- 2021-07-27 마크업 삭제 -->
+									</div>
+								</div>
+							</div>
+							<!-- 2021-07-22 마크업 수정 -->
+							<ul class="box-list">
+								<!-- 조건충족 Y -->
+								<li>
+									<div class="box">
+										<i class="icon56 icon-convertloan"></i>
+										<span class="txt">대출 전환하면 매월 최대 <strong>129,067</strong>원 절약!</span>
+										<a href="javascript:;" class="btn-round">상담하기</a>
+									</div>
+								</li>
+								<!-- // 조건충족 Y -->
+								<!-- 조건충족 N -->
+								<li>
+									<a href="javascript:;" class="box">
+										<img src="/images/te/sample-banner-1.png" alt="샘플 배너"/>
+									</a>
+								</li>
+								<!-- // 조건충족 N -->
+							</ul>
+							<!-- // 2021-07-22 마크업 수정 -->
+						</div>
+					</div>
+
+					<div class="part insurance">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">
+								내차 보험
+								<i class="icon16 icon-error"></i>
+							</h3>
+							<button type="button" class="reload-data">
+								<span>10%</span>
+								<icon class="icon24 icon-refresh-round"></icon>
+							</button>
+						</div>
+						<div class="part-content">
+							<!-- 보험 내역 없는 경우 -->
+							<div class="box-area">
+								<p class="box-txt">
+									내 자동차 보험 연결하면<br>
+									갱신 시점을 알려드려요.
+								</p>
+								<i class="icon140 icon-insurance"></i>
+								<button type="button" class="btn-yellow"><span>보험 연결하기</span></button>
+							</div>
+							<!-- // 보험 내역 없는 경우 -->
+
+							<div class="box-area">
+								<a href="javascript:;" class="item-area">
+									<span class="img"><img src="/images/sample/sample-kbinsurance.png" alt="샘플이미지"/></span>
+									<div class="box">
+										<span class="tit">스마트 자동차 보험</span>
+										<span class="txt">KB손해보험</span>
+										<ul class="info">
+											<li>그랜저 IG</li>
+											<li>2020.01.04 ~ 2021.01.03</li>
+										</ul>
+									</div>
+									<i class="icon16 icon-arrow-right-black"></i>
+								</a>
+								<div class="bg-area">
+									<i class="icon24 icon-calendar"></i>
+									<span class="tit">갱신일</span>
+									<span class="price">D-20</span>
+								</div>
+								<div class="detail-area">
+									<span class="tit">일시납 1회차</span>
+									<span class="date">01.21 (목)</span><!-- 2021-07-30 날짜 추가 -->
+									<div class="box">
+										<span class="price"><strong>1,089,000</strong>원</span>
+										<span class="type">신용카드</span>
+									</div>
+								</div>
+							</div>
+							<!-- 2021-07-22 마크업 수정 -->
+							<ul class="box-list">
+								<!-- 보험 계약 상태가 정상인 경우 --> 
+								<li>
+									<a href="javascript:;" class="box">
+										<img src="/images/te/sample-banner-2.png" alt="샘플 배너"/>
+									</a>
+								</li>
+								<!-- // 보험 계약 상태가 정상인 경우 --> 
+								<!-- 가입 내역이 없는 경우 -->
+								<li>
+									<a href="javascript:;" class="box">
+										<img src="/images/te/sample-banner-3.png" alt="샘플 배너"/>
+									</a>
+								</li>
+								<!-- // 가입 내역이 없는 경우 -->
+							</ul>
+							<!-- // 2021-07-22 마크업 수정 -->
+						</div>
+						<div class="part-content">
+							<div class="box-area">
+								<a href="javascript:;" class="item-area">
+									<span class="img"><img src="/images/sample/sample-dbinsurance.png" alt="샘플이미지"/></span>
+									<div class="box">
+										<span class="tit">DB운전자 보험</span>
+										<span class="txt">DB손해보험</span>
+										<ul class="info">
+											<li>2020.01.04 ~ 2021.01.03</li>
+										</ul>
+									</div>
+									<i class="icon16 icon-arrow-right-black"></i>
+								</a>
+								<div class="detail-area">
+									<span class="tit">연납 9회차</span>
+									<span class="date">01.21 (목)</span><!-- 2021-07-27 날짜 표기방식 수정 -->
+									<div class="box">
+										<span class="price"><strong>108,000</strong>원</span>
+										<span class="type">자동이체</span>
+									</div>
+								</div>
+							</div>
+							<!-- 2021-07-22 마크업 수정 -->
+							<ul class="box-list">
+								<!-- 보험 계약 상태가 정상인 경우 & 가입 내역이 없는 경우 -->
+								<li>
+									<a href="javascript:;" class="box">
+										<img src="/images/te/sample-banner-4.png" alt="샘플 배너"/>
+									</a>
+								</li>
+								<!-- // 보험 계약 상태가 정상인 경우 & 가입 내역이 없는 경우 -->
+								<!-- 가입 내역이 없는 경우 -->
+								<li>
+									<a href="javascript:;" class="box">
+										<img src="/images/te/sample-banner-5.png" alt="샘플 배너"/>
+									</a>
+								</li>
+								<!-- // 가입 내역이 없는 경우 -->
+							</ul>
+							<!-- // 2021-07-22 마크업 수정 -->
+						</div>
+					</div>
+
+					<div class="part sell">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">
+								내 차 팔기
+							</h3>
+						</div>
+						<!-- 2021-07-01 버튼 추가로 인한 마크업 추가&수정 -->
+						<!-- 차량 보유중 -->
+						<div class="link-area">
+							<span class="tit"><em>올 뉴 쏘렌토</em>, 지금 바로</span>
+							<span class="txt"><strong>130</strong>만원 더 받고 팔기</span>
+							<span class="img">
+								<img src="/images/sample/sample-car-1.png" alt="샘플 이미지"/>
+								<em class="num">+130</em>
+							</span>
+							<div class="btn-area">
+								<button type="button" class="btn-yellow"><span>내 차 팔기 신청하기</span></button>
+							</div>
+						</div>
+						<!-- // 차량 보유중 -->
+
+						<!-- 차량 미 보유중 -->
+						<div class="link-area none">
+							<span class="tit">내 차 팔때, 2분투자로</span>
+							<span class="txt"><strong>130</strong>만원 더 받는 방법?</span><!-- 2021-07-01 텍스트 수정 -->
+							<span class="img">
+								<img src="/images/sample/sample-car-1.png" alt="샘플 이미지"/><!-- 2021-07-01 텍스트 수정 -->
+								<em class="num">+130</em>
+							</span>
+							<div class="btn-area">
+								<button type="button" class="btn-yellow"><span>내 차 팔기 신청하기</span></button>
+							</div>
+						</div>
+						<!-- // 차량 미 보유중 -->
+						<!-- // 2021-07-01 버튼 추가로 인한 마크업 추가&수정 -->
+					</div>
+
+					<div class="part simulation">
+						<div class="part-tit-wrap">
+							<h3 class="contents-title-200">
+								내 차 팔기 시뮬레이션
+							</h3>
+						</div>
+						<!-- 2021-07-06 마크업 추가 -->
+						<div class="part-top">
+							<div class="box-area">
+								<i class="icon24 icon-car"></i>
+								<p class="name">올 뉴 쏘렌토</p>
+								<button type="button" class="btn-txt sm">차량변경</button><!-- 차가 한대만 있을경우 버튼 노출 X -->
+							</div>
+						</div>
+						<!-- // 2021-07-06 마크업 추가 -->
+						<div class="part-content">
+							<div class="box-area">
+								<div class="simulation-area">
+									<span class="type">경매로 팔기</span>
+									<i class="icon96 icon-sell-1"></i>
+									<span class="tit">대신 팔아 주세요!</span>
+									<span class="txt">
+										차를 잘 모르고 판매하는게 귀찮은<br>
+										고객에게 추천드려요.
+									</span>
+									<a href="javascript:;" class="btn-round"><span>팔아줘 차차차 바로가기</span><i class="icon16 icon-arrow-right-black"></i></a>
+								</div>
+								<!-- 차량 보유중일 경우에만 노출 -->
+								<div class="detail-area">
+									<span class="tit">판매 예상가</span>
+									<div class="box">
+										<span class="price"><strong>1,450</strong>만원</span>
+										<span class="type">
+											팔아줘 차차차 거래 기준<br>
+											(3개월 거래 평균)
+										</span>
+									</div>
+								</div>
+								<!-- // 차량 보유중일 경우에만 노출 -->
+							</div>
+						</div>
+
+						<div class="part-content">
+							<div class="box-area">
+								<div class="simulation-area">
+									<span class="type">직접팔기</span>
+									<i class="icon96 icon-sell-2"></i>
+									<span class="tit">내가 직접 팔고 싶어요!</span>
+									<span class="txt">
+										시간이 걸려도 직접 팔고 싶은<br>
+										고객에게 추천 드려요.
+									</span>
+									<a href="javascript:;" class="btn-round"><span>직거래 차차차 바로가기</span><i class="icon16 icon-arrow-right-black"></i></a>
+								</div>
+								<!-- 차량 보유중일 경우에만 노출 -->
+								<div class="detail-area">
+									<span class="tit">판매 예상가</span>
+									<div class="box">
+										<span class="price"><strong>1,610</strong>만원</span>
+										<span class="type">
+											팔아줘 차차차 거래 기준<br>
+											(3개월 거래 평균)
+										</span>
+									</div>
+								</div>
+								<!-- // 차량 보유중일 경우에만 노출 -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+	</div>
+	<!-- // wrap -->
+
+	<!-- dockbar -->
+	<!-- 2021-07-26 메뉴 수정 -->
+	<div class="dock-menu">
+		<ul class="dock-bar">
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-home"></i>
+					<span>홈</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-sell"></i>
+					<span>팔때</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-search"></i>
+					<span>검색</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="active"><!-- 활성화시 'active' 클래스 추가 -->
+					<i class="icon dock-data"></i>
+					<span>마이데이터</span><!-- 2021-07-07 텍스트 수정 --> 
+				</a>
+				<ul class="dock-depth2">
+					<li>
+						<a href="javascript:;"><span>내자산</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차구매</span></a>
+					</li>
+					<li>
+						<a href="javascript:;" class="active"><span>차테크</span></a><!-- 활성화시 'active' 클래스 추가 -->
+					</li>
+					<li>
+						<a href="javascript:;"><span>내차고</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<i class="icon dock-market"></i>
+					<span>시세</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- // 2021-07-26 메뉴 수정 -->
+	<!-- // dockbar -->
+</body>
+</html>

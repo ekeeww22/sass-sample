@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.top-location{
+    &:first-child{
+        margin-top:-0.8rem;
+    }
+    ul{
+        display:flex;
+        justify-content:center;
+        margin-bottom:3.2rem;
+        li{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            margin-left:1.6rem;
+            width:2rem;
+            height:2rem;
+            border-radius:50%;
+            background:#eee;
+            &:first-child{
+                margin-left:0;
+            }
+            span{
+                font-size:0;
+                text-indent:-9999px;
+            }
+            &.active{
+                background:#ffcc00 url(../images/icon/icon-check-black.svg) no-repeat;
+                background-size:cover;
+            }
+            &.end{
+                background:#ffcc00;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.CMYMCP133{
+    .contents-title-100{
+        margin-bottom:0.8rem;
+    }
+    .sticky-box{
+        position:sticky;
+        top:4.4rem;
+        left:0;
+        margin:0 -1.6rem;
+        padding:2.4rem 1.6rem 0;
+        background:#fff;
+        z-index:1;
+        .inp-box{
+        
+        }
+        .tab-underbar{
+            margin-top:2.4rem;
+        }
+        & + .choice-wrap{
+            margin-top:3.2rem;
+        }
+    }
+    .btn-floating{
+        position:fixed;
+        right:1.6rem;
+        bottom:8.8rem;
+        width:5.6rem;
+        height:5.6rem;
+        border-radius:50%;
+        background:#fff;
+        box-shadow:0 0.6rem 1.2rem rgba(0,0,0,0.12);
+        z-index:10;
+        .num{
+            position:absolute;
+            top:0;
+            right:-0.4rem;
+            padding:0.2rem 0.6rem;
+            @include dock-bar-100;
+            @include primary-color-100;
+            border-radius:0.8rem;
+            transform:translateY(-50%);
+        }
+    }
+    .bottom-fixed + .bottom-space{
+        height:12.4rem;
+    }
+}

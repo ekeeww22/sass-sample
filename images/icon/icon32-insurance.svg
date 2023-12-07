@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFD800" d="M15.133 19.121L20.962 13.68 7.429 8.754 7.715 14.827z" transform="translate(-540 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(460) translate(2.286 2.286)"/>
+                                <path fill="#FC0" d="M19.336 14.828c1.417-1.265 2.617-2.765 3.55-4.435 1.563-2.87 1.786-6.365-.476-8.666-2.277-2.303-5.944-2.303-8.22 0l-.72.73-.718-.73c-2.278-2.303-5.945-2.303-8.222 0-2.26 2.3-2.038 5.796-.473 8.666 1.34 2.463 4.647 5.22 6.408 6.552" transform="translate(-540 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(460) translate(2.286 2.286)"/>
+                                <path stroke="#050101" stroke-width="1.5" d="M16.996 16.945c1.417-1.265 4.957-4.882 5.89-6.552 1.563-2.87 1.786-6.365-.476-8.666-2.277-2.303-5.944-2.303-8.22 0l-.72.73-.718-.73c-2.278-2.303-5.945-2.303-8.222 0-2.26 2.3-2.038 5.796-.473 8.666 1.34 2.463 4.647 5.22 6.408 6.552" transform="translate(-540 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(460) translate(2.286 2.286)"/>
+                                <path stroke="#050101" stroke-linecap="round" stroke-width="1.5" d="M18.654 20.819c1.417-.292 4.136-.948 6.968-1.532.608-.139 1.214.238 1.372.853.005.025.01.05.013.076.093.71-.308 1.391-.966 1.64l-9.643 5.07-10.435-2.87L0 25.492" transform="translate(-540 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(460) translate(2.286 2.286)"/>
+                                <path fill="#FFF" stroke="#050101" stroke-linecap="round" stroke-width="1.5" d="M4.571 17.819l8.558-1.374c.956-.154 1.932-.138 2.884.047l5.435 2.493c.801.155 1.38.87 1.38 1.702 0 .792-.628 1.435-1.404 1.435l-7.022-1.435" transform="translate(-540 -886) translate(54.5 160) translate(0 672) translate(25.5 54) translate(460) translate(2.286 2.286)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

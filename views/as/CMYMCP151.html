@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>통합인증_정기전송 여부 및 전송요구 기간 설정</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP151">
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="end"><span>2</span></li>
+							<li class="active"><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+                    
+					<h3 class="contents-title-100">
+						상세정보 전송요구를 위해<br>
+                        정기 전송 여부 및<br>
+                        기간을 설정해 주세요.
+					</h3>
+
+                    <dl class="form-list">
+                        <dt>정기적 전송 여부</dt>
+                        <dd>
+                            <div class="form-box">
+                                <label class="form-radio" for="radio1-1">
+                                    <input type="radio" name="radio1" id="radio1-1" checked="">
+                                    <i class="icon"></i>
+                                    <span class="txt">예</span>
+                                </label>
+                                <label class="form-radio" for="radio1-2">
+                                    <input type="radio" name="radio1" id="radio1-2">
+                                    <i class="icon"></i>
+                                    <span class="txt">아니오</span>
+                                </label>
+                            </div>
+
+                            <div class="inp-list-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="select-box type-select filled">
+                                            <label for="" class="inp-tit">기본정보</label>
+                                            <select name="" id=""><!-- 아니오 선택시 'disabled' -->
+                                                <option value=""></option>
+                                                <option value="" selected="">주1회</option>
+                                                <option value="">주2회</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="select-box type-select filled">
+                                            <label for="" class="inp-tit">추가정보</label>
+                                            <select name="" id=""><!-- 아니오 선택시 'disabled' -->
+                                                <option value=""></option>
+                                                <option value="" selected="">주1회</option>
+                                                <option value="">주2회</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dt>전송요구의 종료시점(전송요구서의 유효기간)</dt>
+                        <dd>
+                            <div class="form-box">
+                                <label class="form-radio" for="radio2-1">
+                                    <input type="radio" name="radio2" id="radio2-1" checked="">
+                                    <i class="icon"></i>
+                                    <span class="txt">1년</span>
+                                </label>
+                                <label class="form-radio" for="radio2-2">
+                                    <input type="radio" name="radio2" id="radio2-2">
+                                    <i class="icon"></i>
+                                    <span class="txt">1년 범위 내 직접선택</span>
+                                </label>
+                            </div>
+                            <div class="date-box">
+                                <input type="date" disabled><!-- 1년 범위 내 직접선택 선택시 'disabled' 삭제 -->
+                                <i class="icon24 icon-calendar">날짜검색</i>
+                            </div>
+                        </dd>
+                    </dl>
+                    
+                    <div class="tac">
+                        <label class="form-checkbox sm">
+                            <input type="checkbox">
+                            <i class="icon"></i>
+                            <span class="txt">모든 정보제공기관에 동일하게 적용</span>
+                        </label>
+                    </div>
+					
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow"><span>다음</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

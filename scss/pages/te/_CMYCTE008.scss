@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.CMYCTE008{
+    .info-list{
+        margin:0 -1.6rem;
+        padding:0 1.6rem;
+        max-height:24rem;
+        overflow:hidden;
+        overflow-y:auto;
+        > li{
+            margin-top:0;
+            padding:1.2rem 0;
+            .icon{
+                top:50%;
+                width:2.4rem;
+                height:2.4rem;
+                transform:translateY(-50%);
+                & ~ .tit{
+                    padding-left:3.2rem;
+                }
+            }
+        }
+    }
+    .tac{
+        margin-top:2.4rem;
+        .form-checkbox{
+            .txt{
+                margin-left:0.4rem;
+                text-align:left;
+                em{
+                    display:block;
+                    font-size:1.2rem;
+                }
+            }
+        }
+        .tag-round{
+            margin-top:0.8rem;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family:'KBFGText';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGTextM.eot');
+	src:local('KBFGTextM'),
+        url('../font/KBFGTextM.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGTextM.woff') format('woff'),
+        url('../font/KBFGTextM.ttf') format('truetype'),
+        url('../font/KBFGTextM.svg#KBFGTextM') format('svg');
+} /* KB금융 본문체 Medium*/
+
+@font-face {
+	font-family:'KBFGText';
+	font-style:normal;
+	font-weight:bold;
+  src:url('../font/KBFGTextB.eot');
+	src:local('KBFGTextB'),
+        url('../font/KBFGTextB.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGTextB.woff') format('woff'),
+        url('../font/KBFGTextB.ttf') format('truetype'),
+        url('../font/KBFGTextB.svg#KBFGTextB') format('svg');
+} /* KB금융 본문체 Bold*/
+
+@font-face {
+	font-family:'KBFBTextL';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGTextL.eot');
+	src:local('KBFGTextM'),
+        url('../font/KBFGTextL.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGTextL.woff') format('woff'),
+        url('../font/KBFGTextL.ttf') format('truetype'),
+        url('../font/KBFGTextL.svg#KBFGTextL') format('svg');
+
+} /* KB금융 본문체 Light*/
+
+@font-face {
+	font-family:'KBFGTextM';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGTextM.eot');
+	src:local('KBFGTextM'),
+        url('../font/KBFGTextM.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGTextM.woff') format('woff'),
+        url('../font/KBFGTextM.ttf') format('truetype'),
+        url('../font/KBFGTextM.svg#KBFGTextM') format('svg');
+} /* KB금융 본문체 Medium*/
+
+@font-face {
+	font-family:'KBFGTextB';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGTextB.eot');
+	src:local('KBFGTextB'),
+        url('../font/KBFGTextB.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGTextB.woff') format('woff'),
+        url('../font/KBFGTextB.ttf') format('truetype'),
+        url('../font/KBFGTextB.svg#KBFGTextB') format('svg');
+} /* KB금융 본문체 Bold*/
+
+@font-face {
+	font-family:'KBFGDisplayL';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGDisplayL.eot');
+	src:local('KBFGDisplayL'),
+        url('../font/KBFGDisplayL.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGDisplayL.woff') format('woff'),
+        url('../font/KBFGDisplayL.ttf') format('truetype'),
+        url('../font/KBFGDisplayL.svg#KBFGDisplayL') format('svg');
+} /*KB금융 제목체 Light*/
+
+@font-face {
+	font-family:'KBFGDisplayM';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGDisplayM.eot');
+	src:local('KBFGDisplayM'),
+        url('../font/KBFGDisplayM.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGDisplayM.woff') format('woff'),
+        url('../font/KBFGDisplayM.ttf') format('truetype'),
+        url('../font/KBFGDisplayM.svg#KBFGDisplayM') format('svg');
+} /*KB금융 제목체 Medium*/
+
+@font-face {
+	font-family:'KBFGDisplayB';
+	font-style:normal;
+	font-weight:normal;
+  src:url('../font/KBFGDisplayB.eot');
+	src:local('KBFGDisplayB'),
+        url('../font/KBFGDisplayB.eot?iefix') format('embedded-opentype'),
+        url('../font/KBFGDisplayB.woff') format('woff'),
+        url('../font/KBFGDisplayB.ttf') format('truetype'),
+        url('../font/KBFGDisplayB.svg#KBFGDisplayB') format('svg');
+} /*KB금융 제목체 Blod*/

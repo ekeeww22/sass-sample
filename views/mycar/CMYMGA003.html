@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 내 차 수정</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>내 차 수정</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA003">
+                    <div class="top-product-image-area">
+						<div class="top-product-image">
+							<div class="product"><img src="/images/mycar/image-content-mycar-1.png" alt=""></div>
+							<div class="license-plate">
+								<span class="lp-number">123가 1234</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-underbar" data-module="tabmenu" data-contents="tabcontents1">
+                        <ul><!--선택된 li에 클래스명 [.active] 추가-->
+                            <li><button class="active" data-target="cont1">기본정보</button></li>
+                            <li><button class="" data-target="cont2">추가정보</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents-wrap" >
+                        <div class="tab-contents" data-name="tabcontents1">
+                            <div class="tab-content tab-content01 active" data-name="cont1">
+                                <dl class="part-list part-01">
+									<dt>
+										<span class="tit">모델정보</span>
+										<a href="javascript:;" class="btn-txt sm">모델변경</a>
+									</dt>
+									<dd>
+										<p class="txt">
+											현대 그랜저 더 뉴 그랜저 2.5 캘리그래피
+										</p>
+									</dd>
+								</dl>
+								<dl class="part-list part-02">
+									<dt>
+										<span class="tit">연식</span>
+									</dt>
+									<dd>
+										<div class="inp-list-wrap">
+											<ul>
+												<li>
+													<div class="select-box type-select default">
+														<label for="" class="inp-tit">년</label>
+														<select name="" id="">
+															<option value=""></option>
+															<option value="">2021</option>
+															<option value="">2020</option>
+														</select>
+													</div>
+													<div class="select-box type-select default">
+														<label for="" class="inp-tit">월</label>
+														<select name="" id="">
+															<option value=""></option>
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</div>
+													<div class="select-box type-select default">
+														<label for="" class="inp-tit">일</label>
+														<select name="" id="">
+															<option value=""></option>
+															<option value="">1</option>
+															<option value="">2</option>
+														</select>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl class="part-list part-03">
+									<dt>
+										<span class="tit">색상</span>
+									</dt>
+									<dd>
+										<div class="color-model-card type-nocard">
+											<ul><!--li안의 각각의 input id와 label for 값을 똑같게 설정  -->
+												<li>
+													<label for="color-01">
+														<input type="radio" name="colors" id="color-01" checked>
+														<div class="color-border">
+															<span class="color-box" style="background-color:#000; border:1px solid #000;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">검정색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-02">
+														<input type="radio" name="colors" id="color-02">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#fff; border:1px solid #ddd;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">흰색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-03">
+														<input type="radio" name="colors" id="color-03">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#f0f0f0; border:1px solid #f0f0f0;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">은색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-04">
+														<input type="radio" name="colors" id="color-04">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#ececde; border:1px solid #ececde;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">진주색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-05">
+														<input type="radio" name="colors" id="color-05">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#bcbcbc; border:1px solid #bcbcbc;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">회색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-06">
+														<input type="radio" name="colors" id="color-06">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#eb2a2a; border:1px solid #eb2a2a;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">빨강색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-07">
+														<input type="radio" name="colors" id="color-07">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#2666c6; border:1px solid #2666c6;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">파랑색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-08">
+														<input type="radio" name="colors" id="color-08">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#e46600; border:1px solid #e46600;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">주황색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-09">
+														<input type="radio" name="colors" id="color-09">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#653b2a; border:1px solid #653b2a;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">갈색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-10">
+														<input type="radio" name="colors" id="color-10">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#009944; border:1px solid #009944;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">초록색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-11">
+														<input type="radio" name="colors" id="color-11">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#fed800; border:1px solid #fed800;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">노랑색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+												<li>
+													<label for="color-12">
+														<input type="radio" name="colors" id="color-12">
+														<div class="color-border">
+															<span class="color-box" style="background-color:#56357e; border:1px solid #56357e;">컬러값</span> <!--컬러값은 헥사코드로 직접 태그에 입력-->
+														</div>
+													</label>
+													<p class="color-name">보라색</p> <!-- 2021-07-29 마크업 추가 -->
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl class="part-list part-04">
+									<dt>
+										<span class="tit">주행거리</span>
+									</dt>
+									<dd>
+										<!-- 2021-07-01 퍼블수정 : 마크업 전체 수정 - 현대/기아 둘 중 하나 노출-->
+										<div class="card-box r12"> 
+											<div class="card-header">
+												<div class="img-wrap">
+													<img src="/images/sample/icon24Hyundai.png" alt="현대로고">
+													<!-- <img src="/images/sample/icon24Kia.png" alt="기아로고"> -->
+												</div>
+												<strong class="tit">현대 멤버십</strong>
+												<!-- <strong class="tit">기아 멤버십</strong> -->
+											</div>
+											
+											<p class="text">현대 멤버십 인증을 하면 주행거리를 직접 입력할 필요없이 편리하게 관리할 수 있습니다.</p>
+											<!-- <p class="text">기아 멤버십 인증을 하면 주행거리를 직접 입력할 필요없이 편리하게 관리할 수 있습니다.</p> -->
+											<div class="btn-wrap">
+												<button class="btn-border-gray"><span>주행거리 연결하기</span></button>
+											</div>
+										</div>
+										<!--// 2021-07-01 퍼블수정 : 마크업 수정 -->
+
+										<div class="inp-list-wrap">
+											<ul>
+												<li>
+													<div class="inp-box type-basic default">
+														<label for="" class="inp-tit">입력일</label>
+														<input type="text" value="2021.06.22" disabled >
+														<button class="icon16 icon-close">삭제</button>
+													</div>
+													<div class="inp-box type-basic default">
+														<label for="" class="inp-tit">주행거리</label>
+														<input type="text">
+														<button class="icon16 icon-close">삭제</button>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+								<dl class="part-list part-05">
+									<dt>
+										<span class="tit">지난 주행거리</span>
+									</dt>
+									<dd>
+										<div class="distance-driven-list">
+											<ul>
+												<li>
+													<span class="date">2021.05.31</span>
+													<strong class="distance">100,000km</strong>
+													<span class="tag-round bg-gray">직접입력</span>
+													<a href="javascript:;" class="btn-txt sm">삭제</a>
+												</li>
+												<li>
+													<span class="date">2021.05.31</span>
+													<strong class="distance">100,000km</strong>
+													<span class="tag-round bg-gray">명의이전등록</span>
+													<!-- <a href="javascript:;" class="btn-txt sm">삭제</a> -->
+												</li>
+												<li>
+													<span class="date">2021.05.31</span>
+													<strong class="distance">40,000km</strong>
+													<span class="tag-round bg-gray">명의이전등록</span>
+													<!-- <a href="javascript:;" class="btn-txt sm">삭제</a> -->
+												</li>
+												<li>
+													<span class="date">2021.05.31</span>
+													<strong class="distance">10,000km</strong>
+													<span class="tag-round bg-gray">명의이전등록</span>
+													<!-- <a href="javascript:;" class="btn-txt sm">삭제</a> -->
+												</li>
+												<li>
+													<span class="date">2021.05.31</span>
+													<strong class="distance">100km</strong>
+													<span class="tag-round bg-gray">자동차검사</span>
+													<!-- <a href="javascript:;" class="btn-txt sm">삭제</a> -->
+												</li>
+											</ul>
+										</div>
+									</dd>
+								</dl>
+                            </div>
+                            <div class="tab-content tab-content02" data-name="cont2">
+                                <div class="data-list">
+									<ul>
+										<li>
+											<span class="tit">형식연도</span>
+											<span class="txt">2005년</span>
+										</li>
+										<li>
+											<span class="tit">연료</span>
+											<span class="txt">가솔린</span>
+										</li>
+										<li>
+											<span class="tit">변속기</span>
+											<span class="txt">오토</span>
+										</li>
+										<li>
+											<span class="tit">옵션(20개)</span>
+											<div class="option-list-wrap">
+												<ul>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40Navigation.svg" alt="내비게이션"></div>
+														<p class="option-txt">내비게이션</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40Sunroof.svg" alt="썬루프"></div>
+														<p class="option-txt">썬루프 <br> (파노라마)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40SmartKey.svg" alt="스마트키"></div>
+														<p class="option-txt">스마트키</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40Sheet.svg" alt="통풍시트(운전석,동승석)"></div>
+														<p class="option-txt">통풍시트 <br> (운전석,동승석)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40CruiseControl.svg" alt="크루즈 컨트롤"></div>
+														<p class="option-txt">크루즈 <br> 컨트롤</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40HandleHeatingWire.svg" alt="핸들열선"></div>
+														<p class="option-txt">핸들열선</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40LaneDepartureWarning.svg" alt="차선이탈경보(LDWS)"></div>
+														<p class="option-txt">차선이탈경보 <br> (LDWS)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40AutomaticEmergencyBraking.svg" alt="자동긴급제동(AEB)"></div>
+														<p class="option-txt">자동긴급제동 <br> (AEB)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40SideCurtainAirbags.svg" alt="사이드&커튼에어백"></div>
+														<p class="option-txt">사이드& <br> 커튼에어백</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40ElectricFoldingMirror.svg" alt="전동접이식미러"></div>
+														<p class="option-txt">전동접이식 <br> 미러</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40TirePressure.svg" alt="타이어공기압감지(TPMS)"></div>
+														<p class="option-txt">타이어공기압 <br> 감지(TPMS)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40ElectricTrunk.svg" alt="전동트렁크"></div>
+														<p class="option-txt">전동트렁크</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40AutoLight.svg" alt="오토라이트"></div>
+														<p class="option-txt">오토라이트</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40RainSensorWiper.svg" alt="레인센서와이퍼"></div>
+														<p class="option-txt">레인센서 <br> 와이퍼</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40ParkingSensor.svg" alt="주차감지센서(전반,후방)"></div>
+														<p class="option-txt">주차감지센서 <br> (전반,후방)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40HeatedSeat.svg" alt="열선시트(앞좌석,뒷자석)"></div>
+														<p class="option-txt">열선시트 <br> (앞좌석,뒷자석)</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40Bluetooth.svg" alt="블루투스"></div>
+														<p class="option-txt">블루투스</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40Highpass.svg" alt="하이패스룸밀러"></div>
+														<p class="option-txt">하이패스 <br> 룸밀러</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40LeatherSeat.svg" alt="가죽시트"></div>
+														<p class="option-txt">가죽시트</p>
+													</li>
+													<li>
+														<div class="img-wrap"><img src="/images/mycar/icon40AluminumWheel.svg" alt="알루미늄 휠"></div>
+														<p class="option-txt">알루미늄 휠</p>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<span class="tit">리스/렌트이력</span>
+											<span class="txt">없음</span>
+										</li>
+										<li>
+											<span class="tit">사고이력</span>
+											<span class="txt">-</span>
+										</li>
+										<li>
+											<span class="tit">수리이력</span>
+											<span class="txt">없음</span>
+										</li>
+										<li>
+											<span class="tit">판매지역(팔아줘)</span>
+											<span class="txt">경기도</span>
+										</li>
+										<li>
+											<span class="tit">판매지역(직거래,바꿔줘)</span>
+											<span class="txt">-</span>
+										</li>
+									</ul>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>차량 삭제</span></button>
+                        <button type="button" class="btn-yellow"><span>변경내용 저장</span></button>
+                    </div>
+					<div class="bottom-space"></div>         
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

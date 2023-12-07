@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>내차구매</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+    
+    <script>
+        $(function(){
+            $(".sortable-card-wrap").sortable({
+                items: $(".target"),
+                handle: '.btn',
+                cancel: ''
+            });
+        });
+    </script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-all-gray">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>다음차 순서 변경</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content bu">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMPH010">
+					<p class="body-120">오른쪽 아이콘을 누르고 위, 아래 위치로 끌어 <br>차량 순서를 변경하세요.</p>
+
+                    <ul class="sortable-card-wrap" id="sortable-card-wrap">
+                        <li class="target">
+                            <div class="info-box">
+                                <div class="data">
+                                    <div class="round-txt-wrap">
+                                        <span>2020년식</span><span>검정색</span>
+                                    </div>
+                                    <strong>기아 스포티지 4세대 디젤 1.7 2WD 트렌디</strong>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/images/car/img96-car-kia.png" alt="기아 스포티지 4세대 디젤 1.7 2WD 트렌디">
+                                </div>
+                            </div>
+                            <div class="btn-box">
+                                <button class="btn">이동버튼</button>
+                            </div>
+                        </li>
+                        <li class="target">
+                            <div class="info-box">
+                                <div class="data">
+                                    <div class="round-txt-wrap">
+                                        <span>2020년식</span><span>흰색</span>
+                                    </div>
+                                    <strong>벤츠 E클래스 (W213) E200d 4matic Avan…</strong>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/images/car/img96-car-benz.png" alt="벤츠 E클래스 (W213)">
+                                </div>
+                            </div>
+                            <div class="btn-box">
+                                <button class="btn">이동버튼</button>
+                            </div>
+                        </li>
+                        <li class="target">
+                            <div class="info-box">
+                                <div class="data">
+                                    <div class="round-txt-wrap">
+                                        <span>2020년식</span><span>빨간색</span>
+                                    </div>
+                                    <strong>현대 그랜저HG 하이브리드 2.4 HEV프리미엄</strong>
+                                </div>
+                                <div class="img-wrap">
+                                    <img src="/images/car/img96-car-hyundai.png" alt="현대 그랜저HG 하이브리드 2.4 HEV프리미엄">
+                                </div>
+                            </div>
+                            <div class="btn-box">
+                                <button class="btn">이동버튼</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-gray"><span>취소</span></button>
+                        <button type="button" class="btn-yellow"><span>변경</span></button>
+                    </div>
+                    <div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>지출 내역</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>지출 내역</h2>
+			<div class="btn-header-wrap">
+				<button type="button"><i class="icon24 btn-delete"></i><span>삭제</span></button>
+			</div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content te">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE007">
+					<div class="part top">
+						<div class="part-tit-wrap">
+							<!-- 
+								카테고리별 이미지
+								할부 --- <img src="/images/icon/icon-lease.svg" alt="할부">
+								정비/수리 --- <img src="/images/icon/icon-maintain.svg" alt="정비/수리">
+								주유/충전 --- <img src="/images/icon/icon-gasbill.svg" alt="주유/충전">
+								통행료 --- <img src="/images/icon/icon-tollgate.svg" alt="통행료">
+								주차 --- <img src="/images/icon/icon-parking.svg" alt="주차">
+								세차 --- <img src="/images/icon/icon-carwash.svg" alt="세차">
+								대리운전 --- <img src="/images/icon/icon-chauffeur.svg" alt="대리운전">
+								보험 --- <img src="/images/icon/icon-insure.svg" alt="자동차 보험">
+								유지비 기타 --- <img src="/images/icon/icon-other.svg" alt="유지비 기타">
+								계좌 출금 ---<img src="/images/icon/icon-account.svg" alt="계좌 출금">
+							 -->
+							<!-- default -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+									<span>GS 칼텍스 서초대로</span>
+								</dt>
+								<dd>
+									<span>50,000원</span>
+								</dd>
+							</dl>
+							<!-- // default -->
+
+							<!-- 카드 - 승인 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+									<span>알리익스프레스런던</span>
+								</dt>
+								<dd>
+									<span>USD 115.02</span><!-- 국내일경우 원화로 수정 -->
+								</dd>
+							</dl>
+							<!-- // 카드 - 승인 -->
+
+							<!-- 카드 – 승인취소 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+									<span>알리익스프레스런던</span>
+								</dt>
+								<dd>
+									<em class="state cancel">승인취소</em>
+									<span>USD 115.02</span><!-- 국내일경우 원화로 수정 -->
+								</dd>
+							</dl>
+							<!-- // 카드 – 승인취소 -->
+
+							<!-- 카드 – 정정 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-gasbill.svg" alt="주유/충전"></span>
+									<span>알리익스프레스런던</span>
+								</dt>
+								<dd>
+									<em class="state">정정</em>
+									<span>USD 115.02</span><!-- 국내일경우 원화로 수정 -->
+								</dd>
+							</dl>
+							<!-- // 카드 – 정정 -->
+
+							<!-- 보험 – 자동차 보험 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-insure.svg" alt="자동차 보험"></span>
+									<span>스마트자동차보험</span>
+								</dt>
+								<dd>
+									<span>11,439,330원</span>
+								</dd>
+							</dl>
+							<!-- // 보험 – 자동차 보험 -->
+
+							<!-- 보험 – 운전자 보험 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-insure.svg" alt="자동차 보험"></span>
+									<span>DB 운전자보험</span>
+								</dt>
+								<dd>
+									<span>108,000원</span>
+								</dd>
+							</dl>
+							<!-- // 보험 – 운전자 보험 -->
+
+							<!-- 할부금융 – 자동차 할부 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-lease.svg" alt="할부"></span>
+									<span>디지털중고차론</span>
+								</dt>
+								<dd>
+									<span>330,050원</span>
+								</dd>
+							</dl>
+							<!-- // 할부금융 – 자동차 할부 -->
+
+							<!-- 계좌 - 출금 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-account.svg" alt="계좌 출금"></span>
+									<span>계좌 출금</span>
+								</dt>
+								<dd>
+									<span>50,000원</span>
+								</dd>
+							</dl>
+							<!-- // 계좌 - 출금 -->
+
+							<!--직접 내역 추가한 경우 : 현금 -->
+							<dl>
+								<dt>
+									<span class="icon"><img src="/images/icon/icon-parking.svg" alt="주차장"></span>
+									<span>반포한강공원 주차장</span>
+								</dt>
+								<dd>
+									<div class="inp-box type-price default">
+										<label for="" class="price-data-wrap">
+											<span class="no-data">0</span> <!-- 금액입력시 클래스명 [.no-data] 제거 -->
+											<b>원</b>
+										</label>
+										<input type="text">
+										<button class="icon16 icon-close">삭제</button>
+									</div>
+								</dd>
+							</dl>
+							<!-- //직접 내역 추가한 경우 : 현금 -->
+						</div>
+
+						<ul class="link-list">
+							<li>
+								<span class="tit">카테고리</span>
+								<a href="javascript:;" class="txt">
+									<span>해당 카테고리 명</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+							<!-- 입력전 -->
+							<li>
+								<span class="tit">메모</span>
+								<a href="javascript:;" class="txt none"><!-- 입력후에는 'none' 클래스 삭제 -->
+									<span>메모를 남겨보세요</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+							<!-- // 입력전 -->
+							<!-- 입력후 -->
+							<!-- <li>
+								<span class="tit">메모</span>
+								<a href="javascript:;" class="txt">
+									<span>엔진오일 교환 , 에스오일 세븐골드 5W30</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li> -->
+							<!-- 입력후 -->
+							<li>
+								<span class="tit">지출 합계에 포함</span>
+								<label class="form-switch sm">
+									<input type="checkbox" checked data-idx="ch1"><!-- 카드_해외승인_정정 케이스 에서 원화 api가 미회신 된 경우 & 계좌_출금 케이스 에서 출금 내역이 외화 계좌인 경우 disabled 추가 -->
+									<i><span></span></i>
+								</label>
+								<script>
+									/*
+									스크립트 예시 : 체크 여부에따라서 메시지 변경됩니다. data-idx는 예시를 보여주기 위함이라 삭제해도 됩니다.
+									*/
+									$('input[data-idx="ch1"]').on("change",function(){
+										if($(this).is(":checked") == true){
+											new UIComponent.Toast.Message("4월 차량 유지비에 포함되었습니다.");
+										}
+										else{
+											new UIComponent.Toast.Message("4월 차량 유지비에서 제외되었습니다.");
+										}
+									});
+								</script>
+							</li>
+						</ul>
+					</div>
+
+					<div class="part data">
+						<div class="data-list">
+							<!-- default & 카드 - 국내승인 -->
+							<ul>
+								<li>
+									<span class="tit">결제수단</span>
+									<a href="javascript:;" class="txt">
+										<span>NEW현대백화점체크카드</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a>
+								</li>
+								<li>
+									<span class="tit">결제일시</span>
+									<span class="txt">2021년 4월 14일 08:48</span>
+								</li>
+								<li>
+									<span class="tit">결제상태</span>
+									<span class="txt">승인</span>
+								</li>
+								<li>
+									<span class="tit">결제방법</span>
+									<span class="txt">일시불</span>
+								</li>
+							</ul>
+							<!-- // default & 카드 - 국내승인 -->
+
+							<!-- 카드 - 해외승인 -->
+							<ul>
+								<li>
+									<span class="tit">결제수단</span>
+									<a href="javascript:;" class="txt">
+										<span>NEW현대백화점체크카드</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a>
+								</li>
+								<li>
+									<span class="tit">결제일시</span>
+									<span class="txt">2021년 4월 14일 08:48</span>
+								</li>
+								<li>
+									<span class="tit">결제상태</span>
+									<span class="txt">승인</span>
+								</li>
+								<li>
+									<span class="tit">원화</span>
+									<span class="txt">KRW 132,489</span>
+								</li>
+							</ul>
+							<!-- // 카드 - 해외승인 -->
+
+							<!-- 보험 – 자동차 보험 -->
+							<ul>
+								<li>
+									<span class="tit">수금방법</span>
+									<span class="txt">자동이체</span>
+								</li>
+								<li>
+									<span class="tit">납입시기</span>
+									<span class="txt">2021년 4월 14일</span>
+								</li>
+								<li>
+									<span class="tit">납입회차</span>
+									<span class="txt">1회차</span>
+								</li>
+							</ul>
+							<!-- // 보험 – 자동차 보험 -->
+
+							<!-- 보험 – 운전자 보험 -->
+							<ul>
+								<li>
+									<span class="tit">수금방법</span>
+									<span class="txt">자동이체</span>
+								</li>
+								<li>
+									<span class="tit">납입일자</span>
+									<span class="txt">2021년 4월 14일</span>
+								</li>
+								<li>
+									<span class="tit">납입회차</span>
+									<span class="txt">1회차</span>
+								</li>
+							</ul>
+							<!-- // 보험 – 운전자 보험 -->
+
+							<!-- 할부금융 – 자동차 할부 -->
+							<ul>
+								<li>
+									<span class="tit">거래유형</span>
+									<span class="txt">상환</span>
+								</li>
+								<li>
+									<span class="tit">상환방식</span>
+									<span class="txt">원금균등분할상환</span>
+								</li>
+								<li>
+									<span class="tit">거래일시</span>
+									<span class="txt">2021년 4월 14일 08:48</span>
+								</li>
+							</ul>
+							<!-- // 할부금융 – 자동차 할부 -->
+
+							<!-- 계좌 - 출금 -->
+							<ul>
+								<li>
+									<span class="tit">결제수단</span>
+									<a href="javascript:;" class="txt">
+										<span>KB 마이핏통장</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a>
+								</li>
+								<li>
+									<span class="tit">거래일시</span>
+									<span class="txt">2021년 4월 14일 08:48</span>
+								</li>
+							</ul>
+							<!-- // 계좌 - 출금 -->
+
+							<!-- 직접 내역 추가한 경우 : 현금 -->
+							<ul>
+								<li>
+									<span class="tit">지출처</span>
+									<a href="javascript:;" class="txt">
+										<span>반포한강공원 주차장</span>
+										<i class="icon16 icon-arrow-right-black"></i>
+									</a>
+								</li>
+								<li>
+									<span class="tit">지출수단</span>
+									<span class="txt">현금</span>
+								</li>
+								<li>
+									<span class="tit">지출일시</span>
+									<div class="txt">
+										<div class="txt-input"><!-- pc 테스트시 'type-pc' 클래스 추가  -->
+											<label id="date1" for="view-date" class="view-date">2021년 4월 14일 08:48</label>
+											<label id="time1" for="view-time" class="view-time"></label>
+											<input type="date" id="view-date">
+											<input type="time" id="view-time">
+										</div>
+										<i class="icon-arrow-right"></i>
+									</div>
+									<script>
+										$(document).ready(function(e){
+											$('#view-date').on("change",function(){
+												setTimeout(function(){
+													$("#time1").click();
+												},100)
+											});
+										});
+									</script>
+								</li>
+							</ul>
+							<!-- // 직접 내역 추가한 경우 : 현금 -->
+						</div>
+					</div>
+				</div>
+				<!-- // section, 화면ID -->
+
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+
+	
+</body>
+</html>

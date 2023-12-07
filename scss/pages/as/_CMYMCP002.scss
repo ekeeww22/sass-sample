@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.mainbg-kbcolor-off { 
+    .content-header { background-color:rgba(246,248,249,1); }
+    .content-body {
+        .content { 
+            &.ast {
+                .section {        
+                    .top-main-account { background-color:rgba(246,248,249,1); }
+                    .container-main {
+                        &:before { background-color:rgba(246,248,249,1); }
+                    }
+                }
+            }
+        }
+    }
+}

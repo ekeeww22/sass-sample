@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+.hearder-right-icon-area { position:fixed; top:1.2rem; right:1.6rem; }
+
+.CMYMGA005 { 
+    .top-car-info-area { width:calc(100% + 3.2rem); margin-left:-1.6rem; padding-bottom:2.4rem;
+        .top-car-thumb { 
+            dl { position:relative; padding:0 1.6rem; display:flex; justify-content:space-between;
+                dt {
+                    &.top-product-txt { padding-right:2.4rem }
+                    .tit { display:block; font-weight:700; font-size:1.8rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; }
+                    .txt { display:block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; }
+                    .details-txt { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; text-align:right; margin-top:0.8rem;
+                        &:after { display:block; content:""; clear:both; height:0.1rem; background-color:#aaaaaa; margin-top:-0.3rem; }
+                    }
+                }
+                dd { position:relative;
+                    .product { max-width:14rem; min-width:14rem; padding-bottom:0.7rem;
+                        img { width:100%; }
+                    }
+                    .license-plate { width:13.6rem; height:3.9rem; position:absolute; top:6.2rem; left:45%; margin-left:-6rem; text-align:center; z-index:900;
+                        background-image:url('../images/mycar/bg-license-plate.svg');
+                        background-repeat:no-repeat;
+                        background-position:center center; 
+                        background-size:contain;
+                        .lp-number { 
+                            display:inline-block; padding:0.6rem 0 0.7rem; font-size:1.6rem; text-align:center; line-height:2.4rem; letter-spacing:-0.04rem; font-weight:700; color:#222;
+                        }
+                    }
+                }
+            }
+        }
+        .driving-info-area { margin-left:1.6rem; margin-right:1.6rem; }
+    }
+    .mycar-comtent-bc {
+        margin: 0 -1.6rem -3.2rem;
+        padding:3.2rem 1.6rem 4rem;
+        min-height:calc(100vh - 16.2rem);
+        background-color: #f6f8f9;
+    }
+
+    .sub-main-data-box { position:relative; padding-top:4.8rem; 
+        &:first-child { padding-top:0; 
+            .container-top-roundbox { margin-top:0; }
+        }
+    }        
+
+    .sub-tit { font-size:0; position:relative;
+        strong { display:inline-block; font-size:2rem; line-height:3rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; vertical-align:middle; margin-right:0.4rem; }
+        .btn-call { position:absolute; top:50%; transform:translateY(-50%); right:0; text-align:right;
+            .txt { display:inline-block; vertical-align:middle; margin-left:0.4rem; font-weight:700; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; }
+        }
+    }
+    .sub-tit-right { position:absolute; top:50%; transform:translateY(-50%); right:0; display:flex; text-align:center; align-items:center;                 
+        label { display:block; cursor:pointer; }
+        span { display:inline-block; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; vertical-align:middle; }
+
+        .form-switch { margin-left:0.8rem; }
+        .form-switch i { width:3.6rem; height:2rem; border-radius:1rem; }
+        .form-switch i span { width:1.6rem; height:1.6rem; font-size:0; }
+    }
+
+    .sub-tit-area { 
+        .sub-tit-type2 { 
+            strong { display:inline-block; font-size:2rem; line-height:2.6rem; letter-spacing:-0.04rem; color:#222222; font-weight:700; vertical-align:middle; }
+        }
+    }
+
+    .box-icon-tit-area { font-size:0;
+        .tit-icon { display:inline-block; margin-right:0.8rem; vertical-align:middle; }
+        .tit { display:inline-block; font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; vertical-align:middle; }
+    }
+
+    .box-icon-sub-txt { margin-top:0.8rem; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666; 
+        + .btn-area { padding:1.6rem 0 0 0; 
+            button { line-height:4.8rem;
+                span { font-weight:500; font-size:1.6rem; line-height:2rem; letter-spacing:-0.02rem; color:#222; }
+            }
+        }
+    }
+
+    .container-top-roundbox { position:relative; padding:2.4rem; background-color:rgba(255,255,255,1); margin-top:1.6rem;
+        z-index:1; border-radius:1.2rem; box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);       
+    }
+
+    .driving-top-area {
+        .tit { display:block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; 
+            .txt { display:inline-block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; vertical-align:middle; }
+        }
+        .line-txt { position:relative; display:inline-block; font-weight:700; font-size:2.4rem; line-height:3.4rem; letter-spacing:-0.04rem; color:#222222; 
+            &:after { display:block; content:""; position:absolute; z-index:-1; bottom:0.2rem; background-color:#ffde00; width:100%; border-radius:0.4rem; height:0.8rem; }
+        }
+    }
+
+    .driving-info-area { margin-top:1.6rem; padding-top:1.6rem; border-top:0.1rem solid #eeeeee;
+        .driving-info { display:flex; justify-content:space-between; align-items:center; 
+            .tit { font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666666; }
+            .txt { font-weight:500; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; text-align:right; }
+            ~ .driving-info { margin-top:0.4rem; }
+        }
+    }
+
+    .graph-area { margin-top:2.4rem; 
+        img { width:100%; }
+    }
+
+    .driving-info-top-area { overflow:hidden;
+        .driving-info-top { display:flex; justify-content:space-between; align-items:center; 
+            .tit { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; }
+            .txt { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; text-align:right; }
+        }
+    }
+
+    .progress-icon-bar-area { position:relative; margin-top:1.6rem;
+        .progress-icon-bar { position:relative; z-index:1; height:6.4rem; border-radius:1.2rem;
+            &:before { display:inline-block; content:""; width:3.8rem; height:2.1rem; background-repeat:no-repeat; background-size:contain; background-position:center center; background-image:url('../images/mycar/icon-car.svg'); 
+                position:absolute; right:0; bottom:2.4rem;
+            }
+            
+        }
+        .progress-txt-bar {
+
+        }
+
+        .icon-car-area { position:relative; height:2.1rem;
+            /* width:calc(100% - 3.8rem); */
+            width:100%; 
+            .icon-car { position:absolute; right:0; display:block; width:3.8rem; height:2.1rem; background-repeat:no-repeat; background-size:contain; background-position:center center; background-image:url('../images/mycar/icon-car.svg');  }
+        }
+        
+        .progress-bar { overflow:hidden;
+            background-color:#eee; width:100%; height:2.4rem; border-radius:1.2rem;
+            .progress-color-bar { height:2.4rem; overflow:hidden; 
+                img { width:calc(100vw - 7.2rem); height:100%; }
+            }
+        }
+        .progress-bg-bar { 
+            margin-top:4rem; background-color:#eee; height:2.4rem; border-radius:1.2rem;
+        }
+        .progress-txt-bar { position:relative; margin-top:-2.4rem; height:4.8rem;
+            .progress-txt-focus { position:absolute; top:0; display:inline-block;
+                .bar { height:3rem; border-left:0.1rem dashed #ffcc00; }
+                .txt { width:2.4rem; margin-left:-50%; font-weight:500; font-size:1.2rem; line-height:1.8rem; letter-spacing:-0.04rem; color:#222222;  }
+            }
+        }        
+    }
+    .bottom-line-txt { margin-top:1.6rem; padding-top:2.4rem; border-top:0.1rem solid #eeeeee;
+        .txt { display:block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222222; text-align:center; }
+        .txt.color-blue { display:block; font-weight:400; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#2589ff; text-align:center;
+            b { font-weight:700; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#2589ff; }
+        }
+    }
+
+    .alert-bottom-txt-area { position:relative; margin-top:1.6rem; padding-left:2rem;
+        i { position:absolute; top:0; left:0; margin-right:0.4rem; margin-top:0.3rem; }
+        .txt { display:inline-block; font-weight:400; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666666; }
+    }
+
+    .bottom-logo-area { margin-top:3.2rem; text-align:center; 
+        img { width:7.7rem; }
+    }
+
+    .page-calendar-area { 
+        .icon-car-area { transition:all 2s ease; }
+        .progress-color-bar { transition:all 2s ease; }
+        .progress-txt-focus { left:60%; }
+    }
+    .page-calendar-area1 { 
+        .icon-car-area { width:14%; }
+        .progress-color-bar { width:14%; }
+    }
+    .page-calendar-area2 { 
+        .icon-car-area { width:14%; }
+        .progress-color-bar { width:14%; }
+    }
+    .page-calendar-area3 { 
+        .icon-car-area { width:14%; }
+        .progress-color-bar { width:14%; }
+    }
+
+    .page-calendar-area1.active { 
+        .icon-car-area { width:100%; }
+        .progress-color-bar { width:100%; }
+        
+    }
+    .page-calendar-area2.active { 
+        .icon-car-area { width:25%; }
+        .progress-color-bar { width:25%; }
+    }
+    .page-calendar-area3.active { 
+        .icon-car-area { width:60%; }
+        .progress-color-bar { width:60%; }
+    }
+    
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>레이아웃</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP224">
+					<div class="top-account-wrap">
+                        <div class="account-name">
+                            <div class="bank40"><img src="/images/bank/bank-sample.svg" alt="샘플"></div>
+                            <strong>T-Premium KB국민카드</strong>
+                        </div>
+
+                        <div class="inp-list-wrap">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btn-select active"><!-- 값이 입력되면 클래스 'active' 추가 -->
+                                        <span class="tit">카드 선택</span>
+                                        <span class="txt">
+                                            카드 전체<!-- 2021-08-02 '카드 전체' 디폴트로 수정 -->
+                                        </span>
+                                        <i class="icon16 icon-arrow-bottom-gray"></i>
+                                    </button>
+                                </li>
+                                <!--
+                                <li>
+                                    <div class="select-box type-select default">
+                                        <label for="" class="inp-tit">카드 전체</label>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                            <option value="">T-Premium KB국민···(1111********1234)</option>
+                                            <option value="">T-Premium KB국민···(1111********1234)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+
+                        <div class="account-data">
+                            <strong class="tit">03월 청구금액</strong> <!--2021-06-25 퍼블수정 : 문구수정-->
+                            <div class="large-box">
+                                <em>31,000,000</em><span>원</span>
+                            </div>
+
+                            <div class="small-box">
+                                <strong>결제(예정)일</strong>
+                                <div class="account-box">
+                                    <em class="">2021.03.10</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="detail-list">
+                        <ul>
+                            <li>
+                                <p class="date">02.03</p>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">스타벅스 학동역점</p>
+                                    <p class="time">2021.02.04 15:25:08</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">카드번호</span>
+                                                <span class="txt">1111-****-****-1234</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">이용금액</span>
+                                                <span class="txt bold">40,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">일시불/할부</span>
+                                                <span class="txt">일시불</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <p class="date">02.03</p>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">스타벅스 학동역점</p>
+                                    <p class="time">2021.02.04 15:25:08</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">카드번호</span>
+                                                <span class="txt">1111-****-****-1234</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">이용금액</span>
+                                                <span class="txt bold">40,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">일시불/할부</span>
+                                                <span class="txt">일시불</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                                <a href="javascript:;" class="detail-box">
+                                    <p class="list-tit">스타벅스 학동역점</p>
+                                    <p class="time">2021.02.04 15:25:08</p>
+                                    <div class="data-list">
+                                        <ul>
+                                            <li>
+                                                <span class="tit">카드번호</span>
+                                                <span class="txt">1111-****-****-1234</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">이용금액</span>
+                                                <span class="txt bold">40,000원</span>
+                                            </li>
+                                            <li>
+                                                <span class="tit">일시불/할부</span>
+                                                <span class="txt">할부</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

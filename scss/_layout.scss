@@ -1,0 +1,582 @@
+/* layout */
+.wrap,
+.content-body,
+.content-body section{width:100%;}
+
+.content-header{
+    position:fixed;
+    display:flex;
+    width:100%;
+    height:4.4rem;
+    padding-left:1.6rem;
+    background-color:#fff;
+    align-items: center;
+    z-index: 1000;
+    h2{
+        @include header-title-100;
+        button{
+            display:flex;
+            align-items:center;
+            span{
+                @include contents-title-200;
+            }
+            .icon16{
+                margin-left:0.4rem;
+            }
+        }
+    }
+    button.btn-history-back{
+        width:2.4rem;
+        height:2.4rem;
+        background:url(./../images/cm/btn-back.svg);
+        text-indent:-10000px;
+    }
+    button.btn-history-back+h2{
+        margin-left:1.6rem;
+    }
+    .btn-header-wrap{
+        position:absolute;
+        top:1.0rem;
+        right:0rem;
+        button {
+            position:relative;
+            margin-right:1.6rem;
+            width:2.4rem;
+            height:2.4rem;
+            .btn-add{
+                background:url(./../images/cm/btn-add.svg);
+            }
+            .btn-car{
+                background:url(./../images/cm/btn-car.svg);
+            }
+            .btn-alarm{
+                background:url(./../images/cm/btn-alarm.svg);
+            }
+            .btn-home{
+                background:url(./../images/cm/btn-home.svg);
+            }
+            .btn-delete{
+                background:url(./../images/cm/btn-delete.svg);
+            }
+            span{
+                font-size:0;
+                text-indent:-9999px;
+            }
+            .badge-yellow { position:absolute; display:inline-block; top:-0.4rem; right:-0.3rem; width:1.6rem; height:1.6rem; background-color:#ffcc00;
+                border-radius:0.8rem; text-align:center; line-height:1.6rem; font-weight:400; font-size:1.2rem; letter-spacing:-0.02rem; color:#222222; 
+            }
+        }
+    }
+    .header-link{
+        display:inline-block;
+        @include body-210;
+        position:absolute;
+        right:1.6rem;
+        
+    }
+    .tooltip-wrap{
+        .tooltip{width:100vh;}
+    }
+}
+.content-body{position:relative;width:100%;height:auto;padding:6.8rem 1.6rem 3.2rem 1.6rem;}
+
+/* wrap class */
+.bg-header-yellow { 
+    .content-header { background-color:#fc0; }
+    .top-background-header { background-color:#fc0; }
+}
+.bg-header-gray { 
+    .content-header { background-color:#f6f8f9; }
+    .top-background-header { background-color:#ffffff; }
+}
+.bg-header-white { 
+    .content-header { background-color:#ffffff; }
+    .top-background-header { background-color:#ffffff; }
+}
+.bg-all-gray { background-color:#f6f8f9;
+    .content-header { background-color:#f6f8f9; }
+    .top-background-header { background-color:#f6f8f9; }
+}
+.bg-all-white { background-color:#ffffff;
+    .content-header { background-color:#ffffff; }
+    .top-background-header { background-color:#ffffff; }
+}
+
+.text-unmarked { color:rgba(136,136,136,1) !important; }
+
+.btn-area{
+    display:flex;
+    padding:2.4rem 0 1.6rem;
+    a,button{
+        display:block;
+        padding:0 1.6rem;
+        width:100%;
+        line-height:5.6rem;
+        text-align:center;
+        border-radius:1.2rem;
+        span{
+            @include contents-title-300;
+            vertical-align:middle;
+            font-weight:500;
+        }
+        &.btn-yellow{
+            background:#ffcc00;
+        }
+        &.btn-gray{
+            background:#eee;
+        }
+        &.btn-txt-blue{
+            span{
+                @include option-color-blue-100;
+            }
+        }
+        &.btn-border{
+            @include line-color-gray-300;
+        }
+        &[disabled]{
+            background:#f8f8f8;
+            span{
+                color:#888 !important;
+            }
+        }
+        & ~ button{
+            margin-left:0.9rem;
+        }
+    }
+    &.bottom-fixed{
+        position:fixed;
+        bottom:0;
+        left:0;
+        padding:2.4rem 1.6rem 1.6rem;
+        width:100%;
+        background:url("../images/cm/bg-page.svg") no-repeat;
+		background-size:cover;
+        z-index:100;
+        a,button{
+            line-height:5.6rem;
+            span{
+                font-weight:500;
+            }
+        }
+    }
+}
+
+.bottom-fixed + .bottom-space{
+    width:100%;
+    height:6.4rem;
+}
+
+/* 팝업 공통 */
+.popup-container {
+    @include position-full(fixed);
+    z-index: 5000;
+	.btn-area.bottom-fixed{
+		
+	}
+}
+.popup-container .popup-wrap {
+    z-index: 1;
+}
+.popup-container .popup-dimmend {
+    @include position-full(absolute);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+  
+html.popup-view,
+html.popup-view body {
+    width: 100%;
+    height: 100%;
+}
+  
+html.popup-view body {
+    overflow: hidden;
+}
+  
+/* 알럿 팝업 */
+*[data-type="alert"] {
+    .modal{
+        position:absolute;
+        top:50%;
+        left:50%;
+        width:calc(100% - 3.2rem);
+        border-radius:1.6rem;
+        background:#fff;
+        transform:translate(-50%,-50%);
+        z-index:1;
+        .modal-header{
+            padding:3.2rem 1.6rem 0;
+            text-align:center;
+            .icon64{
+                & + .modal-tit{
+                    margin:1.6rem 0 -0.8rem;
+                }
+            }
+            .modal-tit{
+                @include contents-title-300;
+            }
+            & + .modal-body{
+                padding-top:1.6rem;
+            }
+        }
+        .modal-body{
+            padding:3.2rem 1.6rem 8.8rem;
+            text-align:center;
+            border-radius:0 0 1.6rem 1.6rem;
+            overflow:hidden;
+            .modal-txt{
+                @include body-120;
+                @include font-color-black-100;
+            }
+        }
+        .modal-footer{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            border-top:1px solid #eee;
+            z-index:1;
+            .btn-area{
+                padding:0;
+                button{
+                    border-radius:0;
+                    span{
+                        font-size:1.6rem;
+                    }
+                    & ~ button{
+                        margin-left:0;
+                        border-left:1px solid #eee;
+                    }
+                }
+            }
+        }
+        .btn-today{
+            position:absolute;
+            top:calc(100% + 0.8rem);
+            left:0;
+            @include body-120;
+            @include font-color-white-100;
+            &:after{
+                content:'';
+                display:block;
+                position:absolute;
+                bottom:0.2rem;
+                left:0;
+                width:100%;
+                height:1px;
+                background:#fff;
+            }
+        }
+    }
+}
+
+/* 윈도우 팝업 */
+*[data-type="window"] {
+    .modal{
+        position:absolute;
+        top:50%;
+        left:50%;
+        width:calc(100% - 3.2rem);
+        border-radius:1.6rem;
+        background:#fff;
+        transform:translate(-50%,-50%);
+        z-index:1;
+        .modal-header{
+            padding:3.2rem 1.6rem 0;
+            text-align:center;
+            .icon64{
+                & + .modal-tit{
+                    margin:1.6rem 0 -0.8rem;
+                }
+            }
+            .modal-tit{
+                @include contents-title-300;
+            }
+            & + .modal-body{
+                padding-top:1.6rem;
+            }
+        }
+        .modal-body{
+            padding:3.2rem 1.6rem 8.8rem;
+            text-align:center;
+            border-radius:0 0 1.6rem 1.6rem;
+            overflow:hidden;
+            .modal-txt{
+                @include body-120;
+                @include font-color-black-100;
+            }
+        }
+        .modal-footer{
+            position:absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            border-top:1px solid #eee;
+            z-index:1;
+            .btn-area{
+                padding:0;
+                button{
+                    border-radius:0;
+                    span{
+                        font-size:1.6rem;
+                    }
+                    & ~ button{
+                        margin-left:0;
+                        border-left:1px solid #eee;
+                    }
+                }
+            }
+        }
+        .btn-today{
+            position:absolute;
+            top:calc(100% + 0.8rem);
+            left:0;
+            @include body-120;
+            @include font-color-white-100;
+            &:after{
+                content:'';
+                display:block;
+                position:absolute;
+                bottom:0.2rem;
+                left:0;
+                width:100%;
+                height:1px;
+                background:#fff;
+            }
+        }
+    }
+}
+
+  
+/* 하단에서 올라오는 팝업 ( 모달 토스트 팝업 ) */
+*[data-type="toast"] {
+    &.show {
+        .modal{
+            bottom:0;
+        }
+    }
+    &.step1{
+        .modal{
+            left:100%;
+            &:first-child{
+                left:0;
+            }
+        }
+    }
+    &.step2{
+        .modal{
+            &:first-child{
+                left:-100%;
+            }
+            &.active{
+                left:0;
+            }
+        }
+    }
+    .modal{
+        position:absolute;
+        left:0;
+        bottom:-100%;
+        width:100%;
+        height:auto;
+        max-height:90vh;
+        border-radius:2.4rem 2.4rem 0 0;
+        background:#fff;
+        overflow:hidden;
+        z-index:110;
+        @include allTransition;
+        & ~ .modal{
+            left:100%;
+        }
+    }
+	.modal-header{
+		position:absolute;
+		top:0;
+		left:0;
+        display:flex;
+        align-items:center;
+		padding:1.6rem 1.6rem 0;
+		width:100%;
+		height:7.2rem;
+		border-radius:2.4rem 2.4rem 0 0;
+		background:#fff;
+		overflow:hidden;
+		z-index:3;
+        .btn-history-back{
+            width:2.4rem;
+            height:2.4rem;
+            background:url(./../images/cm/btn-back.svg);
+            text-indent:-10000px;
+            & + h3{
+                margin-left:1.6rem;
+            }
+        }
+		h3{
+			padding:1.3rem 4.8rem 1.3rem 0;
+			@include contents-title-200;
+		}
+		.modal-close{
+			position:absolute;
+			top:1.6rem;
+			right:0;
+			width:5.6rem;
+			height:5.6rem;
+			font-size:0;
+			text-indent:-9999px;
+			background:url(../images/icon/icon24-close-black.svg) no-repeat center;
+			background-size:2.4rem 2.4rem;
+		}
+	}
+	.modal-body{
+		position:relative;
+		padding:8.8rem 1.6rem;
+		width:100%;
+		height:auto;
+		max-height:90vh;
+		background:#fff;
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+    .modal-footer{
+        position:absolute;
+        bottom:0;
+        left:0;
+        padding:1.6rem;
+        width:100%;
+        background:url("../images/cm/bg-page.svg") no-repeat;
+		background-size:cover;
+        z-index:100;
+    }
+	.btn-area{
+        padding:0;
+        button{
+            line-height:4.8rem;
+            span{
+                @include body-110;
+            }
+        }
+	}
+}
+
+/* dockbar */
+.dock-menu{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    z-index:1000;
+    .dock-bar{
+        display:flex;
+        width:100%;
+        border-top:1px solid #eee;
+        background:#fff;
+        li{
+            width:100%;
+            a{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                flex-direction:column;
+                height:5.6rem;
+                &.active{
+                    .icon{
+                        &.dock-home{
+                            background:url("../images/icon/dock-home-on.svg") no-repeat center/contain;
+                        }
+                        &.dock-sell{
+                            background:url("../images/icon/dock-sell-on.svg") no-repeat center/contain;
+                        }
+                        &.dock-market{
+                            background:url("../images/icon/dock-market-on.svg") no-repeat center/contain;
+                        }
+                        &.dock-data{
+                            background:url("../images/icon/dock-data-on.svg") no-repeat center/contain;
+                        }
+                        &.dock-more{
+                            background:url("../images/icon/dock-more-on.svg") no-repeat center/contain;
+                        }
+                        &.dock-search{
+                            background:url("../images/icon/dock-search-on.svg") no-repeat center/contain;
+                        }
+                    }
+                    span{
+                        @include font-color-black-100;
+                        font-weight:700;
+                    }
+                    & + .dock-depth2{
+                        display:flex;
+                    }
+                }
+                .icon{
+                    width:2.4rem;
+                    height:2.4rem;
+                    &.dock-home{
+                        background:url("../images/icon/dock-home-off.svg") no-repeat center/contain;
+                    }
+                    &.dock-sell{
+                        background:url("../images/icon/dock-sell-off.svg") no-repeat center/contain;
+                    }
+                    &.dock-market{
+                        background:url("../images/icon/dock-market-off.svg") no-repeat center/contain;
+                    }
+                    &.dock-data{
+                        background:url("../images/icon/dock-data-off.svg") no-repeat center/contain;
+                    }
+                    &.dock-more{
+                        background:url("../images/icon/dock-more-off.svg") no-repeat center/contain;
+                    }
+                    &.dock-search{
+                        background:url("../images/icon/dock-search-off.svg") no-repeat center/contain;
+                    }
+                    & + span{
+                        margin-top:0.4rem;
+                    }
+                }
+                span{
+                    position:relative;
+                    display:block;
+                    @include dock-bar-100;
+                }
+            }
+            .dock-depth2{
+                display:none;
+                position:absolute;
+                bottom:100%;
+                left:0;
+                align-items:center;
+                padding:0 2.8rem;
+                width:100%;
+                height:4.8rem;
+                border-radius:2.4rem 2.4rem 0 0;
+                background:#fff;
+                box-shadow:0 -0.4rem 2rem rgba(0,0,0,0.08);
+                z-index:-1;
+                li{
+                    a{
+                        height:4.8rem;
+                        &.active{
+                            span{
+                                @include font-color-black-100;
+                                font-weight:700;
+                                &:before{
+                                    content:'';
+                                    display:block;
+                                    position:absolute;
+                                    top:0;
+                                    left:0;
+                                    width:100%;
+                                    height:0.2rem;
+                                    background:#222;
+                                }
+                            }
+                        }
+                        span{
+                            @include body-210;
+                            line-height:4.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

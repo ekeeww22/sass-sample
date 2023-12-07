@@ -1,0 +1,348 @@
+@mixin position-full($position) {
+    position: $position;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*
+ * clearfix
+ * @include clearfix;
+*/
+@mixin clearfix() {
+    &:after { content: ""; display: block; clear: both;}
+}
+
+/*
+* overflowScrolling
+* @include overflowScrolling;
+*/
+@mixin overflowScrolling() {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*
+* calc
+* @include calc('width', 250px)
+*/
+@mixin calc($property, $expression) {
+    #{$property}: calc( 100% - #{$expression});
+}
+
+
+/*
+* calc
+* @include camobile-size-calc('width', 87px);
+*/
+@mixin mobile-size-calc($property, $expression) {
+	#{$property}: (#{$expression/2}px);
+}
+
+
+/*
+* textEllipsis 한 줄
+* @include textEllipsis;
+*/
+@mixin textEllipsis() {
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+}
+
+
+/*
+* textEllipsis 두 줄
+* @include textEllipsisClamp;
+*/
+@mixin textEllipsisClamp() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/*
+* translate3D
+* @include translate3D;
+*/
+@mixin translate3D () {
+-webkit-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+        -o-transform: translate3D(0, 0, 0);
+        transform: translate3D(0, 0, 0);
+}
+
+
+/*
+* scale
+* @include scale(-1, 1);
+*/
+@mixin scale ($sx, $sy) {
+-webkit-transform: scale($sx, $sy);
+    -ms-transform: scale($sx, $sy);
+        -o-transform: scale($sx, $sy);
+            transform: scale($sx, $sy);
+}
+
+/*
+* transition
+* @include allTransition();
+*/
+@mixin allTransition () {
+    // 효과 수정 중
+    transition: all cubic-bezier(0.65, 0.05, 0.36, .5) .2s;
+}
+
+
+/* Typography */
+@mixin textClipClamp() {
+	overflow:hidden;
+	text-overflow:clip;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+
+@mixin header-title-100() {
+    line-height:3rem;
+    color:#222;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin page-intro-100() {
+    line-height:3.4rem;
+    color:#222;
+    font-size:2.4rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin page-intro-200() {
+    line-height:2.4rem;
+    color:#666;
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin contents-title-50() {
+    line-height:4rem;
+    color:#222;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin contents-title-100() {
+    line-height:3.4rem;
+    color:#222;
+    font-size:2.4rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin contents-title-200() {
+    line-height:3rem;
+    color:#222;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin contents-title-300() {
+    line-height:2.6rem;
+    color:#222;
+    font-size:1.8rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin body-100() {
+    line-height:2.4rem;
+    color:#222;
+    font-size:1.6rem;
+    font-weight:700;
+    letter-spacing:-0.04rem;
+}
+
+@mixin body-110() {
+    line-height:2.4rem;
+    color:#222;
+    font-size:1.6rem;
+    font-weight:500;
+    letter-spacing:-0.04rem;
+}
+
+@mixin body-120() {
+    line-height:2.4rem;
+    color:#666;
+    font-size:1.6rem;
+    font-weight:400;
+    letter-spacing:-0.04rem; 
+}
+
+@mixin body-200() {
+    line-height:2rem;
+    color:#666;
+    font-size:1.4rem;
+    font-weight:700;
+    letter-spacing:-0.02rem; 
+}
+
+@mixin body-210() {
+    line-height:2rem;
+    color:#666;
+    font-size:1.4rem;
+    font-weight:400;
+    letter-spacing:-0.02rem; 
+}
+
+@mixin caption-100() {
+    line-height:2rem;
+    color:#888;
+    font-size:1.4rem;
+    font-weight:400;
+    letter-spacing:-0.02rem; 
+}
+
+@mixin dock-bar-100() {
+    line-height:1.6rem;
+    color:#666;
+    font-size:1.2rem;
+    font-weight:400;
+    letter-spacing:-0.02rem;
+}
+
+/* color */
+@mixin primary-color-100() {
+    color:#222;
+    background-color:#fc0;
+}
+
+@mixin primary-color-200() {
+    color:#fff;
+    background-color:#2589ff;
+}
+
+@mixin font-color-black-100() {
+    color:#222
+}
+
+@mixin font-color-black-100() {
+    color:#222
+}
+
+@mixin font-color-gray-100() {
+    color:#666
+}
+
+@mixin font-color-gray-200() {
+    color:#888
+}
+
+@mixin font-color-white-100() {
+    color:#fff
+}
+
+@mixin line-color-gray-100() {
+    border:1px solid #aaa;
+}
+
+@mixin line-color-gray-200() {
+    border:1px solid #ddd;
+}
+
+@mixin line-color-gray-300() {
+    border:1px solid #eee;
+}
+
+@mixin bg-color-gray-100() {
+    background-color:#f8f8f8;
+}
+
+@mixin bg-color-gray-200() {
+    background-color:#f6f8f9;
+}
+
+@mixin option-color-red-100() {
+    color:#f00;
+}
+
+@mixin option-color-blue-100() {
+    color:#2589ff;
+}
+
+/* 라운드-배경색-그레이  */
+@mixin round-gray-box{
+    border-radius:1.2rem;
+    background:#f8f8f8;
+}
+.round-gray-box{
+    @include round-gray-box;
+}
+
+/* 라운드-배경색-창백한 */
+@mixin round-pale-box{
+    padding:1.6rem;
+    border-radius:0.8rem;
+    background:#f6f8f9;
+}
+.round-pale-box{
+    @include round-pale-box;
+}
+
+/* 라운드-보더 */
+@mixin round-border{
+    border-radius:1.2rem;
+    border:1px solid #eee;
+    overflow:hidden;
+}
+.round-border{
+    @include round-border;
+}
+
+/* 라운드 숫자  */
+@mixin num-round{
+    font-size:1.4rem;
+    padding:0 0.6rem;
+    line-height:2rem;
+    text-align:center;
+    border-radius:0.8rem;
+    background-color:#eee;
+    color:#222;
+}
+.num-round{
+    @include num-round;
+}
+
+/* info */
+@mixin info{
+    font-size:0;
+    li{
+        position:relative;
+        display:inline-block;
+        @include body-210;
+        & + li{
+            margin-left:0.8rem;
+            padding-left:0.9rem;
+            &:before{
+                content:'';
+                position:absolute;
+                left:0;
+                top:50%;
+                width:1px;
+                height:1.2rem;
+                background:#ddd;
+                transform:translateY(-50%);
+            }
+        }
+    }
+}

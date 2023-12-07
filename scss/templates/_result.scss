@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* result */
+.result-box{
+    padding:14rem 0;
+    text-align:center;
+    .icon48{
+        & + .txt{
+            @include body-210;
+        }
+    }
+    .icon-logo{
+        display:block;
+        margin:0 auto;
+        width:12rem;
+        height:6.4rem;
+        img{
+            width:100%;
+        }
+    }
+    > .tit{
+        @include contents-title-300;
+        margin-top:1.6rem;
+    }
+    > .txt{
+        @include body-120;
+        margin-top:0.8rem;
+    }
+}

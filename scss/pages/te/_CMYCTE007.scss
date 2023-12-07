@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.CMYCTE007{
+    .part{
+        margin:3.2rem -1.6rem 0;
+        padding:3.2rem 1.6rem 0;
+        border-top:0.8rem solid #f8f8f8;
+        &:first-child{
+            margin-top:0;
+            padding-top:0;
+            border-top:none;
+        }
+        &.top{
+            & + .part{
+                margin-top:0.8rem;
+            }
+        }
+        .part-tit-wrap{
+            padding-right:0;
+            dl{
+                dd{
+                    position:relative;
+                    display:inline-block;
+                    margin-top:0.8rem;
+                }
+            }
+        }
+        .link-list{
+            margin-top:2.4rem;
+            > li{
+                padding:1.6rem 0;
+            }
+        }
+        .data-list{
+            ul{
+                li{
+                    div.txt{
+                        display:inline-flex;
+                        align-items:center;
+                    }
+                }
+            }
+        }
+    }
+}

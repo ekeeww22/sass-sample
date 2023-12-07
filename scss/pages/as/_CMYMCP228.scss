@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.CMYMCP228{
+    .detail-list > ul > li:first-child{border-top:0;}
+    .filter-area + .detail-list > ul > li:first-child{border-top:1px solid #eee;}
+}

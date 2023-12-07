@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+.CMYMCP361 { 
+    .contents-subtext-area { font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#666; margin-top:0.8rem;
+        span { display:inline; font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#2589ff; }
+    }
+    .link-list-area {
+        .link-list { margin-top:3.2rem;
+            li {
+                a,
+                button { padding:1.6rem 1.8rem 1.6rem 0; }
+                a .icon16, 
+                button .icon16 { right:0; }
+                a .txt, 
+                button .txt { font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; }
+
+                .text-icon16 { float:left; position:initial; display:inline-block; width:1.6rem; height:1.6rem; margin-top:0.4rem; margin-left:0.8rem; }
+            }
+        }
+    }
+    
+    .btn-area { display:block; 
+        button {
+            ~ button {
+                margin-top:1.6rem; margin-left:0;
+            }
+        }
+        .btn-dark-gray { 
+            background-color:#646464;
+            line-height: 4.8rem;
+            span { color:#fff; font-size:1.4rem; text-align:center; line-height:2rem; letter-spacing:-0.02rem; }
+        }
+    }
+    .icon-error { background:url("../images/icon/icon16-error.svg") no-repeat center/contain; }
+
+    .btn-area.bottom-fixed {
+        .bottom-text-button-area { text-align:center; font-size:0; padding-top:3.2rem;
+            button { display:inline-block; width:auto; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; margin-left:0.8rem; margin-right:0.8rem; padding:0; text-decoration:underline; }
+        }
+        .bottom-text-logout-area { text-align:right; font-size:0; padding-top:4rem; padding-bottom:2.4rem;
+            em { display:inline-block; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; vertical-align:middle; }
+            button { display:inline-block; position:initial; width:1.6rem; padding:0; height:1.6rem;  margin-left:0.4rem; }
+        }
+    }
+    .bottom-space { height:20.3rem; }
+
+    .send-notice-area {
+        h4 { padding-top:3.2rem; font-size:0; 
+            strong { display:inline-block; margin-right:0.8rem; vertical-align:middle; }
+            .alarm-txt { display:inline-block; position:relative; font-size:1.4rem; line-height:2rem; letter-spacing:-0.02rem; color:#666; padding-left:2rem; vertical-align:middle;
+                i { position:absolute; top:50%; left:0; transform:translateY(-50%); }
+            }
+        }
+        
+        .checkbox-area { 
+            ul { padding-top:2.8rem;
+                > li { 
+                    ~ li { padding-top:2.4rem; }
+                }
+            }
+            .form-checkbox {
+                .txt { font-size:1.6rem; line-height:2.4rem; letter-spacing:-0.04rem; color:#222; }
+            }
+        }
+
+        .radio-area { 
+            ul { padding-top:2.8rem;
+                > li { float:left; width:50%; }
+                &:after { display:block; content:""; clear:both; height:0; }
+            }
+        }
+
+    }
+}

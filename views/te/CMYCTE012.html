@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>직접 내역 추가하기</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>직접 내역 추가하기</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content te">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCTE012">
+					<div class="part top">
+						<div class="inp-box type-price default">
+							<label for="" class="price-data-wrap">
+								<span class="no-data">0</span> <!-- 금액입력시 클래스명 [.no-data] 제거 -->
+								<b>원</b>
+							</label>
+							<input type="text">
+							<button class="icon16 icon-close">삭제</button>
+						</div>
+
+						<ul class="link-list">
+							<li>
+								<span class="tit">카테고리</span>
+								<a href="javascript:;" class="txt none"><!-- 입력후에는 'none' 클래스 삭제 -->
+									<span>선택하기</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+							<li>
+								<span class="tit">지출처</span>
+								<a href="javascript:;" class="txt none"><!-- 입력후에는 'none' 클래스 삭제 -->
+									<span>지출처를 입력하세요</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+							<li>
+								<span class="tit">지출일시</span>
+								<div class="txt">
+									<div class="txt-input"><!-- pc 테스트시 'type-pc' 클래스 추가  -->
+										<label id="date1" for="view-date" class="view-date">2021년 4월 14일 08:48</label>
+										<label id="time1" for="view-time" class="view-time"></label>
+										<input type="date" id="view-date">
+										<input type="time" id="view-time">
+									</div>
+									<i class="icon-arrow-right"></i>
+								</div>
+								<script>
+									$(document).ready(function(e){
+										$('#view-date').on("change",function(){
+											setTimeout(function(){
+												$("#time1").click();
+											},100)
+										});
+									});
+								</script>
+							</li>
+							<li>
+								<span class="tit">메모</span>
+								<a href="javascript:;" class="txt none"><!-- 입력후에는 'none' 클래스 삭제 -->
+									<span>메모를 남겨보세요</span>
+									<i class="icon-arrow-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="btn-area bottom-fixed">
+                        <button class="btn-yellow" disabled><span>추가하기</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+
+	
+</body>
+</html>

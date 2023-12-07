@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+.CMYCTE001{
+    padding-bottom:11.2rem;
+    .part{
+        margin-top:4.8rem;
+        &:first-child{
+            margin-top:0;
+        }
+        .part-tit-wrap{
+            .reload-data{
+                top:0.3rem;
+            }
+            & + .part-content{
+                margin-top:1.6rem;
+            }
+        }
+        &.keep{
+            .part-tit-wrap{
+                .reload-data{
+                    top:0;
+                }
+                & + .part-content{
+                    margin-top:2.4rem;
+                }
+            }
+            .info-area{
+                position:relative;
+                padding:2.4rem;
+                font-size:0;
+                border-radius:1.2rem;
+                background:#ffcc00;
+                box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+                .tit{
+                    @include body-120;
+                    @include font-color-black-100;
+                    span{
+                        display:inline-block;
+                        margin:-0.4rem 0 0 0.4rem;
+                        @include dock-bar-100;
+                        @include font-color-black-100;
+                        vertical-align:middle;
+                        opacity:0.5;
+                    }
+                }
+                .txt{
+                    @include contents-title-300;
+                    em{
+                        display:inline-block;
+                        @include contents-title-300;
+                    }
+                }
+                .icon{
+                    position:absolute;
+                    top:-2.4rem;
+                    right:-1.6rem;
+                    width:12.4rem;
+                    height:12.2rem;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+            .chart-area{
+                margin-top:2.4rem;
+                padding:2.4rem;
+                border-radius:1.2rem;
+                background:#fff;
+                box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+                dl{
+                    font-size:0;
+                    dt{
+                        @include contents-title-300;
+                    }
+                    dd{
+                        margin-top:0.4rem;
+                        @include body-210;
+                        em{
+                            @include body-210;
+                        }
+                    }
+                }
+                .chart-box{
+                    margin-top:1.2rem;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+            .link-area{
+                margin-top:2.4rem;
+                padding:2.4rem 2.4rem 1.6rem;
+                border-radius:1.2rem;
+                background:#fff;
+                box-shadow:0 0.4rem 1.6rem rgba(0,0,0,0.08);
+                h4{
+                    margin-bottom:1.6rem;
+                    @include contents-title-300;
+                }
+                .link-list{
+                    li{
+                        a{
+                            display:flex;
+                            align-items:center;
+                            padding:1.6rem 2rem 1.6rem 0;
+                        }
+                        .tit{
+                            text-align:left;
+                        }
+                        .icon16{
+                            right:0;
+                        }
+                    }
+                }
+            }
+            .card-area{
+                margin:4.8rem -1.6rem 0;
+                dl{
+                    padding:0 1.6rem;
+                    font-size:0;
+                    dt{
+                        @include contents-title-200;
+                    }
+                    dd{
+                        margin-top:0.4rem;
+                        @include body-120;
+                        span{
+                            @include body-120;
+                        }
+                    }
+                }
+                .card-slider{
+                    margin-top:1.6rem;
+                    padding:0 1.6rem;
+                    font-size:0;
+                    overflow-x:auto;
+                    white-space:nowrap;
+                    -ms-overflow-style:none;
+                    scrollbar-width:none;
+                    &::-webkit-scrollbar{
+                        display:none;
+                    }
+                    li{
+                        display:inline-block;
+                        margin-left:3.2rem;
+                        width:12.4rem;
+                        vertical-align:top;
+                        white-space:normal;
+                        &:first-child{
+                            margin-left:0;
+                        }
+                        .img{
+                            position:relative;
+                            display:block;
+                            width:12.4rem;
+                            height:12.4rem;
+                            img{
+                                position:absolute;
+                                top:50%;
+                                left:50%;
+                                max-width:100%;
+                                max-height:100%;
+                                box-shadow:0 0.4rem 1rem rgba(0,0,0,0.1);
+                                transform:translate(-50%,-50%);
+                            }
+                        }
+                        .tit{
+                            display:block;
+                            margin-top:0.8rem;
+                            @include body-200;
+                            @include font-color-black-100;
+                        }
+                        .txt{
+                            display:block;
+                            @include body-210;
+                        }
+                        .price{
+                            display:block;
+                            margin-top:0.4rem;
+                            @include body-210;
+                            @include option-color-blue-100;
+                        }
+                    }
+                }
+            }
+        }
+        &.finance{
+            .part-content{
+                .box-area{
+                    .detail-area{
+                        .box{
+                            min-height:4.6rem;
+                            .type{
+                                @include option-color-blue-100;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.insurance{
+            .part-content{
+                & + .part-content{
+                    margin-top:2.4rem;
+                }
+            }
+        }
+        &.sell{
+            .link-area{
+                margin-top:1.6rem;
+                display:block;
+                padding:2.4rem;
+                border-radius:1.2rem;
+                background:#29538d;
+                .tit{
+                    display:block;
+                    @include body-200;
+                    color:rgba(255,255,255,0.7);
+                    em{
+                        @include body-200;
+                        color:rgba(255,255,255,0.7);
+                    }
+                }
+                .txt{
+                    display:block;
+                    margin-top:0.4rem;
+                    @include contents-title-100;
+                    @include font-color-white-100;
+                }
+                .img{
+                    position:relative;
+                    display:block;
+                    margin:4.4rem auto 0;
+                    width:18rem;
+                    height:10rem;
+                    &:before{
+                        content:'';
+                        display:block;
+                        position:absolute;
+                        top:-3.6rem;
+                        left:-2rem;
+                        width:calc(100% + 4rem);
+                        height:8rem;
+                        background:url(../images/te/img-car-bg-1.svg) no-repeat;
+                        background-size:cover;
+                    }
+                    .num{
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        position:absolute;
+                        top:-2rem;
+                        right:1rem;
+                        width:4.8rem;
+                        height:4.8rem;
+                        @include body-200;
+                        color:#ffcc00;
+                        background:url(../images/te/icon-car-tag.svg) no-repeat;
+                        background-size:4.8rem;
+                    }
+                    img{
+                        width:100%;
+                    }
+                }
+                .btn-area{
+                    margin-top:1.6rem;
+                    padding:0;
+                    a,button{
+                        line-height:4.8rem;
+                        span{
+                            @include body-110;
+                        }
+                    }
+                }
+                &.none{
+                    background:#6a68db;
+                    .img{
+                        &:before{
+                            background:url(../images/te/img-car-bg-2.svg) no-repeat;
+                            background-size:cover;
+                        }
+                    }
+                }
+            }
+        }
+        &.simulation{
+            .part-content{
+                .box-area{
+                    .detail-area{
+                        margin-top:2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

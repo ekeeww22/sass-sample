@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    font-weight:normal;
+    font-style:normal;
+    box-sizing: border-box;
+}
+
+strong{
+    font-weight:bold;
+}
+
+html,body{
+    font-family:-apple-system, 'Roboto','NotoSansKR',sans-serif;
+    font-size:10px;
+    font-weight: 400;
+    letter-spacing:0;
+    -webkit-text-size-adjust:100%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+ul,li,ol {
+list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a,a:hover,a:active,a:focus {
+    text-decoration:none;
+    color: #000;
+    outline: none;
+}
+button{
+    text-decoration:none;
+    color: #000;
+    outline: none;
+    border:0;
+    cursor: pointer;
+}
+button:hover,button:active,button:focus{
+    outline:0;
+    // -webkit-tap-highlight-color: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, select {
+    vertical-align:middle;
+    font-family: 'Roboto','NotoSansKR',sans-serif;
+    font-size:14px;
+    font-weight: 400;
+    box-sizing:border-box;
+    border-radius:0;
+    background-color:transparent;
+    outline:0;
+    border:0;
+}
+input[type="date"]{
+    z-index:20; position:relative; white-space:nowrap;
+}
+
+input[type="date"],
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    appearance:none;
+    -webkit-appearance:none;
+    margin:0;
+    background:none;
+}
+
+
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+
+}
+
+/* device 320 */
+@media screen and (max-width: 320px) {
+    html,body{
+        font-size:9px;
+    }
+}

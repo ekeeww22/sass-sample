@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.CMYCTE018{
+    .part{
+        margin-top:3.2rem;
+        &:first-child{
+            margin-top:0;
+        }
+        .part-tit-wrap{
+            .reload-data{
+                top:0.3rem;
+            }
+            & + .part-content{
+                margin-top:1.6rem;
+            }
+        }
+        .part-content{
+            &:first-child{
+                margin-top:0;
+            }
+            .box-area{
+                margin-top:1.6rem;
+                &:first-child{
+                    margin-top:0;
+                }
+            }
+            .box-list{
+                margin-top:1.6rem;
+                li{
+                    margin-top:1.6rem;
+                    &:first-child{
+                        margin-top:0;
+                    }
+                    &.bg-pale{
+                        background:#fff8dc;
+                        box-shadow:none;
+                    }
+                    &.bg-iceblue{
+                        background:#edf5ff;
+                        box-shadow:none;
+                    }
+                }
+            }
+        }
+        &.top{
+            margin:-2.4rem -1.6rem 0;
+            padding:2.4rem 1.6rem 3.2rem;
+            @include bg-color-gray-200;
+        }
+    }
+}

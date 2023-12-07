@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.CMYMCP387{
+    .confirm-list{
+        dt{
+            @include contents-title-300;
+            & + dd{
+                margin-top:1.6rem;
+            }
+        }
+        dd{
+            margin-top:0.8rem;
+            @include body-120;
+            & + dt{
+                margin-top:3.2rem;
+            }
+        }
+    }
+}

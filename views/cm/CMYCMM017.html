@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>비밀번호 재설정</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+			<h2>비밀번호 찾기</h2>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content cm">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYCMM017">
+                    <div class="result-box">
+                        <i class="icon48 icon-nodata"></i>
+                        <div class="tit">
+                            <button type="button" class="btn-tooltip" data-target="tooltip-1"><span>비밀번호 재설정</span><i class="icon16 icon-tooltip">툴팁</i></button>
+                            <div class="tooltip" data-module="tooltip" data-name="tooltip-1">
+                                <h4 class="tit">비밀번호 재설정 시 유의사항?</h4>
+                                <ul class="bullet-list sm">
+                                    <li>영문, 숫자, 특수기호를 2가지 이상 조합하여 6~20자의 문자를 입력해주세요.(공백입력불가)</li>
+                                    <li>아이디를 포함한 문자/숫자는 비밀번호로 사용할 수 없습니다.</li>
+                                    <li>동일한 문자/숫자 3자리 이상은 입력이 불가합니다.(ex. aaa, 111 등)</li>
+                                </ul>
+                                <button class="icon16 icon-close">닫기</button>
+                            </div>
+                        </div>
+                        <p class="txt">
+                            새로운 비밀번호를 입력해주세요.<br>
+                            비밀번호가 재설정됩니다.
+                        </p>
+                    </div>
+
+					<div class="inp-list-wrap">
+                        <ul>
+                            <li>
+                                <div class="inp-box type-basic default">
+                                    <label for="inp1" class="inp-tit">비밀번호 입력</label>
+                                    <input type="password" id="inp1">
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                                <p class="sub-txt">영문+숫자+특수기호 2가지 이상 조합 6~20자리</p>
+                            </li>
+                            <li>
+                                <div class="inp-box type-basic default">
+                                    <label for="inp2" class="inp-tit">비밀번호 확인</label>
+                                    <input type="password" id="inp2">
+                                    <button class="icon16 icon-close">삭제</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="btn-area bottom-fixed">
+                        <button class="btn-yellow" disabled><span>확인</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

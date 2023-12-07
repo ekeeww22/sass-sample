@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<title>정보제공기관 선택(통합인증용) : 기관 목록</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="../../css/app.css">
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- content-header -->
+		<div class="content-header">
+			<button type="button" class="btn-history-back">뒤로</button>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content as">
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMCP132">
+                    <!-- 2021-06-28 마크업 추가 -->
+					<div class="top-location">
+						<ul>
+							<li class="end"><span>1</span></li>
+							<li class="active"><span>2</span></li>
+							<li><span>3</span></li>
+							<li><span>4</span></li>
+						</ul>
+					</div>
+					<!-- // 2021-06-28 마크업 추가 -->
+                    
+					<h3 class="contents-title-100">
+						연결할 금융기관을<br>
+						선택해 주세요.
+					</h3>
+					<div class="sticky-box">
+						<div class="inp-box type-search default">
+							<input type="text" placeholder="검색">
+							<button class="icon16 icon-close">필터삭제</button>
+							<button class="icon24 icon-search">검색</button>
+						</div>
+	
+						<div class="tab-underbar type-scroll-x">
+							<ul>
+								<li><button type="button" data-group="tit" data-name="tit-1">은행</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-2">증권</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-3">카드</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-4">보험</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-5">보증보험</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-6">할부금융</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-7">통신</button></li>
+								<li><button type="button" data-group="tit" data-name="tit-8">전자금융</button></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- 결과 없을경우 -->
+					<div class="result-box">
+                        <i class="icon48 icon-nodata"></i>
+                        <p class="txt">조회된 데이터가 없습니다.</p>
+                    </div>
+					<!-- // 결과 없을경우 -->
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-1">
+                        <h4 class="list-tit">은행</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt"><em class="keyword">KB</em>국민은행</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt"><em class="keyword">KB</em>저축은행</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">IBK기업은행</span>
+                                </label>
+                            </li>
+                            <li class="complete"><!-- 연결완료시 'complete' 클래스 & input disabled 추가 -->
+                                <label class="form-checkbox">
+                                    <input type="checkbox" disabled="">
+                                    <i class="icon"></i>
+                                    <span class="txt">DGB대구은행</span>
+                                    <span class="tag">연결완료</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">KEB하나은행</span>
+                                </label>
+                            </li>
+							<li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">NH농협은행</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-2">
+                        <h4 class="list-tit">증권</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">KB증권</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">DB금융투자</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-3">
+                        <h4 class="list-tit">카드</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt"><em class="keyword">KB</em>국민카드</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">비씨카드</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-4">
+                        <h4 class="list-tit">보험</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt"><em class="keyword">KB</em>생명</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-5">
+                        <h4 class="list-tit">보증보험</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">보증보험</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-6">
+                        <h4 class="list-tit">할부금융</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">할부금융</span>
+                                </label>
+                            </li>
+							<li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">할부금융</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-7">
+                        <h4 class="list-tit">통신</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">통신</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<div class="choice-wrap" data-module="tabScroller" data-target="tit-8">
+                        <h4 class="list-tit">전자금융</h4>
+                        <ul>
+                            <li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">전자금융</span>
+                                </label>
+                            </li>
+							<li>
+                                <label class="form-checkbox">
+                                    <input type="checkbox">
+                                    <i class="icon"></i>
+                                    <span class="txt">전자금융</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+					<button type="button" class="btn-floating">
+						<i class="icon56 icon-asset"></i>
+						<span class="num">20</span>
+					</button>
+
+					<div class="btn-area bottom-fixed">
+                        <button type="button" class="btn-yellow" disabled><span>다음</span></button>
+                    </div>
+					<div class="bottom-space"></div>
+				</div>
+				<!-- // section, 화면ID -->
+			</div>
+			<!-- // content -->
+
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>

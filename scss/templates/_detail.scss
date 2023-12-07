@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* detail */
+.detail-list{
+    margin:0 -1.6rem;
+    > ul{
+        > li{
+            padding:3.2rem 1.6rem;
+            border-top:1px solid #eee;
+            .detail-list-top{
+                .tit{@include body-120; color:#222;}
+                .txt{@include contents-title-50;}
+            }
+            .date{
+                position:relative;
+                @include body-200;
+                & + .detail-box{
+                    margin-top:2.4rem;
+                }
+            }
+            .detail-box{
+                display:block;
+                margin-top:3.2rem;
+                & + .detail-box{
+                    margin-top:3.2rem !important;
+                }
+                & + .date{
+                    margin-top:3.2rem;
+                    padding-top:3.2rem;
+                    &:before{
+                        content:'';
+                        display:block;
+                        position:absolute;
+                        top:0;
+                        left:-1.6rem;
+                        width:calc(100% + 3.2rem);
+                        height:1px;
+                        background:#eee;
+                    }
+                }
+                .list-tit{
+                    @include body-100;
+                }
+                .time{
+                    @include body-210;
+                }
+                .data-list{
+                    display:block;
+                    margin-top:0.8rem;
+                    ul{
+                        margin-top:0.8rem;
+                        li{
+                            margin-top:0.4rem;
+                            &:first-child{
+                                margin-top:0;
+                            }
+                            .bold{
+                                font-weight:700;
+                            }
+                            .icon16{
+                                margin-top:-0.3rem;
+                                vertical-align:middle;
+                            }
+                        }
+                        & + .bg-gray{
+                            margin-top:1.6rem;
+                        }
+                        &.bg-gray{
+                            & + .bg-gray{
+                                margin-top:0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

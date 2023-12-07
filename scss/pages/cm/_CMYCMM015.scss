@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.CMYCMM015{
+    .result-box{
+        padding:0 0 3.2rem;
+    }
+    .data-list{
+        ul{
+            li{
+                .tit{
+                    @include body-120;
+                }
+                .txt{
+                    @include body-110;
+                }
+            }
+        } 
+    }
+}

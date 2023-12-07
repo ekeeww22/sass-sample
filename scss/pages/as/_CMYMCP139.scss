@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.CMYMCP139{
+    .tooltip-wrap{
+        margin-top:1.6rem;
+        .tooltip{
+            top:calc(100% + 0.4rem);
+            left:0;
+        }
+    }
+    .form-box{
+        position:relative;
+        padding:1.6rem;
+        .form-checkbox{
+            .txt{
+                @include body-110;
+            }
+        }
+        .num-box{
+            position:absolute;
+            top:50%;
+            right:1.6rem;
+            @include body-200;
+            transform:translateY(-50%);
+            em{
+                display:inline-block;
+                @include body-200;
+                color:#2589ff;
+            }
+            span{
+                display:inline-block;
+                @include body-200;
+            }
+        }
+    }
+    .accordion-list-wrap{
+        margin-top:3.2rem;
+        border-radius:1.2rem;
+        @include line-color-gray-200;
+        .accordion-wrap{
+            &.type-total{
+                margin-top:0;
+                border:none;
+                border-top:1px solid #ddd;
+                border-radius:0;
+                .acco-left{
+                    .form-checkbox{
+                        .txt{
+                            @include body-120;
+                            color:#000;
+                        }
+                    }
+                }
+                .acco-right{
+                    .num-box{
+                        em{
+                            color:#2589ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-area{
+        button{
+            strong{
+                font-weight:400;
+            }
+        }
+    }
+}

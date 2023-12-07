@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta class="" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>내차고 &gt; 월 평균 주행</title>
+
+	<link type="text/css" rel="stylesheet" href="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../../js/lib/slick/slick.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/app.css" />
+
+	<script src="../../js/lib/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../../js/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="../../js/lib/slick/slick.js"></script>
+	<script src="../../js/uicomponent.js"></script>
+	<script>
+		$(document).ready(function(){
+			UIComponent.Html.reset();
+
+			
+		});
+	</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap bg-header-white">
+		<!--
+			[wrap 인접 class 지정 가이드]
+
+			bg-header-yellow : 헤더만 황색으로 변경
+			bg-header-gray   : 헤더만 회색으로 변경
+			bg-header-white  : 헤더만 백색으로 변경
+			bg-all-gray      : 헤더와 콘텐츠배경 회색으로 변경
+			bg-all-white     : 헤더와 콘텐츠배경 백색으로 변경
+
+			text-unmarked    : 금액 미표시 일때만 클래스 추가
+			↑ CMYMCP002.html 파일 참고
+		-->
+
+		<!-- content-header -->
+		<div class="content-header ">
+            <button type="button" class="btn-history-back">뒤로</button>
+            <h2>월 평균 주행</h2>
+			<div class="hearder-right-icon-area"><button class="icon24 icon-share">text</button></div>
+		</div>
+		<!-- // content-header -->
+
+		<!-- content-body -->
+		<div class="content-body">
+			
+			<!-- content, 카테고리-->
+			<div class="content mycar">
+
+				<!-- section, 화면ID (화면별 섹션 추가)-->
+				<div class="section CMYMGA005">
+					<div class="top-car-info-area">
+						<div class="top-car-thumb">
+							<dl>
+								<dt class="top-product-txt">
+									<h4 class="tit">현대 그랜저</h4>
+									<span class="txt">더 뉴 그랜저 2.5 캘리그래피</span>
+									<button class="details-txt">수정</button>
+								</dt>
+								<dd class="top-product-image">
+									
+									<div class="product"><img src="/images/mycar/image-content-mycar-1.png" alt=""></div>
+									<div class="license-plate">
+										<span class="lp-number">123가 1234</span>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="mycar-comtent-bc">
+
+						<div class="sub-main-data-box">
+                            <div class="container-top-roundbox">
+                                <div class="driving-top-area">
+									<em class="tit"><span class="txt">나의 월 평균 주행거리</span></em>
+									<strong class="line-txt">2,999km</strong>
+                                </div>
+								<div class="driving-info-area">
+									<dl class="driving-info">
+										<dt class="tit">나의 누적 주행거리</dt>
+										<dd class="txt">999,999km</dd>
+									</dl>
+									<dl class="driving-info">
+										<dt class="tit">동일 모델 월 평균 주행거리</dt>
+										<dd class="txt">1,300km</dd>
+									</dl>
+								</div>
+								<div class="graph-area"><img src="/images/mycar/image-graph-selling-price2.png" alt="" /></div>
+                            </div>
+                        </div>
+
+						<div class="sub-main-data-box">
+                            <div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>
+										평균보다 더 달리고 있어요.<br />
+										가까운 거리는 걸어보면 어떨까요?
+									</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox page-calendar-area page-calendar-area1">
+								<div class="driving-info-top-area">
+									<dl class="driving-info-top">
+										<dt class="tit"><span class="txt">월 평균 주행거리</span></dt>
+										<dd class="txt">2,999km</dd>
+									</dl>
+								</div>
+								<!-- 2021-07-30 수정 -->
+								<div class="progress-icon-bar-area" data-module="ScrollPositionController" data-latitude="bottom">
+									<div class="icon-car-area">
+										<i class="icon-car"></i>
+									</div>
+									<div class="progress-bar">
+										<div class="progress-color-bar">
+											<img src="/images/mycar/bg-mycar-progressbar.png" alt="" />
+										</div>
+									</div>
+									<div class="progress-txt-bar">
+										<div class="progress-txt-focus">
+											<div class="bar"></div>
+											<div class="txt">평균</div>
+										</div>
+									</div>								
+								</div>
+								<div class="bottom-line-txt">
+									<span class="txt">%3단계 모델명% 중에서도</span>
+									<span class="txt color-blue"><b>월 평균 000km 정도</b> 더 달리고 있어요.</span>
+								</div>
+                            </div>
+						</div>
+
+						<div class="sub-main-data-box">
+							<div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>
+										운전이 두려운건 아니시죠?<br />
+										주말엔 드라이브 어떠세요.
+									</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox page-calendar-area page-calendar-area2">
+								<div class="driving-info-top-area">
+									<dl class="driving-info-top">
+										<dt class="tit"><span class="txt">월 평균 주행거리</span></dt>
+										<dd class="txt">600km</dd>
+									</dl>
+								</div>
+
+								<!-- 2021-07-30 수정 -->
+								<div class="progress-icon-bar-area" data-module="ScrollPositionController" data-latitude="bottom">
+									<div class="icon-car-area">
+										<i class="icon-car"></i>
+									</div>
+									<div class="progress-bar">
+										<div class="progress-color-bar">
+											<img src="/images/mycar/bg-mycar-progressbar.png" alt="" />
+										</div>
+									</div>
+									<div class="progress-txt-bar">
+										<div class="progress-txt-focus">
+											<div class="bar"></div>
+											<div class="txt">평균</div>
+										</div>
+									</div>								
+								</div>
+								<div class="bottom-line-txt">
+									<span class="txt">%3단계 모델명% 중에서도</span>
+									<span class="txt color-blue"><b>월 평균 000Km 정도</b> 덜 달리고 있어요.</span>
+								</div>
+                            </div>
+						</div>
+
+						<div class="sub-main-data-box">
+							<div class="sub-tit-area">
+                                <div class="sub-tit">
+                                    <strong>
+										모델 평균 표준 드라이버네요.
+									</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox page-calendar-area page-calendar-area3">
+								<div class="driving-info-top-area">
+									<dl class="driving-info-top">
+										<dt class="tit"><span class="txt">월 평균 주행거리</span></dt>
+										<dd class="txt">1,400km</dd>
+									</dl>
+								</div>
+								<!-- 2021-07-30 수정 -->
+								<div class="progress-icon-bar-area" data-module="ScrollPositionController" data-latitude="bottom">
+									<div class="icon-car-area">
+										<i class="icon-car"></i>
+									</div>
+									<div class="progress-bar">
+										<div class="progress-color-bar">
+											<img src="/images/mycar/bg-mycar-progressbar.png" alt="" />
+										</div>
+									</div>
+									<div class="progress-txt-bar">
+										<div class="progress-txt-focus">
+											<div class="bar"></div>
+											<div class="txt">평균</div>
+										</div>
+									</div>								
+								</div>
+								<div class="bottom-line-txt">
+									<span class="txt">어쩌면 %3단계 모델명%의</span>
+									<span class="txt color-blue"><b>표본같은 운행 패턴을</b> 갖고 계신것 같아요.</span>
+								</div>
+                            </div>
+						</div>
+
+						<div class="alert-bottom-txt-area">
+							<i class="icon16 icon-info">text</i>
+							<span class="txt">KB차차차에 등록된 동일 모델 전체 0,000대의 차량들의 월 평균 주행거리를 측정한 결과로 매일 갱신됩니다.</span>
+						</div>
+
+						<div class="sub-main-data-box">
+							<div class="sub-tit-area">
+                                <div class="sub-tit-type2">
+                                    <strong>
+										주행거리
+									</strong>
+                                </div>
+                            </div>
+                            <div class="container-top-roundbox">
+								<h4 class="box-icon-tit-area">
+									<em class="tit-icon"><img src="/images/mycar/icon24-hyundai.svg" alt="" /></em>
+									<strong class="tit">현대 멤버십</strong>
+								</h4>
+								<div class="box-icon-sub-txt">
+									현대 멤버십 인증을 하면 주행거리를 직접 입력할 필요없이 편리하게 관리할 수 있습니다.
+								</div>
+								<div class="btn-area">
+                                    <button type="button" class="btn-grayline"><span>주행거리 연결하기</span></button>
+                                </div>
+                            </div>
+						</div>
+
+						<div class="bottom-logo-area">
+							<img src="/images/mycar/logo-bottom.svg" alt="" />
+						</div>
+
+					</div>
+
+					<!-- 2021-07-30 스크립트 추가. -->
+					<script>
+						(function(){
+							var items = document.querySelectorAll('[data-module="ScrollPositionController"]');
+							items.forEach(function(sender,index){
+								sender.addEventListener('screenOn',function(){
+									var _range = this.module.getRange();
+									var _windowH = Math.floor(window.outerHeight * 0.3);
+									if(window.scrollY > (_range['min'] + _windowH )){
+										var _target = $(sender).closest('.page-calendar-area')[0];
+										if( !_target.hasClass('active') ){
+											_target.classList.add('active');
+										}
+									}
+								});
+				
+							});
+						})();
+						
+					</script>
+
+                </div>
+                <!-- // section, 화면ID -->
+            </div>
+            <!-- // content -->
+            
+		</div>
+		<!-- // content-body -->
+
+	</div>
+	<!-- // wrap -->
+</body>
+</html>
